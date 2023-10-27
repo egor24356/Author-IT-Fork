@@ -31,6 +31,10 @@
   main {
     display: block;
   }
+
+  ul {
+    list-style: none;
+  }
   
   /**
    * Correct the font size and margin on `h1` elements within `section` and
@@ -74,6 +78,7 @@
    */
   
   a {
+    text-decoration: none;
     background-color: transparent;
   }
   

@@ -83,8 +83,9 @@ button:focus {
 }
 
 main {
-    max-width: 100%;
     position: relative;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 /* header */
@@ -100,7 +101,7 @@ main {
 }
 
 .item__logo {
-    background: url(/icon1/logo-white.svg) center no-repeat;
+    background: url(../icon1/logo-white.svg) center no-repeat;
     height: 96.5px;
     position: relative;
 }
@@ -117,7 +118,7 @@ main {
 }
 
 .item__logo:hover {
-    background: url(/icon1/logo-black.svg) center no-repeat;
+    background: url(../icon1/logo-black.svg) center no-repeat;
 }
 
 .nav__items {
@@ -271,7 +272,7 @@ main {
 /* section crm */
 
 .crm__content {
-    background: url(/icon1/crm_bg.svg) center no-repeat;
+    background: url(../icon1/crm_bg.svg) center no-repeat;
     transform: translateX(-7%);
     min-width: 1483px;
     height: 948px;
@@ -328,7 +329,7 @@ main {
 }
 
 .comm__revers {
-    background: url(/icon1/crm_comma_revers.svg) center no-repeat;
+    background: url(../icon1/crm_comma_revers.svg) center no-repeat;
     width: 184px;
     height: 240px;
 }
@@ -382,7 +383,7 @@ main {
 }
 
 .specialization {
-    background: url(/icon1/crm_comma.svg) center no-repeat;
+    background: url(../icon1/crm_comma.svg) center no-repeat;
     width: 285.983px;
     height: 240px;
     padding: 34px 26px 128px 24px;
@@ -464,7 +465,6 @@ main {
 /* section black-background */
 
 .black__bg {
-    height: 4513px;
     width: 1270px;
     margin: 0 auto;
 }
@@ -473,9 +473,8 @@ main {
 
 .ticker {
     position: relative;
-    height: 140px;
-    left: calc(-50vw + 50%);
-    margin: 108px 0 31px 0;
+    margin: 108px 0 100px 0;
+    overflow: hidden;
 }
   
 .ticker__wrapper {
@@ -554,7 +553,7 @@ main {
     padding: 0;
     display: block;
     background-color: transparent;
-    cursor: url(/icon1/team__cursor.svg), pointer;
+    cursor: url(../icon1/team__cursor.svg), pointer;
 }
 
 .team__wrap-face-Egor {
@@ -601,7 +600,7 @@ main {
     height: 878px !important;
     padding: 128px 72px 81px 72px;
     transform: translateY(-71px) !important;
-    cursor: url(/icon1/team__cursor.svg), pointer;
+    cursor: url(../icon1/team__cursor.svg), pointer;
 }
 
 .descr-team {
@@ -610,7 +609,7 @@ main {
     width: 1263px !important;
     height: 612px !important;
     margin-right: 0px !important;
-    cursor: url(/icon1/team__cursor.svg), pointer;
+    cursor: url(../icon1/team__cursor.svg), pointer;
 
 }
 
@@ -686,7 +685,7 @@ main {
     padding: 129px 11.53px 57px 55px;
     margin-top: 80px;
     border-radius: 35px 0 48px 48px;
-    background: url(/img1/slider__union__bg.svg) center no-repeat;
+    background: url(../img1/slider__union__bg.svg) center no-repeat;
 }
 
 .swiper__container__we__proud {
@@ -824,7 +823,7 @@ main {
 /* section comments */
 
 .container__comments {
-    background: url(/img1/slider__trust.png);
+    background: url(../img1/slider__trust.png);
     width: 1483px;
     height: 942px;
     transform: translateX(-7%);
@@ -923,24 +922,27 @@ main {
 /* section mailer */
 
 .container__mailer {
-    width: 2160px;
-    height: 1263px;
-    background: url(/img1/mailer__bg.png) center center/cover no-repeat;
-    transform: translateX(-22%);
-    padding: 709px 419px 119px 482px;
+    display: flex;
+    max-width: 1920px;
+    height: 1127px;
+    padding-bottom: 100px;
+    align-items: flex-end;
+    background: url(../img1/mailer__bg.png) center no-repeat;
+    background-size: cover;
 }
 
 .form__mailer {
-    width: 1263px;
-    height: 435px;
-    background-color: #F5F6FF;
-    border-radius: 52px;
+    max-width: 1263px;
+    max-height: 435px;
+    margin: 0 auto;
     padding: 72px 120px;
+    border-radius: 52px;
+    background-color: #F5F6FF;
 }
 
-.mailer {
-    position: relative;
-    margin-top: 56px;
+.mailer form {
+    /* position: relative; */
+    /* margin-top: 56px; */
     display: flex;
     justify-content: space-between;
 }
@@ -948,6 +950,7 @@ main {
 .container__break__mailer {
     display: flex;
     flex-direction: column;
+    max-width: 591px;
 }
 
 .mailer__row {
@@ -965,23 +968,23 @@ main {
     border-bottom: 1px solid #232323;
 }
 
-.mailer input::hover {
+/* .mailer input::hover {
 
 }
 
 .mailer input::active {
-}
+} */
 
 .mailer input[type=text] {
     width: 591px;
 }
 
 .mailer input[type=tel], input[type=email] {
-    width: 285px;
+    width: 47%;
 }
 
 .mailer input[type=tel] {
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .mailer__descr {
@@ -991,13 +994,24 @@ main {
     margin-top: 20px;
 }
 
+.container-button {
+    display: flex;
+    align-items: flex-end;
+    max-height: 156px;
+    margin-bottom: 5px;
+}
+
 .mailer button {
-    position: absolute;
+    /* position: absolute; */
     width: 367px;
     height: 81px;
     color:#F5F6FF;
     bottom: 0;
     right: 0;
+}
+
+.mailer__title {
+    padding-bottom: 56px;
 }
 
 /* footer */
@@ -1514,7 +1528,7 @@ main {
 /* страница О нас */
 
 .AboutUs__white {
-    background: url(/AboutUs_img/AboutUs-bg.png) center center/cover no-repeat;
+    background: url(../AboutUs_img/AboutUs-bg.png) center center/cover no-repeat;
     width: 1266px;
     height: 5996.884px;
     position: relative;
@@ -1892,7 +1906,7 @@ main {
 /* страница Кейсы */
 
 .Cases__png-bg {
-    background: url(/Cases_img/Cases-bg.png) center bottom no-repeat;
+    background: url(../Cases_img/Cases-bg.png) center bottom no-repeat;
     width: 1920px;
     height: 1000px;
     position: relative;

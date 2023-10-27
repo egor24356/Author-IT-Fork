@@ -9,11 +9,10 @@ const btnIntegration = document.querySelector('#integrationBtn');
 const btnDevelopment = document.querySelector('#developmentBtn');
 const btnTest = document.querySelector('#testBtn');
 
-const ANIM_DURATION = 700;
+const ANIM_DURATION = 300;
 
 
 services.forEach(s => {
-    console.log(s)
     s.style = `transition: all ${ANIM_DURATION/1000}s ease;`
 })
 

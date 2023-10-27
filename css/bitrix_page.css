@@ -37,7 +37,7 @@
 
 .strange__background {
     position: relative;
-    background: url(/img1/strange_bg.svg) no-repeat;
+    background: url(../img1/strange_bg.svg) no-repeat;
     width: 1200px;
     height: 732px;
     flex-shrink: 0;
@@ -119,7 +119,7 @@
 .right__descr__wrapper {
     flex-basis: 50%;
     flex-direction: column;
-    background: url(/icon1/comma_bitrix.svg);
+    background: url(../icon1/comma_bitrix.svg);
     width: 557px;
     height: 627px;
     background-repeat: no-repeat;

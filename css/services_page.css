@@ -90,7 +90,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background: url(/icon1/comma_services1.svg);
+    background: url(../icon1/comma_services1.svg);
     width: 387px;
     height: 506px;
     
@@ -99,7 +99,7 @@
 .container__green__comma2 {
     display: flex;
     flex-direction: column;
-    background: url(/icon1/comma_services2.svg);
+    background: url(../icon1/comma_services2.svg);
     width: 387px;
     height: 506px;
 }
@@ -108,7 +108,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background: url(/icon1/comma_services3.svg);
+    background: url(../icon1/comma_services3.svg);
     width: 387px;
     height: 506px;
 }

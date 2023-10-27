@@ -100,7 +100,7 @@ main {
 }
 
 .item__logo {
-    background: url(/icon1/logo-white.svg) center no-repeat;
+    background: url(../icon1/logo-white.svg) center no-repeat;
     height: 96.5px;
     position: relative;
 }
@@ -117,7 +117,7 @@ main {
 }
 
 .item__logo:hover {
-    background: url(/icon1/logo-black.svg) center no-repeat;
+    background: url(../icon1/logo-black.svg) center no-repeat;
 }
 
 .nav__items {
@@ -271,7 +271,7 @@ main {
 /* section crm */
 
 .crm__content {
-    background: url(/icon1/crm_bg.svg) center no-repeat;
+    background: url(../icon1/crm_bg.svg) center no-repeat;
     transform: translateX(-7%);
     min-width: 1483px;
     height: 948px;
@@ -328,7 +328,7 @@ main {
 }
 
 .comm__revers {
-    background: url(/icon1/crm_comma_revers.svg) center no-repeat;
+    background: url(../icon1/crm_comma_revers.svg) center no-repeat;
     width: 184px;
     height: 240px;
 }
@@ -382,7 +382,7 @@ main {
 }
 
 .specialization {
-    background: url(/icon1/crm_comma.svg) center no-repeat;
+    background: url(../icon1/crm_comma.svg) center no-repeat;
     width: 285.983px;
     height: 240px;
     padding: 34px 26px 128px 24px;
@@ -554,7 +554,7 @@ main {
     padding: 0;
     display: block;
     background-color: transparent;
-    cursor: url(/icon1/team__cursor.svg), pointer;
+    cursor: url(../icon1/team__cursor.svg), pointer;
 }
 
 .team__wrap-face-Egor {
@@ -601,7 +601,7 @@ main {
     height: 878px !important;
     padding: 128px 72px 81px 72px;
     transform: translateY(-71px) !important;
-    cursor: url(/icon1/team__cursor.svg), pointer;
+    cursor: url(../icon1/team__cursor.svg), pointer;
 }
 
 .descr-team {
@@ -610,7 +610,7 @@ main {
     width: 1263px !important;
     height: 612px !important;
     margin-right: 0px !important;
-    cursor: url(/icon1/team__cursor.svg), pointer;
+    cursor: url(../icon1/team__cursor.svg), pointer;
 
 }
 
@@ -686,7 +686,7 @@ main {
     padding: 129px 11.53px 57px 55px;
     margin-top: 80px;
     border-radius: 35px 0 48px 48px;
-    background: url(/img1/slider__union__bg.svg) center no-repeat;
+    background: url(../img1/slider__union__bg.svg) center no-repeat;
 }
 
 .swiper__container__we__proud {
@@ -824,7 +824,7 @@ main {
 /* section comments */
 
 .container__comments {
-    background: url(/img1/slider__trust.png);
+    background: url(../img1/slider__trust.png);
     width: 1483px;
     height: 942px;
     transform: translateX(-7%);
@@ -925,7 +925,7 @@ main {
 .container__mailer {
     width: 2160px;
     height: 1263px;
-    background: url(/img1/mailer__bg.png) center center/cover no-repeat;
+    background: url(../img1/mailer__bg.png) center center/cover no-repeat;
     transform: translateX(-22%);
     padding: 709px 419px 119px 482px;
 }
@@ -1514,7 +1514,7 @@ main {
 /* страница О нас */
 
 .AboutUs__white {
-    background: url(/AboutUs_img/AboutUs-bg.png) center center/cover no-repeat;
+    background: url(../AboutUs_img/AboutUs-bg.png) center center/cover no-repeat;
     width: 1266px;
     height: 5996.884px;
     position: relative;
@@ -1892,7 +1892,7 @@ main {
 /* страница Кейсы */
 
 .Cases__png-bg {
-    background: url(/Cases_img/Cases-bg.png) center bottom no-repeat;
+    background: url(../Cases_img/Cases-bg.png) center bottom no-repeat;
     width: 1920px;
     height: 1000px;
     position: relative;

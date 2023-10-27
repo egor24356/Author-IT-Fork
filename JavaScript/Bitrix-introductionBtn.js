@@ -1,34 +1,61 @@
-// нажатие на свайпер section Cases
+// нажатие на кнопку introduction
 
 document.addEventListener('DOMContentLoaded', ()  => { 
 
-    const button = document.querySelector('.Bitrix-introduction__container-btn');
-    const buttonImg = document.querySelector('.Bitrix-introduction__btn-img svg path');
-    const buttonHeader = document.querySelector('.Bitrix-introduction__btn-header');
+    const button = document.querySelectorAll('.Bitrix-introduction__container-btn');
 
-    // Обработчик события клика на слайд
-    button.addEventListener('mousemove', e => {
-        buttonImg.style.fill = "#FF7D04";
-        buttonImg.style.stroke = "none";
-        buttonHeader.style.color = "#F5F6FF";
-    });
-    button.addEventListener('mouseout', e => {
-        buttonImg.style.fill = "#F5F6FF";
-        buttonImg.style.stroke = "#232323";
-        buttonHeader.style.color = "#232323";
-    });
-    button.addEventListener('mousedown', e => {
-        buttonImg.style.fill = "#EC7202";
-        buttonImg.style.stroke = "none";
-        buttonHeader.style.color = "#F5F6FF";
-    });
-    button.addEventListener('mouseup', e => {
-        buttonImg.style.fill = "#F5F6FF";
-        buttonImg.style.stroke = "#232323";
-        buttonHeader.style.color = "#232323";
-    });
-    button.addEventListener('click', e => {
+    // наведение на кнопку
+    button.forEach((e) => {
+        e.addEventListener('mousemove', () => {
+            const img = e.querySelector('.Bitrix-introduction__btn-img svg path');
+            const header = e.querySelector('.Bitrix-introduction__btn-header');
+            img.style.fill = "#FF7D04";
+            img.style.stroke = "none";
+            header.style.color = "#F5F6FF";
+        });
     
-    })
-    // добавить selectorAll
+        e.addEventListener('mouseout', () => {
+            const img = e.querySelector('.Bitrix-introduction__btn-img svg path');
+            const header = e.querySelector('.Bitrix-introduction__btn-header');
+            img.style.fill = "#F5F6FF";
+            img.style.stroke = "#232323";
+            header.style.color = "#232323";
+        });
+    });
+
+    // зажатие кнопки
+    button.forEach((e) => {
+        e.addEventListener('mousedown', () => {
+            const img = e.querySelector('.Bitrix-introduction__btn-img svg path');
+            const header = e.querySelector('.Bitrix-introduction__btn-header');
+            img.style.fill = "#EC7202";
+            img.style.stroke = "none";
+            header.style.color = "#F5F6FF";
+        });
+    
+        e.addEventListener('mouseup', () => {
+            const img = e.querySelector('.Bitrix-introduction__btn-img svg path');
+            const header = e.querySelector('.Bitrix-introduction__btn-header');
+            img.style.fill = "#F5F6FF";
+            img.style.stroke = "#232323";
+            header.style.color = "#232323";
+        });
+    });
+
+    const bitrixAll = document.querySelectorAll('.bitrixAll');
+    console.log(bitrixAll);
+    //нажатие на кнопку
+    button.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const btnData = btn.getAttribute('data-introduction');
+            bitrixAll.forEach(b => {
+                const bitrixData = b.getAttribute('data-introduction');
+                if (btnData === bitrixData) {
+                    b.classList.remove('none');
+                }else{
+                    b.classList.add('none');
+                }
+            });
+        });
+    });
 })

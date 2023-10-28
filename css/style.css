@@ -1416,6 +1416,10 @@ main {
     background-color: transparent;
 }
 
+.Bitrix-introduction__resetStyle {
+    background-color: transparent;
+}
+
 .Bitrix-introduction__btn-header {
     color: #232323;
     text-align: center;
@@ -1916,13 +1920,6 @@ main {
     color: #232323;
 }
 
-
-/* AboutUs-mailer */
-
-.AboutUs-container__mailer {
-    transform: none;
-    margin: 72px auto 0 auto;
-}
 
 /* AboutUs__black */
 

@@ -37,6 +37,13 @@ h4 {
     font-weight: 700;
 }
 
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--caption16-color);
+}
+
 .subtitle24 {
     color: #000;
     font-family: "Unbounded-Regular";
@@ -63,7 +70,18 @@ h4 {
     line-height: 142.2%;
 }
 
+:root {
+    --caption16-font-family: 'Open Sans', sans-serif;
+    --caption16-font-size: 14px;
+    --caption16-font-weight: 400;
+    --caption16-color: #232323;
+    --subtitle24-color: #F5F6FF;
+    --subtitle24-font-family: "Unbounded-Regular";
+    --subtitle24-font-size: 24px;
+}
+
 button {
+    font-family: var(--caption16-font-family);
     background-color: #FF7D04;
     border-radius: 40px;
     border: none;
@@ -803,6 +821,7 @@ main {
 }
 
 .slider__union__btn__all__keys {
+
     display: block;
     width: 283px;
     height: 81px;
@@ -1102,6 +1121,8 @@ main {
 }
 
 /* страница Битрикс24 Внедрение облачного Б24 */
+
+.Bitrix__white-bg__cloud {}
 
 .BitrixCloud__white-bg {
     position: relative;
@@ -1435,6 +1456,7 @@ main {
     background: #F5F6FF;
     border-radius: 40px;
     margin: 0 auto 58px auto;
+    /*display: none;*/
 }
 
 /* секция Bitrix__rates */
@@ -1504,12 +1526,18 @@ main {
     background: #F5F6FF;
     border-radius: 40px;
     margin: 0 auto 58px auto;
+    /*display: none;*/
 }
 
 .BitrixEnter__container-title {
     padding: 100px 27px 92px 31px;
 }
 
+
+.Bitrix-container__mailer {
+    margin: 0 auto;
+    transform: none;
+}
 /* Bitrix__black-dg */
 
 .Bitrix__black-dg {
@@ -1609,7 +1637,7 @@ main {
 /* выравнивание ФИ сотрудников */
 
 .AboutUs-promo__slider-name-Kostya {
-    transform: translate(-628px, -89px);
+    transform: translate(-628px, -107px);
 }
 
 .AboutUs-promo__slider-name-NastyaD {
@@ -1623,7 +1651,7 @@ main {
 }
 
 .AboutUs-promo__slider-proffession-Kostya {
-    transform: translate(-628px, -88px);
+    transform: translate(-628px, -91px);
 }
 
 .AboutUs-promo__slider-proffession-NastyaD {
@@ -1639,8 +1667,9 @@ main {
 }
 
 .AboutUs-promo__slider-quote-Kostya {
-    transform: translate(-628px, -94px);
-    width: 430px;
+    transform: translate(-544px, -102px);
+    /*transform: translate(-628px, -94px);
+    width: 430px; */
 }
 
 .AboutUs-promo__slider-quote-NastyaD {
@@ -1891,6 +1920,14 @@ main {
     color: #232323;
 }
 
+
+/* AboutUs-mailer */
+
+.AboutUs-container__mailer {
+    transform: none;
+    margin: 72px auto 0 auto;
+}
+
 /* AboutUs__black */
 
 .AboutUs__black {
@@ -1899,7 +1936,6 @@ main {
     position: relative;
     margin: 0 auto 0 auto;
 }
-
 
 /* страница Кейсы */
 
@@ -2151,5 +2187,3 @@ main {
     font-family: "Unbounded-Black"; 
     src: url("../fonts/Unbounded-Black.ttf") format("truetype");
 } 
-
-

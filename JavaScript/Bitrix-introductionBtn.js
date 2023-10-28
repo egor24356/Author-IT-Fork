@@ -1,3 +1,4 @@
+
 // нажатие на кнопку introduction
 
 document.addEventListener('DOMContentLoaded', ()  => { 
@@ -59,3 +60,4 @@ document.addEventListener('DOMContentLoaded', ()  => {
         });
     });
 })
+

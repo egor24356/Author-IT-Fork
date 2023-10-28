@@ -1,3 +1,4 @@
+
 //переход на нужный слайд при нажатии на соответствующую иконку страницы "О нас"
 
 document.addEventListener('DOMContentLoaded', ()  => { 
@@ -39,4 +40,5 @@ document.addEventListener('DOMContentLoaded', ()  => {
             });
         });
     });
+
 });

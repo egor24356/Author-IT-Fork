@@ -102,6 +102,7 @@ button:focus {
 }
 
 main {
+    overflow: hidden;
     max-width: 100%;
     position: relative;
 }
@@ -199,7 +200,6 @@ main {
 
 .container__autor__IT {
     display: flex;
-    max-width: 1920px;
     height: 928px;
     padding: 167px 0 159px 0;
 }
@@ -207,7 +207,6 @@ main {
 /* Общая фотка в section autor__IT*/
 
 .container__autor__IT img {
-    width: 950px;
     height: 807px;
     border-radius: 50px 0 0 50px;
     transform: translateY(-100px);
@@ -483,20 +482,26 @@ main {
 /* section black-background */
 
 .black__bg {
-    height: 4513px;
-    width: 1270px;
+    max-width: 1270px;
     margin: 0 auto;
 }
 
 /* section running_line */
 
 .ticker {
-    position: relative;
+    /* position: relative; */
     height: 140px;
-    left: calc(-50vw + 50%);
+    /* left: calc(-50vw + 50%); */
     margin: 108px 0 31px 0;
 }
-  
+
+.running__line {
+    background: linear-gradient(90deg, rgba(35,35,35,1) 0%, rgba(35,35,35,0) 5%, rgba(35,35,35,0) 95%, rgba(35,35,35,1) 100%);
+    margin: 0 auto;
+    max-width: 1920px;
+    overflow-x: hidden;
+}
+
 .ticker__wrapper {
     display: flex;
 }
@@ -956,7 +961,7 @@ main {
 /* section mailer */
 
 .container__mailer {
-    width: 2160px;
+    max-width: 2160px;
     height: 1263px;
     background: url(../img1/mailer__bg.png) center center/cover no-repeat;
     transform: translateX(-22%);

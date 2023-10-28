@@ -1,110 +1,63 @@
-Skip to content
-Avtor-IT
-/
-Author-IT
 
-Type / to search
-
-Code
-Issues
-Pull requests
-1
-Actions
-Projects
-Security
-Insights
-Settings
-Pane width
-Use a value between 13% and 50%
-
-17
-Change width
-Files
-Go to file
-t
-.vscode
-settings.json
-AboutUs_icons
-AboutUs_img
-Bitrix_icons
-Cases_icons
-Cases_img
-JavaScript
-AboutUs.js
-Bitrix-introductionBtn.js
-Cases.js
-cursor.js
-filterCases.js
-mailer.js
-running-line.js
-swiper-Cases.js
-swiper-comments.js
-swiper-team.js
-swiper-we-proud.js
-css
-normalize.css
-style.css
-fonts
-html
-AboutUs.html
-Bitrix.html
-Cases.html
-Services.html
-index.html
-icon1
-img1
-libs
-README.md
-mail.php
-Documentation • Share feedback
-BreadcrumbsAuthor-IT/JavaScript
-/Bitrix-introductionBtn.js
-Latest commit
-AnastasiaManaeva
-AnastasiaManaeva
-Test
-fd92ed9
- · 
-1 hour ago
-History
-File metadata and controls
-
-Code
-
-Blame
-34 lines (30 loc) · 1.28 KB
-// нажатие на свайпер section Cases
+// нажатие на кнопку introduction
 
 document.addEventListener('DOMContentLoaded', ()  => { 
 
-    const button = document.querySelector('.Bitrix-introduction__container-btn');
-    const buttonImg = document.querySelector('.Bitrix-introduction__btn-img svg path');
-    const buttonHeader = document.querySelector('.Bitrix-introduction__btn-header');
+    const button = document.querySelectorAll('.Bitrix-introduction__container-btn');
 
-    // Обработчик события клика на слайд
-    button.addEventListener('mousemove', e => {
-        buttonImg.style.fill = "#FF7D04";
-        buttonImg.style.stroke = "none";
-        buttonHeader.style.color = "#F5F6FF";
-    });
-    button.addEventListener('mouseout', e => {
-        buttonImg.style.fill = "#F5F6FF";
-        buttonImg.style.stroke = "#232323";
-        buttonHeader.style.color = "#232323";
-    });
-    button.addEventListener('mousedown', e => {
-        buttonImg.style.fill = "#EC7202";
-        buttonImg.style.stroke = "none";
-        buttonHeader.style.color = "#F5F6FF";
-    });
-    button.addEventListener('mouseup', e => {
-        buttonImg.style.fill = "#F5F6FF";
-        buttonImg.style.stroke = "#232323";
-        buttonHeader.style.color = "#232323";
-    });
-    button.addEventListener('click', e => {
+    // наведение на кнопку
+    button.forEach((e) => {
+        e.addEventListener('mousemove', () => {
+            const img = e.querySelector('.Bitrix-introduction__btn-img svg path');
+            const header = e.querySelector('.Bitrix-introduction__btn-header');
+            img.style.fill = "#FF7D04";
+            img.style.stroke = "none";
+            header.style.color = "#F5F6FF";
+        });
     
-    })
-    // добавить selectorAll
+        e.addEventListener('mouseout', () => {
+            const img = e.querySelector('.Bitrix-introduction__btn-img svg path');
+            const header = e.querySelector('.Bitrix-introduction__btn-header');
+            img.style.fill = "#F5F6FF";
+            img.style.stroke = "#232323";
+            header.style.color = "#232323";
+        });
+    });
+
+    // зажатие кнопки
+    button.forEach((e) => {
+        e.addEventListener('mousedown', () => {
+            const img = e.querySelector('.Bitrix-introduction__btn-img svg path');
+            const header = e.querySelector('.Bitrix-introduction__btn-header');
+            img.style.fill = "#EC7202";
+            img.style.stroke = "none";
+            header.style.color = "#F5F6FF";
+        });
+    
+        e.addEventListener('mouseup', () => {
+            const img = e.querySelector('.Bitrix-introduction__btn-img svg path');
+            const header = e.querySelector('.Bitrix-introduction__btn-header');
+            img.style.fill = "#F5F6FF";
+            img.style.stroke = "#232323";
+            header.style.color = "#232323";
+        });
+    });
+
+    const bitrixAll = document.querySelectorAll('.bitrixAll');
+    console.log(bitrixAll);
+    //нажатие на кнопку
+    button.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const btnData = btn.getAttribute('data-introduction');
+            bitrixAll.forEach(b => {
+                const bitrixData = b.getAttribute('data-introduction');
+                if (btnData === bitrixData) {
+                    b.classList.remove('none');
+                }else{
+                    b.classList.add('none');
+                }
+            });
+        });
+    });
 })
-Author-IT/JavaScript/Bitrix-introductionBtn.js at main · Avtor-IT/Author-IT
+

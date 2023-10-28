@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -83,9 +84,8 @@ button:focus {
 }
 
 main {
-    position: relative;
     max-width: 100%;
-    overflow: hidden;
+    position: relative;
 }
 
 /* header */
@@ -465,6 +465,7 @@ main {
 /* section black-background */
 
 .black__bg {
+    height: 4513px;
     width: 1270px;
     margin: 0 auto;
 }
@@ -473,8 +474,9 @@ main {
 
 .ticker {
     position: relative;
-    margin: 108px 0 100px 0;
-    overflow: hidden;
+    height: 140px;
+    left: calc(-50vw + 50%);
+    margin: 108px 0 31px 0;
 }
   
 .ticker__wrapper {
@@ -801,9 +803,22 @@ main {
 }
 
 .slider__union__btn__all__keys {
+    display: block;
     width: 283px;
     height: 81px;
     transform: translate(320%, 15%);
+    padding: 24px 80px 24px 75px;
+    border-radius: 40px;
+    background: #FF7D04;
+    text-decoration: none;
+}
+
+.slider__union__btn__all__keys:hover {
+    background: #FF9330;
+}
+
+.slider__union__btn__all__keys:active {
+    background: #EC7202;
 }
 
 .slider__union__btn__all__keys h3 {
@@ -922,27 +937,24 @@ main {
 /* section mailer */
 
 .container__mailer {
-    display: flex;
-    max-width: 1920px;
-    height: 1127px;
-    padding-bottom: 100px;
-    align-items: flex-end;
-    background: url(../img1/mailer__bg.png) center no-repeat;
-    background-size: cover;
+    width: 2160px;
+    height: 1263px;
+    background: url(../img1/mailer__bg.png) center center/cover no-repeat;
+    transform: translateX(-22%);
+    padding: 709px 419px 119px 482px;
 }
 
 .form__mailer {
-    max-width: 1263px;
-    max-height: 435px;
-    margin: 0 auto;
-    padding: 72px 120px;
-    border-radius: 52px;
+    width: 1263px;
+    height: 435px;
     background-color: #F5F6FF;
+    border-radius: 52px;
+    padding: 72px 120px;
 }
 
-.mailer form {
-    /* position: relative; */
-    /* margin-top: 56px; */
+.mailer {
+    position: relative;
+    margin-top: 56px;
     display: flex;
     justify-content: space-between;
 }
@@ -950,7 +962,6 @@ main {
 .container__break__mailer {
     display: flex;
     flex-direction: column;
-    max-width: 591px;
 }
 
 .mailer__row {
@@ -968,23 +979,23 @@ main {
     border-bottom: 1px solid #232323;
 }
 
-/* .mailer input::hover {
+.mailer input::hover {
 
 }
 
 .mailer input::active {
-} */
+}
 
 .mailer input[type=text] {
     width: 591px;
 }
 
 .mailer input[type=tel], input[type=email] {
-    width: 47%;
+    width: 285px;
 }
 
 .mailer input[type=tel] {
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .mailer__descr {
@@ -994,24 +1005,13 @@ main {
     margin-top: 20px;
 }
 
-.container-button {
-    display: flex;
-    align-items: flex-end;
-    max-height: 156px;
-    margin-bottom: 5px;
-}
-
 .mailer button {
-    /* position: absolute; */
+    position: absolute;
     width: 367px;
     height: 81px;
     color:#F5F6FF;
     bottom: 0;
     right: 0;
-}
-
-.mailer__title {
-    padding-bottom: 56px;
 }
 
 /* footer */
@@ -1103,14 +1103,13 @@ main {
 
 /* страница Битрикс24 Внедрение облачного Б24 */
 
-.Bitrix__white-bg__cloud {
+.BitrixCloud__white-bg {
     position: relative;
     width: 1266px;
     height: 3911px;
     background: #F5F6FF;
     border-radius: 40px;
     margin: 0 auto 58px auto;
-    display: none;
 }
 
 /* секция Bitrix__title */
@@ -1436,7 +1435,6 @@ main {
     background: #F5F6FF;
     border-radius: 40px;
     margin: 0 auto 58px auto;
-    /*display: none;*/
 }
 
 /* секция Bitrix__rates */
@@ -1506,23 +1504,19 @@ main {
     background: #F5F6FF;
     border-radius: 40px;
     margin: 0 auto 58px auto;
-    display: none;
 }
 
 .BitrixEnter__container-title {
     padding: 100px 27px 92px 31px;
 }
 
+/* Bitrix__black-dg */
 
-
-
-
-
-/* секция Bitrix-mailer */
-
-.Bitrix-container__mailer {
-    margin: 0 auto;
-    transform: none;
+.Bitrix__black-dg {
+    width: 1266px;
+    height: 1263px;
+    position: relative;
+    margin: 0 auto 0 auto;
 }
 
 /* страница О нас */
@@ -1615,7 +1609,7 @@ main {
 /* выравнивание ФИ сотрудников */
 
 .AboutUs-promo__slider-name-Kostya {
-    transform: translate(-628px, -107px);
+    transform: translate(-628px, -89px);
 }
 
 .AboutUs-promo__slider-name-NastyaD {
@@ -1629,7 +1623,7 @@ main {
 }
 
 .AboutUs-promo__slider-proffession-Kostya {
-    transform: translate(-628px, -91px);
+    transform: translate(-628px, -88px);
 }
 
 .AboutUs-promo__slider-proffession-NastyaD {
@@ -1645,7 +1639,8 @@ main {
 }
 
 .AboutUs-promo__slider-quote-Kostya {
-    transform: translate(-544px, -102px);
+    transform: translate(-628px, -94px);
+    width: 430px;
 }
 
 .AboutUs-promo__slider-quote-NastyaD {
@@ -1896,12 +1891,15 @@ main {
     color: #232323;
 }
 
-/* AboutUs-mailer */
+/* AboutUs__black */
 
-.AboutUs-container__mailer {
-    transform: none;
-    margin: 72px auto 0 auto;
+.AboutUs__black {
+    width: 1266px;
+    height: 1263px;
+    position: relative;
+    margin: 0 auto 0 auto;
 }
+
 
 /* страница Кейсы */
 
@@ -2153,3 +2151,5 @@ main {
     font-family: "Unbounded-Black"; 
     src: url("../fonts/Unbounded-Black.ttf") format("truetype");
 } 
+
+

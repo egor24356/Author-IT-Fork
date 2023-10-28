@@ -31,16 +31,11 @@ document.addEventListener('DOMContentLoaded', ()  => {
 	followCursor(); // вызываем функцию followCursor
 
 	const teamImg = document.querySelector('.team__img')
-	const links = document.querySelectorAll('.team__links')
+	const links = document.querySelector('.team__links')
 	const swiperTeam = document.querySelector('.swiper__team')
 	
-	links.forEach(link => {
-		link.addEventListener('click', function() {
-			links.forEach(() => {
-				teamImg.remove();
-				swiperTeam.style.display = 'block';
-			})
-		})
-    })
-
+	links.addEventListener('click', function() {
+		teamImg.remove();
+		swiperTeam.style.display = 'block';
+	})
 })

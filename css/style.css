@@ -199,7 +199,7 @@ main {
 
 .container__autor__IT {
     display: flex;
-    width: 1920px;
+    max-width: 1920px;
     height: 928px;
     padding: 167px 0 159px 0;
 }

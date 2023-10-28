@@ -6,7 +6,7 @@
 
 body {
     display: flex;
-    min-width: 1220px;
+   /* min-width: 1220px; ????*/
     justify-content: center;
     background-color: #232323;
     flex-wrap: wrap;
@@ -193,7 +193,7 @@ main {
     width: 1266.001px;
     height: 2685.604px;
     border-radius: 40px;
-    margin: 0 auto 108px auto;
+    margin: 0 auto 0 auto;
 }
 
 /* section autor__IT */
@@ -542,8 +542,8 @@ main {
 
 .cursor {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background: rgba(25, 127, 117, 0.8);
     border-radius: 100%;
     user-select: none;
@@ -558,8 +558,8 @@ main {
 /* cursor при наведении на ссылки (лица команды) */
 
 .cursor_active {
-    height: 360px;
-    width: 360px;
+    height: 250px;
+    width: 250px;
     border-width: 2px;
     background: rgba(34, 153, 141, 0.5);
 }
@@ -573,37 +573,15 @@ main {
 
 .team__links {
     position: absolute;
-    width: 110px;
-    height: 110px;
+    width: 1005px;
+    height: 739px;
     padding: 0;
     display: block;
     background-color: transparent;
     cursor: url(../icon1/team__cursor.svg), pointer;
+    transform: translate(44px, -821px);
 }
 
-.team__wrap-face-Egor {
-    transform: translate(150px, -800px);
-}
-
-.team__wrap-face-Kostya {
-    transform: translate(350px, -800px);
-}
-
-.team__wrap-face-NastyaM {
-    transform: translate(525px, -745px);
-}
-
-.team__wrap-face-NastyaD {
-    transform: translate(670px, -750px);
-}
-
-.team__wrap-face-Ksysha {
-    transform: translate(815px, -750px);
-}
-
-.team__wrap-face-Daniil {
-    transform: translate(570px, -590px);
-}
 
 /* фотография в team__container */
 
@@ -1128,8 +1106,6 @@ main {
 
 /* страница Битрикс24 Внедрение облачного Б24 */
 
-.Bitrix__white-bg__cloud {}
-
 .BitrixCloud__white-bg {
     position: relative;
     width: 1266px;
@@ -1607,6 +1583,7 @@ main {
 /* выравнивание больших фотографий */
 
 .AboutUs-promo__slider-img {
+    margin-top: 20px;
     margin-right: 29px;
 }
 
@@ -2174,7 +2151,6 @@ main {
     margin-right: 63px;
 }
 
-
 /* шрифты */
 
 @font-face {
@@ -2185,3 +2161,127 @@ main {
     font-family: "Unbounded-Black"; 
     src: url("../fonts/Unbounded-Black.ttf") format("truetype");
 } 
+
+/* Медиа-запросы страницы AboutUs */
+
+@media (max-width: 1280px) { 
+    .nav__items {
+        width: 90vw;
+    }
+    .tabs__item {
+        width: 185px !important;
+    }
+    .AboutUs__white {
+        background-size: 90vw 100%;
+        width: 90vw;
+        height: 4839px;
+    }
+    .AboutUs-promo__title {
+        font-size: 150px;
+    }
+    .AboutUs-promo {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .AboutUs_img {
+        width: 80vw;
+        margin: 40px auto 0 auto;
+    }
+    .AboutUs-promo__container {
+        margin-top: 70px;
+        width: 1020px;
+        height: 585px;
+    }
+    .swiper__container__AboutUs {
+        width: 1020px;
+    }
+    .slide__AboutUs {
+        height: 415px !important;
+    }
+    .AboutUs-promo__slider-img {
+        margin-top: 15px;
+    }
+    .slide__AboutUs__NastyaM img {
+        margin-left: 80px;
+    }
+    .AboutUs-promo__slider-descr {
+        margin-top: 100px;
+    }
+    .AboutUs-promo__slider-descr-Egor {
+        margin-top: 145px;
+    }
+    .AboutUs-promo__slider-descr-NastyaM {
+        margin-top: 108px;
+    }
+    .AboutUs-promo__slider-descr-Ksysha {
+        margin-top: 126px;
+    }
+    .AboutUs-promo__slider-name {
+        font-size: 45px;
+    }
+    .AboutUs-promo__slider-proffession {
+        font-size: 20px;
+    }
+    .AboutUs-promo__slider-quote {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .AboutUs-promo__slider-name-Kostya {
+        transform: translate(-430px, -45px);
+    }
+    .AboutUs-promo__slider-name-NastyaD {
+        transform: translate(-80px, -23px);
+    }
+    .AboutUs-promo__slider-proffession-Kostya {
+        transform: translate(-430px, -55px);
+    }
+    .AboutUs-promo__slider-proffession-NastyaD {
+        transform: translate(-80px, -29px);
+    }
+    .AboutUs-promo__slider-quote-Kostya {
+        transform: translate(-430px, -60px);
+    }
+    .AboutUs-promo__slider-quote-NastyaD {
+        transform: translate(0, -29px);
+    }
+    .AboutUs-icons {
+        width: 170px;
+        height: 170px;
+    }
+    .AboutUs-promo-arrow-prev {
+        transform: translate(45px, -1445px);
+    }
+    .AboutUs-promo-arrow-next {
+        transform: translate(-45px, -1445px);
+    }
+    .AboutUs-history__wrapper {
+        height: 938px;
+        padding: 151px 53px 0px 253px;
+    }
+    h1 {
+        font-size: 80px;
+    }
+    .caption16 {
+        font-size: 14px;
+    }
+    .AboutUs-history__img {
+        width: 796px;
+    }
+}
+
+@media (max-width: 1200px) { 
+
+}
+
+@media (max-width: 992px) { 
+
+}
+
+@media (max-width: 768px) { 
+
+}
+
+@media (max-width: 576px) { 
+
+}

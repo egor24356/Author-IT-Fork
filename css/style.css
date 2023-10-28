@@ -1060,6 +1060,7 @@ main {
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     font-weight: 700;
+    color:#F5F6FF;
 }
 
 .footer__wrap ul {
@@ -1534,10 +1535,6 @@ main {
 }
 
 
-.Bitrix-container__mailer {
-    margin: 0 auto;
-    transform: none;
-}
 /* Bitrix__black-dg */
 
 .Bitrix__black-dg {
@@ -1637,7 +1634,7 @@ main {
 /* выравнивание ФИ сотрудников */
 
 .AboutUs-promo__slider-name-Kostya {
-    transform: translate(-628px, -107px);
+    transform: translate(-628px, -89px);
 }
 
 .AboutUs-promo__slider-name-NastyaD {
@@ -1651,7 +1648,7 @@ main {
 }
 
 .AboutUs-promo__slider-proffession-Kostya {
-    transform: translate(-628px, -91px);
+    transform: translate(-628px, -88px);
 }
 
 .AboutUs-promo__slider-proffession-NastyaD {
@@ -1667,9 +1664,8 @@ main {
 }
 
 .AboutUs-promo__slider-quote-Kostya {
-    transform: translate(-544px, -102px);
-    /*transform: translate(-628px, -94px);
-    width: 430px; */
+    transform: translate(-628px, -94px);
+    width: 430px; 
 }
 
 .AboutUs-promo__slider-quote-NastyaD {

@@ -1,3 +1,4 @@
+
 //переход на нужный слайд при нажатии на соответствующую иконку страницы "О нас"
 
 document.addEventListener('DOMContentLoaded', ()  => { 
@@ -12,7 +13,7 @@ document.addEventListener('DOMContentLoaded', ()  => {
             delay: 10000,
             disableOnInteraction: true
         },
-        speed: 3000,
+        speed: 1000,
     
         // Navigation arrows
         navigation: {
@@ -33,10 +34,11 @@ document.addEventListener('DOMContentLoaded', ()  => {
             slidesAbout.forEach((slide, index) => {
                 const filterSlideAbout = slide.dataset.filterabout;
                 if (filterIconAbout === filterSlideAbout) {
-                    swiperAboutUs.slideTo(index, 1500, false);
+                    swiperAboutUs.slideTo(index, 0, false);
 
                 }
             });
         });
     });
+
 });

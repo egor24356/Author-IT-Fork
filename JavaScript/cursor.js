@@ -2,19 +2,19 @@
 
 document.addEventListener('DOMContentLoaded', ()  => { 
 
-	const container = document.querySelector('.team__container')
+	const containerTeam = document.querySelector('.team__container')
 	const cursor = document.querySelector('.cursor') // ищем элемент, который будет следовать за курсором
 	
-	container.onmouseover = () => {
+	containerTeam.onmouseover = () => {
 		cursor.style.opacity = 1
 	}
 
-	container.onmouseout = () => {
+	containerTeam.onmouseout = () => {
 		cursor.style.opacity = 0
 	}
 
 	const followCursor = () => { // объявляем функцию followCursor
-		container.addEventListener('mousemove', e => { // при движении курсора
+		containerTeam.addEventListener('mousemove', e => { // при движении курсора
 			const target = e.target // определяем, где находится курсор
 			if (!target) return
 				if (target.closest('a')) { // если курсор наведён на кнопку

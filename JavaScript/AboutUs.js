@@ -9,11 +9,11 @@ document.addEventListener('DOMContentLoaded', ()  => {
         grabCursor: true,
         slidesPerView: 1,
         direction: 'horizontal',
-        autoplay: {
-            delay: 10000,
-            disableOnInteraction: true
-        },
-        speed: 1000,
+      //  autoplay: {
+      //      delay: 10000,
+      //      disableOnInteraction: true
+      //  },
+      //  speed: 1000,
     
         // Navigation arrows
         navigation: {

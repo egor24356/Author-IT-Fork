@@ -1,0 +1,27 @@
+.mobile-nav {
+    display: none;
+}
+
+.mobile-nav {
+    transform: translateY(-100%);
+    width: 100vw;
+    height: 100vh;
+    background-color: #232323;
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.mobile-nav__nav {
+    margin: 20px auto 0 auto;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mobile-nav__item {
+    text-align: center;
+    border-bottom: 1px solid #f5f6ff6e;
+    font-size: 24px !important;
+}

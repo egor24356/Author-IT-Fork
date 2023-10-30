@@ -154,7 +154,7 @@
         width: auto !important;
     }
     .custom-pagination {
-        left: 90% !important;
+        left: 85% !important;
     }
     .container__we__proud__slider {
         background: #F5F6FF;
@@ -403,5 +403,111 @@
     }
     .mailer__title {
         text-align: center;
+    }
+    .swiper__wrapper__comments {
+        height: auto !important;
+    }
+    .container__mailer {
+        padding: 466px 0 40px 0;
+        background-size: 150%;
+    }
+}
+
+@media (max-width: 690px) {
+    .container__autor__IT > img {
+        display: none;
+    }
+    .crm__icon__top {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 40px;
+    }
+    .mobile-nav-btn {
+        --width: 20px;
+        --height: 15px;
+    }
+    .mobile-nav-btn-wrap {
+        top: 10px;
+        left: 10px;
+    }
+    .autor__content {
+        margin-left: 0;
+    }
+    .container__autor__IT {
+        padding: 40px;
+    }
+    .autor__descr1 {
+        margin-right: 0;
+    }
+    .white__bg {
+        max-width: 98vw;
+    }
+    .title-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .crm__content {
+        transform: translateX(-1%);
+        padding: 45px 20px;
+    }
+    .descr {
+        padding: 30px;
+    }
+    .specialization  {
+        padding: 20px 30px;
+    }
+    .container__we__commas {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .white__bg {
+        padding-bottom: 20px;
+    }
+    .container__we__commas {
+        height: auto !important;
+        justify-content: space-around;
+    }
+    .container__we__commas .com {
+        aspect-ratio: 119/162;
+        width: max(40%, 150px) !important;
+    }
+    .ticker__wrapper .ticker__item {
+        font-size: 45px;
+    }
+    .ticker {
+        margin: 40px 0 0 0;
+    }
+    .team__profession {
+        position: absolute;
+        margin-top: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .swiper__team__img {
+        width: auto;
+        height: 300px;
+        top: -12px;
+        right: -28px;
+    }
+    .descr-team {
+        height: auto !important;
+    }
+    .swiper__team {
+        height: 650px !important;
+        padding: 128px 40px 81px 40px;
+    }
+    .custom-pagination {
+        bottom: 0 !important;
+    }
+    .swiper__team {
+        max-height: 500px !important;
+    }
+    .container__we__proud {
+        padding: 79px 0 310px 0;
     }
 }

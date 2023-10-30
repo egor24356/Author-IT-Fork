@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
     
@@ -10,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media_aboutUs.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 </head>
 <body>
@@ -40,7 +40,7 @@
                                 <div class="swiper-wrapper swiper__wrapper__AboutUs">
                                     <div class="swiper-slide slide__AboutUs slide__AboutUs__Daniil" data-filterAbout="Daniil">
                                         <img class="AboutUs-promo__slider-img" src="../AboutUs_img/AboutUs-promo-slider__Daniil.png" alt="Фотография Даниила Гулевича">
-                                        <div class="AboutUs-promo__slider-descr">
+                                        <div class="AboutUs-promo__slider-descr AboutUs-promo__slider-descr-Daniil">
                                             <h2 class="AboutUs-promo__slider-name">Даниил Гулевич</h2>
                                             <div class="AboutUs-promo__slider-proffession subtitle24">Директор</div>
                                             <div class="AboutUs-promo__slider-quote caption16">
@@ -62,7 +62,7 @@
                                     </div>
                                     <div class="swiper-slide slide__AboutUs slide__AboutUs__Ksysha" data-filterAbout="Ksysha">
                                         <img class="AboutUs-promo__slider-img" src="../AboutUs_img/AboutUs-promo-slider__Ksysha.png" alt="Фотография Ксении Бойко">
-                                        <div class="AboutUs-promo__slider-descr">
+                                        <div class="AboutUs-promo__slider-descr AboutUs-promo__slider-descr-Ksysha">
                                             <h2 class="AboutUs-promo__slider-name">Ксения Бойко</h2>
                                             <div class="AboutUs-promo__slider-proffession subtitle24">РОП</div>
                                             <div class="AboutUs-promo__slider-quote caption16">
@@ -87,7 +87,7 @@
                                     </div>
                                     <div class="swiper-slide slide__AboutUs slide__AboutUs__Egor" data-filterAbout="Egor">
                                         <img class="AboutUs-promo__slider-img" src="../AboutUs_img/AboutUs-promo-slider__Egor.png" alt="Фотография Егора Соколова">
-                                        <div class="AboutUs-promo__slider-descr">
+                                        <div class="AboutUs-promo__slider-descr AboutUs-promo__slider-descr-Egor">
                                             <h2 class="AboutUs-promo__slider-name">Егор Соколов</h2>
                                             <div class="AboutUs-promo__slider-proffession subtitle24">Frontend разработчик</div>
                                             <div class="AboutUs-promo__slider-quote caption16">
@@ -97,7 +97,7 @@
                                     </div>
                                     <div class="swiper-slide slide__AboutUs slide__AboutUs__NastyaM" data-filterAbout="NastyaM">
                                         <img class="AboutUs-promo__slider-img" src="../AboutUs_img/AboutUs-promo-slider__NastyaM.png" alt="Фотография Анастасии Манаевой">
-                                        <div class="AboutUs-promo__slider-descr">
+                                        <div class="AboutUs-promo__slider-descr AboutUs-promo__slider-descr-NastyaM">
                                             <h2 class="AboutUs-promo__slider-name">Анастасия Манаева</h2>
                                             <div class="AboutUs-promo__slider-proffession subtitle24">Frontend разработчик</div>
                                             <div class="AboutUs-promo__slider-quote caption16">
@@ -336,30 +336,29 @@
             </section>
         </div>
         <div class="AboutUs__black">
-            <section class="mailer AboutUs-mailer">
+            <section class="mailer-section AboutUs-mailer-section">
                 <div class="container__mailer AboutUs-container__mailer">
-                    <div class="form__mailer">
-                        <h2 class="mailer__title">
+                    <div class="form__mailer AboutUs-form__mailer">
+                        <h2 class="mailer__title AboutUs-mailer__title">
                             Давайте сотрудничать!
                         </h2>
-                        <form name="test" action="#" class="mailer" method="post" enctype="multipart/form-data">
-                            <div class="container__break__mailer">
-                                <div class="mailer__row">
+                        <form name="test" action="#" class="mailer AboutUs-mailer" method="post" enctype="multipart/form-data">
+                            <div class="container__break__mailer AboutUs-container__break__mailer">
+                                <div class="mailer__row AboutUs-mailer__row">
                                     <input class="input input-name" type="text" data-validate-field="name" name="userName" placeholder="Ваше имя">
                                 </div>
-                                <div class="mailer__row">
+                                <div class="mailer__row AboutUs-mailer__second-row">
                                     <input class="input input-tel" type="tel" data-validate-field="tel" name="userPhone" placeholder="Номер телефона">
                                     <input class="input input-mail" type="email" data-validate-field="email" name="userEmail" placeholder="Почта" >
                                 </div>
-                                <p class="mailer__descr">Оставьте свои данные и мы свяжемся с вами в течение недели.</p>
+                                <p class="mailer__descr AboutUs-mailer__descr">Оставьте свои данные и мы свяжемся с вами в течение недели.</p>
                             </div>
-                            <button class="button" type="submit"><h3>Оставить заявку</h3></button>
+                            <button class="button AboutUs-button" type="submit"><h3>Оставить заявку</h3></button>
                         </form>
                     </div>
                 </div>
             </section>
         </div>
-    
     <footer class="footer">
         <div class="container__footer">
             <div class="footer__wrap">
@@ -395,5 +394,4 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> 
     <script src="../JavaScript/AboutUs.js"></script>
 </body>
-
 </html>

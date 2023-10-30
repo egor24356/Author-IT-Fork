@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,7 +5,7 @@
 
 body {
     display: flex;
-    min-width: 1220px;
+   /* min-width: 1220px; ????*/
     justify-content: center;
     background-color: #232323;
     flex-wrap: wrap;
@@ -37,6 +36,13 @@ h4 {
     font-weight: 700;
 }
 
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--caption16-color);
+}
+
 .subtitle24 {
     color: #000;
     font-family: "Unbounded-Regular";
@@ -63,7 +69,18 @@ h4 {
     line-height: 142.2%;
 }
 
+:root {
+    --caption16-font-family: 'Open Sans', sans-serif;
+    --caption16-font-size: 14px;
+    --caption16-font-weight: 400;
+    --caption16-color: #232323;
+    --subtitle24-color: #F5F6FF;
+    --subtitle24-font-family: "Unbounded-Regular";
+    --subtitle24-font-size: 24px;
+}
+
 button {
+    font-family: var(--caption16-font-family);
     background-color: #FF7D04;
     border-radius: 40px;
     border: none;
@@ -84,6 +101,7 @@ button:focus {
 }
 
 main {
+    overflow: hidden;
     max-width: 100%;
     position: relative;
 }
@@ -174,14 +192,13 @@ main {
     width: 1266.001px;
     height: 2685.604px;
     border-radius: 40px;
-    margin: 0 auto 108px auto;
+    margin: 0 auto 0 auto;
 }
 
 /* section autor__IT */
 
 .container__autor__IT {
     display: flex;
-    width: 1920px;
     height: 928px;
     padding: 167px 0 159px 0;
 }
@@ -189,7 +206,6 @@ main {
 /* Общая фотка в section autor__IT*/
 
 .container__autor__IT img {
-    width: 950px;
     height: 807px;
     border-radius: 50px 0 0 50px;
     transform: translateY(-100px);
@@ -465,20 +481,26 @@ main {
 /* section black-background */
 
 .black__bg {
-    height: 4513px;
-    width: 1270px;
+    max-width: 1270px;
     margin: 0 auto;
 }
 
 /* section running_line */
 
 .ticker {
-    position: relative;
+    /* position: relative; */
     height: 140px;
-    left: calc(-50vw + 50%);
+    /* left: calc(-50vw + 50%); */
     margin: 108px 0 31px 0;
 }
-  
+
+.running__line {
+    background: linear-gradient(90deg, rgba(35,35,35,1) 0%, rgba(35,35,35,0) 5%, rgba(35,35,35,0) 95%, rgba(35,35,35,1) 100%);
+    margin: 0 auto;
+    max-width: 1920px;
+    overflow-x: hidden;
+}
+
 .ticker__wrapper {
     display: flex;
 }
@@ -513,14 +535,15 @@ main {
     border-radius: 48px;
     margin-bottom: 127px;
     cursor: none;
+    margin-top: 40px;
 }
 
 /* cursor */
 
 .cursor {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background: rgba(25, 127, 117, 0.8);
     border-radius: 100%;
     user-select: none;
@@ -535,8 +558,8 @@ main {
 /* cursor при наведении на ссылки (лица команды) */
 
 .cursor_active {
-    height: 360px;
-    width: 360px;
+    height: 250px;
+    width: 250px;
     border-width: 2px;
     background: rgba(34, 153, 141, 0.5);
 }
@@ -550,37 +573,15 @@ main {
 
 .team__links {
     position: absolute;
-    width: 110px;
-    height: 110px;
+    width: 1005px;
+    height: 739px;
     padding: 0;
     display: block;
     background-color: transparent;
     cursor: url(../icon1/team__cursor.svg), pointer;
+    transform: translate(44px, -821px);
 }
 
-.team__wrap-face-Egor {
-    transform: translate(150px, -800px);
-}
-
-.team__wrap-face-Kostya {
-    transform: translate(350px, -800px);
-}
-
-.team__wrap-face-NastyaM {
-    transform: translate(525px, -745px);
-}
-
-.team__wrap-face-NastyaD {
-    transform: translate(670px, -750px);
-}
-
-.team__wrap-face-Ksysha {
-    transform: translate(815px, -750px);
-}
-
-.team__wrap-face-Daniil {
-    transform: translate(570px, -590px);
-}
 
 /* фотография в team__container */
 
@@ -610,7 +611,7 @@ main {
     flex-direction: column;
     width: 1263px !important;
     height: 612px !important;
-    margin-right: 0px !important;
+    /* margin-right: 0px !important; */
     cursor: url(../icon1/team__cursor.svg), pointer;
 
 }
@@ -803,6 +804,7 @@ main {
 }
 
 .slider__union__btn__all__keys {
+
     display: block;
     width: 283px;
     height: 81px;
@@ -937,8 +939,7 @@ main {
 /* section mailer */
 
 .container__mailer {
-    width: 2160px;
-    height: 1263px;
+    max-width: 2160px;
     background: url(../img1/mailer__bg.png) center center/cover no-repeat;
     transform: translateX(-22%);
     padding: 709px 419px 119px 482px;
@@ -952,7 +953,7 @@ main {
     padding: 72px 120px;
 }
 
-.mailer {
+.mailer-section {
     position: relative;
     margin-top: 56px;
     display: flex;
@@ -1005,6 +1006,13 @@ main {
     margin-top: 20px;
 }
 
+.mailer {
+    position: relative;
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .mailer button {
     position: absolute;
     width: 367px;
@@ -1041,6 +1049,7 @@ main {
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     font-weight: 700;
+    color:#F5F6FF;
 }
 
 .footer__wrap ul {
@@ -1394,6 +1403,10 @@ main {
     background-color: transparent;
 }
 
+.Bitrix-introduction__resetStyle {
+    background-color: transparent;
+}
+
 .Bitrix-introduction__btn-header {
     color: #232323;
     text-align: center;
@@ -1435,6 +1448,7 @@ main {
     background: #F5F6FF;
     border-radius: 40px;
     margin: 0 auto 58px auto;
+    /*display: none;*/
 }
 
 /* секция Bitrix__rates */
@@ -1504,11 +1518,13 @@ main {
     background: #F5F6FF;
     border-radius: 40px;
     margin: 0 auto 58px auto;
+    /*display: none;*/
 }
 
 .BitrixEnter__container-title {
     padding: 100px 27px 92px 31px;
 }
+
 
 /* Bitrix__black-dg */
 
@@ -1552,7 +1568,6 @@ main {
 
 .AboutUs-promo__container {
     width: 1191px;
-    height: 754px;
     margin-top: 100px;
 }
 
@@ -1573,6 +1588,7 @@ main {
 /* выравнивание больших фотографий */
 
 .AboutUs-promo__slider-img {
+    margin-top: 20px;
     margin-right: 29px;
 }
 
@@ -1640,7 +1656,7 @@ main {
 
 .AboutUs-promo__slider-quote-Kostya {
     transform: translate(-628px, -94px);
-    width: 430px;
+    width: 430px; 
 }
 
 .AboutUs-promo__slider-quote-NastyaD {
@@ -1675,7 +1691,6 @@ main {
 /* section AboutUs-history */
 
 .AboutUs-history__wrapper {
-    height: 1159px;
     padding: 180px 0px 0px 326px;
 }
 
@@ -1739,7 +1754,6 @@ main {
 /* section AboutUs-weToday */
 
 .AboutUs-weToday__wrapper {
-    height: 913px;
     padding: 123px 35px 0 35px;
 }
 
@@ -1753,7 +1767,6 @@ main {
 /* section AboutUs-weFuture */
 
 .AboutUs-weFuture__wrapper {
-    height: 964px;
     padding: 120px 35px 0 106px;
 }
 
@@ -1809,7 +1822,6 @@ main {
 /* section AboutUs-whyWe */
 
 .AboutUs-whyWe__wrapper {
-    height: 1046px;
     padding: 49px 115px 40px 133px;
 }
 
@@ -1891,15 +1903,14 @@ main {
     color: #232323;
 }
 
+
 /* AboutUs__black */
 
 .AboutUs__black {
     width: 1266px;
-    height: 1263px;
     position: relative;
     margin: 0 auto 0 auto;
 }
-
 
 /* страница Кейсы */
 
@@ -2139,7 +2150,6 @@ main {
 .Cases__container-img {
     margin-right: 63px;
 }
-
 
 /* шрифты */
 

@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', ()  => {
 
     const button = document.querySelectorAll('.Bitrix-introduction__container-btn');
 
+
     // наведение на кнопку
     button.forEach((e) => {
         e.addEventListener('mousemove', () => {
@@ -44,9 +45,10 @@ document.addEventListener('DOMContentLoaded', ()  => {
     });
 
     const bitrixAll = document.querySelectorAll('.bitrixAll');
-    console.log(bitrixAll);
+    const bitrixBtnAll = document.querySelectorAll('.Bitrix__btnAll');
+    console.log(bitrixBtnAll);
     //нажатие на кнопку
-    button.forEach(btn => {
+    bitrixBtnAll.forEach(btn => {
         btn.addEventListener('click', () => {
             const btnData = btn.getAttribute('data-introduction');
             bitrixAll.forEach(b => {

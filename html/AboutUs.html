@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/media_aboutUs.css">
+    <link rel="stylesheet" href="../css/mobile-nav.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 </head>
 <body>
@@ -26,7 +27,23 @@
                 </nav>
         </div>
     </header>
-
+    <div class="mobile-nav">
+        <nav class="mobile-nav__nav">
+            <a href="../index.html" class="tabs__items mobile-nav__item item__logo tabs__item"></a>
+            <a href="Bitrix.html" class="tabs__items mobile-nav__item bitrix tabs__item">Битрикс24</a>
+            <a href="Services.html" class="tabs__items mobile-nav__item services tabs__item">Услуги</a>
+            <a href="Cases.html" class="tabs__items mobile-nav__item cases tabs__item">Кейсы</a>
+            <a href="AboutUs.html" class="tabs__items mobile-nav__item about tabs__item">О нас</a>
+            <a href="#" class="tabs__items mobile-nav__item telephone tabs__item">+7 (3519) 51 - 00 - 40</a>
+        </nav>
+    </div>
+    <div class="container__mobile-nav-btn">
+        <div class="mobile-nav-btn-wrap">
+            <button class="mobile-nav-btn">
+                <div class="nav-icon"></div>
+            </button>
+        </div>
+    </div>
     <main class="main">
         <div class="AboutUs__white">
             <section class="AboutUs-promo-slider">
@@ -123,7 +140,6 @@
                         </div>
                     </div>
                 </div>
-                
             </section>
             <section class="AboutUs-history">
                 <div class="AboutUs-history__wrapper">
@@ -140,7 +156,6 @@
                             партнерские отношения с Битрикс24 помогли дойти до статуса Золотого 
                             партнера Битрикс24 и открыть компетенции по направлениям CRM, Бизнес 
                             Процессы  и Коробочная версия.
-
                         </div>
                     </div>
                     <img class="AboutUs-history__img" src="../AboutUs_img/AboutUs-history.png" alt="Общая фотография команды">
@@ -414,6 +429,7 @@
     <script src="../libs/inputmask.min.js"></script>
     <script src="../libs/just-validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> 
+    <script src="../JavaScript/mobile-nav.js"></script>
     <script src="../JavaScript/AboutUs.js"></script>
 </body>
 </html>

@@ -3,6 +3,10 @@
     max-width: 100vw;
 }
 
+.needed{
+    display: none;
+}
+
 .white__bg__bitrix {
     max-width: 1266px;
     position: relative;
@@ -535,6 +539,7 @@
 
 .green-folder__container {
     padding: 64px 195px;
+    justify-content: center;
 }
 
 .rates-title {
@@ -777,11 +782,17 @@
 } */
 
 @media  (max-width: 415px){
+    .needed {
+        display: block;
+    }
+    .no__needed {
+        display: none;
+    }
     .header {
         display: none;
     }
     .strange__background {
-        transform: scale(0.45) translateX(590px) translateY(-510px);
+        transform: scale(0.45) translateX(640px) translateY(-540px);
     }
     .container__header2__text {
         font-size: 24px;
@@ -807,14 +818,12 @@
         margin-bottom: 16px;
     }
     .title__confusion {
-        justify-content: center;
         margin-top: 45px;
         font-size: 24px;
-        margin-left: 16px;
+        margin-left: 7.4px;
     }
     .left__img {
         transform: scale(0.3) translateY(-840px);
-        margin-left: 10px;
     }
     .wrapper__confusion {
         display: flex;
@@ -842,14 +851,14 @@
         flex-basis: auto;
     }
     .right__descr {
-        transform: translateY(-160px) translateX(20px);
+        transform: translateY(-120px) translateX(20px);
     }
     .left__descr__title {
         font-size: 32px;
     }
     .right__descr__wrapper {
-        transform: translateY(-860px) translateX(70px);
-        background-size: 50%;
+        transform: translateY(-812px) translateX(77px);
+        background-size: 60%;
     }
     .descr__bitrix__block__text {
         font-size: 12px;
@@ -870,6 +879,27 @@
         margin-top: 350px;
     }
     .descr__bitrix__block__text__bottom {
-        
+        margin-top: -315px;   
+    }
+    .green__wrapper {
+        margin-top: -650px;
+    }
+    .title__advantages__text {
+        font-size: 32px;
+        margin-right: 650px;
+    }
+    .green-folder__list {
+        display: flex;
+    }
+    .left__section__gold__partner__bitrix__title {
+        font-size: 32px;
+    }
+    .gold__partner__bitrix__wrapper {
+        flex-direction: column;
+    }
+    .gold__partner__bitrix__img {
+        width: 50%;
+        height: 50%;
+        margin-top: 700px;
     }
 }

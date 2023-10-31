@@ -8,7 +8,6 @@
     }
     .white__bg {
         max-width: 90vw;
-        margin-top: 40px;
     }
     .crm__content {
         background-image: none;
@@ -77,6 +76,7 @@
     .team__container {
         max-height: 665px;
         height: auto;
+        margin-top: 120px;
     }
     .team__img {
         margin: -127px auto 0 auto;

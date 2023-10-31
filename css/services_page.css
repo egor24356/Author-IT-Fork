@@ -12,7 +12,7 @@
     position: relative;
     background-color: #F5F6FF;
     border-radius: 40px;
-    margin: 0 auto 108px auto;
+    margin: 0 auto auto;
     overflow: hidden;
 }
 
@@ -41,6 +41,7 @@
 
 .services__wrap {
     min-height: 100%;
+    gap: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -146,6 +147,10 @@
     pointer-events: none;
 }
 
+.comma__service-mobile {
+    display: none;
+}
+
 .container__green__comma1:hover {
     background:  url('../icon1/comma_services1_hover.svg');
     background-repeat: no-repeat;
@@ -172,9 +177,12 @@
     background-color: #F5F6FF;
     /* transition: all .2s ease; */
     position: absolute;
+    bottom: -100%;
     width: 100%;
+    min-height: 66%;
 }
 
 .our-service_active {
-    transform: translateY(-111%);
+    /* transform: translateY(-111%); */
+    bottom: 0;
 }

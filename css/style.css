@@ -1624,10 +1624,6 @@ main {
 
 /* выравнивание ФИ сотрудников */
 
-.AboutUs-promo__slider-name-Kostya {
-    transform: translate(-628px, -89px);
-}
-
 .AboutUs-promo__slider-name-NastyaD {
     transform: translate(-123px, -63px);
 }
@@ -1636,10 +1632,6 @@ main {
 
 .AboutUs-promo__slider-proffession {
     margin-top: 16px;
-}
-
-.AboutUs-promo__slider-proffession-Kostya {
-    transform: translate(-628px, -88px);
 }
 
 .AboutUs-promo__slider-proffession-NastyaD {
@@ -1655,7 +1647,6 @@ main {
 }
 
 .AboutUs-promo__slider-quote-Kostya {
-    transform: translate(-628px, -94px);
     width: 430px; 
 }
 
@@ -1691,7 +1682,7 @@ main {
 /* section AboutUs-history */
 
 .AboutUs-history__wrapper {
-    padding: 180px 0px 0px 326px;
+    padding: 180px 0px 117px 326px;
 }
 
 /* текст секции сверху фото */
@@ -1733,7 +1724,6 @@ main {
 /* section AboutUs-achievement */
 
 .AboutUs-achievement__wrapper {
-    height: 247px;
     display: flex;
     padding: 64px 80px 0px 239px;
 }
@@ -1782,7 +1772,7 @@ main {
 /* фото */
 
 .AboutUs-weFuture__img {
-    height: 728px;
+    transform: scale(1);
     margin-right: 57px;
 }
 
@@ -1901,6 +1891,16 @@ main {
 .template__table__row-right__descr-text {
     width: 603px;
     color: #232323;
+}
+
+/* для адаптива */
+
+.AboutUs__none768 {
+    display: none;
+}
+
+.AboutUs__block768 {
+    display: block;
 }
 
 

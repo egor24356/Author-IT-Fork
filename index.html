@@ -48,7 +48,8 @@
             <section class="autor__IT">
                     <div class="container__autor__IT">
                         <div class="autor__content">
-                            <h1>Автор<br>IT</h1>
+                            <h1 class="desktop-title">Автор<br>IT</h1>
+                            <h1 class="mobile-title">Автор IT</h1>
                             <p class="autor__descr1 body14">
                                 Интеграторы полного цикла с упором на внедрение 
                                 и разработку порталов Битрикс24.
@@ -70,7 +71,7 @@
                                 </div>
                             </div>
                         </div>
-                        <img src="img1/Page1_main_img.png" alt="team">
+                        <img class="title-img" src="img1/Page1_main_img.png" alt="team">
                     </div>
             </section>
             <section class="crm">
@@ -165,11 +166,6 @@
                     </div>
                     <div class="swiper-container swiper__team">
                         <div class="swiper-wrapper swiper__wrapper__team">
-                            <div class="swiper-slide descr-team descr-Egor" name="#team-Egor">
-                                <h2 class="team__name">Егор <br>Соколов</h2> 
-                                <div class="team__profession">Frontend разработчик</div>
-                                <img class="swiper__team__img" src="img1/team_Egor.png" alt="Фотография Егора Соколова">
-                            </div>
                             <div class="swiper-slide descr-team descr-Kostya" name="#team-Kostya">
                                 <h2 class="team__name">Константин <br>Потысьев</h2> 
                                 <div class="team__profession">Менеджер</div>
@@ -179,6 +175,11 @@
                                 <h2 class="team__name">Анастасия <br>Манаева</h2> 
                                 <div class="team__profession">Frontend разработчик</div>
                                 <img class="swiper__team__img" src="img1/team_NastyaM.png" alt="Фотография Анастасии Манаевой">
+                            </div>
+                            <div class="swiper-slide descr-team descr-Egor" name="#team-Egor">
+                                <h2 class="team__name">Егор <br>Соколов</h2> 
+                                <div class="team__profession">Frontend разработчик</div>
+                                <img class="swiper__team__img" src="img1/team_Egor.png" alt="Фотография Егора Соколова">
                             </div>
                             <div class="swiper-slide descr-team descr-NastyaD" name="#team-NastyaD">
                                 <h2 class="team__name">Анастасия <br>Мартынцева</h2> 
@@ -197,6 +198,10 @@
                             </div>
                         </div>
                         <div class="swiper-pagination custom-pagination"></div>
+                    </div>
+                    <div class="cursor-mobile-wrap">
+                        <div class="cursor-mobile"></div>
+                        <p>Next</p>
                     </div>
                 </div>
             </section>
@@ -219,9 +224,10 @@
                         <div class="swiper-container swiper__container__we__proud">
                             <div class="swiper-wrapper swiper__wrapper__we__proud">
                                 <div class="swiper-slide slide__we__proud we__proud1">
+                                    <h3 class="slider__union__name slider__name-mobile">Интернет-магазин BigWall</h3>
                                     <div class="container__text__slider__union">
                                         <div class="text__slider__union__title">
-                                            <h3 class="slider__union__name">Интернет-магазин BigWall</h3> 
+                                            <h3 class="slider__union__name slider__name-desktop">Интернет-магазин BigWall</h3> 
                                             <div class="slider__union__descr union__descr">
                                                 BigWall – интернет-магазин снаряжения <br>и одежды для 
                                                 спортивного и промышленного альпинизма, горного туризма, 
@@ -469,7 +475,7 @@
                         <h2 class="mailer__title">
                             Давайте сотрудничать!
                         </h2>
-                        <form name="test" action="#" class="mailer" method="post" enctype="multipart/form-data">
+                        <form name="test" action="#" class="mailer mailer-form-wrap" method="post" enctype="multipart/form-data">
                             <div class="container__break__mailer">
                                 <div class="mailer__row">
                                     <input class="input input-name" type="text" data-validate-field="name" name="userName" placeholder="Ваше имя">
@@ -516,13 +522,13 @@
         </footer>
     </main>
 
+    <script src="JavaScript/cursor.js"></script>
     <script src="JavaScript/swiper-comments.js"></script>
     <script src="JavaScript/mobile-nav.js"></script>
     <script src="libs/inputmask.min.js"></script>
     <script src="libs/just-validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> 
     <script src="JavaScript/swiper-we-proud.js"></script>
-    <script src="JavaScript/cursor.js"></script>
     <script src="JavaScript/mailer.js"></script>
     <script src="JavaScript/swiper-team.js"></script>
     <script src="JavaScript/running-line.js"></script>

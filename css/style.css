@@ -198,6 +198,10 @@ main {
 
 /* section autor__IT */
 
+.autor__content .mobile-title {
+    display: none;
+}
+
 .container__autor__IT {
     display: flex;
     height: 928px;
@@ -529,6 +533,10 @@ main {
 
 /* section team */
 
+.cursor-mobile-wrap {
+    display: none;
+}
+
 .team__container {
     display: flex;
     background-color: #F5F6FF;
@@ -648,6 +656,10 @@ main {
 /* section we__proud */
 
 /* container__we__proud */
+
+.slider__name-mobile {
+    display: none;
+}
 
 .container__we__proud {
     display: flex;

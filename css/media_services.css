@@ -1,0 +1,44 @@
+@media (max-width: 1299px) {
+    h2 {
+        font-size: 60px;
+    }
+    .white__bg__services {
+        max-width: 90vw;
+    }
+    .service-btn {
+        aspect-ratio: 387/506;
+        max-width: 300px;
+        background-size: 300px;
+        position: relative;
+        height: auto;
+    }
+    .comma__service {
+        aspect-ratio: 387/506;
+        max-width: 300px;
+        max-width: 22%;
+    }
+    .container__green__comma1:hover {
+        aspect-ratio: 387/506;
+        max-width: 300px;
+        background-size: 300px;
+    }
+    .container__green__comma2:hover {
+        aspect-ratio: 387/506;
+        max-width: 300px;
+        background-size: 300px;
+    }
+    .container__green__comma3:hover {
+        aspect-ratio: 387/506;
+        max-width: 300px;
+        background-size: 300px;
+    }
+    .comma__descr1 {
+        padding-bottom: 0;
+        position: absolute;
+        bottom: 20%;
+        left: 15%;
+    }
+    .our-service {
+        min-height: 507px;
+    }
+}

@@ -953,21 +953,20 @@ main {
 
 .container__mailer {
     max-width: 2160px;
-    height: 1263px;
     background: url(../img1/mailer__bg.png) center center/cover no-repeat;
     transform: translateX(-22%);
     padding: 709px 419px 119px 482px;
 }
 
 .form__mailer {
-    width: 1263px;
+    min-width: 1263px;
     height: 435px;
     background-color: #F5F6FF;
     border-radius: 52px;
     padding: 72px 120px;
 }
 
-.mailer {
+.mailer-section {
     position: relative;
     margin-top: 56px;
     display: flex;
@@ -1018,6 +1017,13 @@ main {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     margin-top: 20px;
+}
+
+.mailer {
+    position: relative;
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .mailer button {
@@ -1575,7 +1581,6 @@ main {
 
 .AboutUs-promo__container {
     width: 1191px;
-    height: 754px;
     margin-top: 100px;
 }
 
@@ -1699,7 +1704,6 @@ main {
 /* section AboutUs-history */
 
 .AboutUs-history__wrapper {
-    height: 1159px;
     padding: 180px 0px 0px 326px;
 }
 
@@ -1763,7 +1767,6 @@ main {
 /* section AboutUs-weToday */
 
 .AboutUs-weToday__wrapper {
-    height: 913px;
     padding: 123px 35px 0 35px;
 }
 
@@ -1777,7 +1780,6 @@ main {
 /* section AboutUs-weFuture */
 
 .AboutUs-weFuture__wrapper {
-    height: 964px;
     padding: 120px 35px 0 106px;
 }
 
@@ -1833,7 +1835,6 @@ main {
 /* section AboutUs-whyWe */
 
 .AboutUs-whyWe__wrapper {
-    height: 1046px;
     padding: 49px 115px 40px 133px;
 }
 
@@ -1920,7 +1921,6 @@ main {
 
 .AboutUs__black {
     width: 1266px;
-    height: 1263px;
     position: relative;
     margin: 0 auto 0 auto;
 }
@@ -2175,126 +2175,4 @@ main {
     src: url("../fonts/Unbounded-Black.ttf") format("truetype");
 } 
 
-/* Медиа-запросы страницы AboutUs */
 
-@media (max-width: 1280px) { 
-    .nav__items {
-        width: 90vw;
-    }
-    .tabs__item {
-        width: 185px !important;
-    }
-    .AboutUs__white {
-        background-size: 90vw 100%;
-        width: 90vw;
-        height: 4839px;
-    }
-    .AboutUs-promo__title {
-        font-size: 150px;
-    }
-    .AboutUs-promo {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .AboutUs_img {
-        width: 80vw;
-        margin: 40px auto 0 auto;
-    }
-    .AboutUs-promo__container {
-        margin-top: 70px;
-        width: 1020px;
-        height: 585px;
-    }
-    .swiper__container__AboutUs {
-        width: 1020px;
-    }
-    .slide__AboutUs {
-        height: 415px !important;
-    }
-    .AboutUs-promo__slider-img {
-        margin-top: 15px;
-    }
-    .slide__AboutUs__NastyaM img {
-        margin-left: 80px;
-    }
-    .AboutUs-promo__slider-descr {
-        margin-top: 100px;
-    }
-    .AboutUs-promo__slider-descr-Egor {
-        margin-top: 145px;
-    }
-    .AboutUs-promo__slider-descr-NastyaM {
-        margin-top: 108px;
-    }
-    .AboutUs-promo__slider-descr-Ksysha {
-        margin-top: 126px;
-    }
-    .AboutUs-promo__slider-name {
-        font-size: 45px;
-    }
-    .AboutUs-promo__slider-proffession {
-        font-size: 20px;
-    }
-    .AboutUs-promo__slider-quote {
-        margin-top: 20px;
-        font-size: 14px;
-    }
-    .AboutUs-promo__slider-name-Kostya {
-        transform: translate(-430px, -45px);
-    }
-    .AboutUs-promo__slider-name-NastyaD {
-        transform: translate(-80px, -23px);
-    }
-    .AboutUs-promo__slider-proffession-Kostya {
-        transform: translate(-430px, -55px);
-    }
-    .AboutUs-promo__slider-proffession-NastyaD {
-        transform: translate(-80px, -29px);
-    }
-    .AboutUs-promo__slider-quote-Kostya {
-        transform: translate(-430px, -60px);
-    }
-    .AboutUs-promo__slider-quote-NastyaD {
-        transform: translate(0, -29px);
-    }
-    .AboutUs-icons {
-        width: 170px;
-        height: 170px;
-    }
-    .AboutUs-promo-arrow-prev {
-        transform: translate(45px, -1445px);
-    }
-    .AboutUs-promo-arrow-next {
-        transform: translate(-45px, -1445px);
-    }
-    .AboutUs-history__wrapper {
-        height: 938px;
-        padding: 151px 53px 0px 253px;
-    }
-    h1 {
-        font-size: 80px;
-    }
-    .caption16 {
-        font-size: 14px;
-    }
-    .AboutUs-history__img {
-        width: 796px;
-    }
-}
-
-@media (max-width: 1200px) { 
-
-}
-
-@media (max-width: 992px) { 
-
-}
-
-@media (max-width: 768px) { 
-
-}
-
-@media (max-width: 576px) { 
-
-}

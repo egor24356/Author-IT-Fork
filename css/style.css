@@ -946,7 +946,7 @@ main {
 }
 
 .form__mailer {
-    min-width: 1263px;
+    width: 1263px;
     height: 435px;
     background-color: #F5F6FF;
     border-radius: 52px;

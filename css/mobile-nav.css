@@ -2,6 +2,10 @@
     display: none;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 .mobile-nav {
     top: -100%;
     width: 100vw;
@@ -19,16 +23,18 @@
 
 .mobile-nav__nav {
     margin: 20px auto 0 auto;
-    max-width: 400px;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
 }
 
-.mobile-nav__item {
+.mobile-nav__nav .mobile-nav__item {
     text-align: center;
     border-bottom: 1px solid #f5f6ff6e;
     font-size: 24px !important;
+    width: 100% !important;
 }
 
 .mobile-nav-btn-wrap {
@@ -125,6 +131,15 @@
 
 @media (max-width: 992px) {
     .mobile-nav-btn {
-        display: flex;
+        display: flex !important;
+    }
+    .mobile-nav {
+        display: flex !important;
+    }
+    .header {
+        display: none !important;
+    }
+    .mobile-nav-btn-wrap {
+        display: block !important;
     }
 }

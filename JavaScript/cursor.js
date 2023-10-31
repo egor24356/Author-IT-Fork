@@ -33,9 +33,12 @@ document.addEventListener('DOMContentLoaded', ()  => {
 	const teamImg = document.querySelector('.team__img')
 	const links = document.querySelector('.team__links')
 	const swiperTeam = document.querySelector('.swiper__team')
+	const mobileCursor = document.querySelector('.cursor-mobile-wrap')
 	
 	links.addEventListener('click', function() {
 		teamImg.remove();
+		cursor.style.display = 'none';
+		mobileCursor.style.display = 'none';
 		swiperTeam.style.display = 'block';
 	})
 })

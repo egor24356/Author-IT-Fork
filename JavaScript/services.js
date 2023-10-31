@@ -70,3 +70,34 @@ function hideAllServices() {
     setTimeout(() => serviceDevelopment.classList.remove('our-service_active'), ANIM_DURATION);
     setTimeout(() => serviceIntegration.classList.remove('our-service_active'), 2*ANIM_DURATION);
 }
+
+let startX = 0;
+let startY = 0;
+
+document.addEventListener('touchstart', function(e) {
+    startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
+});
+
+document.addEventListener('touchmove', function(e) {
+    if (!startX || !startY) {
+        return;
+    }
+
+    let endX = e.touches[0].clientX;
+    let endY = e.touches[0].clientY;
+
+    let diffY = endY - startY;
+
+    if (Math.abs(diffY) < Math.abs(endX - startX)) {}
+    else {
+        if (diffY < 0) {
+            showServices();
+        } else {
+            hideServices();
+        }
+    }
+
+    startX = 0;
+    startY = 0;
+});

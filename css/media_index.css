@@ -3,12 +3,14 @@
         width: 90vw;
         justify-content: space-between;
     }
-    .tabs__items {
+    .container__text__slider__union {
+        margin-right: 0;
+    }
+    .tabs__items:not(.mobile-nav__item) {
         width: auto !important;
     }
     .white__bg {
         max-width: 90vw;
-        margin-top: 40px;
     }
     .crm__content {
         background-image: none;
@@ -77,6 +79,7 @@
     .team__container {
         max-height: 665px;
         height: auto;
+        margin-top: 120px;
     }
     .team__img {
         margin: -127px auto 0 auto;
@@ -227,9 +230,7 @@
 }
 
 @media (max-width: 992px) {
-    .mobile-nav-btn-wrap {
-        display: block;
-    }
+
     h2 {
         font-size: 55px;
     }
@@ -241,12 +242,6 @@
     }
     .caption16 {
         font-size: 12px;
-    }
-    .mobile-nav {
-        display: block;
-    }
-    .header {
-        display: none;
     }
 
     .crm__content .more {
@@ -560,7 +555,7 @@
         background-size: 130%;
     }
     .mailer-section {
-        margin-top: -220px;
+        margin-top: -100px;
     }
     .mailer-form-wrap {
         position: relative;
@@ -617,6 +612,9 @@
 }
 
 @media (max-width: 690px) {
+    .team__container {
+        margin-top: 15px;
+    }
     .team__img img {
         width: 690px;
         transform: translateY(15%);
@@ -675,6 +673,9 @@
 @media (max-width: 576px) {
     h1 {
         font-size: 40px;
+    }
+    .mailer-section {
+        margin-top: -200px;
     }
     .mobile-nav-btn {
         --width: 20px;
@@ -793,5 +794,11 @@
 @media (max-width: 440px) {
     .title-img {
         right: -30% !important;
+    }
+    .mailer__title {
+        font-size: 28px;
+    }
+    .container__break__mailer input {
+        font-size: 14px;
     }
 }

@@ -91,6 +91,7 @@
     flex-direction: column;
     justify-content: flex-end;
     background: url(../icon1/comma_services1.svg);
+    background-repeat: no-repeat;
     width: 387px;
     height: 506px;
     
@@ -100,6 +101,7 @@
     display: flex;
     flex-direction: column;
     background: url(../icon1/comma_services2.svg);
+    background-repeat: no-repeat;
     width: 387px;
     height: 506px;
 }
@@ -109,6 +111,7 @@
     flex-direction: column;
     justify-content: flex-end;
     background: url(../icon1/comma_services3.svg);
+    background-repeat: no-repeat;
     width: 387px;
     height: 506px;
 }
@@ -145,12 +148,15 @@
 
 .container__green__comma1:hover {
     background:  url('../icon1/comma_services1_hover.svg');
+    background-repeat: no-repeat;
 }
 .container__green__comma2:hover {
     background:  url('../icon1/comma_services2_hover.svg');
+    background-repeat: no-repeat;
 }
 .container__green__comma3:hover {
     background:  url('../icon1/comma_services3_hover.svg');
+    background-repeat: no-repeat;
 }
 
 .wrapper__our__services {

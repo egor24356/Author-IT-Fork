@@ -206,6 +206,9 @@
 }
 
 @media (max-width: 992px) {
+    .mobile-nav-btn-wrap {
+        display: block;
+    }
     h2 {
         font-size: 55px;
     }
@@ -253,6 +256,7 @@
     }
     .white__bg {
         height: auto;
+        margin-top: 0;
     }
     .container__comments .trust__arrow__right, .container__comments .trust__arrow__left {
         display: none;

@@ -1,4 +1,7 @@
 @media (max-width: 1399px) {
+    .index-mailer {
+        min-width: 0;
+    }
     .nav__items {
         width: 90vw;
         justify-content: space-between;
@@ -361,7 +364,7 @@
         height: auto;
     }
     .container__comments {
-        padding: 60px;
+        padding: 90px 60px;
         height: auto;
     }
     .comments__items {
@@ -504,7 +507,7 @@
     }
     .container__comments {
         margin-top: 80px;
-        padding: 60px 12px 30px 12px;
+        padding: 90px 12px 30px 12px;
     }
     .swiper__container__comments__items {
         margin-top: 40px;

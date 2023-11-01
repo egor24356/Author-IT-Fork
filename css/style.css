@@ -959,7 +959,6 @@ main {
 }
 
 .form__mailer {
-    min-width: 1263px;
     height: 435px;
     background-color: #F5F6FF;
     border-radius: 52px;
@@ -1169,6 +1168,24 @@ main {
     background: #F5F6FF;
     border-radius: 40px;
     margin: 0 auto 58px auto;
+}
+
+/* для адаптива */
+
+.rates-block992 {
+    display: flex;
+}
+
+.rates-none992 {
+    display: none !important;
+}
+
+.bitrix-title-block360 {
+    display: block;
+}
+
+.bitrix-title-none360 {
+    display: none;
 }
 
 /* секция Bitrix__title */
@@ -1427,7 +1444,7 @@ main {
 /* кнопка для открытия модального окна */
 
 .Bitrix__rates-services__btn {
-    margin-top: 24px;
+    margin-top: -110px;
     color:#F5F6FF;
     position: absolute;
     right: 31px;
@@ -1674,10 +1691,6 @@ main {
 
 /* выравнивание ФИ сотрудников */
 
-.AboutUs-promo__slider-name-Kostya {
-    transform: translate(-628px, -89px);
-}
-
 .AboutUs-promo__slider-name-NastyaD {
     transform: translate(-123px, -63px);
 }
@@ -1686,10 +1699,6 @@ main {
 
 .AboutUs-promo__slider-proffession {
     margin-top: 16px;
-}
-
-.AboutUs-promo__slider-proffession-Kostya {
-    transform: translate(-628px, -88px);
 }
 
 .AboutUs-promo__slider-proffession-NastyaD {
@@ -1705,7 +1714,6 @@ main {
 }
 
 .AboutUs-promo__slider-quote-Kostya {
-    transform: translate(-628px, -94px);
     width: 430px; 
 }
 
@@ -1741,7 +1749,7 @@ main {
 /* section AboutUs-history */
 
 .AboutUs-history__wrapper {
-    padding: 180px 0px 0px 326px;
+    padding: 180px 0px 117px 326px;
 }
 
 /* текст секции сверху фото */
@@ -1783,7 +1791,6 @@ main {
 /* section AboutUs-achievement */
 
 .AboutUs-achievement__wrapper {
-    height: 247px;
     display: flex;
     padding: 64px 80px 0px 239px;
 }
@@ -1832,7 +1839,7 @@ main {
 /* фото */
 
 .AboutUs-weFuture__img {
-    height: 728px;
+    transform: scale(1);
     margin-right: 57px;
 }
 
@@ -1951,6 +1958,16 @@ main {
 .template__table__row-right__descr-text {
     width: 603px;
     color: #232323;
+}
+
+/* для адаптива */
+
+.AboutUs__none768 {
+    display: none;
+}
+
+.AboutUs__block768 {
+    display: block;
 }
 
 

@@ -159,6 +159,10 @@
                 <div class="team__container">
                     <div class="cursor"></div>
                     <div class="team__wrap-face">
+                        <div class="cursor-mobile-wrap">
+                            <div class="cursor-mobile"></div>
+                            <p>Next</p>
+                        </div>
                         <div class="team__img">
                             <img src="img1/team_cursor.png" alt="Наша команда">
                             <a class="team__links"></a>
@@ -198,10 +202,6 @@
                             </div>
                         </div>
                         <div class="swiper-pagination custom-pagination"></div>
-                    </div>
-                    <div class="cursor-mobile-wrap">
-                        <div class="cursor-mobile"></div>
-                        <p>Next</p>
                     </div>
                 </div>
             </section>
@@ -495,30 +495,34 @@
             </section>
         </div>
         <footer class="footer">
-            <div class="container__footer">
-                <div class="footer__wrap">
-                    <div class="footer__logoContacts">
-                        <img src="icon1/logo-footer.svg" alt="Логотип">
-                        <div class="footer__contacts">
-                            <p class="footer__title">
-                                Наши контакты:
-                            </p>
-                            <ul class="footer__list__contacts">
-                                <li>+7(3519)51-00-40</li>
-                                <li>info@autor-it.ru</li>
-                                <li>г. Магнитогорск, пр-кт Ленина 92 офис 304</li>
-                            </ul>
-                        </div>
-                    </div>
-                        <ul class="footer__nav">
-                            <li><a href="html/Bitrix.html">Битрикс24</a></li>
-                            <li><a href="html/Services.html">Услуги</a></li>
-                            <li><a href="html/Cases.html">Кейсы</a></li>
-                            <li><a href="html/AboutUs.html">О нас</a></li>
+            <div class="footer__container">
+                <ul class="footer__nav navigation">
+                    <li class="navigation__item"><a href="index.html" class="navigation__link">Главная</a></li>
+                    <li class="navigation__item"><a href="html/Bitrix.html" class="navigation__link">Битрикс24</a></li>
+                    <li class="navigation__item"><a href="html/Services.html" class="navigation__link">Услуги</a></li>
+                    <li class="navigation__item"><a href="html/Cases.html" class="navigation__link">Кейсы</a></li>
+                    <li class="navigation__item"><a href="html/AboutUs.html" class="navigation__link">О нас</a></li>
+                </ul>
+                <div class="footer__contacts contacts-section">
+                    <img class="contacts-section__logo" src="icon1/footer-logo.svg">
+                    <div class="contacts-section__content">
+                        <p class="contacts-section__title">Контакты:</p>
+                        <ul class="contacts-section__contacts contact-list">
+                            <li class="contact-list__item contact">
+                                <img class="contact__icon" src="icon1/phone-icon.png">
+                                <p class="contact__info">+7(3519)51-00-40</p>
+                            </li>
+                            <li class="contact-list__item contact">
+                                <img class="contact__icon" src="icon1/mail-icon.png">
+                                <p class="contact__info">info@autor-it.ru</p>
+                            </li>
+                            <li class="contact-list__item contact">
+                                <img class="contact__icon" src="icon1/geo-icon.png">
+                                <p class="contact__info">г. Магнитогорск, пр-кт Ленина&nbsp92 офис&nbsp303</p>
+                            </li>
                         </ul>
-                    <div class="footer__footnote">
-                        © 2023 Все права защищены.
                     </div>
+                    <p class="footer__rights">© 2023 Все права защищены.</p>
                 </div>
             </div>
         </footer>
@@ -536,6 +540,4 @@
     <script src="JavaScript/running-line.js"></script>
     
 </body>
-
 </html>
-

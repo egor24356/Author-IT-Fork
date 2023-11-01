@@ -17,13 +17,14 @@
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
+
 }
+
 
 .container__header2 {
     position: absolute;
     display: inline-flex;
     flex-direction: column;
-    text-align: right;
     align-items: flex-end;
     gap: 3px;
     margin: 61px 31px;
@@ -171,10 +172,10 @@
 
 
 .green__wrapper {
-    margin-top: 64px;
-    background-color: #0A7272;
     transform: translateX(-330px);
-    min-width: 1920px;
+    margin-top: 64px;
+    width: 1920px;
+    background-color: #0A7272;
 } 
 
 .title__advantages {
@@ -317,7 +318,6 @@
     color: #232323;
     display: flex;
     margin-top: 500px;
-    
 }
 
 .training {
@@ -522,12 +522,12 @@
 
 /* rates section */
 .rates {
-    margin: 134px auto;
+    margin-top: 80px;
 }
 
 .green-folder {
     margin: 0 auto;
-    max-width: 1483px;
+    width: 1483px;
     height: 1021px;
     background: url(../Bitrix_img/green-folder.png) center center/cover no-repeat;
 }
@@ -557,7 +557,6 @@
 }
 
 .rates-item-wrap {
-    
     padding: 42px 32px;
     border-radius: 24px;
 }
@@ -595,18 +594,10 @@
     color: #0A7272;
 }
 
-.rates-item-wrap__subtitle_black__enterprise, .rates-item-wrap__subtitle_white {
-    margin-top: 60px;
+.rates-item-wrap__subtitle_black, .rates-item-wrap__subtitle_white {
+    margin-top: 12px;
+    line-height: 142.2%
 }
-
-.rates-item-wrap__subtitle_black__sky {
-    margin-top: 30px;
-}
-
-.rates-item-wrap__subtitle_white {
-    margin-top: 7px;
-}
-
 
 .rates-item-wrap__price {
     font-weight: 900;

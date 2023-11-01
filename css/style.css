@@ -4,9 +4,9 @@
 }
 
 body {
-    display: flex;
+    /* display: flex; */
    /* min-width: 1220px; ????*/
-    justify-content: center;
+    /* justify-content: center; */
     background-color: #232323;
     flex-wrap: wrap;
 }

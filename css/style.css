@@ -1134,6 +1134,16 @@ main {
     margin: 0 auto 58px auto;
 }
 
+/* для адаптива */
+
+.rates-block992 {
+    display: flex;
+}
+
+.rates-none992 {
+    display: none !important;
+}
+
 /* секция Bitrix__title */
 
 .Bitrix__container-title {
@@ -1390,7 +1400,7 @@ main {
 /* кнопка для открытия модального окна */
 
 .Bitrix__rates-services__btn {
-    margin-top: 24px;
+    margin-top: -110px;
     color:#F5F6FF;
     position: absolute;
     right: 31px;

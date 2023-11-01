@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/bitrix_page.css">
+    <link rel="stylesheet" href="../css/media_bitrix.css">
+    <link rel="stylesheet" href="../css/mobile-nav.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <script src="../JavaScript/benefits.js" defer></script>
 </head>
@@ -30,9 +32,25 @@
                 </nav>
         </div>
     </header>
-
+    <div class="mobile-nav">
+        <nav class="mobile-nav__nav">
+            <a href="../index.html" class="tabs__items mobile-nav__item item__logo tabs__item"></a>
+            <a href="Bitrix.html" class="tabs__items mobile-nav__item bitrix tabs__item">Битрикс24</a>
+            <a href="Services.html" class="tabs__items mobile-nav__item services tabs__item">Услуги</a>
+            <a href="Cases.html" class="tabs__items mobile-nav__item cases tabs__item">Кейсы</a>
+            <a href="AboutUs.html" class="tabs__items mobile-nav__item about tabs__item">О нас</a>
+            <a href="#" class="tabs__items mobile-nav__item telephone tabs__item">+7 (3519) 51 - 00 - 40</a>
+        </nav>
+    </div>
+    <div class="container__mobile-nav-btn">
+        <div class="mobile-nav-btn-wrap">
+            <button class="mobile-nav-btn">
+                <div class="nav-icon"></div>
+            </button>
+        </div>
+    </div>
     <main class="main">
-        <div class="bitrixAll">
+        <div class="bitrixAll none">
             <section class="white__bg__bitrix">
                 <div class="container__bitrix">
                     <div class="title__top">
@@ -398,7 +416,7 @@
                 </div>
             </section>
         </div>
-        <div class="BitrixCloud__white-bg bitrixAll none" data-introduction="Cloud">
+        <div class="BitrixCloud__white-bg bitrixAll " data-introduction="Cloud">
             <section class="Bitrix__title">
                 <div class="Bitrix__container-title">
                     <h1 class="Bitrix__title">Внедрение <br>облачного Б24</h1>
@@ -509,18 +527,27 @@
                                     <h2 class="template__table__row-left__title-text">5</h2>
                                 </div>
                                 <div class="template__table__row-left__descr">
-                                    <p class="template__table__row-left__descr-text subtitle24">
+                                    <p class="template__table__row-left__descr-text rates-block992 subtitle24">
                                         Прозрачность <br>и надежность
+                                    </p>
+                                    <p class="template__table__row-left__descr-text rates-none992 subtitle24">
+                                        Прозрачность и надежность
                                     </p>
                                 </div>
                             </div>
                             <div class="template__table__row-right">
                                 <div class="template__table__row-right__descr">
-                                    <p class="template__table__row-right__descr-text caption16">
+                                    <p class="template__table__row-right__descr-text rates-block992 caption16">
                                         Мы гордимся своей репутацией и стремимся к полному удовлетворению наших 
                                         клиентов. Мы ценим долгосрочные отношения и налаживаем прочные связи с 
                                         нашей клиентской базой. У нас нет скрытых платежей <br>или условий. 
                                         Мы гарантируем честность и ответственность во всех наших деловых отношениях
+                                    </p>
+                                    <p class="template__table__row-right__descr-text rates-none992 caption16">
+                                        Мы гордимся своей репутацией и стремимся к полному удовлетворению наших 
+                                        клиентов. Мы ценим долгосрочные отношения и налаживаем прочные связи с 
+                                        нашей клиентской базой. У нас нет скрытых платежей или условий. 
+                                        Мы гарантируем честность и&nbspответственность во всех наших деловых отношениях
                                     </p>
                                 </div>
                             </div>
@@ -528,10 +555,10 @@
                     </div>
                 </div>
             </section>
-            <section class="Bitrix__rates">
+            <section class="Bitrix__rates ">
                 <div class="Bitrix__rates-wrapper">
                     <h2 class="Bitrix__rates-title">Тарифы облачного Б24</h2>
-                    <div class="Bitrix__container-rates-services">
+                    <div class="Bitrix__container-rates-services rates-block992">
                         <div class="Bitrix__container-rates">
                             <div class="Bitrix__container-rates__types">
                                 <div class="Bitrix__container-rate__typeItem">
@@ -910,10 +937,588 @@
                             </div>
                         </div>
                     </div>
-                    <button class="Bitrix__rates-services__btn"><h3>Запросить КП</h3></button>
+                    <div class="Bitrix__container-rates-services rates-none992">
+                        <div class="Bitrix__container-rates-wrapperMobile">
+                            <div class="Bitrix__container-rates">
+                                <div class="Bitrix__container-rates__types">
+                                    <div class="Bitrix__container-rate__typeItem">
+                                        <div class="Bitrix__rate__typeName">
+                                            Базовый
+                                        </div>
+                                        <div class="Bitrix__rate__typeDescr Bitrix__rate__basDescr caption16">
+                                            Для малого бизнеса <br>или небольших отделов продаж до 5 человек
+                                        </div>
+                                        <div class="Bitrix__rate__typePrice subtitle24">
+                                            23 880 ₽
+                                        </div>
+                                    </div>
+                                    <div class="Bitrix__container-rates__support-row">
+                                        <div class="Bitrix__container-rates__support-header">
+                                            <h4 class="Bitrix__container-rates__support-name">
+                                                Совместная работа
+                                            </h4>
+                                        </div>
+                                        <div class="Bitrix__container-rates__support-scale">
+                                            <img src="../Bitrix_icons/scale-middle.png" alt="Средняя поддержка" class="Bitrix__container-rates__support-middleScale">
+                                        </div>
+                                    </div>
+                                    <div class="Bitrix__container-rates__support-row">
+                                        <div class="Bitrix__container-rates__support-header">
+                                            <h4 class="Bitrix__container-rates__support-name">
+                                                CRM
+                                            </h4>
+                                        </div>
+                                        <div class="Bitrix__container-rates__support-scale">
+                                            <img src="../Bitrix_icons/scale-min.png" alt="Минимальная поддержка поддержка" class="Bitrix__container-rates__support-minScale">
+                                        </div>
+                                    </div>
+                                    <div class="Bitrix__container-rates__support-row">
+                                        <div class="Bitrix__container-rates__support-header">
+                                            <h4 class="Bitrix__container-rates__support-name">
+                                                Задачи и проекты
+                                            </h4>
+                                        </div>
+                                        <div class="Bitrix__container-rates__support-scale">
+                                            <img src="../Bitrix_icons/scale-middle.png" alt="Средняя поддержка" class="Bitrix__container-rates__support-middleScale">
+                                        </div>
+                                    </div>
+                                    <div class="Bitrix__container-rates__support-row">
+                                        <div class="Bitrix__container-rates__support-header">
+                                            <h4 class="Bitrix__container-rates__support-name">
+                                                Контакт-центр
+                                            </h4>
+                                        </div>
+                                        <div class="Bitrix__container-rates__support-scale">
+                                            <img src="../Bitrix_icons/scale-middle.png" alt="Средняя поддержка" class="Bitrix__container-rates__support-middleScale">
+                                        </div>
+                                    </div>
+                                    <div class="Bitrix__container-rates__support-row">
+                                        <div class="Bitrix__container-rates__support-header">
+                                            <h4 class="Bitrix__container-rates__support-name">
+                                                Интернет-магазин
+                                            </h4>
+                                        </div>
+                                        <div class="Bitrix__container-rates__support-scale">
+                                            <img src="../Bitrix_icons/scale-middle.png" alt="Средняя поддержка" class="Bitrix__container-rates__support-middleScale">
+                                        </div>
+                                    </div>
+                                    <div class="Bitrix__container-rates__support-row">
+                                        <div class="Bitrix__container-rates__support-header">
+                                            <h4 class="Bitrix__container-rates__support-name">
+                                                Документы онлайн
+                                            </h4>
+                                        </div>
+                                        <div class="Bitrix__container-rates__support-scale">
+                                            <img src="../Bitrix_icons/scale-middle.png" alt="Средняя поддержка" class="Bitrix__container-rates__support-middleScale">
+                                        </div>
+                                    </div>
+                                    <div class="Bitrix__container-rates__support-row">
+                                        <div class="Bitrix__container-rates__support-header">
+                                            <h4 class="Bitrix__container-rates__support-name">
+                                                Администрирование
+                                            </h4>
+                                        </div>
+                                        <div class="Bitrix__container-rates__support-scale">
+                                            <img src="../Bitrix_icons/scale-middle.png" alt="Средняя поддержка" class="Bitrix__container-rates__support-middleScale">
+                                        </div>
+                                    </div>
+                                    <div class="Bitrix__container-rates__support-row">
+                                        <div class="Bitrix__container-rates__support-header">
+                                            <h4 class="Bitrix__container-rates__support-name">
+                                                Маркетинг
+                                            </h4>
+                                        </div>
+                                        <div class="Bitrix__container-rates__support-scale">
+                                            <img src="../Bitrix_icons/scale-middle.png" alt="Средняя поддержка" class="Bitrix__container-rates__support-middleScale">
+                                        </div>
+                                    </div>
+                                    <div class="Bitrix__container-rates__support-row">
+                                        <div class="Bitrix__container-rates__support-header">
+                                            <h4 class="Bitrix__container-rates__support-name">
+                                                Сквозная аналитика
+                                            </h4>
+                                        </div>
+                                        <div class="Bitrix__container-rates__support-scale">
+                                            <img src="../Bitrix_icons/scale-middle.png" alt="Средняя поддержка" class="Bitrix__container-rates__support-middleScale">
+                                        </div>
+                                    </div>
+                                    <div class="Bitrix__container-rates__support-row">
+                                        <div class="Bitrix__container-rates__support-header">
+                                            <h4 class="Bitrix__container-rates__support-name">
+                                                HR
+                                            </h4>
+                                        </div>
+                                        <div class="Bitrix__container-rates__support-scale">
+                                            <img src="../Bitrix_icons/scale-max.png" alt="Высокая поддержка" class="Bitrix__container-rates__support-maxScale">
+                                        </div>
+                                    </div>
+                                    <div class="Bitrix__container-rates__support-row">
+                                        <div class="Bitrix__container-rates__support-header">
+                                            <h4 class="Bitrix__container-rates__support-name">
+                                                Бизнес-процессы
+                                            </h4>
+                                        </div>
+                                        <div class="Bitrix__container-rates__support-scale">
+                                            <img src="../Bitrix_icons/scale-max.png" alt="Высокая поддержка" class="Bitrix__container-rates__support-maxScale">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Bitrix__container-services-wrapperMobile">
+                                    <div class="Bitrix__container-services">
+                                        <div class="Bitrix__services-title">
+                                            Услуги по внедрению
+                                        </div>
+                                        <div class="Bitrix__services-prices">
+                                            <div class="Bitrix__services__priceItem subtitle24">
+                                                173 000 ₽
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="Bitrix__container-services__header-price">
+                                        <div class="Bitrix__container-services__header-price__row">
+                                            <div class="Bitrix__container-services__header rates-block992">
+                                                <h4 class="Bitrix__services__name">
+                                                    Аналитика <br>и проектирование
+                                                </h4>
+                                            </div>
+                                            <div class="Bitrix__container-services__header rates-none992">
+                                                <h4 class="Bitrix__services__name">
+                                                    Аналитика и проектирование
+                                                </h4>
+                                            </div>
+                                            <div class="Bitrix__container-services__priceItem caption16">
+                                                <div class="Bitrix__services__separPrice">
+                                                    40 000р.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Bitrix__container-services__header-price__row">
+                                            <div class="Bitrix__container-services__header">
+                                                <h4 class="Bitrix__services__name">
+                                                    Настройка Битрикс24
+                                                </h4>
+                                            </div>
+                                            <div class="Bitrix__container-services__priceItem caption16">
+                                                <div class="Bitrix__services__separPrice">
+                                                    46 000р.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Bitrix__container-services__header-price__row">
+                                            <div class="Bitrix__container-services__header rates-block992">
+                                                <h4 class="Bitrix__services__name">
+                                                    Подключение сторонних <br>программ и сервисов <br>к Битрикс24
+                                                </h4>
+                                            </div>
+                                            <div class="Bitrix__container-services__header rates-none992">
+                                                <h4 class="Bitrix__services__name">
+                                                    Подключение сторонних программ и&nbspсервисов к&nbspБитрикс24
+                                                </h4>
+                                            </div>
+                                            <div class="Bitrix__container-services__priceItem caption16">
+                                                <div class="Bitrix__services__separPrice">
+                                                    59 000р.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Bitrix__container-services__header-price__row">
+                                            <div class="Bitrix__container-services__header">
+                                                <h4 class="Bitrix__services__name">
+                                                    Тестирование
+                                                </h4>
+                                            </div>
+                                            <div class="Bitrix__container-services__priceItem caption16">
+                                                <div class="Bitrix__services__separPrice">
+                                                    8 000р.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Bitrix__container-services__header-price__row">
+                                            <div class="Bitrix__container-services__header">
+                                                <h4 class="Bitrix__services__name">
+                                                    Обучение и инструкции <br>для пользователей
+                                                </h4>
+                                            </div>
+                                            <div class="Bitrix__container-services__priceItem caption16">
+                                                <div class="Bitrix__services__separPrice">
+                                                    20 000р.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--   
+                                    <div class="Bitrix__container-rate__typeItem">
+                                        <div class="Bitrix__rate__typeName">
+                                                        Стандартный
+                                                    </div>
+                                                    <div class="Bitrix__rate__typeDescr Bitrix__rate__stanDescr caption16">
+                                                        Для малого <br>и среднего бизнеса <br>и  отделов продаж до 50 человек
+                                                    </div>
+                                                    <div class="Bitrix__rate__typePrice subtitle24">
+                                                        67 080 ₽
+                                                    </div>
+                                                </div>
+                                                <div class="Bitrix__container-rate__typeItem">
+                                                    <div class="Bitrix__rate__typeName">
+                                                        Профессиональный
+                                                    </div>
+                                                    <div class="Bitrix__rate__typeDescr Bitrix__rate__profDescr caption16">
+                                                        Для среднего бизнеса <br>и для тех, кому нужно больше автоматизации <br>в системе
+                                                    </div>
+                                                    <div class="Bitrix__rate__typePrice subtitle24">
+                                                        134 280 ₽
+                                                    </div>
+                                                </div>
+                                                <div class="Bitrix__container-rate__typeItem">
+                                                    <div class="Bitrix__rate__typeName">
+                                                        Энерпрайз
+                                                    </div>
+                                                    <div class="Bitrix__rate__typeDescr Bitrix__rate__enterDescr caption16">
+                                                        Для крупных компаний <br>с большим оборотом <br>и количеством сотрудников
+                                                    </div>
+                                                    <div class="Bitrix__rate__typePrice subtitle24">
+                                                        от 326 280 ₽
+                                                    </div>
+                                                </div>
+                                            <div class="Bitrix__container-rates__support">
+                                                <div class="Bitrix__container-rates__support-row">
+                                                    <div class="Bitrix__container-rates__support-header">
+                                                        <h4 class="Bitrix__container-rates__support-name">
+                                                            Совместная работа
+                                                        </h4>
+                                                    </div>
+                                                    <div class="Bitrix__container-rates__support-scale">
+                                                        <div class="Bitrix__container-rates__support-basScale">
+                                                            <img src="../Bitrix_icons/scale-middle.png" alt="Средняя поддержка" class="Bitrix__container-rates__support-middleScale">
+                                                        </div>
+                                                        <div class="Bitrix__container-rates__support-stanScale">
+                                                            <img src="../Bitrix_icons/scale-middle.png" alt="Средняя поддержка" class="Bitrix__container-rates__support-middleScale">
+                                                        </div>
+                                                        <div class="Bitrix__container-rates__support-profScale">
+                                                            <img src="../Bitrix_icons/scale-middle.png" alt="Средняя поддержка" class="Bitrix__container-rates__support-middleScale">
+                                                        </div>
+                                                        <div class="Bitrix__container-rates__support-enterScale">
+                                                            <img src="../Bitrix_icons/scale-max.png" alt="Высокая поддержка" class="Bitrix__container-rates__support-maxScale">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Bitrix__container-rates__support-row">
+                                                    <div class="Bitrix__container-rates__support-header">
+                                                        <h4 class="Bitrix__container-rates__support-name">
+                                                            CRM
+                                                        </h4>
+                                                    </div>
+                                                    <div class="Bitrix__container-rates__support-scale">
+                                                        <div class="Bitrix__container-rates__support-basScale">
+                                                            <img src="../Bitrix_icons/scale-min.png" alt="Минимальная поддержка поддержка" class="Bitrix__container-rates__support-minScale">
+                                                        </div>
+                                                        <div class="Bitrix__container-rates__support-stanScale">
+                                                            <img src="../Bitrix_icons/scale-min.png" alt="Минимальная поддержка" class="Bitrix__container-rates__support-minScale">
+                                                        </div>
+                                                        <div class="Bitrix__container-rates__support-profScale">
+                                                            <img src="../Bitrix_icons/scale-middle.png" alt="Средняя поддержка" class="Bitrix__container-rates__support-middleScale">
+                                                        </div>
+                                                        <div class="Bitrix__container-rates__support-enterScale">
+                                                            <img src="../Bitrix_icons/scale-max.png" alt="Высокая поддержка" class="Bitrix__container-rates__support-maxScale">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Bitrix__container-rates__support-row">
+                                                    <div class="Bitrix__container-rates__support-header">
+                                                        <h4 class="Bitrix__container-rates__support-name">
+                                                            Задачи и проекты
+                                                        </h4>
+                                                    </div>
+                                                    <div class="Bitrix__container-rates__support-scale">
+                                                        <div class="Bitrix__container-rates__support-basScale">
+                                                            <img src="../Bitrix_icons/scale-middle.png" alt="Средняя поддержка" class="Bitrix__container-rates__support-middleScale">
+                                                        </div>
+                                                        <div class="Bitrix__container-rates__support-stanScale">
+                                                            <img src="../Bitrix_icons/scale-middle.png" alt="Средняя поддержка" class="Bitrix__container-rates__support-middleScale">
+                                                        </div>
+                                                        <div class="Bitrix__container-rates__support-profScale">
+                                                            <img src="../Bitrix_icons/scale-max.png" alt="Высокая поддержка" class="Bitrix__container-rates__support-maxScale">
+                                                        </div>
+                                                        <div class="Bitrix__container-rates__support-enterScale">
+                                                            <img src="../Bitrix_icons/scale-max.png" alt="Высокая поддержка" class="Bitrix__container-rates__support-maxScale">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Bitrix__container-rates__support-row">
+                                                    <div class="Bitrix__container-rates__support-header">
+                                                        <h4 class="Bitrix__container-rates__support-name">
+                                                            Контакт-центр
+                                                        </h4>
+                                                    </div>
+                                                    <div class="Bitrix__container-rates__support-scale">
+                                                        <div class="Bitrix__container-rates__support-basScale">
+                                                            <img src="../Bitrix_icons/scale-middle.png" alt="Средняя поддержка" class="Bitrix__container-rates__support-middleScale">
+                                                        </div>
+                                                        <div class="Bitrix__container-rates__support-stanScale">
+                                                            <img src="../Bitrix_icons/scale-middle.png" alt="Средняя поддержка" class="Bitrix__container-rates__support-middleScale">
+                                                        </div>
+                                                        <div class="Bitrix__container-rates__support-profScale">
+                                                            <img src="../Bitrix_icons/scale-max.png" alt="Высокая поддержка" class="Bitrix__container-rates__support-maxScale">
+                                                        </div>
+                                                        <div class="Bitrix__container-rates__support-enterScale">
+                                                            <img src="../Bitrix_icons/scale-max.png" alt="Высокая поддержка" class="Bitrix__container-rates__support-maxScale">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Bitrix__container-rates__support-row">
+                                                    <div class="Bitrix__container-rates__support-header">
+                                                        <h4 class="Bitrix__container-rates__support-name">
+                                                            Интернет-магазин
+                                                        </h4>
+                                                    </div>
+                                                    <div class="Bitrix__container-rates__support-scale">
+                                                        <div class="Bitrix__container-rates__support-basScale">
+                                                            <img src="../Bitrix_icons/scale-middle.png" alt="Средняя поддержка" class="Bitrix__container-rates__support-middleScale">
+                                                        </div>
+                                                        <div class="Bitrix__container-rates__support-stanScale">
+                                                            <img src="../Bitrix_icons/scale-middle.png" alt="Средняя поддержка" class="Bitrix__container-rates__support-middleScale">
+                                                        </div>
+                                                        <div class="Bitrix__container-rates__support-profScale">
+                                                            <img src="../Bitrix_icons/scale-max.png" alt="Высокая поддержка" class="Bitrix__container-rates__support-maxScale">
+                                                        </div>
+                                                        <div class="Bitrix__container-rates__support-enterScale">
+                                                            <img src="../Bitrix_icons/scale-max.png" alt="Высокая поддержка" class="Bitrix__container-rates__support-maxScale">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Bitrix__container-rates__support-row">
+                                                    <div class="Bitrix__container-rates__support-header">
+                                                        <h4 class="Bitrix__container-rates__support-name">
+                                                            Документы онлайн
+                                                        </h4>
+                                                    </div>
+                                                    <div class="Bitrix__container-rates__support-scale support-scale__3col">
+                                                        <div class="Bitrix__container-rates__support-stanScale">
+                                                            <img src="../Bitrix_icons/scale-middle.png" alt="Средняя поддержка" class="Bitrix__container-rates__support-middleScale">
+                                                        </div>
+                                                        <div class="Bitrix__container-rates__support-profScale">
+                                                            <img src="../Bitrix_icons/scale-max.png" alt="Высокая поддержка" class="Bitrix__container-rates__support-maxScale">
+                                                        </div>
+                                                        <div class="Bitrix__container-rates__support-enterScale">
+                                                            <img src="../Bitrix_icons/scale-max.png" alt="Высокая поддержка" class="Bitrix__container-rates__support-maxScale">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Bitrix__container-rates__support-row">
+                                                    <div class="Bitrix__container-rates__support-header">
+                                                        <h4 class="Bitrix__container-rates__support-name">
+                                                            Администрирование
+                                                        </h4>
+                                                    </div>
+                                                    <div class="Bitrix__container-rates__support-scale support-scale__3col">
+                                                        <div class="Bitrix__container-rates__support-stanScale">
+                                                            <img src="../Bitrix_icons/scale-middle.png" alt="Средняя поддержка" class="Bitrix__container-rates__support-middleScale">
+                                                        </div>
+                                                        <div class="Bitrix__container-rates__support-profScale">
+                                                            <img src="../Bitrix_icons/scale-middle.png" alt="Средняя поддержка" class="Bitrix__container-rates__support-middleScale">
+                                                        </div>
+                                                        <div class="Bitrix__container-rates__support-enterScale">
+                                                            <img src="../Bitrix_icons/scale-max.png" alt="Высокая поддержка" class="Bitrix__container-rates__support-maxScale">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Bitrix__container-rates__support-row">
+                                                    <div class="Bitrix__container-rates__support-header">
+                                                        <h4 class="Bitrix__container-rates__support-name">
+                                                            Маркетинг
+                                                        </h4>
+                                                    </div>
+                                                    <div class="Bitrix__container-rates__support-scale support-scale__3col">
+                                                        <div class="Bitrix__container-rates__support-stanScale">
+                                                            <img src="../Bitrix_icons/scale-middle.png" alt="Средняя поддержка" class="Bitrix__container-rates__support-middleScale">
+                                                        </div>
+                                                        <div class="Bitrix__container-rates__support-profScale">
+                                                            <img src="../Bitrix_icons/scale-max.png" alt="Высокая поддержка" class="Bitrix__container-rates__support-maxScale">
+                                                        </div>
+                                                        <div class="Bitrix__container-rates__support-enterScale">
+                                                            <img src="../Bitrix_icons/scale-max.png" alt="Высокая поддержка" class="Bitrix__container-rates__support-maxScale">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Bitrix__container-rates__support-row">
+                                                    <div class="Bitrix__container-rates__support-header">
+                                                        <h4 class="Bitrix__container-rates__support-name">
+                                                            Сквозная аналитика
+                                                        </h4>
+                                                    </div>
+                                                    <div class="Bitrix__container-rates__support-scale support-scale__2col">
+                                                        <div class="Bitrix__container-rates__support-profScale">
+                                                            <img src="../Bitrix_icons/scale-middle.png" alt="Средняя поддержка" class="Bitrix__container-rates__support-middleScale">
+                                                        </div>
+                                                        <div class="Bitrix__container-rates__support-enterScale">
+                                                            <img src="../Bitrix_icons/scale-max.png" alt="Высокая поддержка" class="Bitrix__container-rates__support-maxScale">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Bitrix__container-rates__support-row">
+                                                    <div class="Bitrix__container-rates__support-header">
+                                                        <h4 class="Bitrix__container-rates__support-name">
+                                                            HR
+                                                        </h4>
+                                                    </div>
+                                                    <div class="Bitrix__container-rates__support-scale support-scale__2col">
+                                                        <div class="Bitrix__container-rates__support-profScale">
+                                                            <img src="../Bitrix_icons/scale-max.png" alt="Высокая поддержка" class="Bitrix__container-rates__support-maxScale">
+                                                        </div>
+                                                        <div class="Bitrix__container-rates__support-enterScale">
+                                                            <img src="../Bitrix_icons/scale-max.png" alt="Высокая поддержка" class="Bitrix__container-rates__support-maxScale">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Bitrix__container-rates__support-row">
+                                                    <div class="Bitrix__container-rates__support-header">
+                                                        <h4 class="Bitrix__container-rates__support-name">
+                                                            Бизнес-процессы
+                                                        </h4>
+                                                    </div>
+                                                    <div class="Bitrix__container-rates__support-scale support-scale__1col">
+                                                        <div class="Bitrix__container-rates__support-enterScale">
+                                                            <img src="../Bitrix_icons/scale-max.png" alt="Высокая поддержка" class="Bitrix__container-rates__support-maxScale">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Bitrix__container-services">
+                                            <div class="Bitrix__services-title">
+                                                Услуги по внедрению
+                                            </div>
+                                            <div class="Bitrix__services-prices">
+                                                <div class="Bitrix__services__priceItem subtitle24">
+                                                    173 000 ₽
+                                                </div>  
+                                                <div class="Bitrix__services__priceItem subtitle24">
+                                                    249 000 ₽
+                                                </div> 
+                                                <div class="Bitrix__services__priceItem subtitle24">
+                                                    379 000 ₽
+                                                </div> 
+                                                <div class="Bitrix__services__priceItem subtitle24">
+                                                    543 200 ₽
+                                                </div> 
+                                            </div>
+                                            <div class="Bitrix__container-services__rows">
+                                                <div class="Bitrix__container-services__row">
+                                                    <div class="Bitrix__container-services__header">
+                                                        <h4 class="Bitrix__services__name">
+                                                            Аналитика <br>и проектирование
+                                                        </h4>
+                                                    </div>
+                                                    <div class="Bitrix__container-services__priceItem caption16">
+                                                        <div class="Bitrix__services__separPrice">
+                                                            40 000р.
+                                                        </div>
+                                                        <div class="Bitrix__services__separPrice">
+                                                            44 000р.
+                                                        </div>
+                                                        <div class="Bitrix__services__separPrice">
+                                                            76 000р.
+                                                        </div>
+                                                        <div class="Bitrix__services__separPrice">
+                                                            114 000р.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Bitrix__container-services__row">
+                                                    <div class="Bitrix__container-services__header">
+                                                        <h4 class="Bitrix__services__name">
+                                                            Настройка Битрикс24
+                                                        </h4>
+                                                    </div>
+                                                    <div class="Bitrix__container-services__priceItem caption16">
+                                                        <div class="Bitrix__services__separPrice">
+                                                            46 000р.
+                                                        </div>
+                                                        <div class="Bitrix__services__separPrice">
+                                                            76 000р.
+                                                        </div>
+                                                        <div class="Bitrix__services__separPrice">
+                                                            118 000р.
+                                                        </div>
+                                                        <div class="Bitrix__services__separPrice">
+                                                            186 000р.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Bitrix__container-services__row">
+                                                    <div class="Bitrix__container-services__header">
+                                                        <h4 class="Bitrix__services__name">
+                                                            Подключение сторонних <br>программ и сервисов <br>к Битрикс24
+                                                        </h4>
+                                                    </div>
+                                                    <div class="Bitrix__container-services__priceItem caption16">
+                                                        <div class="Bitrix__services__separPrice">
+                                                            59 000р.
+                                                        </div>
+                                                        <div class="Bitrix__services__separPrice">
+                                                            97 000р.
+                                                        </div>
+                                                        <div class="Bitrix__services__separPrice">
+                                                            149 000р.
+                                                        </div>
+                                                        <div class="Bitrix__services__separPrice">
+                                                            203 000р.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Bitrix__container-services__row">
+                                                    <div class="Bitrix__container-services__header">
+                                                        <h4 class="Bitrix__services__name">
+                                                            Тестирование
+                                                        </h4>
+                                                    </div>
+                                                    <div class="Bitrix__container-services__priceItem caption16">
+                                                        <div class="Bitrix__services__separPrice">
+                                                            8 000р.
+                                                        </div>
+                                                        <div class="Bitrix__services__separPrice">
+                                                            12 000р.
+                                                        </div>
+                                                        <div class="Bitrix__services__separPrice">
+                                                            16 000р.
+                                                        </div>
+                                                        <div class="Bitrix__services__separPrice">
+                                                            20 000р.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="Bitrix__container-services__row">
+                                                    <div class="Bitrix__container-services__header">
+                                                        <h4 class="Bitrix__services__name">
+                                                            Обучение и инструкции <br>для пользователей
+                                                        </h4>
+                                                    </div>
+                                                    <div class="Bitrix__container-services__priceItem caption16">
+                                                        <div class="Bitrix__services__separPrice">
+                                                            20 000р.
+                                                        </div>
+                                                        <div class="Bitrix__services__separPrice">
+                                                            20 000р.
+                                                        </div>
+                                                        <div class="Bitrix__services__separPrice">
+                                                            20 000р.
+                                                        </div>
+                                                        <div class="Bitrix__services__separPrice">
+                                                            20 000р.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="Bitrix-introduction">
+                <button class="Bitrix__rates-services__btn"><h3>Запросить КП</h3></button>
                 <div class="Bitrix-introduction__wrapper">
                     <button class="Bitrix-introduction__container-btn Bitrix__btnAll" data-introduction="Box">
                         <div class="Bitrix-introduction__btn-img">
@@ -1549,5 +2154,6 @@
     </main>
 
     <script src="../JavaScript/Bitrix-introductionBtn.js"></script>
+    <script src="../JavaScript/mobile-nav.js"></script>
 </body>
 </html>

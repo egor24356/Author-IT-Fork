@@ -1144,6 +1144,14 @@ main {
     display: none !important;
 }
 
+.bitrix-title-block360 {
+    display: block;
+}
+
+.bitrix-title-none360 {
+    display: none;
+}
+
 /* секция Bitrix__title */
 
 .Bitrix__container-title {

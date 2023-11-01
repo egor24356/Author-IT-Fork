@@ -1597,8 +1597,8 @@ main {
 /* Bitrix__black-dg */
 
 .Bitrix__black-dg {
-    width: 1266px;
-    height: 1263px;
+    width: 100vw;
+    /* height: 1263px; */
     position: relative;
     margin: 0 auto 0 auto;
 }

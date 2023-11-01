@@ -959,10 +959,11 @@ main {
 }
 
 .form__mailer {
-    height: 435px;
+    /* height: 435px; */
     background-color: #F5F6FF;
     border-radius: 52px;
     padding: 72px 120px;
+    width: 1262px;
 }
 
 .mailer-section {

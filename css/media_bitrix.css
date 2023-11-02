@@ -617,7 +617,7 @@
     .Bitrix-introduction__wrapper {
         gap: 0px;
         margin-top: 102px;
-        padding: 0px 33px 40px 5px;
+        padding: 0px 33px 40px 20px;
     }
     .Bitrix-introduction__container-btn {
         transform: scale(.8);

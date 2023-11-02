@@ -4,9 +4,9 @@
 }
 
 body {
-   /* display: flex; */
-   /* min-width: 1220px; ???? */
-   /* justify-content: center;*/
+    /* display: flex; */
+   /* min-width: 1220px; ????*/
+    /* justify-content: center; */
     background-color: #232323;
     /* flex-wrap: wrap; */ 
 }
@@ -959,10 +959,11 @@ main {
 }
 
 .form__mailer {
-    height: 435px;
+    /* height: 435px; */
     background-color: #F5F6FF;
     border-radius: 52px;
     padding: 72px 120px;
+    width: 1262px;
 }
 
 .mailer-section {
@@ -1645,8 +1646,8 @@ main {
 /* Bitrix__black-dg */
 
 .Bitrix__black-dg {
-    width: 1266px;
-    height: 1263px;
+    width: 100vw;
+    /* height: 1263px; */
     position: relative;
     margin: 0 auto 0 auto;
 }

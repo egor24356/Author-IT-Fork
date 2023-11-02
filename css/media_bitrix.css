@@ -194,6 +194,45 @@
 
 /* дополнительные страницы битрикса */
 
+@media (max-width: 1399px) {
+    .form__mailer {
+        max-width: 90vw;
+        height: auto;
+        margin: 0 auto;
+    }
+    .mailer {
+        flex-direction: column;
+    }
+    .mailer button {
+        position:static;
+        margin-top: 18px;
+        width: 100%;
+        padding: 24px 0;
+    }
+    .container__mailer {
+        height: auto;
+        transform: none;
+        padding: 709px 0 119px 0;
+    }
+    .mailer input[type=text] {
+        width: 100%;
+    }
+    .mailer input[type=tel] {
+        margin-right: 0;
+    }
+    .mailer input[type=tel], .input[type=email] {
+        width: 47%;
+    }
+    .mailer__second-row {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    .mailer__descr {
+        margin-top: 8px;
+    }
+}
+
 @media (max-width: 1300px) {
     .nav__items {
         width: 992px;
@@ -826,5 +865,27 @@
         margin-top: -104px;
         right: 53px;
         padding: 15px 45px;
+    }
+    .form__mailer {
+        padding: 40px 50px;
+    }
+    .container__mailer {
+        padding: 0 0 40px 0;
+        background-size: 130%;
+    }
+    .mailer-section {
+        margin-top: -100px;
+    }
+    .mailer-form-wrap {
+        position: relative;
+    }
+    .mailer button {
+        position: absolute;
+        bottom: -100px;
+    }
+    .form__mailer {
+        max-width: 100vw;
+        margin-top: 550px;
+        padding-bottom: 60px;
     }
 }

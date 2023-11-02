@@ -233,7 +233,9 @@
 }
 
 @media (max-width: 992px) {
-
+    .mobile-nav-btn {
+        margin-left: auto;
+    }
     h2 {
         font-size: 55px;
     }

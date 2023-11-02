@@ -710,7 +710,7 @@
     margin-top: 8px;
 }
 
-@media (max-width: 1483px) {
+/* @media (max-width: 1483px) {
     .green-folder__container {
         max-width: 1094px;
         padding: 64px 0;
@@ -778,18 +778,6 @@
     .descr__right__forbes {
         display: none;
     }
-    .mobile-nav-btn {
-        display: flex !important;
-    }
-    .mobile-nav {
-        display: flex !important;
-    }
-    .header {
-        display: none !important;
-    }
-    .mobile-nav-btn-wrap {
-        display: block !important;
-    }
     .gold__partner__bitrix__wrapper {
         position: relative;
     }
@@ -805,7 +793,7 @@
         position: relative;
     }
 }
-
+ */
 @media  (max-width: 415px){
     .header {
         display: none;

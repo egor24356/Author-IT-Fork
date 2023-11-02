@@ -321,6 +321,7 @@
         width: 768px;
         display: flex;
         justify-content: end;
+        margin: 0 auto;
     }
     .mobile-nav-btn-wrap {
         display: block !important;

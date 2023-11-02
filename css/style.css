@@ -8,7 +8,7 @@ body {
    /* min-width: 1220px; ????*/
     /* justify-content: center; */
     background-color: #232323;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */ 
 }
 
 h1 {
@@ -1199,6 +1199,7 @@ main {
 
 .Bitrix__title {
     color: #232323;
+    margin-top: 0;
 }
 
 /* контейнер для описания и срока */
@@ -1512,12 +1513,57 @@ main {
 .BitrixPortal__white-bg {
     position: relative;
     width: 1266px;
-    height: 3441px;
+    height: auto;
     background: #F5F6FF;
     border-radius: 40px;
     margin: 0 auto 58px auto;
     /*display: none;*/
 }
+
+/* секция Bitrix__title */
+
+.BitrixPortal__container-title {
+    padding: 100px 27px 70px 31px;
+}
+
+.BitrixPortal__title {
+    position: relative;
+}
+
+.BitrixPortal__title-time {
+    position: absolute;
+    right: 70px;
+    top: 246px;
+}
+
+.Bitrix__container-descr {
+    padding: 0 117px 64px 131px;
+}
+
+.Bitrix__container-descr__item {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.Bitrix__container-descr__item:not(:first-child) {
+    padding-top: 32px;
+}
+
+.Bitrix__container-descr__item:not(:last-child) {
+    padding-bottom: 24px;
+}
+
+.Bitrix__container-descr__item-img {
+    width: 36px;
+    height: 29px;
+}
+
+.Bitrix__container-descr__item:not(:last-child) {
+    border-bottom: 1px solid #707077;
+}
+
+
 
 /* секция Bitrix__rates */
 
@@ -1577,12 +1623,16 @@ main {
     padding: 0 74px 0 249px;
 }
 
+.BitrixPortal__rates-services__btn {
+    margin-top: 20px;
+}
+
 /* страница Битрикс24 энерпрайз */
 
 .BitrixEnter__white-bg {
     position: relative;
     width: 1266px;
-    height: 3441px;
+    height: auto;
     background: #F5F6FF;
     border-radius: 40px;
     margin: 0 auto 58px auto;
@@ -1666,6 +1716,62 @@ main {
     margin-top: 0;
 }
 
+.benefits-section__list {
+    margin-top: 32px;
+    list-style: url('../Bitrix_icons/check.png');
+}
+
+.benefits-section__item {
+    font-family: "Unbounded-regular";
+    padding-left: 16px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #232323;
+    line-height: 2.5;
+}
+
+.benefits-section__item_bold {
+    color:#FF7D04;
+    font-family: "Unbounded-Black";
+}
+
+.canbe-list {
+    margin-top: 64px;
+    list-style: url('../Bitrix_icons/mark-star.svg');
+}
+
+.canbe-list__item {
+    color: #000;
+    padding-left: 15px;
+}
+
+.benefits-info {
+    margin-top: 38px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.price-wrap {
+    text-align: right;
+    margin-top: 35px;
+}
+
+.price-btn {
+    margin-top: 32px;
+    font-size: 24px;
+    color: #F5F6FF;
+    font-weight: 700;
+}
+
+.BitrixEnter__white-bg {
+    height: auto;
+    padding-bottom: 70px;
+}
+
+.benefits-info__text {
+    margin-top: 0;
+}
 /* Bitrix__black-dg */
 
 .Bitrix__black-dg {

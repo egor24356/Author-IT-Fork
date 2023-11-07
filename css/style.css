@@ -4,11 +4,11 @@
 }
 
 body {
-    display: flex;
+    /* display: flex; */
    /* min-width: 1220px; ????*/
-    justify-content: center;
+    /* justify-content: center; */
     background-color: #232323;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */ 
 }
 
 h1 {
@@ -112,6 +112,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .wrapper__header {
@@ -197,6 +198,10 @@ main {
 
 /* section autor__IT */
 
+.autor__content .mobile-title {
+    display: none;
+}
+
 .container__autor__IT {
     display: flex;
     height: 928px;
@@ -234,7 +239,6 @@ main {
 .autor__go__work {
     margin-top: 40px;
     width: 391px;
-    height: 81px;
     color: #F5F6FF;
     transition: all .3s ease;
 }
@@ -528,6 +532,10 @@ main {
 
 /* section team */
 
+.cursor-mobile-wrap {
+    display: none;
+}
+
 .team__container {
     display: flex;
     background-color: #F5F6FF;
@@ -594,6 +602,7 @@ main {
 
 /* swiper в section team */
 
+
 .swiper__team {
     position: relative;
     min-width: 0;
@@ -647,6 +656,12 @@ main {
 /* section we__proud */
 
 /* container__we__proud */
+
+.slider__name-mobile {
+    display: none;
+}
+
+
 
 .container__we__proud {
     display: flex;
@@ -946,11 +961,11 @@ main {
 }
 
 .form__mailer {
-    width: 1263px;
-    height: 435px;
+    /* height: 435px; */
     background-color: #F5F6FF;
     border-radius: 52px;
     padding: 72px 120px;
+    width: 1262px;
 }
 
 .mailer-section {
@@ -1022,74 +1037,38 @@ main {
     right: 0;
 }
 
-/* footer */
+/* футер */
 
-.container__footer {
-    width: 100vw;
-    height: 550px;
+.footer {
     background-color: #181818;
-} 
+}
+.footer__container {
+    max-width: 1001px;
+    margin: 0 auto;
+    padding: 107px 0 134px 0;
+}
 
-.footer__wrap {
-    max-width: 1263px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 108px;
-    color:#F5F6FF;
+.footer__nav {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 47px 40px;
+    padding-left: 0;
 }
 
-.footer__logoContacts img {
-    margin-bottom: 52px;
+.navigation__item {
+    border-radius: 51px;
+    border: 1px solid var(--White, #F5F6FF);
+    padding: 16px 24px;
+    margin: 0;
 }
 
-.footer__title {
-    margin-bottom: 32px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    color:#F5F6FF;
-}
-
-.footer__wrap ul {
+.footer__container ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-.footer__contacts {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.footer__list__contacts li{
-    margin-bottom: 16px;
-    font-family: 'Open Sans', sans-serif;
+.footer {
     color:rgb(245, 246, 255, .8);
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.footer__list__contacts li:last-child {
-    margin-bottom: 0;
-}
-
-.footer__nav li {
-    display: inline-flex;
-    margin: 0 55.5px;
-    font-family: 'Open Sans', sans-serif;
-    color:rgb(245, 246, 255, .8);
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.footer__nav li:first-child {
-    margin-left: 0;
-}
-
-.footer__nav li:last-child {
-    margin-right: 0;
 }
 
 .footer__nav a {
@@ -1100,14 +1079,87 @@ main {
 
 .footer__nav a:hover {
     color:rgb(245, 246, 255);
+    border-color: rgb(245, 246, 255);
 }
 
-.footer__footnote {
-    margin-top: 372px;
+.navigation a {
+    font-family: "Unbounded-regular";
+    font-size: 24px;
+}
+
+.contacts-section {
+    display: flex;
+    margin-top: 160px;
+    position: relative;
+    gap: 64px;
+}
+
+.contacts-section__logo {
+    max-width: 182px;
+}
+
+.contacts-section__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contacts-section__title {
+    font-size: 40px;
+    font-family: "Unbounded-regular";
+    color: #F5F6FF;
+}
+
+.contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 467px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.contact__icon {
+    width: 32px;
+    height: 32px;
+}
+
+.contact__info {
+    font-size: 20px;
+    color: #F5F6FF;
+}
+
+.footer__rights {
+    position: absolute;
+    right: 0;
+    bottom: -30px;
     color: #D1D2D9;
-    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    font-weight: 400;
+}
+
+@media (max-width: 1080px) {
+    .footer__container {
+        padding: 107px 40px 134px 40px;
+    }
+    .footer__rights {
+        bottom: -50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer__container {
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 573px) {
+    .contacts-section {
+        flex-direction: column;
+    }
 }
 
 /* страница Битрикс24 Внедрение облачного Б24 */
@@ -1121,6 +1173,24 @@ main {
     margin: 0 auto 58px auto;
 }
 
+/* для адаптива */
+
+.rates-block992 {
+    display: flex;
+}
+
+.rates-none992 {
+    display: none !important;
+}
+
+.bitrix-title-block360 {
+    display: block;
+}
+
+.bitrix-title-none360 {
+    display: none;
+}
+
 /* секция Bitrix__title */
 
 .Bitrix__container-title {
@@ -1131,6 +1201,7 @@ main {
 
 .Bitrix__title {
     color: #232323;
+    margin-top: 0;
 }
 
 /* контейнер для описания и срока */
@@ -1377,7 +1448,7 @@ main {
 /* кнопка для открытия модального окна */
 
 .Bitrix__rates-services__btn {
-    margin-top: 24px;
+    margin-top: -110px;
     color:#F5F6FF;
     position: absolute;
     right: 31px;
@@ -1444,12 +1515,57 @@ main {
 .BitrixPortal__white-bg {
     position: relative;
     width: 1266px;
-    height: 3441px;
+    height: auto;
     background: #F5F6FF;
     border-radius: 40px;
     margin: 0 auto 58px auto;
     /*display: none;*/
 }
+
+/* секция Bitrix__title */
+
+.BitrixPortal__container-title {
+    padding: 100px 27px 70px 31px;
+}
+
+.BitrixPortal__title {
+    position: relative;
+}
+
+.BitrixPortal__title-time {
+    position: absolute;
+    right: 70px;
+    top: 246px;
+}
+
+.Bitrix__container-descr {
+    padding: 0 117px 64px 131px;
+}
+
+.Bitrix__container-descr__item {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.Bitrix__container-descr__item:not(:first-child) {
+    padding-top: 32px;
+}
+
+.Bitrix__container-descr__item:not(:last-child) {
+    padding-bottom: 24px;
+}
+
+.Bitrix__container-descr__item-img {
+    width: 36px;
+    height: 29px;
+}
+
+.Bitrix__container-descr__item:not(:last-child) {
+    border-bottom: 1px solid #707077;
+}
+
+
 
 /* секция Bitrix__rates */
 
@@ -1509,12 +1625,16 @@ main {
     padding: 0 74px 0 249px;
 }
 
+.BitrixPortal__rates-services__btn {
+    margin-top: 20px;
+}
+
 /* страница Битрикс24 энерпрайз */
 
 .BitrixEnter__white-bg {
     position: relative;
     width: 1266px;
-    height: 3441px;
+    height: auto;
     background: #F5F6FF;
     border-radius: 40px;
     margin: 0 auto 58px auto;
@@ -1525,12 +1645,140 @@ main {
     padding: 100px 27px 92px 31px;
 }
 
+.Bitrix__benefits {
+    padding: 0 108px;
+}
 
+.benefits-section__container {
+    border-radius: 32px;
+    border: 1px solid #707077;
+    padding: 56px 106px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Bitrix-benefits__subtitle {
+    margin-top: 64px;
+}
+
+.benefits-section__list {
+    margin-top: 32px;
+    list-style: url('../Bitrix_icons/check.png');
+}
+
+.benefits-section__item {
+    font-family: "Unbounded-regular";
+    padding-left: 16px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #232323;
+    line-height: 2.5;
+}
+
+.benefits-section__item_bold {
+    color:#FF7D04;
+    font-family: "Unbounded-Black";
+}
+
+.canbe-list {
+    margin-top: 64px;
+    list-style: url('../Bitrix_icons/mark-star.svg');
+}
+
+.canbe-list__item {
+    color: #000;
+    padding-left: 15px;
+}
+
+.benefits-info {
+    margin-top: 38px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.price-wrap {
+    text-align: right;
+    margin-top: 35px;
+}
+
+.price-btn {
+    margin-top: 32px;
+    font-size: 24px;
+    color: #F5F6FF;
+    font-weight: 700;
+}
+
+.BitrixEnter__white-bg {
+    height: auto;
+    padding-bottom: 70px;
+}
+
+.benefits-info__text {
+    margin-top: 0;
+}
+
+.benefits-section__list {
+    margin-top: 32px;
+    list-style: url('../Bitrix_icons/check.png');
+}
+
+.benefits-section__item {
+    font-family: "Unbounded-regular";
+    padding-left: 16px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #232323;
+    line-height: 2.5;
+}
+
+.benefits-section__item_bold {
+    color:#FF7D04;
+    font-family: "Unbounded-Black";
+}
+
+.canbe-list {
+    margin-top: 64px;
+    list-style: url('../Bitrix_icons/mark-star.svg');
+}
+
+.canbe-list__item {
+    color: #000;
+    padding-left: 15px;
+}
+
+.benefits-info {
+    margin-top: 38px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.price-wrap {
+    text-align: right;
+    margin-top: 35px;
+}
+
+.price-btn {
+    margin-top: 32px;
+    font-size: 24px;
+    color: #F5F6FF;
+    font-weight: 700;
+}
+
+.BitrixEnter__white-bg {
+    height: auto;
+    padding-bottom: 70px;
+}
+
+.benefits-info__text {
+    margin-top: 0;
+}
 /* Bitrix__black-dg */
 
 .Bitrix__black-dg {
-    width: 1266px;
-    height: 1263px;
+    width: 100vw;
+    /* height: 1263px; */
     position: relative;
     margin: 0 auto 0 auto;
 }
@@ -1624,10 +1872,6 @@ main {
 
 /* выравнивание ФИ сотрудников */
 
-.AboutUs-promo__slider-name-Kostya {
-    transform: translate(-628px, -89px);
-}
-
 .AboutUs-promo__slider-name-NastyaD {
     transform: translate(-123px, -63px);
 }
@@ -1636,10 +1880,6 @@ main {
 
 .AboutUs-promo__slider-proffession {
     margin-top: 16px;
-}
-
-.AboutUs-promo__slider-proffession-Kostya {
-    transform: translate(-628px, -88px);
 }
 
 .AboutUs-promo__slider-proffession-NastyaD {
@@ -1655,7 +1895,6 @@ main {
 }
 
 .AboutUs-promo__slider-quote-Kostya {
-    transform: translate(-628px, -94px);
     width: 430px; 
 }
 
@@ -1691,7 +1930,7 @@ main {
 /* section AboutUs-history */
 
 .AboutUs-history__wrapper {
-    padding: 180px 0px 0px 326px;
+    padding: 180px 0px 117px 326px;
 }
 
 /* текст секции сверху фото */
@@ -1733,7 +1972,6 @@ main {
 /* section AboutUs-achievement */
 
 .AboutUs-achievement__wrapper {
-    height: 247px;
     display: flex;
     padding: 64px 80px 0px 239px;
 }
@@ -1782,7 +2020,7 @@ main {
 /* фото */
 
 .AboutUs-weFuture__img {
-    height: 728px;
+    transform: scale(1);
     margin-right: 57px;
 }
 
@@ -1901,6 +2139,16 @@ main {
 .template__table__row-right__descr-text {
     width: 603px;
     color: #232323;
+}
+
+/* для адаптива */
+
+.AboutUs__none768 {
+    display: none;
+}
+
+.AboutUs__block768 {
+    display: block;
 }
 
 

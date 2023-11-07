@@ -1,53 +1,41 @@
-<?php
-//Файлы phpMailer
-require 'phpmailer/PHPMailer.php';
-require 'phpmailer/SMTP.php';
-require 'phpmailer/Exception.php';
+<?php 
+  // формируем URL, на который будем отправлять запрос в битрикс24
+	$queryURL = "https://avtorit24.ru/rest/134/pv3oc3bynmt0zdfd/crm.lead.add.json";	
 
-$title = "Тема письма"; //переменная 
+  //собираем данные из формы
+  $sPhone = htmlspecialchars($_POST["PHONE"]);
+  $sName = htmlspecialchars($_POST["NAME"]);
+  $sLastName = htmlspecialchars($_POST["LAST_NAME"]);
+  $arPhone = (!empty($sPhone)) ? array(array('VALUE' => $sPhone, 'VALUE_TYPE' => 'MOBILE')) : array();
+	
+	// формируем параметры для создания лида	
+	$queryData = http_build_query(array(
+		"fields" => array(
+			"NAME" => $sName,	// имя
+			"LAST_NAME" => $sLastName,	// фамилия
+			"PHONE" => $arPhone, // телефон
+		),
+		'params' => array("REGISTER_SONET_EVENT" => "Y")	// Y = произвести регистрацию события добавления лида в живой ленте. Дополнительно будет отправлено уведомление ответственному за лид.	
+	));
 
-$c = true;
-// Формирование самого письма
-$title = "Заголовок письма";
-foreach ( $_POST as $key => $value ) {
-    if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
-        $body .= "
-        " . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
-        <td style='padding: 10px; border: #e9e9e9 1px solid;'><b>$key</b></td>
-        <td style='padding: 10px; border: #e9e9e9 1px solid;'>$value</td>
-    </tr>
-    ";
-    }
-}
+	// отправляем запрос в Б24 и обрабатываем ответ
+	$curl = curl_init();
+	curl_setopt_array($curl, array(
+		CURLOPT_SSL_VERIFYPEER => 0,
+		CURLOPT_POST => 1,
+		CURLOPT_HEADER => 0,
+		CURLOPT_RETURNTRANSFER => 1,
+		CURLOPT_URL => $queryURL,
+		CURLOPT_POSTFIELDS => $queryData,
+	));
+	$result = curl_exec($curl);
+	curl_close($curl);
+	$result = json_decode($result,1); 
 
-$body = "<table style='width: 100%;'>$body</table>";
-
-//Настройки PHPMailer
-$mail = new PHPMailer\PHPMailer\PHPMailer();
-
-try {
-    $mail->isSMTP();
-    $mail->CharSet = "UTF-8";
-    $mail->SMTPAuth = true;
-
-    //Настройки почты 
-    $mail->Host = ''; // SMTP сервера почты !!!!!!!!!!!!!!!!
-    $mail->Username = ''; // Логин на почте !!!!!!!!!
-    $mail->Password = ''; // Пароль на почте !!!!!!!!!!!!!!
-    $mail->SMTPSecure = 'ssl';
-    $mail->Port = 465;
-
-    $mail->setFrom('', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
-
-    // Получатель письма
-    $mail->addAddress('');
-
-    $mail->isSMTP(true);
-    $mail->Subject = $title;
-    $mail->Body = $body;
-
-    $mail->send();
-
-} catch (Exception $e) {
-    $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
-}
+    // echo "Ваши данные отправлены";
+ 
+	// если произошла какая-то ошибка - выведем её
+	if(array_key_exists('error', $result))
+	{      
+		die("Ошибка при сохранении лида: ".$result['error_description']);
+	}

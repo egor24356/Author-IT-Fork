@@ -140,6 +140,7 @@
         display: none !important;
     }
     .mobile-nav-btn-wrap {
-        display: block !important;
+        display: flex !important;
+        justify-content: flex-end;
     }
 }

@@ -681,7 +681,7 @@
         margin-top: -200px;
     }
     .mobile-nav-btn {
-        --width: 20px;
+        /* --width: 20px; */
         --height: 15px;
     }
     .mobile-nav-btn-wrap {

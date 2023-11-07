@@ -1629,6 +1629,10 @@ main {
     padding: 0 74px 0 249px;
 }
 
+.BitrixPortal-introduction__wrapper {
+    display: none;
+}
+
 .BitrixPortal__rates-services__btn {
     margin-top: 20px;
 }
@@ -1637,7 +1641,7 @@ main {
 
 .BitrixEnter__white-bg {
     position: relative;
-    width: 1266px;
+    max-width: 1266px;
     background: #F5F6FF;
     border-radius: 40px;
     margin: 0 auto 58px auto;

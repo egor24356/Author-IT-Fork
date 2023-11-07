@@ -611,6 +611,9 @@
     .BitrixPortal__container-rates__support-row {
         width: 415px;
     }
+    .BitrixPortal__container-rates__support-row {
+        width: 415px;
+    }
     .Bitrix__container-rates__support-header-nonActive {
         color: #707077;
     }
@@ -721,7 +724,6 @@
     }
     .BitrixPortal__white-bg {
         width: 360px;
-        height: 5507px;
         margin: 0 auto;
     }
     .Bitrix__container-title {

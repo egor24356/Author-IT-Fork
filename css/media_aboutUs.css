@@ -547,7 +547,7 @@
         display: none;
     }
     .AboutUs__white {
-        background: url(/Author-IT-new/AboutUs_img/AboutUs-bg-mobile.png) center center/cover no-repeat;
+        background: url(../AboutUs_img/AboutUs-bg-mobile.png) center center/cover no-repeat;
         background-size: 360px 100%;
         width: 360px;
         height: 3653px;
@@ -682,7 +682,7 @@
     .AboutUs-history__top {
         margin-top: 6px;
         flex-direction: column;
-        color: #000;
+        /* color: #000; */
     }
     .AboutUs-history__top-left {
         width: 291px;
@@ -697,7 +697,7 @@
     .AboutUs-history__bottom {
         width: 291px;
         margin-top: 0;
-        color: #000;
+        /* color: #000; */
     }
     .AboutUs-achievement__wrapper {
         padding: 47px 9px 53px 67px;
@@ -808,31 +808,31 @@
         padding: 24px 12px;
     }
     .AboutUs-promo-slider {
-        background-color: #fff;
+        /* background-color: #fff; */
     }
 
     .AboutUs-history {
-        background-color: #fff;
+        /* background-color: #fff; */
     }
 
     .AboutUs-achievement {
-        background-color: #fff;
+        /* background-color: #fff; */
     }
 
     .AboutUs-weToday {
-        background-color: #fff;
+        /* background-color: #fff; */
     }
 
     .AboutUs-weFuture {
-        background-color: #fff;
+        /* background-color: #fff; */
     }
 
     .AboutUs-whyWe {
-        background-color: #fff;
+        /* background-color: #fff; */
     }
 
     .AboutUs-history__year {
-        color: #000;
+        /* color: #000; */
     }
     
 }

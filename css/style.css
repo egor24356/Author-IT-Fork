@@ -1643,7 +1643,7 @@ main {
 
 .BitrixEnter__white-bg {
     position: relative;
-    width: 1266px;
+    max-width: 1266px;
     height: auto;
     background: #F5F6FF;
     border-radius: 40px;

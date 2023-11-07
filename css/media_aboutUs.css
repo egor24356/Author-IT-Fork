@@ -547,7 +547,7 @@
         display: none;
     }
     .AboutUs__white {
-        background: url(/Author-IT-new/AboutUs_img/AboutUs-bg-mobile.png) center center/cover no-repeat;
+        background: url(../AboutUs_img/AboutUs-bg-mobile.png) center center/cover no-repeat;
         background-size: 360px 100%;
         width: 360px;
         height: 3653px;

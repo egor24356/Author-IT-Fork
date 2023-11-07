@@ -1165,7 +1165,6 @@ main {
 .BitrixCloud__white-bg {
     position: relative;
     width: 1266px;
-    height: 3911px;
     background: #F5F6FF;
     border-radius: 40px;
     margin: 0 auto 58px auto;
@@ -1513,7 +1512,6 @@ main {
 .BitrixPortal__white-bg {
     position: relative;
     width: 1266px;
-    height: 3150px;
     background: #F5F6FF;
     border-radius: 40px;
     margin: 0 auto 58px auto;
@@ -1523,7 +1521,7 @@ main {
 /* секция Bitrix__title */
 
 .BitrixPortal__container-title {
-    padding: 100px 27px 70px 31px;
+    padding: 100px 27px 30px 31px;
 }
 
 .BitrixPortal__title {
@@ -1644,7 +1642,6 @@ main {
 .BitrixEnter__white-bg {
     position: relative;
     max-width: 1266px;
-    height: auto;
     background: #F5F6FF;
     border-radius: 40px;
     margin: 0 auto 58px auto;
@@ -1652,7 +1649,22 @@ main {
 }
 
 .BitrixEnter__container-title {
-    padding: 100px 27px 92px 31px;
+    padding: 100px 50px 70px 31px;
+}
+
+.BitrixEnter__title {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.BitrixEnter__title-time {
+    position: absolute;
+    right: 70px;
+    top: 207px;
+}
+
+.BitrixEnter__container-descr {
+    padding: 70px 117px 64px 131px;
 }
 
 .Bitrix__benefits {

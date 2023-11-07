@@ -37,18 +37,12 @@
     width: 100% !important;
 }
 
-.mobile-btn-container {
-    max-width: 90vw;
-    display: flex;
-    margin: 0 auto;
-    justify-content: end;
-}
-
 .mobile-nav-btn-wrap {
     display: none;
     text-align: center;
-    z-index: 99999;
+    z-index: 999;
     margin-left: auto;
+    margin-right: 5%;
 }
 
 .mobile-nav-btn:active {
@@ -130,7 +124,7 @@
 /* Layout */
 
 .mobile-nav-btn {
-    z-index: 99999;
+    z-index: 999;
     display: none;
 }
 
@@ -146,6 +140,7 @@
         display: none !important;
     }
     .mobile-nav-btn-wrap {
-        display: block !important;
+        display: flex !important;
+        justify-content: flex-end;
     }
 }

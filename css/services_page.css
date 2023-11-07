@@ -186,8 +186,3 @@
     /* transform: translateY(-111%); */
     bottom: 0;
 }
-
-.mobile__container {
-   display: flex;
-   justify-content: end; 
-}

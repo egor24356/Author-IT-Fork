@@ -321,7 +321,6 @@
         width: 768px;
         display: flex;
         justify-content: end;
-        margin: 0 auto;
     }
     .mobile-nav-btn-wrap {
         display: block !important;
@@ -682,6 +681,7 @@
     .AboutUs-history__top {
         margin-top: 6px;
         flex-direction: column;
+        color: #000;
     }
     .AboutUs-history__top-left {
         width: 291px;
@@ -696,6 +696,7 @@
     .AboutUs-history__bottom {
         width: 291px;
         margin-top: 0;
+        color: #000;
     }
     .AboutUs-achievement__wrapper {
         padding: 47px 9px 53px 67px;
@@ -804,6 +805,33 @@
         position: absolute;
         bottom: -100px;
         padding: 24px 12px;
+    }
+    .AboutUs-promo-slider {
+        background-color: #fff;
+    }
+
+    .AboutUs-history {
+        background-color: #fff;
+    }
+
+    .AboutUs-achievement {
+        background-color: #fff;
+    }
+
+    .AboutUs-weToday {
+        background-color: #fff;
+    }
+
+    .AboutUs-weFuture {
+        background-color: #fff;
+    }
+
+    .AboutUs-whyWe {
+        background-color: #fff;
+    }
+
+    .AboutUs-history__year {
+        color: #000;
     }
     
 }

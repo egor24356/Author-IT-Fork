@@ -606,6 +606,10 @@
     .Bitrix__container-rates__support-row {
         width: 457px;
         gap: 66px;
+        align-items: center;
+    }
+    .BitrixPortal__container-rates__support-row {
+        width: 415px;
     }
     .BitrixPortal__container-rates__support-row {
         width: 415px;
@@ -720,7 +724,6 @@
     }
     .BitrixPortal__white-bg {
         width: 360px;
-        height: 5976px;
         margin: 0 auto;
     }
     .Bitrix__container-title {
@@ -809,7 +812,7 @@
         height: auto;
         border-radius: 25px;
         margin: 20px 0;
-        padding: 32px 16px 0;
+        padding: 20px 16px 0;
         border: 1px solid #707077;
     }
     .Bitrix__container-services-wrapperMobile {
@@ -833,26 +836,26 @@
         flex-direction: column;
     }
     .Bitrix__rate__typeName {
-        font-size: 24px;
+        font-size: 18px;
         font-family: "Unbounded-Regular";
         font-weight: 600;
     }
     .Bitrix__container-rate__typeItem {
         display: flex;
         flex-direction: column;
-        margin-bottom: 35px;
+        margin-bottom: 25px;
         margin-left: 0px;
     }
     .Bitrix__rate__typePrice {
         position: static;
         margin-top: 16px;
-        font-size: 24px;
+        font-size: 18px;
     }
     .Bitrix__container-services__priceItem {
         text-align: center;
     }
     .Bitrix__services__separPrice {
-        font-size: 16px;
+        font-size: 14px;
         width: 64px;
     }
     .Bitrix__services__separPrice-large {
@@ -860,7 +863,7 @@
         margin-left: -10px;
     }
     .Bitrix__rate__typeDescr {
-        font-size: 16px;
+        font-size: 14px;
     }
     .Bitrix__rate__basDescr {
         width: 256px;
@@ -884,11 +887,15 @@
         font-size: 24px;
         margin: -6px 3px;
     }
+    .Bitrix__container-rates__support-row {
+        padding: 14px 0;
+    }
     .Bitrix__container-services__header-price {
         margin-top: 157px;
     }
     .Bitrix__container-services__header-price__row {
         display: flex;
+        justify-content: space-evenly;
         gap: 0px;
         width: 318px;
     }
@@ -971,7 +978,7 @@
         background-size: 130%;
     }
     .mailer-section {
-        margin-top: -100px;
+        margin-top: -269px;
     }
     .mailer-form-wrap {
         position: relative;

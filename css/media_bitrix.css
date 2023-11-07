@@ -246,6 +246,9 @@
         height: 3416px;
         margin: 0 auto;
     }
+    .BitrixEnter__white-bg {
+       max-width: 992px;
+    }
     .BitrixPortal__white-bg {
         width: 992px;
         height: 2696px;
@@ -423,6 +426,9 @@
         width: 768px;
         height: 8156px;
         margin: 0 auto;
+    }
+    .BitrixEnter__white-bg {
+        max-width: 768px;
     }
     .BitrixPortal__white-bg {
         width: 768px;
@@ -721,6 +727,9 @@
         width: 360px;
         height: 7407px;
         margin: 0 auto;
+    }
+    .BitrixEnter__white-bg {
+        max-width: 360px;
     }
     .BitrixPortal__white-bg {
         width: 360px;

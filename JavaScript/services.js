@@ -11,7 +11,6 @@ const btnTest = document.querySelector('#testBtn');
 
 const ANIM_DURATION = 300;
 
-
 services.forEach(s => {
     s.style = `transition: all ${ANIM_DURATION/1000}s ease;`
 })
@@ -26,15 +25,26 @@ btnDevelopment.addEventListener('click', function() {
 btnTest.addEventListener('click', function() {
     serviceIntegration.classList.add('our-service_active');
     setTimeout(() => serviceDevelopment.classList.add('our-service_active'), ANIM_DURATION);
-    setTimeout(() => serviceTest.classList.add('our-service_active'), 2 * ANIM_DURATION);
-
+    setTimeout(() => serviceTest.classList.add('our-service_active'), 2 * ANIM_DURATION); 
 });
 
+let isAnimated = false;
+let scrollTimeout;
+
+function changeFlag() {
+    isAnimated = false;
+}
+
 window.addEventListener('wheel', function(e) {
-    if (e.deltaY > 0) {  // wheeldown
-        showServices();
-    } else {
-        hideServices();
+    if (!isAnimated) {
+        isAnimated = true;
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(changeFlag, ANIM_DURATION);
+        if (e.deltaY > 0) {  // wheeldown
+            showServices();
+        } else {
+            hideServices();
+        }
     }
 });
 
@@ -70,3 +80,36 @@ function hideAllServices() {
     setTimeout(() => serviceDevelopment.classList.remove('our-service_active'), ANIM_DURATION);
     setTimeout(() => serviceIntegration.classList.remove('our-service_active'), 2*ANIM_DURATION);
 }
+
+let startX = 0;
+let startY = 0;
+
+document.addEventListener('touchstart', function(e) {
+    startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
+});
+
+document.addEventListener('touchmove', function(e) {
+    if (!startX || !startY) {
+        return;
+    }
+
+    let endX = e.touches[0].clientX;
+    let endY = e.touches[0].clientY;
+
+    let diffY = endY - startY;
+
+    if (Math.abs(diffY) < Math.abs(endX - startX)) {}
+    else {
+        if (diffY < 0) {
+            showServices();
+        } else {
+            console.log(e.touches[0])
+
+            hideServices();
+        }
+    }
+
+    startX = 0;
+    startY = 0;
+});

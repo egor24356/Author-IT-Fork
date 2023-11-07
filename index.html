@@ -16,16 +16,15 @@
 </head>
 
 <body>
-
     <header class="header">
         <div class="wrapper__header">
             <nav class="nav__items">
                 <a href="index.html" class="tabs__items item__logo tabs__item"></a>
                 <a href="html/Bitrix.html" class="tabs__items bitrix tabs__item">Битрикс24</a>
                 <a href="html/Services.html" class="tabs__items services tabs__item">Услуги</a>
-                <a href="html/Cases.html" class="tabs__items cases tabs__item">Кейсы</a>
+                <a href="html/update.html" class="tabs__items cases tabs__item">Кейсы</a>
                 <a href="html/AboutUs.html" class="tabs__items about tabs__item">О нас</a>
-                <a href="tel:+73519510040" class="tabs__items telephone tabs__item">+7 (3519) 51 - 00 - 40</a>
+                <a href="#" class="tabs__items telephone tabs__item">+7 (3519) 51 - 00 - 40</a>
             </nav>
         </div>
     </header>
@@ -34,17 +33,25 @@
             <a href="index.html" class="tabs__items mobile-nav__item item__logo tabs__item"></a>
             <a href="html/Bitrix.html" class="tabs__items mobile-nav__item bitrix tabs__item">Битрикс24</a>
             <a href="html/Services.html" class="tabs__items mobile-nav__item services tabs__item">Услуги</a>
-            <a href="html/Cases.html" class="tabs__items mobile-nav__item cases tabs__item">Кейсы</a>
+            <a href="html/update.html" class="tabs__items mobile-nav__item cases tabs__item">Кейсы</a>
             <a href="html/AboutUs.html" class="tabs__items mobile-nav__item about tabs__item">О нас</a>
             <a href="#" class="tabs__items mobile-nav__item telephone tabs__item">+7 (3519) 51 - 00 - 40</a>
         </nav>
+    </div>
+    <div class="mobile-btn-container">
+        <div class="mobile-nav-btn-wrap">
+            <button class="mobile-nav-btn">
+                <div class="nav-icon"></div>
+            </button>
+        </div>
     </div>
     <main class="main">
         <div class="white__bg">
             <section class="autor__IT">
                     <div class="container__autor__IT">
                         <div class="autor__content">
-                            <h1>Автор<br>IT</h1>
+                            <h1 class="desktop-title">Автор<br>IT</h1>
+                            <h1 class="mobile-title">Автор IT</h1>
                             <p class="autor__descr1 body14">
                                 Интеграторы полного цикла с упором на внедрение 
                                 и разработку порталов Битрикс24.
@@ -55,16 +62,18 @@
                                 этапе. <br>Наша цель - не просто удовлетворить ваши потребности, 
                                 <br>а преуспеть в превышении ваших ожиданий.
                             </p>
-                            <button class="autor__go__work">
-                               <h3>Давайте работать!</h3> 
-                            </button>
-                            <div class="autor__wrap__links">
-                                <a href="https://vk.com/autor_it" class="autor__links body14 vk" target="_blank">VK</a>
-                                <a href="https://t.me/AvtorAiti" class="autor__links body14 tg" target="_blank">Telegram</a>
-                                <a href="https://www.youtube.com/@avtor-it" class="autor__links body14 yt" target="_blank">YouTube</a>
+                            <div class="title-btn">
+                                <button class="autor__go__work">
+                                <h3>Давайте работать!</h3> 
+                                </button>
+                                <div class="autor__wrap__links">
+                                    <a href="https://vk.com/autor_it" class="autor__links body14 vk" target="_blank">VK</a>
+                                    <a href="https://t.me/AvtorAiti" class="autor__links body14 tg" target="_blank">Telegram</a>
+                                    <a href="https://www.youtube.com/@avtor-it" class="autor__links body14 yt" target="_blank">YouTube</a>
+                                </div>
                             </div>
                         </div>
-                        <img src="img1/Page1_main_img.png" alt="team">
+                        <img class="title-img" src="img1/Page1_main_img.png" alt="team">
                     </div>
             </section>
             <section class="crm">
@@ -152,6 +161,10 @@
                 <div class="team__container">
                     <div class="cursor"></div>
                     <div class="team__wrap-face">
+                        <div class="cursor-mobile-wrap">
+                            <div class="cursor-mobile"></div>
+                            <p>Next</p>
+                        </div>
                         <div class="team__img">
                             <img src="img1/team_cursor.png" alt="Наша команда">
                             <a class="team__links"></a>
@@ -159,11 +172,6 @@
                     </div>
                     <div class="swiper-container swiper__team">
                         <div class="swiper-wrapper swiper__wrapper__team">
-                            <div class="swiper-slide descr-team descr-Egor" name="#team-Egor">
-                                <h2 class="team__name">Егор <br>Соколов</h2> 
-                                <div class="team__profession">Frontend разработчик</div>
-                                <img class="swiper__team__img" src="img1/team_Egor.png" alt="Фотография Егора Соколова">
-                            </div>
                             <div class="swiper-slide descr-team descr-Kostya" name="#team-Kostya">
                                 <h2 class="team__name">Константин <br>Потысьев</h2> 
                                 <div class="team__profession">Менеджер</div>
@@ -173,6 +181,11 @@
                                 <h2 class="team__name">Анастасия <br>Манаева</h2> 
                                 <div class="team__profession">Frontend разработчик</div>
                                 <img class="swiper__team__img" src="img1/team_NastyaM.png" alt="Фотография Анастасии Манаевой">
+                            </div>
+                            <div class="swiper-slide descr-team descr-Egor" name="#team-Egor">
+                                <h2 class="team__name">Егор <br>Соколов</h2> 
+                                <div class="team__profession">Frontend разработчик</div>
+                                <img class="swiper__team__img" src="img1/team_Egor.png" alt="Фотография Егора Соколова">
                             </div>
                             <div class="swiper-slide descr-team descr-NastyaD" name="#team-NastyaD">
                                 <h2 class="team__name">Анастасия <br>Мартынцева</h2> 
@@ -213,9 +226,10 @@
                         <div class="swiper-container swiper__container__we__proud">
                             <div class="swiper-wrapper swiper__wrapper__we__proud">
                                 <div class="swiper-slide slide__we__proud we__proud1">
+                                    <h3 class="slider__union__name slider__name-mobile">Интернет-магазин BigWall</h3>
                                     <div class="container__text__slider__union">
                                         <div class="text__slider__union__title">
-                                            <h3 class="slider__union__name">Интернет-магазин BigWall</h3> 
+                                            <h3 class="slider__union__name slider__name-desktop">Интернет-магазин BigWall</h3> 
                                             <div class="slider__union__descr union__descr">
                                                 BigWall – интернет-магазин снаряжения <br>и одежды для 
                                                 спортивного и промышленного альпинизма, горного туризма, 
@@ -256,9 +270,10 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide slide__we__proud we__proud2">
+                                    <h3 class="slider__union__name slider__name-mobile">Интернет-магазин BigWall</h3>
                                     <div class="container__text__slider__union">
                                         <div class="text__slider__union__title">
-                                            <h3 class="slider__union__name">Интернет-магазин BigWall</h3> 
+                                            <h3 class="slider__union__name slider__name-desktop">Интернет-магазин BigWall</h3> 
                                             <div class="slider__union__descr union__descr">
                                                 BigWall - интернет-магазин снаряжения и одежды для спортивного и 
                                                 промышленного альпинизма, горного туризма, скалолазания и путешествий.
@@ -296,9 +311,10 @@
                                     
                                 </div>
                                 <div class="swiper-slide slide__we__proud we__proud3">
+                                    <h3 class="slider__union__name slider__name-mobile">Интернет-магазин BigWall</h3>
                                     <div class="container__text__slider__union">
                                         <div class="text__slider__union__title">
-                                            <h3 class="slider__union__name">Интернет-магазин BigWall</h3> 
+                                            <h3 class="slider__union__name slider__name-desktop">Интернет-магазин BigWall</h3> 
                                             <div class="slider__union__descr union__descr">
                                                 BigWall - интернет-магазин снаряжения и одежды для спортивного и 
                                                 промышленного альпинизма, горного туризма, скалолазания и путешествий.
@@ -338,7 +354,7 @@
                             <img class="swiper-button-prev arrow_left_slider_union_laptop" src="icon1/arrow_left_slider_union_laptop.svg" alt="Стрелка влево">
                             <img class="swiper-button-next arrow_right_slider_union_laptop" src="icon1/arrow_right_slider_union_laptop.svg" alt="Стрелка вправо">
                         </div>
-                        <a class="slider__union__btn__all__keys" href="html/Cases.html">
+                        <a class="slider__union__btn__all__keys" href="html/update.html">
                             <h3>Все кейсы</h3>
                         </a>
                     </div>
@@ -459,11 +475,11 @@
             </section>
             <section class="mailer mailer-section">
                 <div class="container__mailer">
-                    <div class="form__mailer">
+                    <div class="form__mailer index-mailer">
                         <h2 class="mailer__title">
                             Давайте сотрудничать!
                         </h2>
-                        <form name="test" action="#" class="mailer" method="post" enctype="multipart/form-data">
+                        <form name="test" action="#" class="mailer mailer-form-wrap" method="post" enctype="multipart/form-data">
                             <div class="container__break__mailer">
                                 <div class="mailer__row">
                                     <input class="input input-name" type="text" data-validate-field="name" name="userName" placeholder="Ваше имя">
@@ -481,46 +497,49 @@
             </section>
         </div>
         <footer class="footer">
-            <div class="container__footer">
-                <div class="footer__wrap">
-                    <div class="footer__logoContacts">
-                        <img src="icon1/logo-footer.svg" alt="Логотип">
-                        <div class="footer__contacts">
-                            <p class="footer__title">
-                                Наши контакты:
-                            </p>
-                            <ul class="footer__list__contacts">
-                                <li>+7(3519)51-00-40</li>
-                                <li>info@autor-it.ru</li>
-                                <li>г. Магнитогорск, пр-кт Ленина 92 офис 304</li>
-                            </ul>
-                        </div>
-                    </div>
-                        <ul class="footer__nav">
-                            <li><a href="html/Bitrix.html">Битрикс24</a></li>
-                            <li><a href="html/Services.html">Услуги</a></li>
-                            <li><a href="html/Cases.html">Кейсы</a></li>
-                            <li><a href="html/AboutUs.html">О нас</a></li>
+            <div class="footer__container">
+                <ul class="footer__nav navigation">
+                    <li class="navigation__item"><a href="index.html" class="navigation__link">Главная</a></li>
+                    <li class="navigation__item"><a href="html/Bitrix.html" class="navigation__link">Битрикс24</a></li>
+                    <li class="navigation__item"><a href="html/Services.html" class="navigation__link">Услуги</a></li>
+                    <li class="navigation__item"><a href="html/update.html" class="navigation__link">Кейсы</a></li>
+                    <li class="navigation__item"><a href="html/AboutUs.html" class="navigation__link">О нас</a></li>
+                </ul>
+                <div class="footer__contacts contacts-section">
+                    <img class="contacts-section__logo" src="icon1/footer-logo.svg">
+                    <div class="contacts-section__content">
+                        <p class="contacts-section__title">Контакты:</p>
+                        <ul class="contacts-section__contacts contact-list">
+                            <li class="contact-list__item contact">
+                                <img class="contact__icon" src="icon1/phone-icon.png">
+                                <p class="contact__info">+7(3519)51-00-40</p>
+                            </li>
+                            <li class="contact-list__item contact">
+                                <img class="contact__icon" src="icon1/mail-icon.png">
+                                <p class="contact__info">info@autor-it.ru</p>
+                            </li>
+                            <li class="contact-list__item contact">
+                                <img class="contact__icon" src="icon1/geo-icon.png">
+                                <p class="contact__info">г. Магнитогорск, пр-кт Ленина&nbsp92 офис&nbsp303</p>
+                            </li>
                         </ul>
-                    <div class="footer__footnote">
-                        © 2023 Все права защищены.
                     </div>
+                    <p class="footer__rights">© 2023 Все права защищены.</p>
                 </div>
             </div>
         </footer>
     </main>
 
+    <script src="JavaScript/cursor.js"></script>
+    <script src="JavaScript/swiper-comments.js"></script>
+    <script src="JavaScript/mobile-nav.js"></script>
     <script src="libs/inputmask.min.js"></script>
     <script src="libs/just-validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> 
     <script src="JavaScript/swiper-we-proud.js"></script>
-    <script src="JavaScript/cursor.js"></script>
     <script src="JavaScript/mailer.js"></script>
     <script src="JavaScript/swiper-team.js"></script>
     <script src="JavaScript/running-line.js"></script>
-    <script src="JavaScript/swiper-comments.js"></script>
     
 </body>
-
 </html>
-

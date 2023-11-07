@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media_aboutUs.css">
+    <link rel="stylesheet" href="../css/mobile-nav.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 </head>
 <body>
@@ -19,13 +21,29 @@
                     <a href="../index.html" class="tabs__items item__logo tabs__item"></a>
                     <a href="Bitrix.html" class="tabs__items bitrix tabs__item">Битрикс24</a>
                     <a href="Services.html" class="tabs__items services tabs__item">Услуги</a>
-                    <a href="Cases.html" class="tabs__items cases tabs__item">Кейсы</a>
+                    <a href="update.html" class="tabs__items cases tabs__item">Кейсы</a>
                     <a href="AboutUs.html" class="tabs__items about tabs__item">О нас</a>
-                    <a href="tel:+73519510040" class="tabs__items telephone tabs__item">+7 (3519) 51 - 00 - 40</a>
+                    <a href="#" class="tabs__items telephone tabs__item">+7 (3519) 51 - 00 - 40</a>
                 </nav>
         </div>
     </header>
-
+    <div class="mobile-nav">
+        <nav class="mobile-nav__nav">
+            <a href="../index.html" class="tabs__items mobile-nav__item item__logo tabs__item"></a>
+            <a href="Bitrix.html" class="tabs__items mobile-nav__item bitrix tabs__item">Битрикс24</a>
+            <a href="Services.html" class="tabs__items mobile-nav__item services tabs__item">Услуги</a>
+            <a href="update.html" class="tabs__items mobile-nav__item cases tabs__item">Кейсы</a>
+            <a href="AboutUs.html" class="tabs__items mobile-nav__item about tabs__item">О нас</a>
+            <a href="#" class="tabs__items mobile-nav__item telephone tabs__item">+7 (3519) 51 - 00 - 40</a>
+        </nav>
+    </div>
+    <div class="container__mobile-nav-btn">
+        <div class="mobile-nav-btn-wrap">
+            <button class="mobile-nav-btn">
+                <div class="nav-icon"></div>
+            </button>
+        </div>
+    </div>
     <main class="main">
         <div class="AboutUs__white">
             <section class="AboutUs-promo-slider">
@@ -38,19 +56,23 @@
                             <div class="swiper-container swiper__container__AboutUs">
                                 <div class="swiper-wrapper swiper__wrapper__AboutUs">
                                     <div class="swiper-slide slide__AboutUs slide__AboutUs__Daniil" data-filterAbout="Daniil">
-                                        <img class="AboutUs-promo__slider-img" src="../AboutUs_img/AboutUs-promo-slider__Daniil.png" alt="Фотография Даниила Гулевича">
-                                        <div class="AboutUs-promo__slider-descr">
+                                        <img class="AboutUs-promo__slider-img AboutUs-promo__slider-img-Daniil" src="../AboutUs_img/AboutUs-promo-slider__Daniil.png" alt="Фотография Даниила Гулевича">
+                                        <div class="AboutUs-promo__slider-descr AboutUs-promo__slider-descr-Daniil">
                                             <h2 class="AboutUs-promo__slider-name">Даниил Гулевич</h2>
                                             <div class="AboutUs-promo__slider-proffession subtitle24">Директор</div>
-                                            <div class="AboutUs-promo__slider-quote caption16">
+                                            <div class="AboutUs-promo__slider-quote AboutUs__block768 caption16">
                                                 Минимизируйте бюрократию и обеспечьте своей команде свободу для 
+                                                творчества, и вы увидите, как они достигнут удивительных результатов.
+                                            </div>
+                                            <div class="AboutUs-promo__slider-quote AboutUs__none768 caption16">
+                                                Минимизируйте бюрократию <br>и обеспечьте своей команде свободу для 
                                                 творчества, и вы увидите, как они достигнут удивительных результатов.
                                             </div>
                                         </div>
                                     </div>
                                     <div class="swiper-slide slide__AboutUs slide__AboutUs__Kostya" data-filterAbout="Kostya">
-                                        <img class="AboutUs-promo__slider-img" src="../AboutUs_img/AboutUs-promo-slider__Kostya.png" alt="Фотография Константина Потысьева">
-                                        <div class="AboutUs-promo__slider-descr">
+                                        <img class="AboutUs-promo__slider-img AboutUs-promo__slider-img-Kostya" src="../AboutUs_img/AboutUs-promo-slider__Kostya.png" alt="Фотография Константина Потысьева">
+                                        <div class="AboutUs-promo__slider-descr AboutUs-promo__slider-descr-Kostya">
                                             <h2 class="AboutUs-promo__slider-name AboutUs-promo__slider-name-Kostya">Константин Потысьев</h2>
                                             <div class="AboutUs-promo__slider-proffession AboutUs-promo__slider-proffession-Kostya subtitle24">Менеджер</div>
                                             <div class="AboutUs-promo__slider-quote AboutUs-promo__slider-quote-Kostya caption16">
@@ -60,7 +82,7 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide slide__AboutUs slide__AboutUs__Ksysha" data-filterAbout="Ksysha">
-                                        <img class="AboutUs-promo__slider-img" src="../AboutUs_img/AboutUs-promo-slider__Ksysha.png" alt="Фотография Ксении Бойко">
+                                        <img class="AboutUs-promo__slider-img AboutUs-promo__slider-img-Ksysha" src="../AboutUs_img/AboutUs-promo-slider__Ksysha.png" alt="Фотография Ксении Бойко">
                                         <div class="AboutUs-promo__slider-descr AboutUs-promo__slider-descr-Ksysha">
                                             <h2 class="AboutUs-promo__slider-name">Ксения Бойко</h2>
                                             <div class="AboutUs-promo__slider-proffession subtitle24">РОП</div>
@@ -73,8 +95,8 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide slide__AboutUs slide__AboutUs__NastyaD" data-filterAbout="NastyaD">
-                                        <img class="AboutUs-promo__slider-img" src="../AboutUs_img/AboutUs-promo-slider__NastyaD.png" alt="Фотография Анастасии Мартынцевой">
-                                        <div class="AboutUs-promo__slider-descr">
+                                        <img class="AboutUs-promo__slider-img AboutUs-promo__slider-img-NastyaD" src="../AboutUs_img/AboutUs-promo-slider__NastyaD.png" alt="Фотография Анастасии Мартынцевой">
+                                        <div class="AboutUs-promo__slider-descr AboutUs-promo__slider-descr-NastyaD">
                                             <h2 class="AboutUs-promo__slider-name AboutUs-promo__slider-name-NastyaD">Анастасия Мартынцева</h2>
                                             <div class="AboutUs-promo__slider-proffession  AboutUs-promo__slider-proffession-NastyaD subtitle24">Дизайнер</div>
                                             <div class="AboutUs-promo__slider-quote AboutUs-promo__slider-quote-NastyaD caption16">
@@ -85,7 +107,7 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide slide__AboutUs slide__AboutUs__Egor" data-filterAbout="Egor">
-                                        <img class="AboutUs-promo__slider-img" src="../AboutUs_img/AboutUs-promo-slider__Egor.png" alt="Фотография Егора Соколова">
+                                        <img class="AboutUs-promo__slider-img AboutUs-promo__slider-img-Egor" src="../AboutUs_img/AboutUs-promo-slider__Egor.png" alt="Фотография Егора Соколова">
                                         <div class="AboutUs-promo__slider-descr AboutUs-promo__slider-descr-Egor">
                                             <h2 class="AboutUs-promo__slider-name">Егор Соколов</h2>
                                             <div class="AboutUs-promo__slider-proffession subtitle24">Frontend разработчик</div>
@@ -95,7 +117,7 @@
                                         </div>
                                     </div>
                                     <div class="swiper-slide slide__AboutUs slide__AboutUs__NastyaM" data-filterAbout="NastyaM">
-                                        <img class="AboutUs-promo__slider-img" src="../AboutUs_img/AboutUs-promo-slider__NastyaM.png" alt="Фотография Анастасии Манаевой">
+                                        <img class="AboutUs-promo__slider-img AboutUs-promo__slider-img-NastyaM" src="../AboutUs_img/AboutUs-promo-slider__NastyaM.png" alt="Фотография Анастасии Манаевой">
                                         <div class="AboutUs-promo__slider-descr AboutUs-promo__slider-descr-NastyaM">
                                             <h2 class="AboutUs-promo__slider-name">Анастасия Манаева</h2>
                                             <div class="AboutUs-promo__slider-proffession subtitle24">Frontend разработчик</div>
@@ -118,7 +140,6 @@
                         </div>
                     </div>
                 </div>
-                
             </section>
             <section class="AboutUs-history">
                 <div class="AboutUs-history__wrapper">
@@ -135,7 +156,6 @@
                             партнерские отношения с Битрикс24 помогли дойти до статуса Золотого 
                             партнера Битрикс24 и открыть компетенции по направлениям CRM, Бизнес 
                             Процессы  и Коробочная версия.
-
                         </div>
                     </div>
                     <img class="AboutUs-history__img" src="../AboutUs_img/AboutUs-history.png" alt="Общая фотография команды">
@@ -178,11 +198,18 @@
             <section class="AboutUs-weToday">
                 <div class="AboutUs-weToday__wrapper">
                     <img class="AboutUs-weToday__img" src="../AboutUs_img/AboutUs-weToday.png" alt="Фотография общая">
-                    <div class="AboutUs-weToday__descr caption16">
+                    <div class="AboutUs-weToday__descr AboutUs__block768 caption16">
                         На сегодняшний день мы представлены в четырёх городах, 
-                        располагаем штатом <br>из 15 сотрудников, проводим в год не 
-                        менее трёх специализированных мероприятий <br>для партнёров 
+                        располагаем штатом <br> из 15 сотрудников, проводим в год не 
+                        менее трёх специализированных мероприятий для партнёров 
                         и клиентов Битрикс24, что позволяет нам брать актуальный 
+                        фидбэк от пользователей и применять его в работе.
+                    </div>
+                    <div class="AboutUs-weToday__descr AboutUs__none768 caption16">
+                        На сегодняшний день мы представлены в четырёх городах, 
+                        располагаем штатом из 15 сотрудников, <br>проводим в год не 
+                        менее трёх специализированных мероприятий для партнёров 
+                        и клиентов Битрикс24, <br>что позволяет нам брать актуальный 
                         фидбэк от пользователей и применять его в работе.
                     </div>
                 </div>
@@ -224,11 +251,11 @@
             <section class="AboutUs-whyWe">
                 <div class="AboutUs-whyWe__wrapper">
                     <h2 class="AboutUs-whyWe__title">Почему выбирают нас</h2>
-                    <div class="template__table">
-                        <div class="template__table__row">
-                            <div class="template__table__row-left">
+                    <div class="template__table AboutUs-template__table">
+                        <div class="template__table__row AboutUs-template__table__row">
+                            <div class="template__table__row-left AboutUs-template__table__row-left">
                                 <div class="AboutUs-whyWe__row-left__title template__table__row-left__title">
-                                    <h2 class="template__table__row-left__title-text">1</h2>
+                                    <h2 class="template__table__row-left__title-text AboutUs-template__table__row-left__title-text">1</h2>
                                 </div>
                                 <div class="template__table__row-left__descr">
                                     <p class="template__table__row-left__descr-text subtitle24">
@@ -238,18 +265,23 @@
                             </div>
                             <div class="template__table__row-right">
                                 <div class="template__table__row-right__descr">
-                                    <p class="template__table__row-right__descr-text caption16">
+                                    <p class="template__table__row-right__descr-text AboutUs__block768 caption16">
                                         Мы обладаем глубоким знанием и опытом работы в своей отрасли. <br>Мы 
+                                        готовы применить свой опыт и знания, чтобы решить даже самые 
+                                        сложные задачи
+                                    </p>
+                                    <p class="template__table__row-right__descr-text AboutUs__none768 caption16">
+                                        Мы обладаем глубоким знанием и опытом работы в своей отрасли. Мы 
                                         готовы применить свой опыт и знания, чтобы решить даже самые 
                                         сложные задачи
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="template__table__row">
-                            <div class="template__table__row-left">
+                        <div class="template__table__row AboutUs-template__table__row">
+                            <div class="template__table__row-left AboutUs-template__table__row-left">
                                 <div class="template__table__row-left__title">
-                                    <h2 class="template__table__row-left__title-text">2</h2>
+                                    <h2 class="template__table__row-left__title-text AboutUs-template__table__row-left__title-text">2</h2>
                                 </div>
                                 <div class="template__table__row-left__descr">
                                     <p class="template__table__row-left__descr-text subtitle24">
@@ -267,10 +299,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="template__table__row">
-                            <div class="template__table__row-left">
+                        <div class="template__table__row AboutUs-template__table__row">
+                            <div class="template__table__row-left AboutUs-template__table__row-left">
                                 <div class="template__table__row-left__title">
-                                    <h2 class="template__table__row-left__title-text">3</h2>
+                                    <h2 class="template__table__row-left__title-text AboutUs-template__table__row-left__title-text">3</h2>
                                 </div>
                                 <div class="template__table__row-left__descr">
                                     <p class="template__table__row-left__descr-text subtitle24">
@@ -287,10 +319,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class=" template__table__row">
-                            <div class="template__table__row-left">
+                        <div class=" template__table__row AboutUs-template__table__row">
+                            <div class="template__table__row-left AboutUs-template__table__row-left">
                                 <div class="template__table__row-left__title">
-                                    <h2 class="template__table__row-left__title-text">4</h2>
+                                    <h2 class="template__table__row-left__title-text AboutUs-template__table__row-left__title-text">4</h2>
                                 </div>
                                 <div class="template__table__row-left__descr">
                                     <p class="template__table__row-left__descr-text subtitle24">
@@ -308,10 +340,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="template__table__row">
-                            <div class="template__table__row-left">
+                        <div class="template__table__row AboutUs-template__table__row">
+                            <div class="template__table__row-left AboutUs-template__table__row-left">
                                 <div class="template__table__row-left__title">
-                                    <h2 class="template__table__row-left__title-text">5</h2>
+                                    <h2 class="template__table__row-left__title-text AboutUs-template__table__row-left__title-text">5</h2>
                                 </div>
                                 <div class="template__table__row-left__descr">
                                     <p class="template__table__row-left__descr-text subtitle24">
@@ -321,11 +353,17 @@
                             </div>
                             <div class="template__table__row-right">
                                 <div class="template__table__row-right__descr">
-                                    <p class="template__table__row-right__descr-text caption16">
+                                    <p class="template__table__row-right__descr-text AboutUs__block768 caption16">
                                         Мы гордимся своей репутацией и стремимся к полному удовлетворению наших 
                                         клиентов. Мы ценим долгосрочные отношения и налаживаем прочные связи с 
                                         нашей клиентской базой. У нас нет скрытых платежей <br>или условий. 
                                         Мы гарантируем честность и ответственность во всех наших деловых отношениях
+                                    </p>
+                                    <p class="template__table__row-right__descr-text AboutUs__none768 caption16">
+                                        Мы гордимся своей репутацией и стремимся к полному удовлетворению наших 
+                                        клиентов. Мы ценим долгосрочные отношения <br>и налаживаем прочные связи с 
+                                        нашей клиентской базой. У нас нет скрытых платежей или условий. 
+                                        Мы гарантируем честность и ответственность <br>во всех наших деловых отношениях
                                     </p>
                                 </div>
                             </div>
@@ -335,62 +373,67 @@
             </section>
         </div>
         <div class="AboutUs__black">
-            <section class="mailer AboutUs-mailer">
+            <section class="mailer-section AboutUs-mailer-section">
                 <div class="container__mailer AboutUs-container__mailer">
-                    <div class="form__mailer">
-                        <h2 class="mailer__title">
+                    <div class="form__mailer AboutUs-form__mailer">
+                        <h2 class="mailer__title AboutUs-mailer__title">
                             Давайте сотрудничать!
                         </h2>
-                        <form name="test" action="#" class="mailer" method="post" enctype="multipart/form-data">
-                            <div class="container__break__mailer">
-                                <div class="mailer__row">
+                        <form name="test" action="#" class="mailer AboutUs-mailer" method="post" enctype="multipart/form-data">
+                            <div class="container__break__mailer AboutUs-container__break__mailer">
+                                <div class="mailer__row AboutUs-mailer__row">
                                     <input class="input input-name" type="text" data-validate-field="name" name="userName" placeholder="Ваше имя">
                                 </div>
-                                <div class="mailer__row">
+                                <div class="mailer__row AboutUs-mailer__second-row">
                                     <input class="input input-tel" type="tel" data-validate-field="tel" name="userPhone" placeholder="Номер телефона">
                                     <input class="input input-mail" type="email" data-validate-field="email" name="userEmail" placeholder="Почта" >
                                 </div>
-                                <p class="mailer__descr">Оставьте свои данные и мы свяжемся с вами в течение недели.</p>
+                                <p class="mailer__descr AboutUs-mailer__descr">Оставьте свои данные и мы свяжемся с вами в течение недели.</p>
                             </div>
-                            <button class="button" type="submit"><h3>Оставить заявку</h3></button>
+                            <button class="button AboutUs-button" type="submit"><h3>Оставить заявку</h3></button>
                         </form>
                     </div>
                 </div>
             </section>
         </div>
-    <footer class="footer">
-        <div class="container__footer">
-            <div class="footer__wrap">
-                <div class="footer__logoContacts">
-                    <img src="../icon1/logo-footer.svg" alt="Логотип">
-                    <div class="footer__contacts">
-                        <p class="footer__title">
-                            Наши контакты:
-                        </p>
-                        <ul class="footer__list__contacts">
-                            <li>+7(3519)51-00-40</li>
-                            <li>info@autor-it.ru</li>
-                            <li>г. Магнитогорск, пр-кт Ленина 92 офис 304</li>
+        <footer class="footer">
+            <div class="footer__container">
+                <ul class="footer__nav navigation">
+                    <li class="navigation__item"><a href="../index.html" class="navigation__link">Главная</a></li>
+                    <li class="navigation__item"><a href="Bitrix.html" class="navigation__link">Битрикс24</a></li>
+                    <li class="navigation__item"><a href="Services.html" class="navigation__link">Услуги</a></li>
+                    <li class="navigation__item"><a href="update.html" class="navigation__link">Кейсы</a></li>
+                    <li class="navigation__item"><a href="AboutUs.html" class="navigation__link">О нас</a></li>
+                </ul>
+                <div class="footer__contacts contacts-section">
+                    <img class="contacts-section__logo" src="../icon1/footer-logo.svg">
+                    <div class="contacts-section__content">
+                        <p class="contacts-section__title">Контакты:</p>
+                        <ul class="contacts-section__contacts contact-list">
+                            <li class="contact-list__item contact">
+                                <img class="contact__icon" src="../icon1/phone-icon.png">
+                                <p class="contact__info">+7(3519)51-00-40</p>
+                            </li>
+                            <li class="contact-list__item contact">
+                                <img class="contact__icon" src="../icon1/mail-icon.png">
+                                <p class="contact__info">info@autor-it.ru</p>
+                            </li>
+                            <li class="contact-list__item contact">
+                                <img class="contact__icon" src="../icon1/geo-icon.png">
+                                <p class="contact__info">г. Магнитогорск, пр-кт Ленина&nbsp92 офис&nbsp303</p>
+                            </li>
                         </ul>
                     </div>
-                </div>
-                    <ul class="footer__nav">
-                        <li><a href="Bitrix.html">Битрикс24</a></li>
-                        <li><a href="Services.html">Услуги</a></li>
-                        <li><a href="Cases.html">Кейсы</a></li>
-                        <li><a href="AboutUs.html">О нас</a></li>
-                    </ul>
-                <div class="footer__footnote">
-                    © 2023 Все права защищены.
+                    <p class="footer__rights">© 2023 Все права защищены.</p>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
     </main>
 
     <script src="../libs/inputmask.min.js"></script>
     <script src="../libs/just-validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> 
+    <script src="../JavaScript/mobile-nav.js"></script>
     <script src="../JavaScript/AboutUs.js"></script>
 </body>
 </html>

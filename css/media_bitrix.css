@@ -427,6 +427,21 @@
     .BitrixEnter__white-bg {
         max-width: 768px;
     }
+    .BitrixEnter__container-descr {
+        padding-inline: 70px;
+    }
+    .BitrixEnter__title-time {
+        top: 130px;
+    }
+    .benefits-section__container {
+        padding-inline: 45px;
+    }
+    .benefits-section__item {
+        padding-left: 0;
+    }
+    .canbe-list .benefits-section__item {
+        padding-left: 10px;
+    }
     .BitrixPortal__white-bg {
         width: 768px;
         margin: 0 auto;
@@ -741,6 +756,58 @@
     .BitrixEnter__white-bg {
         max-width: 360px;
     }
+    .BitrixEnter__container-descr {
+        padding-inline: 15px;
+    }
+    .benefits-section__container {
+        padding: 56px 40px;
+    }
+    .benefits-section__item {
+        font-size: 16px;
+    }
+    .Bitrix-benefits__subtitle {
+        margin-top: 32px;
+    }
+    .benefits-section__item_many-desktop {
+        display: none;
+    }
+    .benefits-section__item_many-mobile {
+        display: list-item;
+    }
+    .benefits-section__item {
+        line-height: normal;
+        vertical-align: baseline;
+    }
+    .benefits-section__list {
+        margin-top: 8px;
+    }
+    .canbe-list .benefits-section__item {
+        padding-left: 20px;
+    }
+    .price {
+        font-size: 32px;
+    }
+    .price-btn {
+        width: 100%;
+        padding-inline: 0;
+    }
+    .canbe-list {
+        margin-top: 24px;
+        margin-left: -15px;
+    }
+    .benefits-section__item {
+        margin-top: 16px;
+    }
+    .canbe-list {
+        list-style: url(../Bitrix_icons/mark-star_mobile.svg);
+    }
+    .BitrixEnter__title-time {
+        top: 70px;
+        right: 30px;
+    }
+    .benefits-section {
+        padding-inline: 20px;
+    }
     .BitrixPortal__white-bg {
         width: 360px;
         margin: 0 auto;
@@ -796,7 +863,7 @@
     }
     .Bitrix__title-time {
         display: flex;
-        justify-content: end;
+        justify-content: center;
     }
     .BitrixPortal__container-descr {
         padding: 0 45px 50px 45px;

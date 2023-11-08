@@ -429,6 +429,7 @@
     }
     .BitrixEnter__container-descr {
         padding-inline: 70px;
+        padding: 25px 117px 64px 131px;
     }
     .BitrixEnter__title-time {
         top: 130px;
@@ -804,6 +805,7 @@
     .BitrixEnter__title-time {
         top: 70px;
         right: 30px;
+        justify-content: center;
     }
     .benefits-section {
         padding-inline: 20px;
@@ -863,7 +865,7 @@
     }
     .Bitrix__title-time {
         display: flex;
-        justify-content: center;
+        justify-content: end;
     }
     .BitrixPortal__container-descr {
         padding: 0 45px 50px 45px;

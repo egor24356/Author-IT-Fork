@@ -1152,6 +1152,24 @@ main {
     .footer__container {
         margin-top: 60px;
     }
+    .footer__nav {
+        gap: 30px 20px;
+    }
+    .navigation a {
+        font-size: 18px;
+    }
+    .contacts-section {
+        margin-top: 90px;
+    }
+    .contacts-section__title {
+        font-size: 32px;
+    }
+    .contact__info {
+        font-size: 18px;
+    }
+    .contacts-section__logo {
+        max-width: 140px;
+    }
 }
 
 @media (max-width: 573px) {

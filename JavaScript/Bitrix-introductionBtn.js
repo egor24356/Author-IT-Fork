@@ -46,12 +46,12 @@ document.addEventListener('DOMContentLoaded', ()  => {
 
     const bitrixAll = document.querySelectorAll('.bitrixAll');
     const bitrixBtnAll = document.querySelectorAll('.Bitrix__btnAll');
-    console.log(bitrixBtnAll);
     //нажатие на кнопку
     bitrixBtnAll.forEach(btn => {
         btn.addEventListener('click', () => {
             const btnData = btn.getAttribute('data-introduction');
             bitrixAll.forEach(b => {
+                console.log(bitrixAll);
                 const bitrixData = b.getAttribute('data-introduction');
                 if (btnData === bitrixData) {
                     b.classList.remove('none');

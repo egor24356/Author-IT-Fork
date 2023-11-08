@@ -264,8 +264,8 @@
     .BitrixPortal__title {
         font-size: 77px;
     }
-    .BitrixCloud__container-descr-time {
-        margin-top: -24px;
+    .Bitrix__container-descr-time {
+        margin-top: 12px;
     }
     .BitrixPortal__title-time {
         right: 30px;
@@ -474,9 +474,6 @@
     }
     h1 {
         font-size: 63px;
-    }
-    .Bitrix__container-descr-time {
-        margin-top: -24px;
     }
     .Bitrix__title-descr {
         width: 420px;
@@ -816,6 +813,9 @@
     }
     .Bitrix__container-title {
         padding: 40px 30px 27px 30px;
+    }
+    .Bitrix__title {
+        margin-bottom: 0;
     }
     .BitrixPortal__container-title {
         padding: 29px 23px 27px 23px;

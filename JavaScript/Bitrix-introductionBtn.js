@@ -61,5 +61,19 @@ document.addEventListener('DOMContentLoaded', ()  => {
             });
         });
     });
+    bitrixBtnAll.forEach(btn => {
+        btn.addEventListener('touch', () => {
+            const btnData = btn.getAttribute('data-introduction');
+            bitrixAll.forEach(b => {
+                console.log(bitrixAll);
+                const bitrixData = b.getAttribute('data-introduction');
+                if (btnData === bitrixData) {
+                    b.classList.remove('none');
+                }else{
+                    b.classList.add('none');
+                }
+            });
+        });
+    });
 })
 

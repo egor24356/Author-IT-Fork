@@ -1545,6 +1545,12 @@ main {
 .rates-wrapper-none992 {
     display: none;
 }
+.table-none768 {
+    display: none;
+}
+.table-block768 {
+    display: block;
+}
 
 .Bitrix__container-descr__item {
     display: flex;

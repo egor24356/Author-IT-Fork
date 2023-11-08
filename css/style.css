@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body, html {
+    scroll-behavior: smooth;
+}
+
 body {
     /* display: flex; */
    /* min-width: 1220px; ????*/
@@ -191,7 +195,6 @@ main {
     position: relative;
     background-color: #F5F6FF;
     width: 1266.001px;
-    height: 2685.604px;
     border-radius: 40px;
     margin: 0 auto 0 auto;
 }
@@ -237,6 +240,13 @@ main {
 /* Кнопка "Давайте работать!" */
 
 .autor__go__work {
+    display: flex;
+    padding: 24px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    background: #FF7D04;
     margin-top: 40px;
     width: 391px;
     color: #F5F6FF;
@@ -1152,6 +1162,24 @@ main {
     .footer__container {
         margin-top: 60px;
     }
+    .footer__nav {
+        gap: 30px 20px;
+    }
+    .navigation a {
+        font-size: 18px;
+    }
+    .contacts-section {
+        margin-top: 90px;
+    }
+    .contacts-section__title {
+        font-size: 32px;
+    }
+    .contact__info {
+        font-size: 18px;
+    }
+    .contacts-section__logo {
+        max-width: 140px;
+    }
 }
 
 @media (max-width: 573px) {
@@ -1445,6 +1473,9 @@ main {
 /* кнопка для открытия модального окна */
 
 .Bitrix__rates-services__btn {
+    padding: 24px 80px 24px 75px;
+    border-radius: 40px;
+    background: #FF7D04;
     margin-top: -110px;
     color:#F5F6FF;
     position: absolute;
@@ -1545,6 +1576,12 @@ main {
 .rates-wrapper-none992 {
     display: none;
 }
+.table-none768 {
+    display: none;
+}
+.table-block768 {
+    display: block;
+}
 
 .Bitrix__container-descr__item {
     display: flex;
@@ -1630,7 +1667,7 @@ main {
 }
 
 .BitrixPortal__rates-services__btn {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 /* страница Битрикс24 энерпрайз */
@@ -1718,10 +1755,18 @@ main {
 .price-wrap {
     text-align: right;
     margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 
 .price-btn {
+    padding: 24px 80px 24px 75px;
+    display: block;
+    border-radius: 40px;
+    background: #FF7D04;
     margin-top: 32px;
+    font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     color: #F5F6FF;
     font-weight: 700;
@@ -1891,7 +1936,7 @@ main {
 /* section AboutUs-history */
 
 .AboutUs-history__wrapper {
-    padding: 180px 0px 117px 326px;
+    padding: 230px 0px 117px 326px;
 }
 
 /* текст секции сверху фото */
@@ -2021,7 +2066,7 @@ main {
 /* section AboutUs-whyWe */
 
 .AboutUs-whyWe__wrapper {
-    padding: 49px 115px 40px 133px;
+    padding: 140px 115px 40px 133px;
 }
 
 /* заголовок */

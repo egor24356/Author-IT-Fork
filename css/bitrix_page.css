@@ -4,13 +4,6 @@
 }
 
 
- /* Временно */
-
- .Bitrix-introduction__container-btn {
-    display: none;
- }
-
-
 .white__bg__bitrix {
     max-width: 1266px;
     position: relative;
@@ -719,7 +712,7 @@
     margin-top: 8px;
 }
 
-/* @media (max-width: 1483px) {
+@media (max-width: 1483px) {
     .green-folder__container {
         max-width: 1094px;
         padding: 64px 0;
@@ -802,7 +795,7 @@
         position: relative;
     }
 }
- */
+
 @media  (max-width: 415px){
     .needed {
         display: block;

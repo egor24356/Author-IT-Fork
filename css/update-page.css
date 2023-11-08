@@ -15,6 +15,18 @@
     max-width: 1266px;
 }
 
+.nav__items a {
+    font-family: "Open-sans", sans-serif;
+}
+
+.nav__items {
+    justify-content: space-between;
+}
+
+.tabs__items {
+    width: auto !important;
+}
+
 @media (max-width: 1275px) {
     .mobile-nav-btn {
         display: flex !important;

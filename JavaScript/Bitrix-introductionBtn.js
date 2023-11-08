@@ -59,6 +59,11 @@ document.addEventListener('DOMContentLoaded', ()  => {
                     b.classList.add('none');
                 }
             });
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            })
         });
     });
     bitrixBtnAll.forEach(btn => {
@@ -73,6 +78,11 @@ document.addEventListener('DOMContentLoaded', ()  => {
                     b.classList.add('none');
                 }
             });
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+            })
         });
     });
 })

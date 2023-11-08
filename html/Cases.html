@@ -11,8 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/mobile-nav.css">
+    <link rel="stylesheet" href="../css/cases_page.css">
+    <link rel="stylesheet" href="../css/media_cases.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
+    <script src="../JavaScript/mobile-nav.js" defer></script>
+    <script src="../JavaScript/btn-up.js" defer></script>
 </head>
 <body>
     
@@ -28,6 +33,24 @@
                 </nav>
         </div>
     </header>
+
+    <div class="mobile-nav">
+        <nav class="mobile-nav__nav">
+            <a href="../index.html" class="tabs__items mobile-nav__item item__logo tabs__item"></a>
+            <a href="Bitrix.html" class="tabs__items mobile-nav__item bitrix tabs__item">Битрикс24</a>
+            <a href="Services.html" class="tabs__items mobile-nav__item services tabs__item">Услуги</a>
+            <a href="update.html" class="tabs__items mobile-nav__item cases tabs__item">Кейсы</a>
+            <a href="AboutUs.html" class="tabs__items mobile-nav__item about tabs__item">О нас</a>
+            <a href="#" class="tabs__items mobile-nav__item telephone tabs__item">+7 (3519) 51 - 00 - 40</a>
+        </nav>
+    </div>
+    <div class="container__mobile-nav-btn">
+        <div class="mobile-nav-btn-wrap">
+            <button class="mobile-nav-btn">
+                <div class="nav-icon"></div>
+            </button>
+        </div>
+    </div>
 
     <main class="Cases__png-bg">
         <section class="Cases">
@@ -140,14 +163,18 @@
         <section class="Cases-afterClick">
             <div class="Cases__wrapper-main">
                 <div class="Cases__wrapper-descr none" data-filterDescr="BigWall1">
+                    <h2 class="Cases__descr-title cases-title-mobile">BigWall1</h2>
+                    <div class="Cases__descr-subtitle subtitle24 cases-title-mobile">
+                        Интернет-магазин
+                    </div>
                     <div class="Cases__container-descr">
                         <div class="Cases__container-descr__way caption10">
                             Проекты / Интернет-магазины / Интернет-магазин BigWall1
                         </div>
-                        <h2 class="Cases__descr-title">BigWall1</h2>
-                        <div class="Cases__descr-subtitle subtitle24">
-                            Интернет-магазин
-                        </div>
+                            <h2 class="Cases__descr-title cases-title-desktop">BigWall1</h2>
+                            <div class="Cases__descr-subtitle subtitle24 cases-title-desktop">
+                                Интернет-магазин
+                            </div>
                         <div class="Cases__descr-about-projects">
                             <div class="Cases__descr-item caption16">
                                 BigWall – интернет-магазин снаряжения <br>и одежды для 
@@ -177,14 +204,19 @@
                         </a>
                     </div>
                     <img class="Cases__container-img" src="../Cases_img/Cases-descr-BigWall.png" alt="Изображение BigWall">
+                    <p class="Cases-date-mobile">20.03.2017</p>
                 </div> 
                 <div class="Cases__wrapper-descr none" data-filterDescr="BigWall2">
+                    <h2 class="Cases__descr-title cases-title-mobile">BigWall2</h2>
+                    <div class="Cases__descr-subtitle subtitle24 cases-title-mobile">
+                        Интернет-магазин
+                    </div>
                     <div class="Cases__container-descr">
                         <div class="Cases__container-descr__way caption10">
                             Проекты / Интернет-магазины / Интернет-магазин BigWall2
                         </div>
-                        <h2 class="Cases__descr-title">BigWall2</h2>
-                        <div class="Cases__descr-subtitle subtitle24">
+                        <h2 class="Cases__descr-title cases-title-desktop">BigWall2</h2>
+                        <div class="Cases__descr-subtitle subtitle24 cases-title-desktop">
                             Интернет-магазин
                         </div>
                         <div class="Cases__descr-about-projects">
@@ -216,14 +248,19 @@
                         </a>
                     </div>
                     <img class="Cases__container-img" src="../Cases_img/Cases-descr-BigWall.png" alt="Изображение BigWall">
+                    <p class="Cases-date-mobile">20.03.2017</p>
                 </div> 
                 <div class="Cases__wrapper-descr none" data-filterDescr="Integration">
+                    <h2 class="Cases__descr-title cases-title-mobile">Integration</h2>
+                    <div class="Cases__descr-subtitle subtitle24 cases-title-mobile">
+                        Интеграция Битрикс24
+                    </div>
                     <div class="Cases__container-descr">
                         <div class="Cases__container-descr__way caption10">
                             Проекты / Интеграция Битрикс24 / Интеграция Битрикс24 в Integration
                         </div>
-                        <h2 class="Cases__descr-title">Integration</h2>
-                        <div class="Cases__descr-subtitle subtitle24">
+                        <h2 class="Cases__descr-title cases-title-desktop">Integration</h2>
+                        <div class="Cases__descr-subtitle subtitle24 cases-title-desktop">
                             Интеграция Битрикс24
                         </div>
                         <div class="Cases__descr-about-projects">
@@ -255,14 +292,19 @@
                         </a>
                     </div>
                     <img class="Cases__container-img" src="../Cases_img/Cases-descr-BigWall.png" alt="Изображение BigWall">
+                    <p class="Cases-date-mobile">20.03.2017</p>
                 </div> 
                 <div class="Cases__wrapper-descr none" data-filterDescr="Site">
+                    <h2 class="Cases__descr-title cases-title-mobile">Site</h2>
+                    <div class="Cases__descr-subtitle subtitle24 cases-title-mobile">
+                        Корпоративный сайт
+                    </div>
                     <div class="Cases__container-descr">
                         <div class="Cases__container-descr__way caption10">
                             Проекты / Корпоративные сайты / Корпоративный сайт Site
                         </div>
-                        <h2 class="Cases__descr-title">Site</h2>
-                        <div class="Cases__descr-subtitle subtitle24">
+                        <h2 class="Cases__descr-title cases-title-desktop">Site</h2>
+                        <div class="Cases__descr-subtitle subtitle24 cases-title-desktop">
                             Корпоративный сайт
                         </div>
                         <div class="Cases__descr-about-projects">
@@ -294,14 +336,19 @@
                         </a>
                     </div>
                     <img class="Cases__container-img" src="../Cases_img/Cases-descr-BigWall.png" alt="Изображение BigWall">
+                    <p class="Cases-date-mobile">20.03.2017</p>
                 </div> 
                 <div class="Cases__wrapper-descr none" data-filterDescr="Mobile">
+                    <h2 class="Cases__descr-title cases-title-mobile">Mobile</h2>
+                    <div class="Cases__descr-subtitle subtitle24 cases-title-mobile">
+                        Мобильное приложение
+                    </div>
                     <div class="Cases__container-descr">
                         <div class="Cases__container-descr__way caption10">
                             Проекты / Мобильные приложения / Мобильное приложение Mobile
                         </div>
-                        <h2 class="Cases__descr-title">Mobile</h2>
-                        <div class="Cases__descr-subtitle subtitle24">
+                        <h2 class="Cases__descr-title cases-title-desktop">Mobile</h2>
+                        <div class="Cases__descr-subtitle subtitle24 cases-title-desktop">
                             Мобильное приложение
                         </div>
                         <div class="Cases__descr-about-projects">
@@ -333,14 +380,19 @@
                         </a>
                     </div>
                     <img class="Cases__container-img" src="../Cases_img/Cases-descr-BigWall.png" alt="Изображение BigWall">
+                    <p class="Cases-date-mobile">20.03.2017</p>
                 </div> 
                 <div class="Cases__wrapper-descr none" data-filterDescr="BigWall3">
+                    <h2 class="Cases__descr-title cases-title-mobile">BigWall3</h2>
+                    <div class="Cases__descr-subtitle subtitle24 cases-title-mobile">
+                        Интернет-магазин
+                    </div>
                     <div class="Cases__container-descr">
                         <div class="Cases__container-descr__way caption10">
                             Проекты / Интернет-магазины / Интернет-магазин BigWall3
                         </div>
-                        <h2 class="Cases__descr-title">BigWall3</h2>
-                        <div class="Cases__descr-subtitle subtitle24">
+                        <h2 class="Cases__descr-title cases-title-desktop">BigWall3</h2>
+                        <div class="Cases__descr-subtitle subtitle24 cases-title-desktop">
                             Интернет-магазин
                         </div>
                         <div class="Cases__descr-about-projects">
@@ -372,8 +424,10 @@
                         </a>
                     </div>
                     <img class="Cases__container-img" src="../Cases_img/Cases-descr-BigWall.png" alt="Изображение BigWall">
+                    <p class="Cases-date-mobile">20.03.2017</p>
                 </div> 
             </div>
+            <img class="arrow-up-btn" src="../Cases_icons/arrow-up-btn.svg" alt="arrow-up">
         </section>
     </main>
 

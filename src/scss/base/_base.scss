@@ -1,0 +1,122 @@
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body, html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #232323;
+}
+
+h1 {
+    font-family: "Unbounded-Black";
+    font-size: 96px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Unbounded-Black";
+    font-size: 64px;
+    font-weight: 900;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--caption16-color);
+}
+
+.subtitle24 {
+    color: #000;
+    font-family: "Unbounded-Regular";
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.caption16 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.caption10 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.body14 {
+    font-family: 'Open Sans', sans-serif;
+    color: #232323;
+    font-size: 14px;
+    line-height: 142.2%;
+}
+
+:root {
+    --caption16-font-family: 'Open Sans', sans-serif;
+    --caption16-font-size: 14px;
+    --caption16-font-weight: 400;
+    --caption16-color: #232323;
+    --subtitle24-color: #F5F6FF;
+    --subtitle24-font-family: "Unbounded-Regular";
+    --subtitle24-font-size: 24px;
+}
+
+button {
+    font-family: var(--caption16-font-family);
+    background-color: #FF7D04;
+    border-radius: 40px;
+    border: none;
+    padding: 24px 80px 24px 75px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FF9330;
+}
+
+button:active {
+    background-color: #EC7202;
+}
+
+button:focus {
+    outline: none;
+}
+
+main {
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+}
+
+/* шрифты */
+
+@font-face {
+    font-family: "Unbounded-Regular"; 
+    src: url("../fonts/Unbounded-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Unbounded-Black"; 
+    src: url("../fonts/Unbounded-Black.ttf") format("truetype");
+}

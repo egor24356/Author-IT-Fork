@@ -1,0 +1,90 @@
+.autor__content .mobile-title {
+    display: none;
+}
+
+.container__autor__IT {
+    display: flex;
+    height: 928px;
+    padding: 167px 0 159px 0;
+}
+
+/* Общая фотка в section autor__IT*/
+
+.container__autor__IT img {
+    height: 807px;
+    border-radius: 50px 0 0 50px;
+    transform: translateY(-100px);
+}
+
+/* Контент autor__content */
+
+.autor__content {
+    width: 488px;
+    height: 602px;
+    margin-right: 70px;
+    margin-left: 133px;
+}
+
+.autor__descr1 {
+    margin-top: 19px;
+    margin-right: 124px;
+}
+
+.autor__descr2 {
+    margin-top: 40px;
+}
+
+/* Кнопка "Давайте работать!" */
+
+.autor__go__work {
+    margin-top: 40px;
+    width: 391px;
+    color: #F5F6FF;
+    transition: all .3s ease;
+}
+
+/* Ссылки на АвторIT */
+
+.autor__wrap__links {
+    width: 391px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.autor__links {
+    background-color: #F5F6FF;
+    border: 1px solid #232323;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+/* Текст внутри ссылок на АвторIT*/
+
+.vk {
+    min-width: 70px;
+}
+
+.tg {
+    min-width: 114px;
+}
+
+.yt {
+    min-width: 110px;
+}
+
+/* Эффекты у ссылок на АвторIT */
+
+.autor__links:hover {
+    border: 1px solid #FF7D04;
+    color:#FF7D04;
+}
+
+.autor__links:active {
+    border: 1px solid #EC7202;
+    color: #EC7202;
+}

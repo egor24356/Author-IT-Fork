@@ -110,6 +110,19 @@ main {
     position: relative;
 }
 
+.white__bg {
+    position: relative;
+    background-color: #F5F6FF;
+    width: 1266.001px;
+    border-radius: 40px;
+    margin: 0 auto 0 auto;
+}
+
+.black__bg {
+    max-width: 1270px;
+    margin: 0 auto;
+}
+
 /* шрифты */
 
 @font-face {

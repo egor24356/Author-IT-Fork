@@ -1,0 +1,97 @@
+
+.container__comments {
+    background: url(../img/img1/slider__trust.png);
+    width: 1483px;
+    height: 942px;
+    transform: translateX(-7%);
+    position: relative;
+    margin-bottom: 145px;
+    padding: 120px 0 123px 0;
+}
+
+.container__comments h2 {
+    position: absolute;
+    color: #F5F6FF;
+    margin-left: 242px;
+}
+
+/* swiper section comments */
+
+.swiper__container__comments__items {
+    max-width: 780px;
+    height: 520px;
+    padding-bottom: 75px;
+    transform: translateX(30%);
+    margin-top: 100px;
+    overflow: visible !important;
+    min-width: 0;
+}
+
+/* карточки с отзывами */
+
+.comments__items {
+    display: flex;
+    flex-direction: column;
+    width: 780px !important;
+    height: 480px !important;
+    background-color: #F5F6FF;
+    border-radius: 24px;
+    margin-top: 25px;
+    margin-left: 50px;
+    padding: 40px 32px 32px 48px;
+}
+
+.comment__1, .comment__3 {
+    transform: rotate(2deg) !important;
+}
+
+.comment__2 {
+    transform: rotate(-2deg) !important;
+}
+
+/* стрелки свайпера */
+
+.trust__arrow__right {
+    transform: translate(-2500%, 800%);
+    outline:none;
+}
+
+.trust__arrow__left {
+    transform: translate(2500%, 800%);
+    outline:none;
+
+}
+
+/* контент отзывов */
+
+.container__comments__items__title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.comments__items__title {
+    margin-left: 32px;
+}
+
+.comments__items__name {
+    font-family: "Unbounded-Black";
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.comments__items__descr {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #707077;
+}
+
+.comment {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 142.2%;
+    height: 195px;
+}

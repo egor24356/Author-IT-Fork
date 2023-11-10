@@ -189,16 +189,6 @@ main {
     background-color:#F5F6FF
 }
 
-/* section white__bg */
-
-.white__bg {
-    position: relative;
-    background-color: #F5F6FF;
-    width: 1266.001px;
-    border-radius: 40px;
-    margin: 0 auto 0 auto;
-}
-
 /* section autor__IT */
 
 .autor__content .mobile-title {
@@ -206,9 +196,14 @@ main {
 }
 
 .container__autor__IT {
+    background-color: #F5F6FF;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
     display: flex;
     height: 928px;
+    width: 1266px;
     padding: 167px 0 159px 0;
+    margin: 0 auto;
 }
 
 /* Общая фотка в section autor__IT*/
@@ -301,17 +296,26 @@ main {
 
 /* section crm */
 
+.crm-white {
+    background-color: #F5F6FF;
+    width: 1266px;
+    margin: 0 auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding-bottom: 40px;
+}
+
+/* зеленый фон */
+
 .crm__content {
     background: url(../icon1/crm_bg.svg) center no-repeat;
-    transform: translateX(-7%);
+    transform: translateX(-7.5%);
     min-width: 1483px;
     height: 948px;
     padding: 159px 136px 108px 143px;
 }
 
 /* crm__promo */
-
-/* зеленый фон */
 
 .crm__content__promo {
     display: flex;
@@ -491,14 +495,6 @@ main {
     opacity:0;
 }
 
-
-/* section black-background */
-
-.black__bg {
-    max-width: 1270px;
-    margin: 0 auto;
-}
-
 /* section running_line */
 
 .ticker {
@@ -550,10 +546,10 @@ main {
     display: flex;
     background-color: #F5F6FF;
     height: 665px;
+    width: 1266px;
     border-radius: 48px;
-    margin-bottom: 127px;
     cursor: none;
-    margin-top: 40px;
+    margin: 40px auto 127px auto;
 }
 
 /* cursor */
@@ -600,7 +596,6 @@ main {
     transform: translate(44px, -821px);
 }
 
-
 /* фотография в team__container */
 
 .team__img {
@@ -611,7 +606,6 @@ main {
 }
 
 /* swiper в section team */
-
 
 .swiper__team {
     position: relative;
@@ -632,7 +626,6 @@ main {
     height: 612px !important;
     /* margin-right: 0px !important; */
     cursor: url(../icon1/team__cursor.svg), pointer;
-
 }
 
 .team__name {
@@ -863,12 +856,11 @@ main {
 /* section comments */
 
 .container__comments {
-    background: url(../img1/slider__trust.png);
+    background: url(../img1/slider__trust.png) center center/cover no-repeat;
     width: 1483px;
     height: 942px;
-    transform: translateX(-7%);
     position: relative;
-    margin-bottom: 145px;
+    margin: 0 auto 145px;
     padding: 120px 0 123px 0;
 }
 
@@ -964,8 +956,8 @@ main {
 .container__mailer {
     max-width: 2160px;
     background: url(../img1/mailer__bg.png) center center/cover no-repeat;
-    transform: translateX(-22%);
     padding: 709px 419px 119px 482px;
+    margin: 0 auto;
 }
 
 .form__mailer {
@@ -977,6 +969,13 @@ main {
 }
 
 .mailer-section {
+    position: relative;
+    margin-top: 56px;
+    display: flex;
+    justify-content: center;
+}
+
+.mailer {
     position: relative;
     margin-top: 56px;
     display: flex;
@@ -1027,13 +1026,6 @@ main {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     margin-top: 20px;
-}
-
-.mailer {
-    position: relative;
-    margin-top: 56px;
-    display: flex;
-    justify-content: space-between;
 }
 
 .mailer button {

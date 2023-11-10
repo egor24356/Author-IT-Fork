@@ -42,7 +42,7 @@
 }
 
 .tabs__items {
-    width: 300px !important;
+    width: 215px;
     height: 66px;
     color: #F5F6FF;
     display: block;
@@ -62,14 +62,10 @@
 
 .telephone {
     padding: 19px 7px 19px 0px;
+    height: 124px;
 }
 
-.telephone:hover{
-    height: 96.5px;
-    width: 100px;
-}
-
- .tabs__item {
+.tabs__item {
     transition: all .2s ease;
 }
 

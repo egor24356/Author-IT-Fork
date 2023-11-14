@@ -1141,9 +1141,6 @@ main {
 }
 
 .contact__info {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    color: var(--caption16-color);
     font-size: 20px;
     color: #F5F6FF;
 }
@@ -1439,7 +1436,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 410px;
+    height: 428px;
     padding: 0 16px 17px;
 }
 
@@ -1617,7 +1614,7 @@ main {
 /* секция Bitrix__rates */
 
 .BitrixPortal__container-rates-services {
-    height: 969px;
+    height: auto;
 }
 
 .BitrixPortal__container-rates__types {
@@ -2129,8 +2126,8 @@ main {
 
 .template__table__row-left {
     display: flex;
-    gap: 30px;
-    flex-basis: 40%;
+    gap: 20px;
+    flex-basis: 60%;
 }
 
 .template__table__row-left__title {

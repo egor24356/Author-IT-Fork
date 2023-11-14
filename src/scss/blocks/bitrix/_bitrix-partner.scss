@@ -1,0 +1,59 @@
+
+.partner__wrapper {
+    background-color: #F5F6FF;
+    display: block;
+    width: 1266px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.partner__container {
+    display: flex;
+    padding-top: 88px;
+}
+
+.partner__container__left {
+    display: flex;
+    flex-basis: 60%;
+    padding-left: 136px;
+}
+
+.partner__wrapper__left {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+/* .partner__left__img {
+    display: flex;
+    margin-right: 200px;
+    background: url(/Bitrix_img/gold_partner_img.png);
+    background-repeat: no-repeat;
+    height: 834px;
+} */
+
+.partner__left__descr__text {
+    max-width: 397px;
+}
+
+.partner__container__right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+}
+
+.partner__right__container__descr {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.partner__wrapper__right {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.partner__right__title__text {
+    color:#FF7D04;
+}

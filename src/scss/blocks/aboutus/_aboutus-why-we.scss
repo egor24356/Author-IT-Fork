@@ -1,0 +1,91 @@
+.AboutUs-whyWe__wrapper {
+    padding: 49px 115px 40px 133px;
+}
+
+/* заголовок */
+
+.AboutUs-whyWe__title {
+    color: #232323;
+}
+
+/* контейнер строк */
+
+.template__table {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    position: relative;
+    justify-content: center;
+}
+
+/* контейнер строки */
+
+.template__table__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    position: relative;
+}
+
+.template__table__row:not(:last-child) {
+    border-bottom: 1px solid #707077;
+}
+
+/* левая часть строки */
+
+.template__table__row-left {
+    display: flex;
+    gap: 30px;
+    flex-basis: 40%;
+}
+
+.template__table__row-left__title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.template__table__row-left__title-text {
+    width: 58px;
+    color: #FF7D04;
+}
+
+.template__table__row-left__descr {
+    display: flex;
+    position: relative;
+}
+
+.template__table__row-left__descr-text {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #232323;
+}
+
+/* правая часть строки */
+
+.template__table__row-right {
+    display: flex;
+    align-items: center;
+}
+
+.template__table__row-right__descr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.template__table__row-right__descr-text {
+    width: 603px;
+    color: #232323;
+}
+
+/* для адаптива */
+
+.AboutUs__none768 {
+    display: none;
+}
+
+.AboutUs__block768 {
+    display: block;
+}

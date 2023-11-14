@@ -79,6 +79,7 @@
 .contact {
     display: flex;
     gap: 16px;
+    align-items: center;
 }
 
 .contact__icon {
@@ -87,6 +88,8 @@
 }
 
 .contact__info {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--caption16-color);
     font-size: 20px;
     color: #F5F6FF;
 }
@@ -97,4 +100,43 @@
     bottom: -30px;
     color: #D1D2D9;
     font-size: 14px;
+}
+
+@media (max-width: 1080px) {
+    .footer__container {
+        padding: 107px 40px 134px 40px;
+    }
+    .footer__rights {
+        bottom: -50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer__container {
+        margin-top: 60px;
+    }
+    .footer__nav {
+        gap: 30px 20px;
+    }
+    .navigation a {
+        font-size: 18px;
+    }
+    .contacts-section {
+        margin-top: 90px;
+    }
+    .contacts-section__title {
+        font-size: 32px;
+    }
+    .contact__info {
+        font-size: 18px;
+    }
+    .contacts-section__logo {
+        max-width: 140px;
+    }
+}
+
+@media (max-width: 573px) {
+    .contacts-section {
+        flex-direction: column;
+    }
 }

@@ -1,0 +1,83 @@
+.container__mailer {
+    max-width: 2160px;
+    background: url(../img/img1/mailer__bg.png) center center/cover no-repeat;
+    transform: translateX(-22%);
+    padding: 709px 419px 119px 482px;
+}
+
+.form__mailer {
+    /* height: 435px; */
+    background-color: #F5F6FF;
+    border-radius: 52px;
+    padding: 72px 120px;
+    width: 1262px;
+}
+
+.mailer-section {
+    position: relative;
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__break__mailer {
+    display: flex;
+    flex-direction: column;
+}
+
+.mailer__row {
+    margin-bottom: 20px;
+}
+
+.mailer input {
+    padding: 0 0 16px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #232323;
+    background-color: #F5F6FF;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #232323;
+}
+
+.mailer input::hover {
+
+}
+
+.mailer input::active {
+}
+
+.mailer input[type=text] {
+    width: 591px;
+}
+
+.mailer input[type=tel], input[type=email] {
+    width: 285px;
+}
+
+.mailer input[type=tel] {
+    margin-right: 20px;
+}
+
+.mailer__descr {
+    color: #232323;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.mailer {
+    position: relative;
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mailer button {
+    position: absolute;
+    width: 367px;
+    height: 81px;
+    color:#F5F6FF;
+    bottom: 0;
+    right: 0;
+}

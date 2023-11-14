@@ -1,0 +1,66 @@
+.bitrix__container {
+    background-color: #F5F6FF;
+    display: block;
+    width: 1266px;
+    height: 717px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.bitrix__wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.bitrix__container__left {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    padding-left: 136px;
+    gap: 26px;
+}
+
+.bitrix__container__right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    flex-shrink: 0;
+    height: 627px;
+    background: url(../img/img1/comma_bg.svg);
+    background-repeat: no-repeat;
+}
+
+.marker {
+    padding-bottom: 109px;
+}
+
+.bitrix__left__descr__text {
+    line-height: normal;
+    max-width: 417px;
+}
+
+.bitrix__left__title {
+    max-width: 522px;
+    padding-bottom: 14px;
+}
+
+.bitrix__wrapper__right {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding-top: 314px;
+    padding-left: 64px;
+}
+
+.bitrix__right__descr__title {
+    color: #F5F6FF;
+}
+
+.bitrix__right__descr__text {
+    color: #F5F6FF;
+}
+
+.bitrix__right__descr {
+    display: inline-flex;
+    flex-direction: column;
+}

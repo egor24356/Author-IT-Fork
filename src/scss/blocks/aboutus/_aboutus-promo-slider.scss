@@ -1,0 +1,128 @@
+
+.AboutUs-promo__title {
+    color: #FF7D04;
+    font-family: "Unbounded-Black";
+    font-size: 200px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.AboutUs_img {
+    margin-top: 40px;
+    width: 1186px;
+}
+
+/* секция со свайпером AboutUs */
+
+.AboutUs-promo__container {
+    width: 1191px;
+    margin-top: 100px;
+}
+
+/* swiper AboutUs */
+
+.swiper__container__AboutUs {
+    width: 1188px;
+    border: 3px #232323 solid;
+    border-bottom: none;
+    overflow: hidden;
+}
+
+.slide__AboutUs {
+    height: 554px !important;
+    display: flex !important;
+}
+
+/* выравнивание больших фотографий */
+
+.AboutUs-promo__slider-img {
+    margin-top: 20px;
+    margin-right: 29px;
+}
+
+.slide__AboutUs__Daniil img {
+    margin-left: 30px;
+}
+
+.slide__AboutUs__Kostya img {
+    margin-left: 25px;
+}
+
+.slide__AboutUs__Ksysha img {
+    margin-left: 80px;
+}
+
+.slide__AboutUs__NastyaD img {
+    margin-left: 43px;
+}
+
+.slide__AboutUs__Egor img {
+    margin-left: 46px;
+}
+
+.slide__AboutUs__NastyaM img {
+    margin-left: 56px;
+}
+
+/*  выравнивание описаний к фотографиям */
+
+.AboutUs-promo__slider-descr {
+    margin-top: 127px;
+}
+
+/* выравнивание ФИ сотрудников */
+
+.AboutUs-promo__slider-name-NastyaD {
+    transform: translate(-123px, -63px);
+}
+
+/* выравнивание профессий сотрудников */
+
+.AboutUs-promo__slider-proffession {
+    margin-top: 16px;
+}
+
+.AboutUs-promo__slider-proffession-NastyaD {
+    transform: translate(-123px, -57px);
+}
+
+/* выравнивание цитат сотрудников */
+
+.AboutUs-promo__slider-quote {
+    margin-top: 32px;
+    color: #000;
+    width: 372px;
+}
+
+.AboutUs-promo__slider-quote-Kostya {
+    width: 430px; 
+}
+
+.AboutUs-promo__slider-quote-NastyaD {
+    transform: translate(-14px, -53px);
+}
+
+/* нижние иконки слайдера */
+
+.AboutUs-promo__slider-icons {
+    display: flex;
+    margin: 0;
+}
+
+.AboutUs-icons {
+    width: 198px;
+    height: 198px;
+    cursor: pointer;
+}
+
+/* стрелки слайдера */
+
+.AboutUs-promo-arrow-prev {
+    transform: translate(45px, -1768px);
+    outline:none;
+}
+
+.AboutUs-promo-arrow-next {
+    transform: translate(-45px, -1768px);
+    outline:none;
+}

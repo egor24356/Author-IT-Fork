@@ -1,0 +1,52 @@
+.AboutUs-weFuture__wrapper {
+    padding: 120px 35px 0 106px;
+}
+
+/* для смещения фото */
+
+.AboutUs-weFuture__container {
+    width: 1593px;
+    display: flex;
+    transform: translateX(-432px);
+    margin-top: 52px;
+}
+
+/* фото */
+
+.AboutUs-weFuture__img {
+    transform: scale(1);
+    margin-right: 57px;
+}
+
+/* контейнер для описания справа от фото */
+
+.AboutUs-weFuture__descr-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 100px 0 52px;
+}
+
+/* контейнер для иконки и строки */
+
+.AboutUs-weFuture__descr-row {
+    display: flex;
+    color: #000;
+    font-family: "Unbounded-Regular"; 
+    font-size: 24px;
+    font-weight: 400;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.AboutUs-weFuture__descr-row-noneMT {
+    margin-top: 0px;
+}
+
+/* иконки слева от описания */
+
+.AboutUs-weFuture__descr-icon {
+    width: 35px;
+    height: 32px;
+    margin-right: 24px;
+}

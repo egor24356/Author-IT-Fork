@@ -79,6 +79,7 @@
 .contact {
     display: flex;
     gap: 16px;
+    align-items: center;
 }
 
 .contact__icon {
@@ -87,6 +88,8 @@
 }
 
 .contact__info {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--caption16-color);
     font-size: 20px;
     color: #F5F6FF;
 }

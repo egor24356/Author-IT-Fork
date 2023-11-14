@@ -1,0 +1,58 @@
+.confusion__container {
+    background-color: #F5F6FF;
+    display: block;
+    width: 1266px;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 48px;
+
+}
+
+.confusion__title {
+    display: flex;
+    justify-content: center;
+    margin-right: auto; 
+    margin-left: auto;
+    padding-top: 48px;
+}
+
+.confusion__title__text {
+    display: flex;
+    justify-content: center;
+    margin-right: auto; 
+    margin-left: auto;
+}
+
+.confusion__wrapper {
+    display: flex;
+}
+
+.confusion__container__left {
+    display: flex;
+    flex-basis: 50%;
+    background: url(../img/img1/rop.png);
+    background-repeat: no-repeat;
+    width: 405.307px;
+    height: 670px;
+    margin-left: 84px;
+}
+
+.confusion__descr__container {
+    display: flex;
+    max-width: 486px;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.confusion__descr__text {
+    line-height: normal;
+}
+
+.confusion__container__right {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    flex-basis: 50%;
+    padding-top: 72px;
+    padding-right: 136px;
+}

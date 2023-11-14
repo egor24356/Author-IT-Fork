@@ -575,10 +575,11 @@
     .container__comments {
         margin-bottom: 0;
     }
-    .cursor-mobile {
-        display: block;
-    }
-    .cursor-mobile {
+    // .cursor-mobile {
+    //     display: block;
+    //     z-index: 1;
+    // }
+    /* .cursor-mobile {
         display: block;
         width: 156px;
         height: 156px;
@@ -604,7 +605,7 @@
         text-transform: uppercase;
         color: #F5F6FF;
         font-size: 16px;
-    }
+    } */
     .team__links {
         z-index: 3;
     }

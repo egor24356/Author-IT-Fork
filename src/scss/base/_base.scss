@@ -123,6 +123,37 @@ main {
     margin: 0 auto;
 }
 
+.AboutUs__white {
+    background: url(../img/img1/AboutUs-bg.png) center center/cover no-repeat;
+    width: 1266px;
+    height: 5996.884px;
+    position: relative;
+    margin: 0 auto 108px auto;
+}
+
+.AboutUs__black {
+    width: 1266px;
+    position: relative;
+    margin: 0 auto 0 auto;
+}
+
+.main-services {
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+.AboutUs-promo-wrapper {
+    padding: 60px 39px 0 40px;
+}
+
+.Cases__png-bg {
+    background: url(../img/img1/Cases-bg.png) center bottom no-repeat;
+    width: 1920px;
+    height: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+
 /* шрифты */
 
 @font-face {

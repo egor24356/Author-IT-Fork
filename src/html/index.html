@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Автор IT</title>
+		<link rel="shortcut icon" href="img/icon1/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./css/main.css" />
+		<script src="js/cursor.js" defer></script>
+		<script src="js/swiper-comments.js" defer></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script> 
+
+	</head>
+	<body>
+		@@include('blocks/header.html')
+		<main class="main">
+			<div class="white__bg">
+				@@include('blocks/index/index-author__IT.html')
+				@@include('blocks/index/index-crm__content.html')
+				<!-- @@include('blocks/index-we.html') -->
+			</div>
+			@@include('blocks/index/index-running__line.html')
+			<div class="black__bg">
+				@@include('blocks/index/index-team.html')
+				@@include('blocks/index/index-we__proud.html')
+				@@include('blocks/index/index-comments.html')
+				@@include('blocks/index/index-mailer.html')
+			</div>
+			@@include('blocks/footer.html')
+		</main>
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>

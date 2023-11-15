@@ -1,0 +1,203 @@
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body, html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #232323;
+}
+
+h1 {
+    font-family: "Unbounded-Black";
+    font-size: 96px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "Unbounded-Black";
+    font-size: 64px;
+    font-weight: 900;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--caption16-color);
+}
+
+.subtitle24 {
+    color: #000;
+    font-family: "Unbounded-Regular";
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.caption16 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.caption10 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.body14 {
+    font-family: 'Open Sans', sans-serif;
+    color: #232323;
+    font-size: 14px;
+    line-height: 142.2%;
+}
+
+:root {
+    --caption16-font-family: 'Open Sans', sans-serif;
+    --caption16-font-size: 14px;
+    --caption16-font-weight: 400;
+    --caption16-color: #232323;
+    --subtitle24-color: #F5F6FF;
+    --subtitle24-font-family: "Unbounded-Regular";
+    --subtitle24-font-size: 24px;
+}
+
+button {
+    font-family: var(--caption16-font-family);
+    background-color: #FF7D04;
+    border-radius: 40px;
+    border: none;
+    padding: 24px 80px 24px 75px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FF9330;
+}
+
+button:active {
+    background-color: #EC7202;
+}
+
+button:focus {
+    outline: none;
+}
+
+main {
+    overflow: hidden;
+    max-width: 100%;
+    position: relative;
+}
+
+.white__bg {
+    position: relative;
+    background-color: #F5F6FF;
+    width: 1266.001px;
+    border-radius: 40px;
+    margin: 0 auto 0 auto;
+}
+
+.black__bg {
+    max-width: 1270px;
+    margin: 0 auto;
+}
+
+.AboutUs__white {
+    background: url(../img/img1/AboutUs-bg.png) center center/cover no-repeat;
+    width: 1266px;
+    height: 5996.884px;
+    position: relative;
+    margin: 0 auto 108px auto;
+}
+
+.AboutUs__black {
+    width: 1266px;
+    position: relative;
+    margin: 0 auto 0 auto;
+}
+
+.AboutUs-promo-wrapper {
+    padding: 60px 39px 0 40px;
+}
+
+.Cases__png-bg {
+    background: url(../img/img1/Cases-bg.png) center bottom no-repeat;
+    width: 1920px;
+    height: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.BitrixCloud__white-bg {
+    position: relative;
+    width: 1266px;
+    background: #F5F6FF;
+    border-radius: 40px;
+    margin: 0 auto 58px auto;
+}
+
+/* для адаптива */
+
+.rates-block992 {
+    display: flex;
+}
+
+.rates-none992 {
+    display: none !important;
+}
+
+.bitrix-title-block360 {
+    display: block;
+}
+
+.bitrix-title-none360 {
+    display: none;
+}
+
+.BitrixPortal__white-bg {
+    position: relative;
+    width: 1266px;
+    background: #F5F6FF;
+    border-radius: 40px;
+    margin: 0 auto 58px auto;
+    /*display: none;*/
+}
+
+.Bitrix__black-dg {
+    width: 100vw;
+    /* height: 1263px; */
+    position: relative;
+    margin: 0 auto 0 auto;
+}
+
+/* шрифты */
+
+@font-face {
+    font-family: "Unbounded-Regular"; 
+    src: url("../fonts/Unbounded-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Unbounded-Black"; 
+    src: url("../fonts/Unbounded-Black.ttf") format("truetype");
+}

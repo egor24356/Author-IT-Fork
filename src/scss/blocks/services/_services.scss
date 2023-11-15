@@ -1,0 +1,200 @@
+.main-services {
+    max-height: 85vh;
+    overflow-y: hidden;
+}
+
+/* White background */
+
+
+.white__bg__services {
+    max-width: 1266px;
+    position: relative;
+    background-color: #F5F6FF;
+    border-radius: 40px;
+    margin: 0 auto auto;
+    overflow: hidden;
+}
+
+/* Services */
+
+.container__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.services__subtitle {
+    color: #232323;
+    font-family: var(--subtitle24-font-family);
+    font-size: var(--subtitle24-font-size);
+}
+
+.wrapper__services {
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.services__wrap {
+    height: 84vh;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    max-height: 800px;
+}
+
+.comma__descr1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding-bottom: 108px;
+    color: var(--White, #F5F6FF);
+    font-family: Unbounded, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    position: absolute;
+    bottom: 20%;
+    left: 15%;
+}
+
+.comma__descr2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--White, #F5F6FF);
+    font-family: Unbounded, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+.comma__descr3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--White, #F5F6FF);
+    font-family: Unbounded, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    position: absolute;
+    bottom: 30%;
+    left: 5%;
+}
+
+.container__green__comma1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: url(../img/icon1/comma_services1.svg);  
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container__green__comma2 {
+    display: flex;
+    flex-direction: column;
+    background: url(../img/icon1/comma_services2.svg);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container__green__comma3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: url(../img/icon1/comma_services3.svg);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container__our__services {
+    // margin-top: 92px;
+}
+
+.container__title__our__services {
+    padding-left: 72px;
+    display: flex;
+    
+}
+
+.header__first {
+    color: #FF7D04;
+    margin-right: 27px;
+}
+
+.header__second {
+    display: block;
+}
+
+.container__commas {
+    display: flex;
+    justify-content: center;
+    margin: 37px;
+    gap: 20px;
+}
+
+.comma__service {
+    pointer-events: none;
+    aspect-ratio: 286/390;
+    background-size: 100%;
+    width: 220px;
+}
+
+.comma__service-mobile {
+    display: none;
+}
+
+.container__green__comma1:hover {
+    background:  url('../img/icon1/comma_services1_hover.svg');
+    background-repeat: no-repeat;
+}
+.container__green__comma2:hover {
+    background:  url('../img/icon1/comma_services2_hover.svg');
+    background-repeat: no-repeat;
+}
+.container__green__comma3:hover {
+    background:  url('../img/icon1/comma_services3_hover.svg');
+    background-repeat: no-repeat;
+}
+
+.wrapper__our__services {
+    border-bottom: 2px solid #232323;
+}
+
+.container__last {
+    justify-content: flex-start;
+    transform: translateX(118px);
+}
+
+.our-service {
+    background-color: #F5F6FF;
+    /* transition: all .2s ease; */
+    position: absolute;
+    bottom: -102%;
+    width: 100%;
+    min-height: 66%;
+}
+
+.our-service_active {
+    /* transform: translateY(-111%); */
+    bottom: 0;
+}
+
+.service-btn, .service-btn:hover {
+    aspect-ratio: 387/506;
+    width: 290px;
+    background-size: 100%;
+}

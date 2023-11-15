@@ -1,0 +1,57 @@
+.advantages {
+    display: flex;
+    justify-content: center;
+}
+
+.advantages__container {
+    display: flex;
+    justify-content: center;
+    width: 1920px;
+    background-color: #0A7272;
+} 
+
+.advantages__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 106px;
+    padding-bottom: 61px;
+}
+
+.advantages__title__text {
+    display: inline-flex;
+    color: #F5F6FF;
+}
+
+/* Button needs to be done */
+
+.advantages__read__all {
+    color: var(--subtitle24-color);
+    font-family: var(--subtitle24-font-family);
+    font-size: var(--subtitle24-font-size);
+}
+
+.read__all {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.read__all:hover {
+    background-color: transparent;
+}
+
+
+.arrow__read__all {
+    transition: all .1s ease;
+}
+
+.arrow__read__all_active {
+    transform: rotate(-180deg);
+}

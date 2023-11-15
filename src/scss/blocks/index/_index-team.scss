@@ -1,0 +1,145 @@
+.team__container {
+    display: flex;
+    background-color: #F5F6FF;
+    height: 665px;
+    border-radius: 48px;
+    margin-bottom: 127px;
+    cursor: none;
+    margin-top: 40px;
+}
+
+/* cursor */
+
+.cursor {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(25, 127, 117, 0.8);
+    border-radius: 100%;
+    user-select: none;
+    display: block;
+    opacity: 0;
+    transform: translate(-50%, -50%); /* центрируем кружок */
+    z-index: 999; /* чтобы элемент был над остальными элементами */
+    pointer-events: none; /* чтобы сквозь элемент можно было взаимодействовать с элементами, находящимися под ним */
+    transition: width 0.3s, height 0.3s, border-radius 0.3s, background 0.3s;
+}
+
+/* cursor при наведении на ссылки (лица команды) */
+
+.cursor_active {
+    height: 250px;
+    width: 250px;
+    border-width: 2px;
+    background: rgba(34, 153, 141, 0.5);
+}
+
+/* ссылки на лицах*/
+
+.team__wrap-face {
+    position: relative;
+    opacity: 1;
+}
+
+.team__links {
+    position: absolute;
+    width: 1005px;
+    height: 739px;
+    padding: 0;
+    display: block;
+    background-color: transparent;
+    cursor: url(../img/icon1/team__cursor.svg), pointer;
+    top: 0;
+    // transform: translate(44px, -821px);
+}
+
+
+/* фотография в team__container */
+
+.team__img {
+    margin-top: -81px;
+    width: 1075.68px;
+    height: 847.138px;
+    transform: translateX(97px);
+}
+
+.cursor-mobile {
+    z-index: 1;
+    display: block;
+    width: 156px;
+    height: 156px;
+    border-radius: 50%;
+    background-color: #0A7272;
+    mix-blend-mode: exclusion;
+    transform: translateX(-50%);
+    animation: 1s infinite pulsating ease;
+}
+.cursor-mobile-wrap {
+    bottom: 10%;
+    left: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cursor-mobile-wrap p {
+    font-family: "Unbounded-regular";
+    position: absolute;
+    z-index: 1;
+    text-transform: uppercase;
+    color: #F5F6FF;
+    font-size: 16px;
+}
+
+/* swiper в section team */
+
+
+.swiper__team {
+    position: relative;
+    min-width: 0;
+    display: none;
+    overflow: hidden;
+    width: 1270px !important;
+    height: 878px !important;
+    padding: 128px 72px 81px 72px;
+    transform: translateY(-71px) !important;
+    cursor: url(../img/icon1/team__cursor.svg), pointer;
+}
+
+.descr-team {
+    display: flex;
+    flex-direction: column;
+    width: 1263px !important;
+    height: 612px !important;
+    /* margin-right: 0px !important; */
+    cursor: url(../img/icon1/team__cursor.svg), pointer;
+
+}
+
+.team__name {
+    color:#000;
+}
+
+.team__profession {
+    color: #000;
+    font-family: "Unbounded-Black";
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 349px;
+}
+
+.swiper__team__img {
+    margin-top: -655px;
+    margin-left: 493px;
+}
+
+.custom-pagination {
+    width: 65px !important;
+    height: 30px;
+    color:#232323 !important;
+    font-family: "Unbounded-Black";
+    font-size: 24px;
+    font-weight: 400;
+    bottom: 200px !important;
+    left: 1144px !important;
+}

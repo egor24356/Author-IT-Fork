@@ -49,7 +49,8 @@
     display: block;
     background-color: transparent;
     cursor: url(../img/icon1/team__cursor.svg), pointer;
-    transform: translate(44px, -821px);
+    top: 0;
+    // transform: translate(44px, -821px);
 }
 
 
@@ -75,12 +76,11 @@
 }
 .cursor-mobile-wrap {
     bottom: 10%;
-    left: 35%;
+    left: 50%;
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .cursor-mobile-wrap p {
     font-family: "Unbounded-regular";

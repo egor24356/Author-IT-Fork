@@ -9,9 +9,6 @@
     .container__text__slider__union {
         margin-right: 0;
     }
-    .tabs__items:not(.mobile-nav__item) {
-        width: auto !important;
-    }
     .white__bg {
         max-width: 90vw;
     }
@@ -659,6 +656,9 @@
     }
     .team__container {
         position: relative;
+    }
+    .cursor-mobile-wrap {
+        left: 35%;
     }
 }
 

@@ -20,24 +20,28 @@ h1 {
     font-size: 96px;
     font-weight: 900;
     text-transform: uppercase;
+    line-height: normal;
 }
 
 h2 {
     font-family: "Unbounded-Black";
     font-size: 64px;
     font-weight: 900;
+    line-height: normal;
 }
 
 h3 {
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     font-weight: 700;
+    line-height: normal;
 }
 
 h4 {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 700;
+    line-height: normal;
 }
 
 p {
@@ -45,6 +49,7 @@ p {
     font-weight: 400;
     font-size: 16px;
     color: var(--caption16-color);
+    line-height: normal;
 }
 
 .subtitle24 {
@@ -52,18 +57,21 @@ p {
     font-family: "Unbounded-Regular";
     font-size: 24px;
     font-weight: 400;
+    line-height: normal;
 }
 
 .caption16 {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    line-height: normal;
 }
 
 .caption10 {
     font-family: 'Open Sans', sans-serif;
     font-size: 10px;
     font-weight: 400;
+    line-height: normal;
 }
 
 .body14 {
@@ -108,6 +116,10 @@ main {
     overflow: hidden;
     max-width: 100%;
     position: relative;
+}
+
+.lineHeight {
+    line-height: 142.2%;
 }
 
 /* header */
@@ -1129,9 +1141,6 @@ main {
 }
 
 .contact__info {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    color: var(--caption16-color);
     font-size: 20px;
     color: #F5F6FF;
 }
@@ -1428,7 +1437,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 410px;
+    height: 428px;
     padding: 0 16px 17px;
 }
 
@@ -1606,7 +1615,7 @@ main {
 /* секция Bitrix__rates */
 
 .BitrixPortal__container-rates-services {
-    height: 969px;
+    height: auto;
 }
 
 .BitrixPortal__container-rates__types {
@@ -1847,6 +1856,7 @@ main {
 
 .slide__AboutUs__Kostya img {
     margin-left: 25px;
+    margin-right: -556px;
 }
 
 .slide__AboutUs__Ksysha img {
@@ -1869,6 +1879,26 @@ main {
 
 .AboutUs-promo__slider-descr {
     margin-top: 127px;
+}
+
+.AboutUs-promo__slider-descr-Daniil {
+    margin-top: 138px;
+}
+
+.AboutUs-promo__slider-descr-Kostya {
+    margin-top: 57px;
+}
+
+.AboutUs-promo__slider-descr-Ksysha {
+    margin-top: 138px;
+}
+
+.AboutUs-promo__slider-descr-Egor {
+    margin-top: 138px;
+}
+
+.AboutUs-promo__slider-descr-NastyaM {
+    margin-top: 136px;
 }
 
 /* выравнивание ФИ сотрудников */
@@ -1896,7 +1926,7 @@ main {
 }
 
 .AboutUs-promo__slider-quote-Kostya {
-    width: 430px; 
+    width: 456px; 
 }
 
 .AboutUs-promo__slider-quote-NastyaD {
@@ -1931,7 +1961,7 @@ main {
 /* section AboutUs-history */
 
 .AboutUs-history__wrapper {
-    padding: 230px 0px 117px 326px;
+    padding: 230px 0px 85px 326px;
 }
 
 /* текст секции сверху фото */
@@ -1993,7 +2023,7 @@ main {
 /* section AboutUs-weToday */
 
 .AboutUs-weToday__wrapper {
-    padding: 123px 35px 0 35px;
+    padding: 158px 35px 0 35px;
 }
 
 /* описание к фото */
@@ -2022,7 +2052,7 @@ main {
 
 .AboutUs-weFuture__img {
     transform: scale(1);
-    margin-right: 57px;
+    margin-right: 18px;
 }
 
 /* контейнер для описания справа от фото */
@@ -2061,7 +2091,7 @@ main {
 /* section AboutUs-whyWe */
 
 .AboutUs-whyWe__wrapper {
-    padding: 140px 115px 40px 133px;
+    padding: 29px 115px 40px 133px;
 }
 
 /* заголовок */
@@ -2097,8 +2127,8 @@ main {
 
 .template__table__row-left {
     display: flex;
-    gap: 30px;
-    flex-basis: 40%;
+    gap: 20px;
+    flex-basis: 60%;
 }
 
 .template__table__row-left__title {

@@ -291,7 +291,7 @@
         font-size: 20px;
     }
     .template__table__row-right__descr-text {
-        width: 483px;
+        width: 466px;
     }
     .Bitrix__rates-wrapper {
         padding: 0 33px;
@@ -359,10 +359,12 @@
     .BitrixPortal__container-rates__support-scale {
         gap: 98px;
     }
-    .BitrixPortal__container-rates__support-scale-3col {
-        justify-content: end;
-        gap: 100px;
-        padding-right: 32px;
+
+    .Bitrix__rate__typePrice {
+        position: absolute;
+        bottom: 16px;
+        margin-top: 0;
+
     }
     .Bitrix__container-services {
         width: 926px;
@@ -540,7 +542,7 @@
         border: none;
     }
     .Bitrix__container-rates__types {
-        gap: 0px;
+        gap: 0;
         padding-right: 9px;
         height: auto;
         display: flex;
@@ -561,6 +563,8 @@
         position: static;
         margin-top: 19px;
         font-size: 28px;
+        display: flex;
+        justify-content: end;
     }
     .Bitrix__container-services__priceItem {
         text-align: center;
@@ -578,16 +582,16 @@
         font-size: 18px;
     }
     .Bitrix__rate__basDescr {
-        width: 280px;
+        width: 430px;
     }
     .Bitrix__rate__stanDescr {
-        width: 175px;
+        width: 430px;
     }
     .Bitrix__rate__profDescr {
-        width: 230px;
+        width: 430px;
     }
     .Bitrix__rate__enterDescr {
-        width: 280px;
+        width: 430px;
     }
     .Bitrix__services-title {
         color: #F5F6FF;
@@ -610,7 +614,7 @@
     }
     .Bitrix__container-services__header-price__row {
         display: flex;
-        gap: 10px;
+        gap: 40px;
     }
     .Bitrix__container-services__header-price__row:not(:last-child) {
         border-bottom: 1px solid #707077;
@@ -812,7 +816,7 @@
         margin: 0 auto;
     }
     .Bitrix__container-title {
-        padding: 40px 30px 27px 30px;
+        padding: 40px 30px 30px 30px;
     }
     .Bitrix__title {
         margin-bottom: 0;
@@ -885,7 +889,7 @@
         font-size: 16px;
     }
     .template__table {
-        margin: 20px 0 0 0;
+        margin: 0;
         padding-left: 0px;
     }
     .template__table__row {
@@ -905,6 +909,9 @@
     .Bitrix__rates-wrapper {
         padding: 0 5px;
     }
+    .Bitrix__rates-title {
+        margin-left: 17px;
+    }
     .Bitrix__container-rates-services {
         margin: 0;
         width: auto;
@@ -913,12 +920,9 @@
         border: none;
     }
     .Bitrix__container-rates-wrapperMobile {
-        width: 350px;
-        height: auto;
-        border-radius: 25px;
-        margin: 20px 0;
-        padding: 20px 16px 0;
-        border: 1px solid #707077;
+        width: 320px;
+        margin: 20px 16px;
+        padding: 20px 10px 0;
     }
     .Bitrix__container-services-wrapperMobile {
         position: relative;
@@ -941,20 +945,19 @@
         flex-direction: column;
     }
     .Bitrix__rate__typeName {
-        font-size: 16px;
-        font-family: "Unbounded-Regular";
-        font-weight: 600;
+        font-size: 22px;
     }
     .Bitrix__container-rate__typeItem {
         display: flex;
         flex-direction: column;
         margin-bottom: 25px;
         margin-left: 0px;
+        padding-left: 5px;
     }
     .Bitrix__rate__typePrice {
         position: static;
         margin-top: 16px;
-        font-size: 16px;
+        font-size: 22px;
     }
     .Bitrix__container-services__priceItem {
         text-align: center;
@@ -983,76 +986,54 @@
         width: 256px;
     }
     .Bitrix__services-title {
-        font-size: 24px;
-        padding: 0;
-        margin: 24px 16px;
-        width: 318px;
+        font-size: 22px;
+        margin: 10px;
+        padding-left: 7px;
+        width: 300px;
     }
     .Bitrix__services__priceItem {
-        font-size: 24px;
+        font-size: 22px;
         margin: -6px 3px;
     }
-    .Bitrix__container-rates__support-row {
-        padding: 14px 0;
-    }
     .Bitrix__container-services__header-price {
-        margin-top: 157px;
+        margin-top: 115px;
     }
     .Bitrix__container-services__header-price__row {
         display: flex;
-        justify-content: space-evenly;
-        gap: 0px;
-        width: 318px;
-    }
-    .Bitrix__container-services__header-price__row:not(:last-child) {
-        border-bottom: 1px solid #707077;
+        gap: 20px;
+        width: 300px;
     }
     .Bitrix__container-rates__support {
         margin: 5px 0 52px;
     }
     .Bitrix__container-rates__support-row {
-        width: 318px;
-        gap: 43px;
+        padding: 14px 0;
+        width: 300px;
+        gap: 10px;
     }
     .Bitrix__container-rates__support-header-nonActive {
         color: #707077;
     }
     .Bitrix__container-rates__support-name {
         width: 190px;
-        margin-left: 10px;
+        margin-left: 5px;
         font-size: 14px;
     }
     h4 {
         font-size: 16px;
     }
     .Bitrix__container-rates__support-scale {
-        padding: 0 77px 0 13px;
-        gap: 133px;
-    }
-    .support-scale__3col {
-        gap: 133px;
-    }
-    .support-scale__2col {
-        gap: 133px;
+        padding: 0 0 0 15px;
     }
     .BitrixPortal__container-rates__support-check {
         width: 35px;
     }
     .Bitrix__container-services {
-        position: absolute;
-        width: 349px;
-        left: -16px;
-        background-color: #232323;
-    }
-    .BitrixPortal__container-services {
-        left: 5px;
-    }
-    .Bitrix__services-prices {
-        padding: 16px 15px 16px 0px;
-        gap: 60px;
+        width: 319px;
+        left: -10px;
     }
     .Bitrix__services__name {
-        width: 233px;
+        width: 193px;
         padding: 19px 0 19px 10px;
     }
     .Bitrix__container-services__priceItem {

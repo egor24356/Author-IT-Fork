@@ -1,0 +1,30 @@
+.Bitrix__container-title {
+    padding: 100px 27px 96px 31px;
+}
+
+/* заголовок */
+
+.Bitrix__title {
+    color: #232323;
+    margin-top: 0;
+}
+
+/* контейнер для описания и срока */
+
+.Bitrix__container-descr-time {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+/* описание заголовка */
+
+.Bitrix__title-descr {
+    width: 688px;
+}
+
+/* срок выполнения */
+
+.Bitrix__title-time {
+    color: #FF7D04;
+}

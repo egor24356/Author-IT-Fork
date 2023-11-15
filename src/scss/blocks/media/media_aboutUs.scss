@@ -329,10 +329,6 @@
         display: flex;
         justify-content: end;
     }
-    .mobile-nav-btn-wrap {
-        display: block !important;
-        margin-right: 0 !important;
-    }
     .caption16 {
         font-size: 12px;
     }
@@ -553,7 +549,7 @@
         display: none;
     }
     .AboutUs__white {
-        background: url(../AboutUs_img/AboutUs-bg-mobile.png) center center/cover no-repeat;
+        background: url(../img/img1/AboutUs-bg-mobile.png) center center/cover no-repeat;
         background-size: 360px 100%;
         width: 360px;
         height: 3653px;

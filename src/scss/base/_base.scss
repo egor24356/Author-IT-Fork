@@ -137,11 +137,6 @@ main {
     margin: 0 auto 0 auto;
 }
 
-.main-services {
-    max-height: 100vh;
-    overflow-y: hidden;
-}
-
 .AboutUs-promo-wrapper {
     padding: 60px 39px 0 40px;
 }
@@ -152,6 +147,48 @@ main {
     height: 1000px;
     position: relative;
     margin: 0 auto;
+}
+
+.BitrixCloud__white-bg {
+    position: relative;
+    width: 1266px;
+    background: #F5F6FF;
+    border-radius: 40px;
+    margin: 0 auto 58px auto;
+}
+
+/* для адаптива */
+
+.rates-block992 {
+    display: flex;
+}
+
+.rates-none992 {
+    display: none !important;
+}
+
+.bitrix-title-block360 {
+    display: block;
+}
+
+.bitrix-title-none360 {
+    display: none;
+}
+
+.BitrixPortal__white-bg {
+    position: relative;
+    width: 1266px;
+    background: #F5F6FF;
+    border-radius: 40px;
+    margin: 0 auto 58px auto;
+    /*display: none;*/
+}
+
+.Bitrix__black-dg {
+    width: 100vw;
+    /* height: 1263px; */
+    position: relative;
+    margin: 0 auto 0 auto;
 }
 
 /* шрифты */

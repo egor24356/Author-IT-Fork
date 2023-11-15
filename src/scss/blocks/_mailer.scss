@@ -1,8 +1,9 @@
 .container__mailer {
     max-width: 2160px;
     background: url(../img/img1/mailer__bg.png) center center/cover no-repeat;
-    transform: translateX(-22%);
-    padding: 709px 419px 119px 482px;
+    // transform: translateX(-22%);
+    padding: 721px 419px 119px 482px;
+    
 }
 
 .form__mailer {
@@ -17,7 +18,7 @@
     position: relative;
     margin-top: 56px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .container__break__mailer {
@@ -70,7 +71,7 @@
     position: relative;
     margin-top: 56px;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
 }
 
 .mailer button {

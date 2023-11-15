@@ -1,0 +1,215 @@
+.Bitrix__rates-wrapper {
+    padding: 0 31px 0 29.94px;
+}
+
+/* заголовок */
+
+.Bitrix__rates-title {
+    color: #232323;
+}
+
+/* общий контейнер для тарифов и услуг */
+
+.Bitrix__container-rates-services {
+    margin-top: 54px;
+    display: flex;
+    padding-top: 32px;
+    flex-direction: column;
+    align-items: flex-end;
+    border-radius: 25px;
+    border: 1px solid #707077;
+}
+
+/* контейнер для тарифов */
+
+.Bitrix__container-rates {
+    width: 1204px;
+    border-bottom: 3px solid #232323;
+}
+
+/* контейнер для названий тарифов */
+
+.Bitrix__container-rates__types {
+    display: flex;
+    justify-content: end;
+    gap: 60px;
+    height: 184px;
+    padding-right: 30px;
+}
+
+/* названия тарифов */
+
+.Bitrix__rate__typeName {
+    color: #232323;
+    font-family: "Unbounded-Black"; 
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* описания тарифов */
+
+.Bitrix__rate__typeDescr {
+    color: #232323;
+    margin-top: 16px;
+}
+
+.Bitrix__rate__basDescr {
+    width: 164px;
+}
+
+.Bitrix__rate__stanDescr {
+    width: 154px;
+}
+
+.Bitrix__rate__profDescr {
+    width: 216px;
+}
+
+.Bitrix__rate__enterDescr {
+    width: 212px;
+}
+
+/* стоимость тарифов */
+
+.Bitrix__rate__typePrice {
+    color: #FF7D04;
+    margin-top: 32px;
+}
+
+/* контейнер для всех строк */
+
+.Bitrix__container-rates__support {
+    margin: 35px 0 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 660px;
+    padding: 0 16px 17px;
+}
+
+/* контейнер для строки */
+
+.Bitrix__container-rates__support-row {
+    display: flex;
+    width: 1167px;
+    border-top: 1px solid #707077;
+    padding: 19px 0;
+}
+
+/* контейнер для названия услуги */
+
+.Bitrix__container-rates__support-name {
+    width: 255px;
+    color: #232323;
+}
+
+/* контейнер для части со шкалами уровней поддержки */
+
+.Bitrix__container-rates__support-scale {
+    display: flex;
+    justify-content: space-between;
+    width: 910px;
+    padding: 0 101px 0 16px;
+}
+
+.support-scale__3col {
+    justify-content: end !important;
+    gap: 195px;
+}
+
+.support-scale__2col {
+    justify-content: end !important;
+    gap: 195px;
+}
+
+.support-scale__1col {
+    justify-content: end !important;
+}
+
+/* контейнер для услуг */
+
+.Bitrix__container-services {
+    display: flex;
+    flex-direction: column;
+    width: 1204px;
+}
+
+/* заголовок */
+
+.Bitrix__services-title{
+    color: #232323;
+    font-family: "Unbounded-Black"; 
+    font-size: 32px;
+    font-weight: 700;
+    padding: 32px 24px;
+}
+
+/*  контейнер для цен на услуги (верхние) */
+
+.Bitrix__services-prices {
+    display: flex;
+    justify-content: end;
+    gap: 70.75px;
+    padding: 16px 72px 16px 0px;
+}
+
+/* цены */
+
+.Bitrix__services__priceItem {
+    color: #FF7D04;
+}
+
+/* контейнер для всех строк с услугами */
+
+.Bitrix__container-services__rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 410px;
+    padding: 0 16px 17px;
+}
+
+/* контейнер для строки */
+
+.Bitrix__container-services__row {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #707077;
+}
+
+/* название услуги */
+
+.Bitrix__services__name {
+    padding: 19px 10px;
+    color: #232323;
+}
+
+/* контейнер для цен на услуги (нижние) */
+
+.Bitrix__container-services__priceItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 155px;
+    width: 912px;
+    padding: 0 89px 0 64px;
+}
+
+/* цена услуги */
+
+.Bitrix__services__separPrice {
+    color: #232323;
+    width: 77px;
+}
+
+/* кнопка для открытия модального окна */
+
+.Bitrix__rates-services__btn {
+    padding: 24px 80px 24px 75px;
+    border-radius: 40px;
+    background: #FF7D04;
+    margin-top: -110px;
+    color:#F5F6FF;
+    position: absolute;
+    right: 31px;
+}

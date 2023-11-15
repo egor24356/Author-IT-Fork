@@ -27,7 +27,26 @@
 			@@include('blocks/bitrix/bitrix-running-line.html')
 			@@include('blocks/bitrix/bitrix-ik-element.html')
 			@@include('blocks/bitrix/bitrix-rates.html')
-			@@include('blocks/bitrix/bitrix-mailer.html')
+			<div class="BitrixCloud__white-bg bitrixAll" data-introduction="Cloud">
+				@@include('blocks/bitrix/bitrix-title-section.html')
+				@@include('blocks/bitrix/bitrix-why-we.html')
+				@@include('blocks/bitrix/bitrix-bitrixall-rates.html')
+				@@include('blocks/bitrix/bitrix-bitrixall-introduction.html')
+			</div>
+			<div class="BitrixPortal__white-bg bitrixAll" data-introduction="Box">
+				@@include('blocks/bitrix/bitrixall-portal-title.html')
+				@@include('blocks/bitrix/bitrixall-why-we.html')
+				@@include('blocks/bitrix/bitrixall-why-we-rates.html')
+				@@include('blocks/bitrix/bitrixall-why-we-introduction.html')
+			</div>
+			<div class="BitrixEnter__white-bg bitrixAll" data-introduction="Enter">
+				@@include('blocks/bitrix/bitrixall-enter-title.html')
+				@@include('blocks/bitrix/bitrixall-why-we.html')
+				@@include('blocks/bitrix/bitrixall-enter-benefits.html')
+			</div>
+			<div class="Bitrix__black-dg">
+				@@include('blocks/bitrix/bitrix-mailer.html')
+			</div>
 		</main>
 		@@include('blocks/footer.html')
 		<script src="./js/index.bundle.js"></script>

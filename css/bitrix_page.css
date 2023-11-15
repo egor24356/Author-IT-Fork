@@ -185,6 +185,7 @@
 .advantages__container {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     width: 1920px;
     background-color: #0A7272;
 } 
@@ -203,7 +204,33 @@
     color: #F5F6FF;
 }
 
-/* Button needs to be done */
+.benefits-tabs {
+    overflow: hidden;
+    padding-left: 0;
+}
+
+.benefit {
+    background-color: #0A7272;
+    padding: 29px 410px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #F5F6FF;
+}
+
+.benefit-title {
+    font-family: "Unbounded-Black";
+    color: #F5F6FF;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.benefit-descr {
+    max-width: 347px;
+    color: #F5F6FF;
+    font-size: 14px;
+    line-height: normal;
+}
 
 .advantages__read__all {
     color: var(--subtitle24-color);
@@ -246,10 +273,12 @@
 .partner__container {
     display: flex;
     padding-top: 88px;
+    padding-bottom: 437px;
 }
 
 .partner__container__left {
     display: flex;
+    flex-direction: column;
     flex-basis: 60%;
     padding-left: 136px;
 }
@@ -267,6 +296,15 @@
     background-repeat: no-repeat;
     height: 834px;
 } */
+
+.gold__partner {
+    position: absolute;
+    left: -400px;
+}
+
+.partner__left__img {
+    position: relative;
+}
 
 .partner__left__descr__text {
     max-width: 397px;
@@ -294,174 +332,16 @@
     color:#FF7D04;
 }
 
-
-.benefits-tabs {
-    overflow: hidden;
-    padding-left: 0;
-}
-
-.benefit {
-    background-color: #0A7272;
-    padding: 22px 410px;
+.training__title {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #F5F6FF;
-}
-
-.benefit-title {
-    font-family: "Unbounded-Black";
-    color: #F5F6FF;
-    font-size: 48px;
-    font-weight: 900;
-}
-
-.benefit-descr {
-    max-width: 347px;
-    color: #F5F6FF;
-    font-size: 14px;
-    line-height: 142.2%;
-}
-
-
-.gold__partner__bitrix__left {
-    display: flex;
-    flex-basis: 50%;
-    flex-direction: column;
-}
-
-.gold__partner__bitrix__right {
-    display: flex;
-    flex-basis: 50%;
-    flex-direction: column;
-    transform: translateX(109px);
-    gap: 120px;
-}
-
-.gold__partner__bitrix__wrapper {
-    display: flex;
-    margin-top: 88px;
+    padding-left: 134px;
 }
 
 .none {
     display: none;
 }
 
-.left__section__gold__partner__bitrix__title {
-    color: #232323;
-}
 
-.left__section__gold__partner__bitrix {
-    display: inline-flex;
-    transform: translateX(84px);
-}
-
-.left__section__gold__partner__bitrix__descr {
-    margin-top: 40px;
-    color: #232323;
-    font-family: var(--subtitle24-font-family);
-    font-size: var(--subtitle24-font-size);
-}
-
-.right__section__gold__partner__bitrix__container {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-.right__section__gold__partner__bitrix__title {
-    color: #FF7D04;
-}
-
-.right__section__gold__partner__bitrix__descr {
-    color: #232323;
-    font-family: var(--subtitle24-font-family);
-    font-size: var(--subtitle24-font-size);
-}
-
-.gold__partner__bitrix__img {
-    position: absolute;
-    transform: translateX(-360px) translateY(70px);
-}
-
-/* training section */
-
-.training__title {
-    color: #232323;
-    display: flex;
-    margin-top: 500px;
-}
-
-.training {
-    margin: 0 114px 0 134px;
-}
-
-.training__wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-top: 64px;
-    position: relative;
-    justify-content: center;
-    width: 1018px;
-}
-
-.training__container {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px 0;
-    position: relative;
-}
-
-.training__container:not(:last-child) {
-    border-bottom: 1px solid var(--Grey, #707077);
-}
-
-.training__left {
-    display: flex;
-    gap: 30px;
-}
-
-.training__right {
-    display: flex;
-    align-items: center;
-}
-
-.training__left__descr {
-    display: flex;
-    position: relative;
-}
-
-.training__right__descr{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.training__left__title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.training__left__title__text {
-    color: #FF7D04;
-}
-
-.training__left__descr__text {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: #232323;
-    font-family: var(--subtitle24-font-family);
-    font-size: var(--subtitle24-font-size);
-}
-
-.training__right__descr__text {
-    width: 603px;
-    font-family: var(--caption16-font-family);
-    font-size: 16px;
-    color: var(--caption16-color);
-}
 
 /* Bitrix ticker */
 

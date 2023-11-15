@@ -1,7 +1,7 @@
 const benefitsContainer = document.querySelector('.benefits-tabs');
 const readAllBtn = document.querySelector('.read__all');
-const readAllArrow = document.querySelector('.arrow__read__all');
-const readAllText = readAllBtn.querySelector('.title__advantages__descr');
+const readAllArrow = document.querySelector('.advantages__read__all__arrow');
+const readAllText = readAllBtn.querySelector('.advantages__read__all');
 
 readAllBtn.addEventListener('click', function() {
     readAllArrow.classList.toggle('arrow__read__all_active');

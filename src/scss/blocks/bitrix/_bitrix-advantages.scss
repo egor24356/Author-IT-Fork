@@ -6,7 +6,6 @@
 .advantages__container {
     display: flex;
     justify-content: center;
-    flex-direction: column;
     width: 1920px;
     background-color: #0A7272;
 } 
@@ -25,33 +24,7 @@
     color: #F5F6FF;
 }
 
-.benefits-tabs {
-    overflow: hidden;
-    padding-left: 0;
-}
-
-.benefit {
-    background-color: #0A7272;
-    padding: 29px 410px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #F5F6FF;
-}
-
-.benefit-title {
-    font-family: "Unbounded-Black";
-    color: #F5F6FF;
-    font-size: 48px;
-    font-weight: 900;
-}
-
-.benefit-descr {
-    max-width: 347px;
-    color: #F5F6FF;
-    font-size: 14px;
-    line-height: normal;
-}
+/* Button needs to be done */
 
 .advantages__read__all {
     color: var(--subtitle24-color);
@@ -75,7 +48,7 @@
 }
 
 
-.advantages__read__all__arrow {
+.arrow__read__all {
     transition: all .1s ease;
 }
 

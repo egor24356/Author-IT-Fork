@@ -1,3 +1,4 @@
+
 .partner__wrapper {
     background-color: #F5F6FF;
     display: block;
@@ -9,12 +10,10 @@
 .partner__container {
     display: flex;
     padding-top: 88px;
-    padding-bottom: 437px;
 }
 
 .partner__container__left {
     display: flex;
-    flex-direction: column;
     flex-basis: 60%;
     padding-left: 136px;
 }
@@ -32,15 +31,6 @@
     background-repeat: no-repeat;
     height: 834px;
 } */
-
-.gold__partner {
-    position: absolute;
-    left: -400px;
-}
-
-.partner__left__img {
-    position: relative;
-}
 
 .partner__left__descr__text {
     max-width: 397px;

@@ -250,10 +250,14 @@
 
     /* шрифты */
 
-    h1 {
+    .bitrix__header1,
+    .bitrixPortal__header1,
+    .bitrixEnter__header1 {
         font-size: 84px;
     }
-    h2 {
+    .bitrix__header2,
+    .bitrixPortal__header2,
+    .bitrixEnter__header2 {
         font-size: 52px;
     }
     .subtitle24 {
@@ -460,13 +464,19 @@
 
     /* шрифты */
 
-    h1 {
+    .bitrix__header1,
+    .bitrixPortal__header1,
+    .bitrixEnter__header1 {
         font-size: 63px;
     }
-    h2 {
+    .bitrix__header2,
+    .bitrixPortal__header2,
+    .bitrixEnter__header2 {
         font-size: 41px;
     }
-    h4 {
+    .bitrix__header4,
+    .bitrixPortal__header4,
+    .bitrixEnter__header4 {
         font-size: 20px;
     }
     .caption16 {
@@ -765,16 +775,24 @@
 
     /* шрифты */
     
-    h1 {
+    .bitrix__header1,
+    .bitrixPortal__header1,
+    .bitrixEnter__header1 {
         font-size: 27px;
     }
-    h2 {
+    .bitrix__header2,
+    .bitrixPortal__header2,
+    .bitrixEnter__header2 {
         font-size: 24px;
     }
-    h3 {
+    .bitrix__header3,
+    .bitrixPortal__header3,
+    .bitrixEnter__header3 {
         font-size: 21px;
     }
-    h4 {
+    .bitrix__header4,
+    .bitrixPortal__header4,
+    .bitrixEnter__header4 {
         font-size: 16px;
     }
 
@@ -1046,7 +1064,7 @@
         max-width: 360px;
     }
     .BitrixEnter__container-descr {
-        padding-inline: 15px;
+        padding-inline: 32px;
     }
     .benefits-section__container {
         padding: 56px 40px;
@@ -1080,18 +1098,32 @@
         width: 213px;
         padding: 24px 19px;
     }
-    .canbe-list {
-        margin-top: 24px;
-        margin-left: -15px;
-    }
     .benefits-section__item {
         margin-top: 16px;
     }
     .Bitrix-introduction__subtitle {
         font-size: 16px;
     }
-    .canbe-list {
-        list-style: url(../Bitrix_icons/mark-star_mobile.svg);
+    .benefits__container-descr__item-text {
+        font-size: 16px;
+    }
+    .benefits__container-descr__item-img {
+        width: 22px;
+        height: 21px;
+    }
+    .benefits__container-descr__item {
+        align-items: center;
+    }
+    .benefits-info {
+        flex-direction: column;
+        align-items: start;
+        gap: 8px;
+    }
+    .benefits-info h2 {
+        font-size: 32px;
+    }
+    .Bitrix-introduction__subtitle {
+        margin-top: 0;
     }
     .BitrixEnter__title-time {
         top: 70px;

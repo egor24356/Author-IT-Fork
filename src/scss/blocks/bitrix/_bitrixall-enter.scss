@@ -61,15 +61,23 @@
     font-family: "Unbounded-Black";
 }
 
-.canbe-list {
-    margin-top: 64px;
-    list-style: url('../img/icon1/mark-star.svg');
+.benefits-section__item_many-mobile {
+    display: none;
 }
 
-.canbe-list__item {
-    color: #000;
-    padding-left: 15px;
+.benefits__container-descr {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 64px;
 }
+
+.benefits__container-descr__item {
+    display: flex;
+    gap: 24px;
+    color: #000;
+}
+
 
 .benefits-info {
     margin-top: 38px;
@@ -105,4 +113,5 @@
 
 .benefits-info__text {
     margin-top: 0;
+    color: #000;
 }

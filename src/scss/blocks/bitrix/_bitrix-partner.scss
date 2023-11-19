@@ -57,3 +57,13 @@
 .partner__right__title__text {
     color:#FF7D04;
 }
+
+.partner__left__img {
+    position: relative;
+    padding-bottom: 725px;
+}
+
+.partner__left__img img{
+    left: -385px;
+    position: absolute;
+}

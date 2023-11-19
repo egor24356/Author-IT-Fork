@@ -31,10 +31,10 @@
     font-size: 14px;
     background-color: #F5F6FF;
     font-family: var(--caption16-font-family);
-    transition: all .3s ease;
+    border-radius: 80px;
 }
 
-.buttons-wrap__button:hover {
+.buttons-wrap__button:first-child {
     background-color: #FF7D04;
     color: #F5F6FF;
 }

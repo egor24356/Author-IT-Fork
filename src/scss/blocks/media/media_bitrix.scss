@@ -435,6 +435,9 @@
     .BitrixEnter__white-bg {
        max-width: 992px;
     }
+    .BitrixEnter__container-descr {
+        padding: 65px 86px 64px !important;
+    }
 }
 
 @media (max-width: 992px) {
@@ -730,7 +733,7 @@
     }
     .BitrixEnter__container-descr {
         padding-inline: 70px;
-        padding: 25px 117px 64px 131px;
+        padding: 25px 86px 64px !important;
     }
     .BitrixEnter__title-time {
         top: 130px;
@@ -812,8 +815,8 @@
         gap: 18px;
     }
     .Bitrix__container-descr__item-img {
-        width: 30px;
-        height: 25px;
+        width: 25px;
+        height: 21px;
     }
     .Bitrix__title-descr {
         width: 278px;
@@ -1064,7 +1067,7 @@
         max-width: 360px;
     }
     .BitrixEnter__container-descr {
-        padding-inline: 32px;
+        padding: 30px 32px 64px !important;
     }
     .benefits-section__container {
         padding: 56px 40px;
@@ -1108,7 +1111,7 @@
         font-size: 16px;
     }
     .benefits__container-descr__item-img {
-        width: 22px;
+        width: 25px;
         height: 21px;
     }
     .benefits__container-descr__item {

@@ -132,13 +132,19 @@
         display: none;
     }
     .container__commas {
-        justify-content: start;
+        justify-content: start !important;
     }
     .header__second {
         font-size: 24px;
     }
     .container__title__our__services {
         padding-left: 20px !important;
+    }
+    .wrapper__services {
+        justify-content: start !important;
+    }
+    .container__last {
+        min-height: 425px;
     }
 }
 

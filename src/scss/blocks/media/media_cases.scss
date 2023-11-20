@@ -28,8 +28,8 @@
     }
     .Cases__descr-about-projects {
         display: flex;
+        flex-direction: column;
         gap: 20px;
-        flex-wrap: wrap;
     }
     .Cases__container-descr {
         width: auto;

@@ -31,6 +31,12 @@
 }
 
 @media (max-width: 1280px) { 
+    .nav__items {
+        width: 1100px;
+    }
+    .tabs__item {
+        width: 185px !important;
+    }
     .AboutUs__white {
         background-size: 1100px 100%;
         width: 1100px;
@@ -238,6 +244,13 @@
 }
 
 @media (max-width: 1100px) { 
+    .nav__items {
+        width: 992px;
+    }
+    .tabs__item {
+        width: 185px !important;
+        padding: 18px 4px 20px 4px;
+    }
     .AboutUs__white {
         background-size: 992px 100%;
         width: 992px;
@@ -359,21 +372,8 @@
 }
 
 @media (max-width: 992px) { 
-    .container__mobile-nav-btn {
-        margin: 0 auto;
-        width: 768px;
-        display: flex;
-        justify-content: end;
-    }
-    .mobile-nav-btn-wrap {
-        display: block !important;
-        margin-right: 0 !important;
-    }
     .caption16 {
         font-size: 12px;
-    }
-    .mobile-nav {
-        display: flex !important;
     }
     .header {
         display: none;
@@ -391,7 +391,7 @@
         height: 3764px;
     }
     .AboutUs-promo-wrapper {
-        padding: 36px 39px 0 40px;
+        padding: 36px 39px 58px 40px;
     }
     .AboutUs-promo__title {
         font-size: 114px;
@@ -408,7 +408,7 @@
         width: 686px;
     }
     .aboutUs__caption16 {
-        font-size: 12px;
+        font-size: 14px !important;
     }
     .slide__AboutUs {
         height: 369px !important;
@@ -456,7 +456,7 @@
         margin-top: 74px;
     }
     .slide__AboutUs__Daniil img {
-        margin-right: -27px;
+        margin-right: -48px;
     }
     .AboutUs-promo__slider-descr {
         margin-top: 57px;
@@ -514,7 +514,7 @@
         transform: translate(-45px, -1119px);
     }
     .AboutUs-history__wrapper {
-        padding: 74px 20px 39px 132px;
+        padding: 33px 20px 34px 132px;
     }
     .aboutUs__header1 {
         font-size: 55px;
@@ -527,10 +527,10 @@
     }
     .AboutUs-history__bottom {
         width: 614px;
-        margin-top: 0;
+        margin-top: 18px;
     }
     .AboutUs-achievement__wrapper {
-        padding: 19px 64px 18px 132px;
+        padding: 27px 64px 28px 132px;
     }
     .aboutUs__header2 {
         font-size: 40px;
@@ -554,7 +554,7 @@
         margin-top: 17px;
     }
     .AboutUs-weFuture__wrapper {
-        padding: 30px 35px 0 76px;
+        padding: 55px 35px 0 76px;
     }
     .AboutUs-weFuture__container {
         width: 1155px;
@@ -577,11 +577,11 @@
         height: 21px;
     }
     .AboutUs-whyWe__wrapper {
-        padding: 30px 60px 40px;
+        padding: 55px 60px 40px;
         margin-top: -174px;
     }
     .AboutUs-template__table {
-        margin-top: 9px;
+        margin-top: 15px;
     }
     .template__table__row {
         padding: 15px 0;
@@ -618,9 +618,6 @@
 }
 
 @media (max-width: 768px) { 
-    .container__mobile-nav-btn {
-        width: 360px;
-    }
     .header {
         display: none;
     }
@@ -630,8 +627,11 @@
         width: 360px;
         height: 3653px;
     }
+    .aboutUs__caption16 {
+        font-size: 12px !important;
+    }
     .AboutUs-promo-wrapper {
-        padding: 0px 20px;
+        padding: 0px 20px 25px;
     }
     .AboutUs-promo__title {
         font-size: 53px;
@@ -674,83 +674,79 @@
         margin-top: 156px;
     }
     .slide__AboutUs__Daniil img {
-        margin-left: 13px;
-        transform: scale(0.7);
+        margin: 209px 9px 0 0;
+        transform: scale(1);
         height: auto;
-        margin-top: 181px;
     }
     .slide__AboutUs__Kostya img {
         margin-left: -71px;
         transform: scale(0.8);
+        height: auto;
         margin-top: 144px;
     }
     .slide__AboutUs__Ksysha img {
-        margin-left: 39px;
-        transform: scale(1);
-        margin-top: 205px;
-        margin-right: 36px;
+        margin: 186px 0 0;
+        transform: scale(0.85);
         height: auto;
     }
     .slide__AboutUs__NastyaD img {
-        margin-left: 26px;
-        transform: scale(0.7);
-        margin-top: 256px;
+        transform: scale(0.85);
+        margin: 196px 0 0;
         height: auto;
     }
     .slide__AboutUs__Egor img {
-        margin-left: 4px;
-        margin-right: 1px;
-        transform: scale(0.9);
+        margin: 166px 0 0;
+        transform: scale(0.8);
     }
     .slide__AboutUs__NastyaM img {
-        margin-left: 28px;
-        transform: scale(0.9);
+        margin: 172px 0 0;
+        transform: scale(0.75);
     }
     .AboutUs-promo__slider-descr-Daniil {
-        margin-top: -430px;
+        margin-top: -431px;
         margin-left: 20px;
     }
     .AboutUs-promo__slider-descr-Egor {
-        margin-top: -391px;
+        margin-top: -442px;
         margin-left: 20px;
     }
     .AboutUs-promo__slider-descr-NastyaM {
-        margin-top: -393px;
+        margin-top: -454px;
         margin-left: 20px;
     }
     .AboutUs-promo__slider-descr-NastyaD {
-        margin-top: -376px;
-        margin-left: 98px;
+        margin-top: -439px;
+        margin-left: 20px;
     }
     .AboutUs-promo__slider-descr-Ksysha {
-        margin-top: -370px;
+        margin-top: -434px;
         margin-left: 20px;
     }
     .AboutUs-promo__slider-descr-Kostya {
-        margin-top: -411px;
+        margin-top: -452px;
         margin-left: 20px;
     }
     .AboutUs-promo__slider-name {
         font-size: 25px;
     }
     .AboutUs-promo__slider-name-NastyaD {
-        transform: translate(-65px, -77px);
+        transform: none;
     }
     .AboutUs-promo__slider-proffession {
         font-size: 18px;
         margin-top: 12px;
     }
     .AboutUs-promo__slider-proffession-NastyaD {
-        transform: translate(-65px, -77px);
+        transform: none;
     }
     .AboutUs-promo__slider-quote {
-        width: 290px;
+        width: 280px;
     }
     .AboutUs-promo__slider-quote-Kostya {
         width: 280px;
     }
     .AboutUs-promo__slider-quote-NastyaD {
-        transform: translate(-65px, -77px);
+        transform: none;
         width: 257px
     }
     .AboutUs-promo__slider-icons {
@@ -767,7 +763,7 @@
         transform: translate(-23px, -1349px);
     }
     .AboutUs-history__wrapper {
-        padding: 105px 16px 19px 57px;
+        padding: 48px 25px 48px 45px;
     }
     .aboutUs__header1 {
         font-size: 45px;
@@ -775,7 +771,6 @@
     .AboutUs-history__top {
         margin-top: 6px;
         flex-direction: column;
-        /* color: #000; */
     }
     .AboutUs-history__top-left {
         width: 291px;
@@ -789,11 +784,10 @@
     }
     .AboutUs-history__bottom {
         width: 291px;
-        margin-top: 0;
-        /* color: #000; */
+        margin-top: 18px;
     }
     .AboutUs-achievement__wrapper {
-        padding: 47px 9px 53px 67px;
+        padding: 40px 28px 37px 45px;
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -811,7 +805,7 @@
         width: 184px;
     }
     .AboutUs-weToday__wrapper {
-        padding: 0px 15px 0 16px;
+        padding: 15px 16px 0;
     }
     .AboutUs-weToday__img {
         width: 360px;
@@ -833,11 +827,11 @@
     }
     .AboutUs-weFuture__img {
         margin-right: 10px;
-        margin-top: 6px;
-        transform: translateX(-75px) scale(1);
+        margin-top: 47px;
+        transform: translateX(-57px) scale(1.4);
     }
     .AboutUs-weFuture__descr-container {
-        margin: 19px 0 37px;
+        margin: 60px 0 37px;
         gap: 10px;
     }
     .AboutUs-weFuture__descr-row {
@@ -849,14 +843,14 @@
         height: 21px;
     }
     .AboutUs-whyWe__wrapper {
-        padding: 0px 16px 40px 16px;
+        padding: 10px 16px 40px;
         margin-top: 0;
     }
     .subtitle24 {
         font-size: 16px;
     }
     .AboutUs-template__table {
-        margin: 20px 14px 0 14px;
+        margin-top: 15px !important;
     }
     .AboutUs-template__table__row {
         padding: 16px 0;
@@ -868,9 +862,8 @@
     .AboutUs-template__table__row-left__title-text {
         width: 17px;
     }
-    .template__table__row-right__descr-text {
-        width: 300px;
-        margin-top: 8px;
+    .aboutUs__table__row-right__descr-text {
+        width: 329px !important;
     }
     .AboutUs__none768 {
         display: block;
@@ -900,35 +893,7 @@
         position: absolute;
         bottom: -100px;
         padding: 24px 12px;
-    }
-    .AboutUs-promo-slider {
-        /* background-color: #fff; */
-    }
-
-    .AboutUs-history {
-        /* background-color: #fff; */
-    }
-
-    .AboutUs-achievement {
-        /* background-color: #fff; */
-    }
-
-    .AboutUs-weToday {
-        /* background-color: #fff; */
-    }
-
-    .AboutUs-weFuture {
-        /* background-color: #fff; */
-    }
-
-    .AboutUs-whyWe {
-        /* background-color: #fff; */
-    }
-
-    .AboutUs-history__year {
-        /* color: #000; */
-    }
-    
+    }    
 }
 
 @media (max-width: 610px) { 

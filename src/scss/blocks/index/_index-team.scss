@@ -109,7 +109,8 @@
 .descr-team {
     display: flex;
     flex-direction: column;
-    width: 1263px !important;
+    // width: 1263px !important;
+    position: relative;
     height: 612px !important;
     /* margin-right: 0px !important; */
     cursor: url(../img/icon1/team__cursor.svg), pointer;
@@ -129,8 +130,9 @@
 }
 
 .swiper__team__img {
-    margin-top: -655px;
-    margin-left: 493px;
+    position: absolute;
+    right: 0;
+    top: -115px;
 }
 
 .custom-pagination {

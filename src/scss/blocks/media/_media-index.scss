@@ -2,10 +2,6 @@
     .index-mailer {
         min-width: 0;
     }
-    .nav__items {
-        width: 90vw;
-        justify-content: space-between;
-    }
     .container__text__slider__union {
         margin-right: 0;
     }
@@ -13,8 +9,6 @@
         max-width: 90vw;
     }
     .crm__content {
-        background-image: none;
-        background-color: #0A7272;
         width: 100vw;
     }
     .container__we__commas {
@@ -198,6 +192,7 @@
         order: 1;
     }
     .slider__laptop img {
+        max-width: 460px;
     }
     .container__we__proud {
         height: auto;
@@ -226,6 +221,18 @@
     }
     .container__proud__descr  {
         justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 1100px) {
+    .swiper__team__img {
+        top: 100px;
+    }
+    .slider__laptop img {
+        max-width: 400px;
+    }
+    .swiper__container__comments__items {
+        transform: translateX(20%);
     }
 }
 
@@ -314,6 +321,9 @@
     .team__container {
         margin-bottom: 0;
     }
+    .slide__we__proud {
+        padding-inline: 0;
+    }
     .slider__laptop img {
         width: 300px;
     }
@@ -369,9 +379,7 @@
     }
     .swiper__team__img {
         z-index: -1;
-        margin-top: 0;
-        margin-left: 0;
-        bottom: -12%;
+        top: 150px;
         width: 400px;
     }
     .descr-team {
@@ -414,6 +422,12 @@
 }
 
 @media (max-width: 768px) {
+    .container__comments h2 {
+        font-size: 32px;
+    }
+    .team__name {
+        font-size: 32px;
+    }
     h2 {
         font-size: 32px;
     }
@@ -446,7 +460,7 @@
         justify-content: center;
     }
     .team__profession {
-        top: 90px;
+        top: 110px;
         font-weight: 400;
         font-size: 16px;
     }
@@ -454,7 +468,9 @@
         margin-top: 50px;
     }
     .swiper__team__img {
-        bottom: -7%;
+        width: 60%;
+        top: 100px;
+        right: -30px;
     }
     .container__we h2 {
         margin-left: 0;
@@ -742,10 +758,6 @@
         margin-top: 0;
         bottom: 0;
         left: 0;
-    }
-    .swiper__team__img {
-        width: 60%;
-        bottom: -10%;
     }
     .swiper__wrapper__team {
         /* height: 344px !important; */

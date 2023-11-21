@@ -23,7 +23,7 @@ function swiperComments() {
           disableOnInteraction: true
         },
         spaceBetween: 80,
-        speed: 3000,
+        speed: 1500,
 
         // Navigation arrows
         navigation: {

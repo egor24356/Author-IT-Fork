@@ -5,6 +5,7 @@
 
 .advantages__container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     width: 1920px;
     background-color: #0A7272;
@@ -47,11 +48,37 @@
     background-color: transparent;
 }
 
-
-.arrow__read__all {
+.advantages__read__all__arrow {
     transition: all .1s ease;
 }
-
 .arrow__read__all_active {
     transform: rotate(-180deg);
+}
+
+.benefits-tabs {
+    overflow: hidden;
+    padding-left: 0;
+}
+
+.benefit {
+    background-color: #0A7272;
+    padding: 22px 410px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #F5F6FF;
+}
+
+.benefit-title {
+    font-family: "Unbounded-Black";
+    color: #F5F6FF;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.benefit-descr {
+    max-width: 347px;
+    color: #F5F6FF;
+    font-size: 14px;
+    line-height: 142.2%;
 }

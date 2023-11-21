@@ -22,9 +22,8 @@ function cursor() {
 				} else { // иначе
 					cursor.classList.remove('cursor_active') // удаляем активный класс
 				}
-			
 				cursor.style.left = e.pageX + 'px' // задаём элементу позиционирование слева
-				cursor.style.top = e.pageY + 'px' // задаём элементу позиционирование сверху
+				cursor.style.top = e.pageY - (cursor.offsetHeight / 4) + 'px'; // задаём элементу позиционирование сверху
 			})	
 		}
 	

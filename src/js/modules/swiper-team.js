@@ -9,7 +9,7 @@ function swiperTeam() {
           slidesPerView: 1,
           grabCursor: true,
           direction: 'horizontal',
-          speed: 3000,
+          speed: 1500,
           keyboard: true,
 
           pagination: {

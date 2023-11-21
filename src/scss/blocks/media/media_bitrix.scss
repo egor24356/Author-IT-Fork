@@ -238,16 +238,6 @@
 
 @media (max-width: 1300px) {
 
-    /* header */
-
-    .nav__items {
-        width: 992px;
-    }
-    .tabs__item {
-        width: 185px !important;
-        padding: 18px 4px 20px 4px;
-    }
-
     /* шрифты */
 
     .bitrix__header1,
@@ -449,10 +439,6 @@
         display: flex;
         justify-content: end;
         margin: 0 auto;
-    }
-    .mobile-nav-btn-wrap {
-        display: block !important;
-        margin-right: 0 !important;
     }
     .header {
         display: none;
@@ -770,10 +756,6 @@
 
     .container__mobile-nav-btn {
         width: 360px;
-    }
-    .mobile-nav-btn-wrap {
-        display: block !important;
-        margin-right: 0 !important;
     }
 
     /* шрифты */

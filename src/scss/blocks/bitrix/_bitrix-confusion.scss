@@ -56,3 +56,54 @@
     padding-top: 72px;
     padding-right: 136px;
 }
+
+@media (max-width: 992px) {
+    .confusion__container {
+        padding: 45px 16px 45px 18px;
+    }
+    .confusion__wrapper {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .confusion__container__left {
+        flex-basis: auto;
+        width: 300px;
+        height: 470px;
+        background-size: 100% 100%;
+        order: 2;
+    }
+    .confusion__container__right {
+        order: 1;
+        padding-right: 0;
+    }
+}
+@media (max-width: 768px) {
+    .confusion__title__text {
+        font-size: 24px;
+    }
+    .confusion__descr__title {
+        font-size: 20px;
+    }
+    .confusion__descr__text {
+        font-size: 12px;
+    }
+    .confusion__container__left {
+        position: absolute;
+        width: 105px;
+        height: 183px;
+        margin-left: 0;
+        right: -10px;
+        top: 10px;
+    }
+    .confusion__wrapper {
+        position: relative;
+    }
+    .confusion__container__right {
+        padding-top: 24px;
+        flex-basis: auto;
+        gap: 16px;
+    }
+    .confusion__first-descr {
+        max-width: 221px;
+    }
+}

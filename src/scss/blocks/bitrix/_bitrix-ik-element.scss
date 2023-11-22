@@ -180,3 +180,25 @@
         padding: 17px 13px;
     }
 }
+
+/* портфолио всплывашки */
+
+@media (min-width: 992px) {
+    .portfolio {
+        overflow: hidden;
+        position: relative;
+    }
+    .portfolio-2 {
+        position: absolute;
+        bottom: -100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .portfolio-block {
+        width: 100%;
+        transition: all .3s ease;
+    }
+    .portfolio-block--showed {
+        bottom: 0
+    }
+}

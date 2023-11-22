@@ -6,6 +6,7 @@
     margin-bottom: 127px;
     cursor: none;
     margin-top: 40px;
+    margin-inline: auto;
 }
 
 /* cursor */
@@ -144,4 +145,10 @@
     font-weight: 400;
     bottom: 200px !important;
     left: 1144px !important;
+}
+
+@media (max-width: 768px) {
+    .team__container {
+        max-width: 100%;
+    }
 }

@@ -25,15 +25,15 @@
 
 .confusion__wrapper {
     display: flex;
+    justify-content: space-between;
 }
 
 .confusion__container__left {
     display: flex;
-    flex-basis: 50%;
     background: url(../img/img1/rop.png);
     background-repeat: no-repeat;
-    width: 405.307px;
-    height: 670px;
+    width: 401.307px;
+    aspect-ratio: 401/671;
     margin-left: 84px;
 }
 
@@ -62,13 +62,12 @@
         padding: 45px 16px 45px 18px;
     }
     .confusion__wrapper {
-        justify-content: space-between;
         align-items: center;
     }
     .confusion__container__left {
         flex-basis: auto;
         width: 300px;
-        height: 470px;
+        // height: 470px;
         background-size: 100% 100%;
         order: 2;
     }
@@ -90,7 +89,7 @@
     .confusion__container__left {
         position: absolute;
         width: 105px;
-        height: 183px;
+        // height: 165px;
         margin-left: 0;
         right: -10px;
         top: 10px;

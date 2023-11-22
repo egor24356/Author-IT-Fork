@@ -149,6 +149,8 @@ main {
     margin: 0 auto;
 }
 
+
+
 .BitrixCloud__white-bg {
     position: relative;
     width: 1266px;
@@ -189,6 +191,18 @@ main {
     /* height: 1263px; */
     position: relative;
     margin: 0 auto 0 auto;
+}
+
+/* bitrix section */
+
+
+@media (max-width: 768px) {
+    .before-click h2 {
+        font-size: 32px;
+    }    
+    .before-click p {
+        font-size: 16px;
+    }    
 }
 
 /* шрифты */

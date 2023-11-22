@@ -1,21 +1,27 @@
+.crm-white {
+    background-color: #F5F6FF;
+    width: 1266px;
+    margin: 0 auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding-bottom: 40px;
+}
+
+/* зеленый фон */
+
 .crm__content {
     background: url(../img/icon1/crm_bg.svg) center no-repeat;
-    transform: translateX(-7%);
+    transform: translateX(-7.5%);
     min-width: 1483px;
     height: 948px;
-    padding: 159px 136px 108px 143px;
+    padding: 159px 136px 108px 110px;
 }
 
 /* crm__promo */
 
-/* зеленый фон */
-
 .crm__content__promo {
     display: flex;
     justify-content: space-between;
-    height: 109px;
-    min-width: 1064px;
-    margin-left: 106px;
 }
 
 /* шапка части crm */
@@ -119,4 +125,34 @@
 
 .crm__descr__comm {
     color: #F5F6FF;
+}
+
+@media (max-width: 992px) {
+    .crm__content {
+        height: auto;
+        padding: 0;
+        transform: translateX(-6%);
+        background-size: 121vw !important;
+        padding-left: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    .crm__icon__top {
+        flex-direction: column;
+    }
+    .crm__content {
+        transform: translateX(-15%);
+        padding-left: 218px;
+    }
+    .crm__icon__top {
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 570px) {
+    .crm__content  {
+        transform: translateX(-5%);
+        padding-left: 75px;
+    }
 }

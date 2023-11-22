@@ -8,9 +8,6 @@
     .white__bg {
         max-width: 90vw;
     }
-    .crm__content {
-        width: 100vw;
-    }
     .container__we__commas {
         width: 100%;
         padding: 0 10px;
@@ -38,12 +35,6 @@
     }
     .crm__descr__no-bg {
         max-width: 488px;
-    }
-    .crm__content {
-        transform: translateX(-5%);
-        width: 100vw;
-        min-width: 0;
-        height: auto;
     }
     .comm__revers {
         min-width: 213px;
@@ -308,10 +299,7 @@
         margin-left: 80px;
         margin-right: 0;
     }
-    .container__autor__IT img {
-        height: 450px;
-        transform: none;
-    }
+
     .crm__content {
         padding-top: 50px;
     }
@@ -392,9 +380,7 @@
     .autor__content {
         margin-left: 0;
     }
-    .autor__IT {
-        padding: 24px;
-    }
+
     .title-btn {
         display: flex;
         flex-direction: column;
@@ -430,9 +416,6 @@
     }
     h2 {
         font-size: 32px;
-    }
-    .crm__content {
-        padding: 45px 0;
     }
     .crm__content__promo {
         padding: 0 16px;
@@ -651,25 +634,14 @@
     .slider__name-desktop {
         display: none;
     }
-    .crm__icon__top {
-        flex-direction: column;
-    }
-    .autor__content h1 {
-        margin-bottom: 390px;
-        font-size: 40px;
-    }
+
     .autor__content .desktop-title {
         display: none;
     }
     .autor__content .mobile-title {
         display: block;
     }
-    .container__autor__IT img {
-        height: 350px;
-        position: absolute;
-        right: 0;
-        top: 147px;
-    }
+
     .team__container {
         position: relative;
     }
@@ -717,10 +689,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .crm__content {
-        transform: translateX(-1%);
-        padding: 45px 16px;
     }
     .descr {
         padding: 30px;
@@ -778,19 +746,13 @@
     .container__autor__IT img {
         top: 130px;
     }
-    .crm__content {
-        transform: none;
-        padding: 45px 0;
-    }
     .autor__IT {
         padding: 0;
     }
     .autor__go__work h3 {
         font-size: 16px;
     }
-    .autor__go__work, .autor__wrap__links {
-        width: 100%;
-    }
+
     .mailer-form-wrap {
         font-size: 20px;
     }

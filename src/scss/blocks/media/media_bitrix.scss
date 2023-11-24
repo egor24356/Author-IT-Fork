@@ -198,7 +198,7 @@
 
     /* мейлер */
 
-    .form__mailer {
+    /* .form__mailer {
         max-width: 90vw;
         height: auto;
         margin: 0 auto;
@@ -211,13 +211,13 @@
         margin-top: 18px;
         width: 100%;
         padding: 24px 0;
-    }
-    .container__mailer {
-        height: auto;
-        transform: none;
-        padding: 709px 0 119px 0;
-    }
-    .mailer input[type=text] {
+    } */
+    // .container__mailer {
+    //     height: auto;
+    //     transform: none;
+    //     padding: 709px 0 119px 0;
+    // }
+/*     .mailer input[type=text] {
         width: 100%;
     }
     .mailer input[type=tel] {
@@ -233,7 +233,7 @@
     }
     .mailer__descr {
         margin-top: 8px;
-    }
+    } */
 }
 
 @media (max-width: 1300px) {
@@ -932,7 +932,7 @@
         margin-top: -100px;
         padding: 15px 45px;
     }
-    .form__mailer {
+    /* .form__mailer {
         padding: 40px 50px;
     }
     .container__mailer {
@@ -953,7 +953,7 @@
         max-width: 100vw;
         margin-top: 550px;
         padding-bottom: 60px;
-    }
+    } */
     
     /* страница BitrixPortal */
     
@@ -1063,17 +1063,5 @@
     }
     .benefits-section {
         padding-inline: 20px;
-    }
-}
-
-@media (max-width: 600px) {
-    .mailer-section {
-        margin-top: -202px;
-    }
-}
-
-@media (max-width: 460px) {
-    .mailer-section {
-        margin-top: -277px;
     }
 }

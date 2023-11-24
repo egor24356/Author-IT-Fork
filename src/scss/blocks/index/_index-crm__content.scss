@@ -1,21 +1,48 @@
+.crm-white {
+    background-color: #F5F6FF;
+    width: 1266px;
+    margin: 0 auto;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: -1;
+}
+
+
+/* зеленый фон */
+
+.crm__background--mobile {
+    display: none;
+}
+
+.crm__background {
+    z-index: -1;
+    position: absolute;
+    top: -125px;
+    left: -109px;
+    margin-top: 125px;
+}
+
+.crm__container {
+    padding-top: 150px;
+    padding-bottom: 113px;
+}
+
+
 .crm__content {
     background: url(../img/icon1/crm_bg.svg) center no-repeat;
-    transform: translateX(-7%);
+    transform: translateX(-7.5%);
     min-width: 1483px;
     height: 948px;
-    padding: 159px 136px 108px 143px;
+    padding: 159px 136px 108px 110px;
 }
 
 /* crm__promo */
 
-/* зеленый фон */
-
 .crm__content__promo {
     display: flex;
     justify-content: space-between;
-    height: 109px;
-    min-width: 1064px;
-    margin-left: 106px;
 }
 
 /* шапка части crm */
@@ -119,4 +146,65 @@
 
 .crm__descr__comm {
     color: #F5F6FF;
+}
+
+@media (max-width: 992px) {
+    .crm__content {
+        height: auto;
+        padding: 0;
+        transform: translateX(-6%);
+        background-size: 121vw !important;
+        padding-left: 90px;
+    }
+    .crm__container {
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+    .crm__background--desktop {
+        height: 100%;
+    }
+    .crm-white {
+        padding-bottom: 0;
+    }
+    .more {
+        margin: 0;
+        padding: 24px 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .crm__background--desktop {
+        display: none;
+    }
+    .crm__background--mobile {
+        display: block;
+        object-fit: fill;
+        width: 100%;
+        max-height: 100%;
+        left: 0;
+    }
+    .crm__icon__top {
+        flex-direction: column;
+    }
+    .crm__content {
+        transform: translateX(-15%);
+        padding-left: 218px;
+    }
+    .crm__icon__top {
+        margin-top: 16px;
+    }
+    .descr {
+        border-radius: 16px;
+    }
+    .specialization {
+        display: none;
+    }
+}
+
+@media (max-width: 570px) {
+    .crm__content  {
+        transform: translateX(-5%);
+        padding-left: 75px;
+    }
 }

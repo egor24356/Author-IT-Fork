@@ -1,7 +1,7 @@
 @media (max-width: 1399px) {
-    .index-mailer {
+/*     .index-mailer {
         min-width: 0;
-    }
+    } */
     .container__text__slider__union {
         margin-right: 0;
     }
@@ -88,15 +88,15 @@
     .container__comments {
         background: #0A7272;
     }
-    .form__mailer {
+/*     .form__mailer {
         max-width: 90vw;
         height: auto;
         margin: 0 auto;
-    }
+    } */
     .black__bg {
         max-width: 100vw;
     }
-    .mailer {
+/*     .mailer {
         flex-direction: column;
     }
     .mailer button {
@@ -104,13 +104,13 @@
         margin-top: 18px;
         width: 100%;
         padding: 24px 0;
-    }
-    .container__mailer {
+    } */
+/*     .container__mailer {
         height: auto;
         transform: none;
         padding: 709px 0 119px 0;
-    }
-    .mailer input[type=text] {
+    } */
+    /* .mailer input[type=text] {
         width: 100%;
     }
     .mailer input[type=tel] {
@@ -126,7 +126,7 @@
     }
     .mailer__descr {
         margin-top: 8px;
-    }
+    } */
 }
 
 @media (max-width: 1299px) {
@@ -545,20 +545,20 @@
         font-size: 12px;
         font-family: "Unbounded-regular";
     }
-    .form__mailer {
+/*     .form__mailer {
         padding: 40px 50px;
-    }
+    } */
     .swiper__wrapper__comments {
         height: auto !important;
     }
-    .container__mailer {
+/*     .container__mailer {
         padding: 0 0 40px 0;
         background-size: 130%;
     }
     .mailer-section {
         margin-top: -100px;
-    }
-    .mailer-form-wrap {
+    } */
+/*     .mailer-form-wrap {
         position: relative;
     }
     .mailer button {
@@ -569,7 +569,7 @@
         max-width: 100vw;
         margin-top: 550px;
         padding-bottom: 60px;
-    }
+    } */
     .container__comments {
         margin-bottom: 0;
     }
@@ -668,9 +668,9 @@
     h1 {
         font-size: 40px;
     }
-    .mailer-section {
+/*     .mailer-section {
         margin-top: -200px;
-    }
+    } */
     .mobile-nav-btn {
         /* --width: 20px; */
         --height: 15px;
@@ -755,9 +755,9 @@
         font-size: 16px;
     }
 
-    .mailer-form-wrap {
+/*     .mailer-form-wrap {
         font-size: 20px;
-    }
+    } */
 }
 
 @media (max-width:490px) {
@@ -771,10 +771,10 @@
     .title-img {
         right: -30% !important;
     }
-    .mailer__title {
+/*     .mailer__title {
         font-size: 28px;
     }
     .container__break__mailer input {
         font-size: 14px;
-    }
+    } */
 }

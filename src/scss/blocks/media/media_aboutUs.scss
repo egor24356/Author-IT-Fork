@@ -1,9 +1,9 @@
 /* Медиа-запросы страницы AboutUs */
 
 @media (max-width: 100000px) { 
-    .form__mailer {
+/*     .form__mailer {
         width: 1263px;
-    }
+    } */
 }
 
 @media (max-width: 1300px) {
@@ -200,7 +200,7 @@
     .AboutUs__black {
         max-width: 100vw;
     }
-    .mailer-section {
+/*     .mailer-section {
         margin-top: 10px;
     }
     .AboutUs-container__mailer {
@@ -240,7 +240,7 @@
     }
     .AboutUs-mailer__descr {
         margin-top: 8px;
-    }
+    } */
 }
 
 @media (max-width: 1100px) { 
@@ -589,13 +589,13 @@
     .aboutUs__table__row-right__descr-text {
         width: 660px !important;
     }
-    .form__mailer {
+/*     .form__mailer {
         padding: 40px 50px;
-    }
+    } */
     .swiper__wrapper__comments {
         height: auto !important;
     }
-    .container__mailer {
+/*     .container__mailer {
         padding: 0 0 40px 0;
         background-size: 106%;
         margin-top: 71px;
@@ -614,7 +614,7 @@
         max-width: 100vw;
         margin-top: 550px;
         padding-bottom: 60px;
-    }
+    } */
 }
 
 @media (max-width: 768px) { 
@@ -871,18 +871,18 @@
     .AboutUs__block768 {
         display: none;
     }
-    .form__mailer {
+/*     .form__mailer {
         padding: 40px 50px;
         position: relative;
         height: auto;
         max-width: 100vw;
         margin-top: 550px;
         padding-bottom: 60px;
-    }
+    } */
     .swiper__wrapper__comments {
         height: auto !important;
     }
-    .container__mailer {
+/*     .container__mailer {
         padding: 0 0 40px 0;
         background-size: 106%;
     }
@@ -893,10 +893,10 @@
         position: absolute;
         bottom: -100px;
         padding: 24px 12px;
-    }    
+    }     */
 }
 
-@media (max-width: 610px) { 
+/* @media (max-width: 610px) { 
     .mailer-section {
         margin-top: -280px;
     }
@@ -908,9 +908,9 @@
         margin-top: 647px;
         padding: 40px 42px;
     }
-}
+} */
 
-@media (max-width: 510px) { 
+/* @media (max-width: 510px) { 
     .mailer-section {
         margin-top: -280px;
     }
@@ -922,25 +922,25 @@
         margin-top: 578px;
         padding: 40px 42px;
     }
-}
+} */
 
 @media (max-width: 440px) { 
-    .AboutUs-mailer {
+/*     .AboutUs-mailer {
         margin-top: 22px;
     }
     .form__mailer {
         margin-top: 524px;
         padding: 40px 20px;
-    }
+    } */
     .aboutUs__header2 {
         font-size: 20px;
     }
     .aboutUs__header3 {
         font-size: 18px;
     }
-    .mailer button {
+/*     .mailer button {
         bottom: -80px;
         padding: 9px 12px;
         height: 58px;
-    }
+    } */
 }

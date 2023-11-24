@@ -2,18 +2,36 @@
     padding: 100px 27px 30px 31px;
 }
 
-.BitrixPortal__title {
+.Bitrix__black-bg {
     position: relative;
+    width: 1266px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 33px 31px;
+    align-items:center;
 }
 
-.BitrixPortal__title-time {
-    position: absolute;
-    right: 70px;
-    top: 246px;
+.Bitrix__type-rates__container {
+    display: flex;
+    gap: 8px;    
+}
+
+.Bitrix__type-rates__item {
+    padding: 10px 26px;
+    border-radius: 16px;
+    border: 1px solid #F5F6FF;
+    color: #F5F6FF;
+    background-color: inherit;
+}
+
+.Bitrix__type-rates__item__active {
+    border: none;
+    background-color: #FF7D04;
 }
 
 .Bitrix__container-descr {
-    padding: 0 117px 64px 131px;
+    padding: 64px 117px 64px 131px;
 }
 
 /* для адаптива */

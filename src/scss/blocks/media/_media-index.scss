@@ -399,8 +399,10 @@
         background-size: 100vw;
     }
     .crm__icon__bottom {
-         background-color: #0A7272;
-         padding-bottom: 40px;
+        background-color: #0A7272;
+        padding-bottom: 40px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
     .crm__content__promo .crm__title {
         margin-top: 49px;

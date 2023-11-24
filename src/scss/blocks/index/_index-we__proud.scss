@@ -192,3 +192,13 @@
     right: 40px !important;
     outline:none;
 }
+
+@media (max-width: 768px) {
+    .container__proud__text h2 {
+        font-size: 32px;
+    }
+    .proud__descr__left, .proud__descr__right {
+        font-size: 12px;
+        width: auto;
+    }
+}

@@ -176,13 +176,29 @@ main {
     display: none;
 }
 
-.BitrixPortal__white-bg {
+.Bitrix__top-white-bg {
     position: relative;
     width: 1266px;
     background: #F5F6FF;
-    border-radius: 40px;
-    margin: 0 auto 58px auto;
-    /*display: none;*/
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    margin: 0 auto;
+}
+
+.Bitrix__white-bg {
+    position: relative;
+    width: 1266px;
+    background: #F5F6FF;
+    margin: 0 auto;
+}
+
+.Bitrix__bottom-white-bg {
+    position: relative;
+    width: 1266px;
+    background: #F5F6FF;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    margin: 0 auto;
 }
 
 .Bitrix__black-dg {

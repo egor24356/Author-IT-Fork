@@ -87,6 +87,26 @@
     stroke: #FF7D04;
 }
 
+/* отзыв */
+
+.review__photo-wrap {
+    margin-top: 16px;
+    margin-bottom: 8px !important;
+}
+
+.review__name {
+    font-family: "Unbounded-regular" !important;
+}
+
+.review__job-title {
+    margin-top: 8px;
+}
+
+.review__text {
+    margin-top: 16px;
+    height: auto !important;
+}
+
 /* правая часть секции Cases-afterClick с изображением проекта */
 
 .Cases__container-img {

@@ -4,13 +4,14 @@
 
 .green-folder {
     margin: 0 auto;
-    width: 1483px;
-    height: 1021px;
     background: url(../img/img1/green-folder.png) center center/cover no-repeat;
+    max-width: 1483px;
 }
 
 .green-folder__container {
-    padding: 64px 195px;
+    padding: 64px 0;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .rates-title {
@@ -153,4 +154,26 @@
     font-weight: 400;
     border-radius: 16px;
     border: 1px solid var(--White, #F5F6FF);
+}
+
+@media (max-width: 992px) {
+    .green-folder__container {
+        max-width: 768px;
+    }
+    .green-folder__list {
+        flex-direction: column;
+    }
+    .rates-item-wrap {
+        max-width: 100%;
+    }
+    .rates-item-wrap {
+        min-height: auto;
+    }
+    .green-folder__container {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .green-folder__container {
+        padding: 130px 16px 56px;
+    }
 }

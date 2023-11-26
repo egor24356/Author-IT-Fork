@@ -29,7 +29,7 @@ function swiperWeProud() {
             /* the viewport is less than 992 pixels wide */
             const swiper__proud = new Swiper('.swiper__container__we__proud', {
                 initialSlide: 0,
-                spaceBetween: 0,
+                spaceBetween: 40,
                 loop: true,
                 grabCursor: true,
                 slidesPerView: "1",

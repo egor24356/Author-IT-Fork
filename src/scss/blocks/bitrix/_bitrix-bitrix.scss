@@ -2,9 +2,9 @@
     background-color: #F5F6FF;
     display: block;
     width: 1266px;
-    height: 717px;
     margin: 0 auto;
     padding: 0;
+    padding-bottom: 64px;
 }
 
 .bitrix__wrapper {
@@ -18,6 +18,10 @@
     flex-direction: column;
     padding-left: 136px;
     gap: 26px;
+}
+
+.bitrix-bitrix-img-mobile {
+    display: none !important;
 }
 
 .bitrix__container__right {
@@ -63,4 +67,45 @@
 .bitrix__right__descr {
     display: inline-flex;
     flex-direction: column;
+}
+
+@media (max-width: 1300px) {
+    .bitrix {
+        &__container {
+            padding: 0 16px 45px 18px;
+        }
+    }
+    .bitrix__container__left {
+        flex-basis: auto;
+        padding-left: 0;
+    }
+    .bitrix__container__right {
+        flex-basis: auto;
+        width: 557px;
+    }
+    .bitrix-bitrix-img-mobile {
+        display: flex !important;
+        margin: 0 auto;
+        width: 460px;
+        background-size: 100% 100%;
+        height: auto;
+    }
+    .bitrix__wrapper__right {
+        padding: 250px 0 75px 51px;
+    }
+    .bitrix-bitrix-img-desktop {
+        display: none !important;
+    }
+    .bitrix__left__descr__text {
+        padding-bottom: 0;
+        max-width: 100%;
+    }
+}
+@media (max-width: 992px) {
+    
+}
+@media (max-width: 768px) {
+    .bitrix-bitrix-img-mobile {
+        width: 325px;
+    }
 }

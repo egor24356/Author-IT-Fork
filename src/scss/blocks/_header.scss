@@ -12,9 +12,10 @@
 }
 
 .item__logo {
-    background: url(../img/icon1/logo-white.svg) center no-repeat;
-    height: 96.5px;
     position: relative;
+    height: 96.5px;
+    background: url(../img/icon1/logo-white.svg) no-repeat;
+    background-position: 54% 42%;
 }
 
 .item__logo::after {
@@ -29,7 +30,8 @@
 }
 
 .item__logo:hover {
-    background: url(../img/icon1/logo-black.svg) center no-repeat;
+    background: url(../img/icon1/logo-black.svg) no-repeat;
+    background-position: 54% 42%;
 }
 
 .nav__items {
@@ -73,7 +75,7 @@
     background-color:#F5F6FF
 }
 
-@media (max-width: 1280px) { 
+@media (max-width: 1300px) { 
     .nav__items {
         width: 1100px;
     }

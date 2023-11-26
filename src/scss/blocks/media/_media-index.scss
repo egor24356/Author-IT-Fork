@@ -1,15 +1,12 @@
 @media (max-width: 1399px) {
-    .index-mailer {
+/*     .index-mailer {
         min-width: 0;
-    }
+    } */
     .container__text__slider__union {
         margin-right: 0;
     }
     .white__bg {
         max-width: 90vw;
-    }
-    .crm__content {
-        width: 100vw;
     }
     .container__we__commas {
         width: 100%;
@@ -38,12 +35,6 @@
     }
     .crm__descr__no-bg {
         max-width: 488px;
-    }
-    .crm__content {
-        transform: translateX(-5%);
-        width: 100vw;
-        min-width: 0;
-        height: auto;
     }
     .comm__revers {
         min-width: 213px;
@@ -97,15 +88,15 @@
     .container__comments {
         background: #0A7272;
     }
-    .form__mailer {
+/*     .form__mailer {
         max-width: 90vw;
         height: auto;
         margin: 0 auto;
-    }
+    } */
     .black__bg {
         max-width: 100vw;
     }
-    .mailer {
+/*     .mailer {
         flex-direction: column;
     }
     .mailer button {
@@ -113,13 +104,13 @@
         margin-top: 18px;
         width: 100%;
         padding: 24px 0;
-    }
-    .container__mailer {
+    } */
+/*     .container__mailer {
         height: auto;
         transform: none;
         padding: 709px 0 119px 0;
-    }
-    .mailer input[type=text] {
+    } */
+    /* .mailer input[type=text] {
         width: 100%;
     }
     .mailer input[type=tel] {
@@ -135,7 +126,7 @@
     }
     .mailer__descr {
         margin-top: 8px;
-    }
+    } */
 }
 
 @media (max-width: 1299px) {
@@ -308,10 +299,7 @@
         margin-left: 80px;
         margin-right: 0;
     }
-    .container__autor__IT img {
-        height: 450px;
-        transform: none;
-    }
+
     .crm__content {
         padding-top: 50px;
     }
@@ -392,9 +380,7 @@
     .autor__content {
         margin-left: 0;
     }
-    .autor__IT {
-        padding: 24px;
-    }
+
     .title-btn {
         display: flex;
         flex-direction: column;
@@ -413,8 +399,10 @@
         background-size: 100vw;
     }
     .crm__icon__bottom {
-         background-color: #0A7272;
-         padding-bottom: 40px;
+        background-color: #0A7272;
+        padding-bottom: 40px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
     .crm__content__promo .crm__title {
         margin-top: 49px;
@@ -430,9 +418,6 @@
     }
     h2 {
         font-size: 32px;
-    }
-    .crm__content {
-        padding: 45px 0;
     }
     .crm__content__promo {
         padding: 0 16px;
@@ -468,7 +453,7 @@
         margin-top: 50px;
     }
     .swiper__team__img {
-        width: 60%;
+        width: 270px;
         top: 100px;
         right: -30px;
     }
@@ -560,20 +545,20 @@
         font-size: 12px;
         font-family: "Unbounded-regular";
     }
-    .form__mailer {
+/*     .form__mailer {
         padding: 40px 50px;
-    }
+    } */
     .swiper__wrapper__comments {
         height: auto !important;
     }
-    .container__mailer {
+/*     .container__mailer {
         padding: 0 0 40px 0;
         background-size: 130%;
     }
     .mailer-section {
         margin-top: -100px;
-    }
-    .mailer-form-wrap {
+    } */
+/*     .mailer-form-wrap {
         position: relative;
     }
     .mailer button {
@@ -584,7 +569,7 @@
         max-width: 100vw;
         margin-top: 550px;
         padding-bottom: 60px;
-    }
+    } */
     .container__comments {
         margin-bottom: 0;
     }
@@ -651,25 +636,14 @@
     .slider__name-desktop {
         display: none;
     }
-    .crm__icon__top {
-        flex-direction: column;
-    }
-    .autor__content h1 {
-        margin-bottom: 390px;
-        font-size: 40px;
-    }
+
     .autor__content .desktop-title {
         display: none;
     }
     .autor__content .mobile-title {
         display: block;
     }
-    .container__autor__IT img {
-        height: 350px;
-        position: absolute;
-        right: 0;
-        top: 147px;
-    }
+
     .team__container {
         position: relative;
     }
@@ -694,16 +668,12 @@
     h1 {
         font-size: 40px;
     }
-    .mailer-section {
+/*     .mailer-section {
         margin-top: -200px;
-    }
+    } */
     .mobile-nav-btn {
         /* --width: 20px; */
         --height: 15px;
-    }
-    .mobile-nav-btn-wrap {
-        top: 10px;
-        left: 10px;
     }
     .autor__content {
         margin-left: 0;
@@ -721,10 +691,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    .crm__content {
-        transform: translateX(-1%);
-        padding: 45px 16px;
     }
     .descr {
         padding: 30px;
@@ -782,22 +748,16 @@
     .container__autor__IT img {
         top: 130px;
     }
-    .crm__content {
-        transform: none;
-        padding: 45px 0;
-    }
     .autor__IT {
         padding: 0;
     }
     .autor__go__work h3 {
         font-size: 16px;
     }
-    .autor__go__work, .autor__wrap__links {
-        width: 100%;
-    }
-    .mailer-form-wrap {
+
+/*     .mailer-form-wrap {
         font-size: 20px;
-    }
+    } */
 }
 
 @media (max-width:490px) {
@@ -811,10 +771,10 @@
     .title-img {
         right: -30% !important;
     }
-    .mailer__title {
+/*     .mailer__title {
         font-size: 28px;
     }
     .container__break__mailer input {
         font-size: 14px;
-    }
+    } */
 }

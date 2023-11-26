@@ -1,24 +1,24 @@
-.container__mailer {
-    max-width: 2160px;
-    background: url(../img/img1/mailer__bg.png) center center/cover no-repeat;
-    // transform: translateX(-22%);
-    padding: 721px 419px 119px 482px;
-    
-}
-
 .form__mailer {
-    /* height: 435px; */
+    position: absolute;
     background-color: #F5F6FF;
     border-radius: 52px;
     padding: 72px 120px;
-    width: 1262px;
+    width: 1263px;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mailer-photo {
+    position: relative;
+    left: 50%;
+    // bottom: -120px;
+    transform: translateX(-50%);
+    margin-top: 60px;
 }
 
 .mailer-section {
     position: relative;
-    margin-top: 56px;
-    display: flex;
-    justify-content: center;
 }
 
 .container__break__mailer {
@@ -41,23 +41,21 @@
     border-bottom: 1px solid #232323;
 }
 
-.mailer input::hover {
-
-}
-
-.mailer input::active {
+.mailer__second-row {
+    display: flex;
+    gap: 20px;
 }
 
 .mailer input[type=text] {
     width: 591px;
 }
 
-.mailer input[type=tel], input[type=email] {
-    width: 285px;
+.input-tel {
+    width: 50%;
 }
 
-.mailer input[type=tel] {
-    margin-right: 20px;
+.input-mail {
+    width: 50%;
 }
 
 .mailer__descr {
@@ -67,18 +65,77 @@
     margin-top: 20px;
 }
 
-.mailer {
-    position: relative;
-    margin-top: 56px;
-    display: flex;
-    // justify-content: space-between;
+.mailer button {
+    color:#F5F6FF;
 }
 
-.mailer button {
-    position: absolute;
-    width: 367px;
-    height: 81px;
-    color:#F5F6FF;
-    bottom: 0;
-    right: 0;
+.mailer-form-wrap {
+    display: flex;
+    align-items: end;
+    gap: 65px;
+}
+
+.mailer__title {
+    margin-bottom: 56px;
+}
+
+@media (max-width: 1263px) {
+    .container__mailer {
+        margin-bottom: 60px;
+    }
+    .mailer-form-wrap {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .mailer input[type=text] {
+        width: 100%;
+    }
+    .form__mailer {
+        width: 100%;
+        padding-bottom: 0;
+        bottom: 40px;
+    }
+    .mailer button {
+        transform: translateY(50%);
+    }
+    .mailer-form-wrap {
+        gap: 47px;
+    }
+    .mailer-photo {
+        width: 128%;
+        margin-bottom: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+    .form__mailer {
+        padding: 47px 49px 0;
+    }
+    .mailer-photo {
+        margin-bottom: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mailer__title {
+        font-size: 24px;
+    }
+    .mailer input::placeholder, .mailer__descr {
+        font-size: 12px;
+    }
+    .mailer-form-wrap {
+        gap: 0;
+    }
+    .form-btn h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 670px) {
+    .mailer-photo {
+        margin-bottom: 330px;
+    }
+    .form-btn {
+        padding-inline: 0;
+    }
 }

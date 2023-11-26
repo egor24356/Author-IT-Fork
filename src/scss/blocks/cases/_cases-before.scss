@@ -1,7 +1,6 @@
 
 .Cases, .Cases-afterClick {
     width: 1266px;
-    height: 964px;
     background-color: #F5F6FF;
     border-radius: 40px;
     margin: 0 auto;
@@ -136,4 +135,16 @@
 .Cases__swiper__basement-date {
     color: #000;
     font-family: "Unbounded-Regular"; 
+}
+
+@media (max-width: 768px) {
+    .swiper__wrapper__Cases {
+        flex-direction: column;
+    }
+    .Cases__swiper__basement-descr-BigWall {
+        display: none;
+    }
+    .Cases__swiper__basement-date {
+        border: none !important;
+    }
 }

@@ -41,17 +41,25 @@
 
 /* Кнопка "Давайте работать!" */
 
-.autor__go__work {
-    margin-top: 40px;
+.title-btn {
     width: 391px;
+}
+
+.autor__go__work {
+    display: flex;
+    justify-content: center;
     color: #F5F6FF;
+    background-color: #FF7D04;
+    border-radius: 40px;
+    padding: 24px 80px 24px 75px;
+    margin-top: 40px;
     transition: all .3s ease;
 }
 
 /* Ссылки на АвторIT */
 
 .autor__wrap__links {
-    width: 391px;
+    width: 100%;
     margin-top: 24px;
     display: flex;
     justify-content: space-between;

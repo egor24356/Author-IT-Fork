@@ -763,10 +763,14 @@
         width: 360px;
     }
 
+    .Bitrix__black-bg {
+        padding: 33px 2px;
+    }
+
     /* страница BitrixCloud */
 
     .Bitrix__container-title {
-        padding: 40px 30px 30px 30px;
+        padding: 29px 23px 27px 23px;
     }
     .Bitrix__title {
         margin-bottom: 0;
@@ -774,6 +778,9 @@
     .Bitrix__container-descr__item {
         flex-direction: column;
         gap: 18px;
+    }
+    .Bitrix__type-rates__item {
+        padding: 6px;
     }
     .Bitrix__container-descr__item-img {
         width: 25px;
@@ -793,10 +800,6 @@
     }
     .table-none768 {
         display: block;
-    }
-    .Bitrix__title-time {
-        display: flex;
-        justify-content: end;
     }
     .Bitrix__container-descr-time {
         margin-top: 0px;
@@ -928,8 +931,11 @@
         gap: 0px;
         padding: 0px;
     }
+    .price-wrap {
+        padding-right: 15px;
+    }
     .Bitrix__rates-services__btn {
-        margin-top: -100px;
+        margin-top: 0;
         padding: 15px 45px;
     }
     /* .form__mailer {
@@ -957,17 +963,14 @@
     
     /* страница BitrixPortal */
     
-    .BitrixPortal__container-title {
-        padding: 29px 23px 27px 23px;
-    }
     .BitrixPortal__title {
         font-size: 26px;
     }
-    .BitrixPortal__title-time {
-        font-size: 20px;
+    .Bitrix__title-time {
+        font-size: 22px !important;
     }
     .BitrixPortal__container-descr {
-        padding: 0 32px 50px;
+        padding: 25px 32px 50px;
     }
     .BitrixPortal-whyWe__title {
         font-size: 23px;
@@ -999,8 +1002,11 @@
     .BitrixEnter__container-descr {
         padding: 30px 32px 64px !important;
     }
+    .benefits-section__wrapper {
+        padding: 0 32px 350px;
+    }
     .benefits-section__container {
-        padding: 56px 40px;
+        padding: 32px 20px;
     }
     .benefits-section__item {
         font-size: 16px;
@@ -1024,12 +1030,19 @@
     .canbe-list .benefits-section__item {
         padding-left: 20px;
     }
+    .BitrixEnter__price-wrap {
+        padding: 24px 0 0;
+    }
     .price {
-        font-size: 32px;
+        font-size: 30px;
     }
     .price-btn {
-        width: 213px;
-        padding: 24px 19px;
+        width: auto;
+        padding: 15px 45px;
+        margin-top: 24px;
+    }
+    .benefits__container-descr {
+        width: 264px;
     }
     .benefits-section__item {
         margin-top: 16px;

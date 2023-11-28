@@ -197,3 +197,98 @@
     width: 290px;
     background-size: 100%;
 }
+
+/* секции, открывающиеся после клика */
+
+/* белый фон секций */
+
+.services-afterClick-title__container {
+    max-width: 1266px;
+    position: relative;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    background-color: #F5F6FF;
+    margin: 0 auto;
+    padding: 100px 30px 80px 31px;
+}
+
+.services-mobileApp-table__wrapper {
+    max-width: 1266px;
+    position: relative;
+    background-color: #F5F6FF;
+    margin: 0 auto;
+    padding: 0 0 80px 31px;
+}
+
+/* секция title */
+
+.services-afterClick-title__descr__container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 80px;
+}
+
+/* текст */
+
+.services-afterClick-title__descr__text {
+    color: #232323;
+    font-family: "Unbounded-Regular";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* заголовок */
+
+.services-mobileApp-table__title {
+    color: #232323;
+}
+
+/* заголовок меньшим шрифтом для Отраслевых решений и Тестирования */
+
+.services-header64px {
+    font-size: 64px;
+}
+
+/* секция с таблицей */
+
+.services-mobileApp-table__container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 133px 0 102px;
+}
+
+/* строки */
+
+.services-mobileApp-table__row {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    padding: 32px 0 24px;
+}
+
+.services-mobileApp-table__row:last-child {
+    padding-bottom: 0;
+}
+
+.services-mobileApp-table__row:first-child {
+    padding-top: 0;
+}
+
+/* подводка у строк */
+
+.services-mobileApp-table__row:not(:last-child) {
+    border-bottom: 1px solid #707077;
+}
+
+/* текст строк */
+
+.services-mobileApp-table__text {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

@@ -380,11 +380,14 @@
     .autor__content {
         margin-left: 0;
     }
-
     .title-btn {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 315px;
+    }
+    .autor__go__work {
+        padding: 20px 39px;
     }
     .crm__content__promo {
         flex-direction: column;
@@ -418,6 +421,9 @@
     }
     h2 {
         font-size: 32px;
+    }
+    .autor__go__work {
+        padding: 20px 25px;
     }
     .crm__content__promo {
         padding: 0 16px;
@@ -686,11 +692,6 @@
     }
     .white__bg {
         max-width: 360px;
-    }
-    .title-btn {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
     .descr {
         padding: 30px;

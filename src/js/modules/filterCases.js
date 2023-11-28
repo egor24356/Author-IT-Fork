@@ -6,6 +6,8 @@ function filterCases() {
 
         const filterItems = document.querySelectorAll('.Cases__filter-item');
         const swiperContainer = document.querySelector('.Cases__swiper__container');
+        const swiperTitle = document.querySelector('.Cases__swiper-title');
+
         let visibleSlides = getVisibleSlides();
 
         function getVisibleSlides() {
@@ -18,13 +20,14 @@ function filterCases() {
             filterItem.addEventListener('click', () => {
                 
                 const filterValue = filterItem.dataset.filter;
+                swiperTitle.innerHTML = filterItem.innerHTML;
                 const slides = swiperContainer.querySelectorAll('.Cases__swiper__slide');
 
                 visibleSlides = getVisibleSlides();
 
                 slides.forEach((slide, index) => {
                     const slideFilterValue = slide.dataset.filter;
-                    if ((filterValue === 'filterAll' || slideFilterValue === filterValue) && index < visibleSlides) {
+                    if ((filterValue === 'filterAll' || slideFilterValue === filterValue) /* && index < visibleSlides */) {
                         slide.style.display = 'block';
                     } else {
                         slide.style.display = 'none';
@@ -36,6 +39,5 @@ function filterCases() {
         });
     });
 }
-
 
 export default filterCases;

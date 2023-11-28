@@ -15,7 +15,7 @@
     position: relative;
     height: 96.5px;
     background: url(../img/icon1/logo-white.svg) no-repeat;
-    background-position: 54% 42%;
+    background-position: 50% 50%;
 }
 
 .item__logo::after {
@@ -29,11 +29,6 @@
     left: 0;
 }
 
-.item__logo:hover {
-    background: url(../img/icon1/logo-black.svg) no-repeat;
-    background-position: 54% 42%;
-}
-
 .nav__items {
     height: 60px;
     width: 1266px;
@@ -44,7 +39,7 @@
 }
 
 .tabs__items {
-    width: 215px;
+    width: 210px;
     height: 66px;
     color: #F5F6FF;
     display: block;
@@ -53,13 +48,6 @@
     font-family: Open Sans;
     font-size: 16px;
     font-weight: 700;
-}
-
-.tabs__items:hover {
-    transition: 0.1s;
-    color: black;
-    border-radius: 12px 12px 0px 0px;
-    /*background-color:#F5F6FF; */
 }
 
 .telephone {
@@ -71,8 +59,18 @@
     transition: all .2s ease;
 }
 
-.tabs__item:hover {
+.tabs__item:hover, .tabs__item--active {
+    transition: 0.1s;
+    color: black;
+    border-radius: 12px 12px 0px 0px;
     background-color:#F5F6FF
+}
+
+.item__logo:hover, .item__logo.tabs__item--active {
+    background: url(../img/icon1/logo-black.svg) no-repeat;
+    background-position: 50% 50%;
+    background-color:#F5F6FF
+
 }
 
 @media (max-width: 1300px) { 

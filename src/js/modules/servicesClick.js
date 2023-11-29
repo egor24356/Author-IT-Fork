@@ -20,6 +20,13 @@ function servicesClick() {
                 })
             })
         })
+        const bitrixCloudBtn = document.querySelector(`.container__commas-for-js[data-services="bitrixCloud"]`);
+        const bitrixPortalBtn = document.querySelector(`.container__commas-for-js[data-services="bitrixPortal"]`);
+        const bitrixEnterBtn = document.querySelector(`.container__commas-for-js[data-services="bitrixEnter"]`);
+
+        bitrixCloudBtn.addEventListener('click', function(){ location.href='/bitrix.html#cloud' })
+        bitrixPortalBtn.addEventListener('click', function(){ location.href='/bitrix.html#portal' })
+        bitrixEnterBtn.addEventListener('click', function(){ location.href='/bitrix.html#enter' })
     })
 }
 

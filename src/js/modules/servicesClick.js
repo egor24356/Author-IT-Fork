@@ -3,6 +3,7 @@ function servicesClick() {
         const commasAll = document.querySelectorAll('.container__commas-for-js');
         const pagesAll = document.querySelectorAll('.services-page');
         const pageDelete = document.querySelector('.main-services');
+        const mailerFooterServices = document.querySelector('.services-mailer-footer');
         
         commasAll.forEach(commas => {
             commas.addEventListener('click', () => {
@@ -15,6 +16,7 @@ function servicesClick() {
                         pageDelete.classList.add('none');
                         pages.classList.add('block');
                         pages.classList.remove('none');
+                        mailerFooterServices.classList.remove('none');
                     }
 
                 })

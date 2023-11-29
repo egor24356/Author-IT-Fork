@@ -1,3 +1,5 @@
+import changeMailer from "./change-mailer";
+
 function bitrixPage() {
 
 // нажатие на кнопку introduction
@@ -7,9 +9,6 @@ document.addEventListener('DOMContentLoaded', ()  => {
     const bitrixBefore = document.querySelector('.before-click'); //  изначальная страница битрикса
     const bitrixBtnAll = document.querySelector('.Bitrix__btnAll'); // кнопка на изначальной странице
     const bitrixAll = document.querySelector('.bitrixAll'); // страница, открывающаяся после нажатия кнопки
-
-    const mailerBefore = document.querySelector('.Bitrix-mailer-before');
-    const mailerAfter = document.querySelector('.Bitrix-mailer-after');
 
     //нажатие на кнопку
     bitrixBtnAll.addEventListener('click', () => {
@@ -21,8 +20,7 @@ document.addEventListener('DOMContentLoaded', ()  => {
         }else{
             bitrixAll.classList.add('none');
         }
-        mailerBefore.classList.add('none');
-        mailerAfter.classList.remove('none');
+        changeMailer();
         window.scrollTo({
             top: 0,
             left: 0,

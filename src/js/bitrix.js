@@ -7,7 +7,7 @@ import bitirixOpen from './modules/bitrix-open.js';
 
 bitirixOpen();
 headerLinks();
-// portfolio();
+portfolio();
 bitrixPage();
 mobileNav();
 benefits();

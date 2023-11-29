@@ -212,12 +212,22 @@
     padding: 100px 30px 80px 31px;
 }
 
-.services-mobileApp-table__wrapper {
+.services-table__wrapper {
     max-width: 1266px;
     position: relative;
     background-color: #F5F6FF;
     margin: 0 auto;
     padding: 0 0 80px 31px;
+}
+
+.services-proposal__container {
+    max-width: 1266px;
+    position: relative;
+    background-color: #F5F6FF;
+    margin: 0 auto;
+    padding: 0 0 99px;
+    display: flex;
+    justify-content: end;
 }
 
 /* секция title */
@@ -241,7 +251,7 @@
 
 /* заголовок */
 
-.services-mobileApp-table__title {
+.services-table__title {
     color: #232323;
 }
 
@@ -253,7 +263,7 @@
 
 /* секция с таблицей */
 
-.services-mobileApp-table__container {
+.services-table__container {
     display: flex;
     flex-direction: column;
     padding: 40px 133px 0 102px;
@@ -261,34 +271,77 @@
 
 /* строки */
 
-.services-mobileApp-table__row {
+.services-table__row {
     display: flex;
     gap: 24px;
     align-items: center;
     padding: 32px 0 24px;
 }
 
-.services-mobileApp-table__row:last-child {
+.services-table__row:last-child {
     padding-bottom: 0;
 }
 
-.services-mobileApp-table__row:first-child {
+.services-table__row:first-child {
     padding-top: 0;
 }
 
 /* подводка у строк */
 
-.services-mobileApp-table__row:not(:last-child) {
+.services-table__row:not(:last-child) {
     border-bottom: 1px solid #707077;
 }
 
 /* текст строк */
 
-.services-mobileApp-table__text {
+.services-table__text {
     color: #000;
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+/* секция proposal */
+
+/* фотография */
+
+.services-proposal__img {
+    position: absolute;
+    left: -20px;
+    top: 65px;
+    z-index: 1;
+}
+
+/* контейнер с текстом на фоне черной запятой */
+
+.services-proposal__comma-with-text {
+    background-image: url("../img/icon1/services-comma.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 865px;
+    width: 624px;
+    position: relative;
+}
+
+/* текст */
+
+.services-proposal__text {
+    color: #F5F6FF;
+    font-family: "Unbounded-Regular";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    width: 72%;
+    position: absolute;
+    top: 21%;
+    right: 12%;
+}
+
+/* текст с другим top у секций Отраслевые решения и Нагрузочное тестирование */
+
+.proposal-position {
+    top: 14%;
 }

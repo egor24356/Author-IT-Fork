@@ -1,0 +1,109 @@
+
+.partner__wrapper {
+    background-color: #F5F6FF;
+    display: block;
+    width: 1266px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.partner__container {
+    display: flex;
+    padding-top: 88px;
+}
+
+.partner__container__left {
+    display: flex;
+    flex-basis: 60%;
+    padding-left: 136px;
+}
+
+.partner__wrapper__left {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+/* .partner__left__img {
+    display: flex;
+    margin-right: 200px;
+    background: url(/Bitrix_img/gold_partner_img.png);
+    background-repeat: no-repeat;
+    height: 834px;
+} */
+
+.partner__left__descr__text {
+    max-width: 397px;
+}
+
+.partner__container__right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+}
+
+.partner__right__container__descr {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.partner__wrapper__right {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+.partner__right__title__text {
+    color:#FF7D04;
+}
+
+.partner__left__img {
+    position: relative;
+    padding-bottom: 725px;
+}
+
+.partner__left__img img{
+    left: -385px;
+    position: absolute;
+}
+
+@media (max-width: 1300px) {
+    .partner__container__left {
+        flex-basis: auto;
+        padding-left: 0;
+    }
+    .partner__container {
+        padding: 45px 16px 0 18px;
+    }
+    .partner__left__img {
+        padding-bottom: 500px;
+    }
+    .partner__left__img img {
+        background-size: 100% 100%;
+        width: 900px;
+        left: -178px;
+    }
+}
+@media (max-width: 992px) {
+    .partner__container {
+        flex-direction: column;
+    }
+    .partner__left__img img {
+        top: -45px;
+        left: 83px;
+    }
+    .partner__wrapper__right {
+        gap: 25px;
+    }
+}
+@media (max-width: 768px) {
+    .partner__left__img img {
+        width: 390px;
+        left: 25px;
+        top: -20px;
+    }
+    .partner__left__img {
+        padding-bottom: 211px;
+    }
+}

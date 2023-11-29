@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Автор IT</title>
+		<link rel="shortcut icon" href="img/icon1/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./css/main.css" />
+		<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>  -->
+
+	</head>
+	<body>
+		@@include('blocks/header.html')
+		<main class="main">
+			<div class="before-click">
+				@@include('blocks/bitrix/bitrix-integration.html')
+				@@include('blocks/bitrix/bitrix-confusion.html')
+				@@include('blocks/bitrix/bitrix-bitrix.html')
+				@@include('blocks/bitrix/bitrix-advantages.html')
+				@@include('blocks/bitrix/bitrix-partner.html')
+				@@include('blocks/bitrix/bitrix-weare-learning.html')
+				@@include('blocks/bitrix/bitrix-running-line.html')
+				@@include('blocks/bitrix/bitrix-ik-element.html')
+				@@include('blocks/bitrix/bitrix-rates.html')
+			</div>
+			<div class="BitrixPortal__white-bg bitrixAll none" data-introduction="Box">
+				<!-- Корпоративный портал -->
+				@@include('blocks/bitrix/bitrixall-portal-title.html') 
+				@@include('blocks/bitrix/bitrixall-why-we.html')
+				@@include('blocks/bitrix/bitrixall-why-we-rates.html')
+				<!-- Облачный сервис -->
+				@@include('blocks/bitrix/bitrix-title-section.html')
+				@@include('blocks/bitrix/bitrix-bitrixall-rates.html')
+				<!-- Энтерпрайз -->
+				@@include('blocks/bitrix/bitrixall-enter-title.html')
+				@@include('blocks/bitrix/bitrixall-enter-benefits.html')
+			</div>
+			<div class="mailer-before">
+				@@include('blocks/mailer-integrate.html')
+			</div>
+			<div class="mailer-after none">
+				@@include('blocks/mailer-questions-bg.html')
+			</div>
+		</main>
+		@@include('blocks/footer.html')
+		<script src="./js/bitrix.bundle.js"></script>
+	</body>
+</html>

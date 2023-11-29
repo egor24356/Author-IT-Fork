@@ -1,0 +1,150 @@
+
+.Cases, .Cases-afterClick {
+    width: 1266px;
+    background-color: #F5F6FF;
+    border-radius: 40px;
+    margin: 0 auto;
+    padding: 100px 32px 40px 120px;
+}
+
+.Cases__png-bg {
+    margin: 0 auto;
+}
+
+.cases-title-mobile {
+    display: none;
+}
+
+.Cases-date-mobile {
+    display: none;
+}
+
+.arrow-up-btn {
+    display: none;
+}
+
+.Cases {
+    display: block;
+}
+
+.Cases__title {
+    color: #000;
+}
+
+/* контейнер для слайдера и пунктов */
+
+.Cases__container {
+    margin-top: 230px;
+    display: flex;
+}
+
+/* контейнер для пунктов */
+
+.Cases__filter-items {
+    margin-top: 271px;
+    margin-right: 70px;
+    color: #232323;
+    font-family: "Unbounded-Regular"; 
+    cursor: pointer;
+}
+
+.Cases__filter-item {
+    margin-top: 10px;
+}
+
+.Cases__filter-item1 {
+    margin-top: 0;
+    color: #FF7D04;
+}
+
+/* контейнер для надписи у слайдера и навигации */
+
+.Cases__swiper-container-title-arrows {
+    display: flex;
+    position: relative;
+}
+
+/* надпись у слайдера */
+
+.Cases__swiper-title {
+    color: #707077;
+    margin-right: 576px;
+}
+
+/* навигация слайдера */
+
+.Cases__swiper__arrow-prev {
+    left: 671px !important;
+    outline:none;
+}
+
+.Cases__swiper__arrow-next {
+    left: 718px !important;
+    outline:none;
+}
+
+/* swiper секции Cases */
+
+.Cases__swiper__container {
+    display: flex;
+    flex-direction: column;
+    width: 797px;
+    overflow: hidden;
+}
+
+/* slide секции Cases*/
+
+.Cases__swiper__slide {
+    width: 696px !important;
+    height: 440px !important;
+    margin-top: 20px;
+}
+
+/* нижняя часть слайдера с кратким описанием проекта */
+
+.Cases__swiper__basement {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* неактивная "кнопка" в нижней части слайдера */
+
+.Cases__swiper__link {
+    color: #F5F6FF;
+    font-family: "Unbounded-Regular"; 
+    width: 186px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 13px;
+    background: #232323;
+    text-decoration: none;
+    transition: background .3s ease;
+}
+
+/* название слайда в нижней части слайдера */
+
+.Cases__swiper__basement-descr {
+    color: #707077;
+}
+
+/* дата проекта в нижней части слайдера */
+
+.Cases__swiper__basement-date {
+    color: #000;
+    font-family: "Unbounded-Regular"; 
+}
+
+@media (max-width: 768px) {
+    .swiper__wrapper__Cases {
+        flex-direction: column;
+    }
+    .Cases__swiper__basement-descr-BigWall {
+        display: none;
+    }
+    .Cases__swiper__basement-date {
+        border: none !important;
+    }
+}

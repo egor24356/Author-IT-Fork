@@ -1,0 +1,114 @@
+.Cases-afterClick {
+    display: none;
+}
+
+/* обертка всех элементов*/
+
+.Cases__wrapper-descr {
+    display: flex;
+}
+
+/* контейнер левой части с описанием проекта */
+
+.Cases__container-descr {
+    width: 317px;
+    margin-right: 39px;
+}
+
+/* путь */
+
+.Cases__container-descr__way {
+    color: #707077;
+}
+
+/* описание проекта */
+
+.Cases__descr-title {
+    color: #232323;
+    margin-top: 24px;
+}
+
+.Cases__descr-subtitle {
+    color: #232323;
+    margin-top: 6px;
+}
+
+.Cases__descr-about-projects {
+    color: #232323;
+    margin-top: 32px;
+}
+
+.Cases__descr-task {
+    color: #232323;
+    margin-top: 24px;
+}
+
+.Cases__descr-item {
+    color: #232323;
+    margin-top: 8px;
+}
+
+.Cases__descr-result {
+    color: #232323;
+    margin-top: 24px;
+}
+
+/* кнопка для возврата к прошлой секции */
+
+.Cases__descr-link {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    width: 212px;
+    height: 40px;
+    padding: 8px 40px 8px 32px;
+    margin-top: 34px;
+    border-radius: 16px;
+    border: 1px solid var(--c);
+    --c:#232323;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Cases__descr-link:hover {
+    background-color: #F5F6FF;
+    --c:#FF7D04;
+    color:#FF7D04;
+}
+
+.Cases__descr-link:active {
+    background-color: #F5F6FF;
+    --c:#EC7202;
+    color:#EC7202;
+}
+
+.Cases__descr-link-arrow {
+    stroke: #FF7D04;
+}
+
+/* отзыв */
+
+.review__photo-wrap {
+    margin-top: 16px;
+    margin-bottom: 8px !important;
+}
+
+.review__name {
+    font-family: "Unbounded-regular" !important;
+}
+
+.review__job-title {
+    margin-top: 8px;
+}
+
+.review__text {
+    margin-top: 16px;
+    height: auto !important;
+}
+
+/* правая часть секции Cases-afterClick с изображением проекта */
+
+.Cases__container-img {
+    margin-right: 63px;
+}

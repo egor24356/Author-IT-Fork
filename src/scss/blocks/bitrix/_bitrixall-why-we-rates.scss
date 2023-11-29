@@ -1,0 +1,60 @@
+.BitrixPortal__container-rate__typeItem {
+    width: 178px;
+}
+
+.BitrixPortal__rate__typeNameInter {
+    color: #232323;
+    font-family: "Unbounded-Black"; 
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.BitrixPortal__rate__descr {
+    color: #232323;
+    font-family: "Unbounded-Regular"; 
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.BitrixPortal__rate__price {
+    margin-top: 16px;
+    font-size: 24px;
+}
+
+.Bitrix__rate__container__descr-price {
+    margin-top: 16px;
+}
+
+.BitrixPortal__rate__typeDescr-typePrice {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+.BitrixPortal__rate__typeName {
+    color: #232323;
+    font-family: "Unbounded-Black"; 
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.BitrixPortal__container-rates__support {
+    margin-bottom: 0px;
+}
+
+.BitrixPortal__container-rates__support-scale {
+    padding: 0 53px 0 79px;
+    justify-content: inherit;
+    gap: 185px;
+}
+
+.BitrixPortal__container-rates__support-scale-4col {
+    display: flex;
+    justify-content: space-between;
+    width: inherit;
+}
+
+.BitrixPortal__container-rates__support-scale-3col {
+    padding: 0 53px 0 315px;
+    gap: 0;
+}

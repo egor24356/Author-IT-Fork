@@ -1,6 +1,6 @@
 function portfolio() {
-
-    if (window.matchMedia('(min-width: 992px)').matches) {
+    const bitrixBefore = document.querySelector('.before-click');
+    if (window.matchMedia('(min-width: 992px)').matches && !bitrixBefore.classList.contains('none')) {
         const ANIM_DURATION = 300;
         const body = document.querySelector('body');
         const portfolioSection = document.querySelector('.ik-element');

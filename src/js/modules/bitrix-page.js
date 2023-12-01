@@ -1,4 +1,5 @@
 import changeMailer from "./change-mailer";
+import portfolio from "./bitrix-portfolio";
 
 function bitrixPage() {
 
@@ -12,6 +13,7 @@ document.addEventListener('DOMContentLoaded', ()  => {
 
     //нажатие на кнопку
     bitrixBtnAll.addEventListener('click', () => {
+        portfolio();
         bitrixBefore.classList.add('none'); 
         const btnData = bitrixBtnAll.getAttribute('data-introduction');
         const bitrixData = bitrixAll.getAttribute('data-introduction');

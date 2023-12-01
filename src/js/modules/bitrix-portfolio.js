@@ -8,11 +8,11 @@ function portfolio() {
         const thirdBlock = document.querySelector('.portfolio-3');
         const portfolioBlock = document.querySelector('.portfolio');
 
-        window.addEventListener('scroll', function() {     
+        window.addEventListener('scroll', function() {      
             if (isAnimated) return;
             let posY = portfolioBlock.getBoundingClientRect().top;
             let coordY = window.scrollY;
-            if (Math.abs(posY) < 20) {
+            if (Math.abs(posY) < 20  && !bitrixBefore.classList.contains('none')) {
                 body.classList.add('no-scroll');
                 isAnimated = true;
                 setTimeout(changeFlag, ANIM_DURATION);
@@ -40,7 +40,7 @@ function portfolio() {
             if(isAnimated) return;
             isAnimated = true;
             setTimeout(changeFlag, ANIM_DURATION);
-            if (e.deltaY > 0) {
+            if (e.deltaY > 0 ) {
                 if (thirdBlock.classList.contains('portfolio-block--showed')) {
                     window.removeEventListener('wheel', wheelListener);
                     body.classList.remove('no-scroll');

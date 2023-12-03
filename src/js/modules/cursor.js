@@ -1,36 +1,80 @@
 //курсор
 function cursor() {
 	document.addEventListener('DOMContentLoaded', ()  => { 
-
+		const body = document.querySelector('body');
 		const containerTeam = document.querySelector('.team__container')  // was
 		const cursor = document.querySelector('.cursor') // ищем элемент, который будет следовать за курсором
+		const containerTeamTopCoord = containerTeam.getBoundingClientRect().top + window.scrollY;
+		const containerTeamBottomCoord = containerTeamTopCoord + containerTeam.getBoundingClientRect().height;
 
-		containerTeam.onmouseover = (e) => {
-			// cursor.style.opacity = 1 // was
-			cursor.classList.remove('no-opacity');
+		let rTop = Math.abs(containerTeamTopCoord);
+		let rBottom = Math.abs(containerTeamBottomCoord);
+
+		const cursorObj = {
+			pageY: 0,
+			pageX: 0,
+			deltaY: 0
 		}
 
-		containerTeam.onmouseout = (e) => { 
-			// cursor.style.opacity = 0 // was
-			cursor.classList.add('no-opacity');
+		window.addEventListener('mousemove', mousemoveTracker);
+		
+		function mousemoveTracker(e) {
+			cursorObj.deltaY = e.pageY - window.scrollY;
+			cursorObj.pageX = e.pageX;
+			cursorObj.pageY = e.pageY;
+			cursorToggler();
 		}
 
-		const followCursor = () => { // объявляем функцию followCursor
-			containerTeam.addEventListener('mousemove', e => { // при движении курсора
+		window.addEventListener('scroll', scrollTracker);
+		
+		function scrollTracker() {
+			cursorObj.pageY = window.scrollY + cursorObj.deltaY;
+			cursorToggler();
+			cursorTracker();
+		}
+
+		function cursorToggler() {
+			console.log(cursorObj)
+			rTop = Math.abs(cursorObj.pageY - containerTeamTopCoord);
+			rBottom = Math.abs(cursorObj.pageY - containerTeamBottomCoord);
+			if (rTop < 400 || rBottom < 300 ||		
+					((cursorObj.pageY - containerTeamTopCoord) > 0 && (cursorObj.pageY - containerTeamBottomCoord) < 0)) {
+				cursor.classList.remove('no-opacity');
+				body.style = 'cursor: none';
+				if (cursorObj.pageY - containerTeamTopCoord  < 0) {
+					cursor.style = `opacity: ${100/(rTop)}`;
+				}
+				if (cursorObj.pageY - containerTeamBottomCoord > 0) {
+					cursor.style = `opacity: ${100/(rBottom)}`;
+				}
+			} else {
+				cursor.classList.add('no-opacity');
+				body.style = 'cursor: auto';
+			}
+		}
+
+		const followCursorGlob = () => { // объявляем функцию followCursor
+			window.addEventListener('mousemove', e => { // при движении курсора
 				const target = e.target // определяем, где находится курсор
-				if (!target) return
-					if (target.closest('a') || target.closest('.cursor-mobile-wrap')) { // если курсор наведён на кнопку
+				// if (!target) return
+				if (target.closest('a') || target.closest('.cursor-mobile-wrap')) { // если курсор наведён на кнопку
 					cursor.classList.add('cursor_active') // элементу добавляем активный класс
 				} else { // иначе
 					cursor.classList.remove('cursor_active') // удаляем активный класс
 				}
-				cursor.style.left = e.pageX + 'px' // задаём элементу позиционирование слева
-				cursor.style.top = e.pageY - (cursor.offsetHeight / 4) + 'px'; // задаём элементу позиционирование сверху
+				cursorTracker();
+				// cursor.style.left = cursorObj.pageX + 'px' // задаём элементу позиционирование слева
+				// cursor.style.top = cursorObj.pageY - (cursor.offsetHeight / 4) + 'px'; // задаём элементу позиционирование сверху
 			})	
 		}
 	
-		followCursor(); // вызываем функцию followCursor
+		followCursorGlob();
 
+		function cursorTracker() {
+			cursor.style.left = cursorObj.pageX + 'px' // задаём элементу позиционирование слева
+			cursor.style.top = cursorObj.pageY - (cursor.offsetHeight / 4) + 'px'; // задаём элементу позиционирование сверху
+		}
+		
 		const teamImg = document.querySelector('.team__img')
 		const links = document.querySelector('.team__links')
 		const swiperTeam = document.querySelector('.swiper__team')
@@ -41,11 +85,13 @@ function cursor() {
 		nextCircle.addEventListener('click', openSlider);
 		
 		function openSlider () {
+			window.removeEventListener('mousemove', mousemoveTracker);
+			window.removeEventListener('scroll', scrollTracker);
+			body.style = 'cursor: auto';
 			teamImg.remove();
 			cursor.style.display = 'none';
 			mobileCursor.style.display = 'none';
 			swiperTeam.style.display = 'block';
-
 		}
 	})
 }

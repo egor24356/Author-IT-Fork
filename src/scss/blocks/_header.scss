@@ -154,17 +154,49 @@
     }
     .nav__list-item__link, .header__telephone {
         width: 166px;
+        height: 52px;
         font-size: 14px;
     }
+    .nav__list-item__link {
+        padding: 18px 44px 20px;
+    }
+    .nav__logo {
+        padding: 15px 67px 15px 76px;
+    }
     .header__telephone::after {
-        border-right: 10px solid #F5F6FF;
-        border-bottom: 24px solid #F5F6FF;
-        right: 152px;
+        height: 17px;
+        width: 34px;
+        border-right: 28px solid #F5F6FF;
+        border-bottom: 28px solid #F5F6FF;
+        right: 134px;
+        bottom: -28px;
     }
     .nav__list-item__link::after {
-        border-right: 13px solid #F5F6FF;
-        border-bottom: 24px solid #F5F6FF;
-        right: 153px;
+        height: 33px;
+        width: 44px;
+        border-right: 34px solid #F5F6FF;
+        border-bottom: 34px solid #F5F6FF;
+        right: 132px;
+        bottom: -34px;
+    }
+    .nav__logo::after {
+        height: 40px;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        /* обнуление предыдущих стилей after */
+        bottom: 0;
+        right: 0;
+        border: none;
+        border-bottom-left-radius: 0;
+    }
+    .nav__list-item__link::before {
+        height: 33px;
+        width: 44px;
+        border-left: 34px solid #F5F6FF;
+        border-bottom: 34px solid #F5F6FF;
+        right: -44px;
+        bottom: -34px;
     }
 }
 

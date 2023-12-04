@@ -203,17 +203,16 @@
 /* белый фон секций */
 
 .services-afterClick-title__container {
-    max-width: 1266px;
     position: relative;
     border-top-right-radius: 40px;
     border-top-left-radius: 40px;
     background-color: #F5F6FF;
+    color: #232323;
     margin: 0 auto;
     padding: 100px 30px 80px 31px;
 }
 
 .services-table__wrapper {
-    max-width: 1266px;
     position: relative;
     background-color: #F5F6FF;
     margin: 0 auto;
@@ -221,7 +220,6 @@
 }
 
 .services-proposal__container {
-    max-width: 1266px;
     position: relative;
     background-color: #F5F6FF;
     margin: 0 auto;
@@ -279,11 +277,11 @@
 }
 
 .services-table__row:last-child {
-    padding-bottom: 0;
+    padding-bottom: 0 !important;
 }
 
 .services-table__row:first-child {
-    padding-top: 0;
+    padding-top: 0 !important;
 }
 
 /* подводка у строк */
@@ -305,8 +303,6 @@
 
 /* секция proposal */
 
-/* фотография */
-
 .services-proposal__img {
     position: absolute;
     left: -20px;
@@ -314,15 +310,23 @@
     z-index: 1;
 }
 
+/* фотография */
+
+.services-proposal__img-team {
+    width: 721px;
+    height: 884px;
+    object-fit: contain;
+}
+
 /* контейнер с текстом на фоне черной запятой */
 
 .services-proposal__comma-with-text {
     background-image: url("../img/icon1/services-comma.svg");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
-    height: 865px;
+    background-position: right;
     width: 624px;
+    height: 865px;
     position: relative;
 }
 

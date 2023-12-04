@@ -4,16 +4,16 @@
 
 @media (max-width: 1300px) {
     .container {
-        max-width: 992px;
+        max-width: 992px !important;
     }
 }
 @media (max-width: 992px) {
     .container {
-        max-width: 768px;
+        max-width: 768px !important;
     }
 }
 @media (max-width: 768px) {
     .container {
-        max-width: 360px;
+        max-width: 360px !important;
     }
 }

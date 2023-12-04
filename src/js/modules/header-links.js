@@ -1,10 +1,8 @@
 function headerLinks() {
     const urlPath = new URL(document.location).pathname;
-    console.log(urlPath)
-
     
     const header = document.querySelector('.header');
-    const headerLinks = header.querySelectorAll('.tabs__item');
+    const headerLinks = header.querySelectorAll('.nav__list-item__link');
 
     if (urlPath === '/') {
         headerLinks[0].classList.add('tabs__item--active');

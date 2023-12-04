@@ -34,7 +34,6 @@ function cursor() {
 		}
 
 		function cursorToggler() {
-			console.log(cursorObj)
 			rTop = Math.abs(cursorObj.pageY - containerTeamTopCoord);
 			rBottom = Math.abs(cursorObj.pageY - containerTeamBottomCoord);
 			if (rTop < 400 || rBottom < 300 ||		

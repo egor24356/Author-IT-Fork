@@ -1,91 +1,208 @@
 /* Header section */
 
-.header {
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 18px auto 0;
+}
+
+.header__nav {
+    max-width: 1055px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* список */
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ссылки и телефон */
+
+.nav__list-item__link, .header__telephone {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    width: 211px;
+    height: 66px;
+    color: #F5F6FF;
+    padding: 18px 48px 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
 }
 
-.wrapper__header {
-    min-height: 100%;
-}
+/* логотип доп. стили */
 
-.item__logo {
+.nav__logo {
+    padding: 18px 67px 18.63px 76px;
     position: relative;
-    height: 96.5px;
-    background: url(../img/icon1/logo-white.svg) no-repeat;
-    background-position: 50% 50%;
+    width: 211px;
 }
 
-.item__logo::after {
+.logo svg {
+    width: 25px;
+    height: 24px;
+}
+
+/* телефон доп. стили */
+
+.header__telephone {
+    padding: 19px 4px 19px 0;
+    position: relative;
+    width: 211px;
+}
+
+/* псевдоэлементы */
+
+/* псевдоэлемент для ссылок и логотипа */
+
+.nav__list-item__link::before {
+    position: absolute;
+    display: none;
+    content: "";
+    height: 45px;
+    width: 53px;
+    border-left: 24px solid #F5F6FF;
+    border-bottom: 24px solid #F5F6FF;
+    border-bottom-left-radius: 51px;
+    background-color: transparent;
+    bottom: -24px;
+    right: -53px;
+}
+
+/* псевдоэлементы для ссылок и телефона */
+
+.nav__list-item__link::after,
+.header__telephone::after {
+    position: absolute;
+    display: none;
+    content: "";
+    height: 45px;
+    width: 53px;
+    border-right: 24px solid #F5F6FF;
+    border-bottom: 24px solid #F5F6FF;
+    border-bottom-right-radius: 51px;
+    background-color: transparent;
+    bottom: -24px;
+    right: 187px;
+}
+
+/* псевдоэлемент для логотипа для удлиннения при наведении */
+
+.nav__logo::after {
     position: absolute;
     display: block;
     content: "";
-    height: 30px;
+    height: 40px;
+    width: 100%;
+    background-color: inherit;
+    top: 100%;
+    left: 0;
+    /* обнуление предыдущих стилей after */
+    bottom: 0;
+    right: 0;
+    border: none;
+    border-bottom-left-radius: 0;
+}
+
+/* псевдоэлемент для телефона для удлиннения при наведении */
+
+.header__telephone::before {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 40px;
     width: 100%;
     background-color: inherit;
     top: 100%;
     left: 0;
 }
 
-.nav__items {
-    height: 60px;
-    width: 1266px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-}
+/* отображение псевдоэлементов для закругления при наведении */
 
-.tabs__items {
-    width: 210px;
-    height: 66px;
-    color: #F5F6FF;
+.nav__list-item__link:hover::before,
+.nav__list-item__link:hover::after,
+.header__telephone:hover::after,
+.tabs__item--active::before,
+.tabs__item--active::after {
     display: block;
-    padding: 18px 48px 20px 48px;
-    text-decoration: none;
-    font-family: Open Sans;
-    font-size: 16px;
-    font-weight: 700;
 }
 
-.telephone {
-    padding: 19px 7px 19px 0px;
-    height: 124px;
+/* псевдоклассы */
+
+.nav__list-item__link:hover, .header__telephone:hover, .tabs__item--active {
+    color: #232323;
+    background-color: #F5F6FF;
 }
 
-.tabs__item {
-    transition: all .2s ease;
-}
-
-.tabs__item:hover, .tabs__item--active {
-    transition: 0.1s;
-    color: black;
-    border-radius: 12px 12px 0px 0px;
-    background-color:#F5F6FF
-}
-
-.item__logo:hover, .item__logo.tabs__item--active {
-    background: url(../img/icon1/logo-black.svg) no-repeat;
-    background-position: 50% 50%;
-    background-color:#F5F6FF
-
+.nav__logo:hover, .nav__logo.tabs__item--active {
+    path {
+        fill: #232323;
+    }
 }
 
 @media (max-width: 1300px) { 
-    .nav__items {
-        width: 1100px;
+    .header__nav {
+        max-width: 830px;
     }
-    .tabs__items {
-        width: 180px;
+    .nav__list-item__link, .header__telephone {
+        width: 166px;
+        height: 52px;
+        font-size: 14px;
+    }
+    .nav__list-item__link {
+        padding: 18px 44px 20px;
+    }
+    .nav__logo {
+        padding: 15px 67px 15px 76px;
+    }
+    .header__telephone::after {
+        height: 17px;
+        width: 34px;
+        border-right: 28px solid #F5F6FF;
+        border-bottom: 28px solid #F5F6FF;
+        right: 134px;
+        bottom: -28px;
+    }
+    .nav__list-item__link::after {
+        height: 33px;
+        width: 44px;
+        border-right: 34px solid #F5F6FF;
+        border-bottom: 34px solid #F5F6FF;
+        right: 132px;
+        bottom: -34px;
+    }
+    .nav__logo::after {
+        height: 40px;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        /* обнуление предыдущих стилей after */
+        bottom: 0;
+        right: 0;
+        border: none;
+        border-bottom-left-radius: 0;
+    }
+    .nav__list-item__link::before {
+        height: 33px;
+        width: 44px;
+        border-left: 34px solid #F5F6FF;
+        border-bottom: 34px solid #F5F6FF;
+        right: -44px;
+        bottom: -34px;
     }
 }
 
 @media (max-width: 1100px) {
-    .nav__items {
-        width: 992px;
-    }
     .tabs__items {
         width: 165px;
     }

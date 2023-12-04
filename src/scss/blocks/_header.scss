@@ -131,18 +131,20 @@
 
 .nav__list-item__link:hover::before,
 .nav__list-item__link:hover::after,
-.header__telephone:hover::after {
+.header__telephone:hover::after,
+.tabs__item--active::before,
+.tabs__item--active::after {
     display: block;
 }
 
 /* псевдоклассы */
 
-.nav__list-item__link:hover, .header__telephone:hover {
+.nav__list-item__link:hover, .header__telephone:hover, .tabs__item--active {
     color: #232323;
     background-color: #F5F6FF;
 }
 
-.nav__logo:hover {
+.nav__logo:hover, .nav__logo.tabs__item--active {
     path {
         fill: #232323;
     }

@@ -12,6 +12,7 @@
 /* cursor */
 
 .cursor {
+    mix-blend-mode: exclusion;
     position: absolute;
     width: 150px;
     height: 150px;
@@ -20,7 +21,7 @@
     user-select: none;
     display: block;
     // opacity: 0; 
-    transform: translate(-50%, -50%); /* центрируем кружок */
+    // transform: translate(-50%, -50%); /* центрируем кружок */
     z-index: 999; /* чтобы элемент был над остальными элементами */
     pointer-events: none; /* чтобы сквозь элемент можно было взаимодействовать с элементами, находящимися под ним */
     transition: width 0.3s, height 0.3s, border-radius 0.3s, background 0.3s, opacity 0.2s;
@@ -31,7 +32,7 @@
 .cursor_active {
     height: 250px;
     width: 250px;
-    border-width: 2px;
+    // border-width: 2px;
     background: rgba(34, 153, 141, 0.5);
 }
 

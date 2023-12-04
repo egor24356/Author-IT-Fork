@@ -10,6 +10,8 @@ function cursor() {
 		let rTop = Math.abs(containerTeamTopCoord);
 		let rBottom = Math.abs(containerTeamBottomCoord);
 
+		let cursorSize = cursor.getBoundingClientRect().bottom - cursor.getBoundingClientRect().top;
+
 		const cursorObj = {
 			pageY: 0,
 			pageX: 0,
@@ -19,9 +21,11 @@ function cursor() {
 		window.addEventListener('mousemove', mousemoveTracker);
 		
 		function mousemoveTracker(e) {
+			console.log(e.pageY);
 			cursorObj.deltaY = e.pageY - window.scrollY;
 			cursorObj.pageX = e.pageX;
 			cursorObj.pageY = e.pageY;
+			console.log(e)
 			cursorToggler();
 		}
 
@@ -33,19 +37,26 @@ function cursor() {
 			cursorTracker();
 		}
 
+		let size;
+
 		function cursorToggler() {
 			rTop = Math.abs(cursorObj.pageY - containerTeamTopCoord);
 			rBottom = Math.abs(cursorObj.pageY - containerTeamBottomCoord);
-			if (rTop < 400 || rBottom < 300 ||		
+			if (rTop < 400 || rBottom < 400 ||		
 					((cursorObj.pageY - containerTeamTopCoord) > 0 && (cursorObj.pageY - containerTeamBottomCoord) < 0)) {
 				cursor.classList.remove('no-opacity');
 				body.style = 'cursor: none';
-				if (cursorObj.pageY - containerTeamTopCoord  < 0) {
-					cursor.style = `opacity: ${100/(rTop)}`;
+				console.log(`cursorSize = ${cursorSize}`);
+				if (cursorObj.pageY - containerTeamTopCoord < 0) {
+					cursor.style = `transform: scale(${1 - rTop/(400)})`;
 				}
 				if (cursorObj.pageY - containerTeamBottomCoord > 0) {
-					cursor.style = `opacity: ${100/(rBottom)}`;
+					cursor.style = `transform: scale(${1 - rBottom/(400)})`;
 				}
+				if ((cursorObj.pageY - containerTeamTopCoord) > 0 && (cursorObj.pageY - containerTeamBottomCoord) < 0) {
+					cursor.style = `transform: none`;
+				}
+				cursorSize = cursor.getBoundingClientRect().bottom - cursor.getBoundingClientRect().top;
 			} else {
 				cursor.classList.add('no-opacity');
 				body.style = 'cursor: auto';
@@ -62,16 +73,21 @@ function cursor() {
 					cursor.classList.remove('cursor_active') // удаляем активный класс
 				}
 				cursorTracker();
-				// cursor.style.left = cursorObj.pageX + 'px' // задаём элементу позиционирование слева
-				// cursor.style.top = cursorObj.pageY - (cursor.offsetHeight / 4) + 'px'; // задаём элементу позиционирование сверху
 			})	
 		}
 	
 		followCursorGlob();
 
 		function cursorTracker() {
-			cursor.style.left = cursorObj.pageX + 'px' // задаём элементу позиционирование слева
-			cursor.style.top = cursorObj.pageY - (cursor.offsetHeight / 4) + 'px'; // задаём элементу позиционирование сверху
+			if (cursor.classList.contains('cursor_active')) {
+				cursor.style.left = cursorObj.pageX - 250/2 + 'px'; // задаём элементу позиционирование слева
+				cursor.style.top = cursorObj.pageY - 250/2 - 66 - 18 + 'px'; // 66 - высота хедера, 18 - отступ над хедером
+			} else {
+				cursor.style.left = cursorObj.pageX - 150/2 + 'px'; // задаём элементу позиционирование слева
+				cursor.style.top = cursorObj.pageY - 150/2 - 66 - 18 + 'px'; // 66 - высота хедера, 18 - отступ над хедером
+			}
+			// cursor.style.left = cursorObj.pageX - (cursorSize / 4) + 'px'; // задаём элементу позиционирование слева
+			// cursor.style.top = cursorObj.pageY - (cursorSize / 2) + 'px'; // задаём элементу позиционирование сверху
 		}
 		
 		const teamImg = document.querySelector('.team__img')

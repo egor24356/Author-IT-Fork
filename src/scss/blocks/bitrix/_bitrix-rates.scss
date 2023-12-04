@@ -96,26 +96,30 @@
 }
 
 .rates-item-wrap__button_black, .rates-item-wrap__button_white {
-    padding: 0;
     width: 100%;
     border-radius: 40px;
     font-size: 24px;
     font-weight: 700;
     margin-top: 16px;
+    font-family: var(--caption16-font-family);
+    padding-block: 24px;
+    text-align: center;
 }
 
 .rates-item-wrap__button_white {
     color: #F5F6FF;
+    background: #FF7D04;
+    &:hover {
+        background: #FF9330;
+    }
+    &:active {
+        background: #EC7202;
+    }
 }
 
 .rates-item-wrap__button_black  {
-    height: 84.057px;
     border: 4px solid white;
     background-color: transparent;
-}
-
-.rates-item-wrap__button_white {
-    height: 84.057px;
 }
 
 .rates-item-wrap__button_black:hover, .view-all-btn:hover  {

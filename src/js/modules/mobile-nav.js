@@ -16,13 +16,13 @@ function mobileNav() {
 		navCircle.classList.toggle('mobile-nav-circle--active');
 		if (menuIcon.classList.contains('nav-icon--active')) {
 			setTimeout(changeIcon, 350);
-			html.style.overflow = 'auto';
+			html.classList.remove('no-scroll');
 			document.body.style.height = 'auto';
 			document.body.classList.remove('no-scroll');
 
 		} else {
 			menuIcon.classList.toggle('nav-icon--active');
-			html.style.overflow = 'hidden';
+			html.classList.add('no-scroll');
 			document.body.style.height = '100vh';
 			document.body.classList.add('no-scroll');
 		}

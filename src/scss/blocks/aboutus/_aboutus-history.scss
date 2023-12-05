@@ -1,7 +1,3 @@
-.AboutUs-history__wrapper {
-    padding: 225px 0px 117px 239px;
-}
-
 /* текст секции сверху фото */
 
 .AboutUs-history__year {
@@ -10,17 +6,10 @@
 
 .AboutUs-history__top {
     display: flex;
+    gap: 20px;
     color: #F5F6FF;
     margin-top: 16px;
-}
-
-.AboutUs-history__top-left {
-    width: 423px;
-    margin-right: 20px;
-}
-
-.AboutUs-history__top-right {
-    width: 408px;
+    max-width: 868px;
 }
 
 /* фото в секции AboutUs-history */

@@ -123,22 +123,55 @@ main {
     margin: 0 auto;
 }
 
-.AboutUs__white {
-    background: url(../img/img1/AboutUs-bg.png) center center/cover no-repeat;
-    width: 1266px;
-    height: 5996.884px;
-    position: relative;
-    margin: 0 auto 108px auto;
-}
-
-.AboutUs__black {
-    width: 1266px;
-    position: relative;
-    margin: 0 auto 0 auto;
-}
-
 .AboutUs-promo-wrapper {
-    padding: 60px 39px 0 40px;
+    padding: 60px 39px 80px 40px;
+    background-color: #F5F6FF;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin: 0 auto;
+}
+
+.aboutus-hist-ach-today__wrapper {
+    position: relative;
+    background-color: #F5F6FF;
+    margin: 0 auto;
+    height: 2232px;
+}
+
+.aboutUs-comma {
+    position: absolute;
+    background: url(../img/icon1/aboutUs-comma.svg) center center/cover no-repeat;
+    width: 1770.842px;
+    height: 1952.5px;
+    left: -146px;
+}
+
+.AboutUs-history__wrapper {
+    padding: 115px 419.42px 129px 432.42px;
+}
+
+.AboutUs-achievement__wrapper {
+    display: flex;
+    gap: 100px;
+    padding: 65px 473.42px 65px 381.42px;
+}
+
+.AboutUs-weToday__wrapper {
+    padding: 118px 389.42px 0 177.42px;
+}
+
+.AboutUs-weFuture__wrapper {
+    background-color: #F5F6FF;
+    padding: 120px 35px 0 133px;
+    margin: 0 auto;
+}
+
+.AboutUs-whyWe__wrapper {
+    background-color: #F5F6FF;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin: 0 auto;
+    padding: 101px 115px 40px 133px;
 }
 
 .Cases__png-bg {
@@ -151,7 +184,6 @@ main {
 .services-page, .services-mailer-footer {
     overflow: hidden;
 }
-
 
 .BitrixCloud__white-bg {
     position: relative;

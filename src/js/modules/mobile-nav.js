@@ -5,9 +5,20 @@ function mobileNav() {
 	const menuIcon = document.querySelector('.nav-icon');
 	const navCircle = document.querySelector('.mobile-nav-circle')
 	const html = document.querySelector('html');
+	const ANIM_DURATION = parseFloat(getComputedStyle(navCircle).transitionDuration) * 1000;
 
 	function changeIcon() {
 		menuIcon.classList.toggle('nav-icon--active');
+	}
+
+	function changeOverflow() {
+		html.classList.toggle('no-scroll');
+		document.body.classList.toggle('no-scroll');
+		if (menuIcon.classList.contains('nav-icon--active')) {
+			document.body.style.height = '100vh';
+		} else {
+			document.body.style.height = 'auto';
+		}
 	}
 
 	navBtn.onclick = function () {
@@ -15,16 +26,12 @@ function mobileNav() {
 		// nav.classList.toggle('visually-hidden');
 		navCircle.classList.toggle('mobile-nav-circle--active');
 		if (menuIcon.classList.contains('nav-icon--active')) {
-			setTimeout(changeIcon, 350);
-			html.classList.remove('no-scroll');
-			document.body.style.height = 'auto';
-			document.body.classList.remove('no-scroll');
+			setTimeout(changeIcon, ANIM_DURATION - 50);
+			setTimeout(changeOverflow, ANIM_DURATION);
 
 		} else {
-			menuIcon.classList.toggle('nav-icon--active');
-			html.classList.add('no-scroll');
-			document.body.style.height = '100vh';
-			document.body.classList.add('no-scroll');
+			changeIcon();
+			changeOverflow();
 		}
 	};
 }

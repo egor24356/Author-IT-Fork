@@ -14,13 +14,13 @@
 /* секция со свайпером AboutUs */
 
 .AboutUs-promo__container {
-    width: 1191px;
     margin-top: 100px;
 }
 
 /* swiper AboutUs */
 
 .swiper__container__AboutUs {
+    position: relative;
     width: 1188px;
     border: 3px #232323 solid;
     border-bottom: none;
@@ -137,12 +137,393 @@
 
 /* стрелки слайдера */
 
-.AboutUs-promo-arrow-prev {
-    transform: translate(45px, -1768px);
-    outline:none;
+.AboutUs-promo-arrow-prev,
+.AboutUs-promo-arrow-next {
+    width: 31px !important;
+    height: 24px !important;
+    top: 59% !important;
+    outline: none;
 }
 
-.AboutUs-promo-arrow-next {
-    transform: translate(-45px, -1768px);
-    outline:none;
+@media (max-width: 1300px) { 
+    .AboutUs-promo__title {
+        font-size: 152px;
+    }
+    .AboutUs-promo {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .AboutUs_img {
+        width: 912px;
+        margin: 20px auto 0 auto;
+    }
+    .AboutUs-promo__container {
+        margin: 55px auto 0 auto;
+        width: 912px;
+    }
+    .swiper__container__AboutUs {
+        width: 912px;
+    }
+    .slide__AboutUs {
+        height: 415px !important;
+    }
+    .AboutUs-promo__slider-img {
+        margin-top: 15px;
+    }
+    .slide__AboutUs__NastyaM img {
+        margin-left: 71px;
+        margin-right: 43px;
+    }
+    .slide__AboutUs__Daniil img {
+        margin-right: -9px;
+        margin-left: 14px;
+    }
+    .slide__AboutUs__Kostya img {
+        margin-right: -406px;
+        margin-left: -3px;
+    }
+    .slide__AboutUs__Egor img {
+        margin-left: 41px;
+        margin-right: -4px;
+    }
+    .slide__AboutUs__NastyaD img {
+        margin-left: 33px;
+    }
+    .AboutUs-promo__slider-descr {
+        margin-top: 60px;
+    }
+    .AboutUs-promo__slider-descr-Egor {
+        margin-top: 112px;
+    }
+    .AboutUs-promo__slider-descr-Kostya {
+        margin-top: 45px;
+    }
+    .AboutUs-promo__slider-name {
+        font-size: 45px;
+    }
+    .AboutUs-promo__slider-proffession {
+        font-size: 20px;
+    }
+    .AboutUs-promo__slider-quote {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .AboutUs-promo__slider-name-NastyaD {
+        transform: translate(-95px, -23px);
+    }
+    .AboutUs-promo__slider-proffession-NastyaD {
+        transform: translate(-95px, -29px);
+    }
+    .AboutUs-promo__slider-quote-NastyaD {
+        transform: translate(-32px, -32px);
+    }
+    .AboutUs-icons {
+        width: 152px;
+        height: 152px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .AboutUs-promo__title {
+        font-size: 153px;
+    }
+    .AboutUs-promo {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .AboutUs_img {
+        width: 913px;
+        margin: 5px auto 0 auto;
+    }
+    .AboutUs-promo__container {
+        margin: 40px auto 0 auto;
+        width: 913px;
+    }
+    .swiper__container__AboutUs {
+        width: 913px;
+    }
+    .slide__AboutUs__Egor img {
+        margin-right: 0;
+        margin-left: 50px;
+    }
+    .slide__AboutUs__Daniil img {
+        margin-right: 7px;
+    }
+    .slide__AboutUs__Kostya img {
+        margin-left: 0px;
+    }
+    .slide__AboutUs__NastyaD img {
+        margin-left: 53px;
+    }
+    .slide__AboutUs__NastyaM img {
+        margin-left: 74px;
+    }
+    .AboutUs-promo__slider-descr-Daniil {
+        margin-top: 77px;
+    }
+    .AboutUs-promo__slider-descr-Egor {
+        margin-top: 134px;
+    }
+    .AboutUs-promo__slider-descr-NastyaM {
+        margin-top: 77px;
+    }
+    .AboutUs-promo__slider-descr-Ksysha {
+        margin-top: 78px;
+    }
+    .AboutUs-promo__slider-quote-NastyaD {
+        transform: translate(-17px, -29px);
+        width: 327px;
+    }
+    .AboutUs-icons {
+        width: 152.2px;
+        height: 152.2px;
+    }
+}
+
+@media (max-width: 992px) { 
+    .AboutUs-promo-wrapper {
+        padding: 36px 39px 58px 40px;
+    }
+    .AboutUs-promo__title {
+        font-size: 114px;
+    }
+    .AboutUs_img {
+        width: 689px;
+        margin: 60px auto 0 auto;
+    }
+    .AboutUs-promo__container {
+        margin: 60px auto 0 auto;
+        width: 686px;
+    }
+    .swiper__container__AboutUs {
+        width: 686px;
+    }
+    .slide__AboutUs {
+        height: 369px !important;
+    }
+    .AboutUs-promo__slider-img {
+        margin-top: 15px;
+    }
+    .AboutUs-promo__slider-img-Daniil {
+        margin-top: 85px;
+    }
+    .AboutUs-promo__slider-img-Kostya {
+        margin-top: 26px;
+    }
+    .slide__AboutUs__Daniil img {
+        margin-left: 46px;
+        height: 287px;
+    }
+    .slide__AboutUs__Kostya img {
+        margin-left: 15px;
+        margin-right: -295px;
+        margin-top: 87px;
+        height: 283px;
+    }
+    .slide__AboutUs__Ksysha img {
+        margin-left: 39px;
+        margin-top: 63px;
+        margin-right: 13px;
+        height: 306px;
+    }
+    .slide__AboutUs__NastyaD img {
+        margin-left: 26px;
+        margin-top: 104px;
+        height: 267px;
+    }
+    .slide__AboutUs__Egor img {
+        margin-left: 35px;
+        margin-right: -14px;
+        margin-top: 76px;
+        height: 294px;
+    }
+    .slide__AboutUs__NastyaM img {
+        margin-left: 57px;
+        margin-right: 23px;
+        height: 297px;
+        margin-top: 74px;
+    }
+    .slide__AboutUs__Daniil img {
+        margin-right: -48px;
+    }
+    .AboutUs-promo__slider-descr {
+        margin-top: 57px;
+    }
+    .AboutUs-promo__slider-descr-Daniil {
+        margin-top: 30px;
+    }
+    .AboutUs-promo__slider-descr-Egor {
+        margin-top: 120px;
+    }
+    .AboutUs-promo__slider-descr-NastyaM {
+        margin-top: 96px;
+    }
+    .AboutUs-promo__slider-descr-NastyaD {
+        margin-top: 88px;
+    }
+    .AboutUs-promo__slider-descr-Ksysha {
+        margin-top: 103px;
+    }
+    .AboutUs-promo__slider-descr-Kostya {
+        margin-top: 45px;
+    }
+    .AboutUs-promo__slider-name-NastyaD {
+        transform: translate(-80px, -48px);
+    }
+    .AboutUs-promo__slider-name {
+        font-size: 36px;
+    }
+    .AboutUs-promo__slider-proffession {
+        font-size: 18px;
+        margin-top: 12px;
+    }
+    .AboutUs-promo__slider-proffession-NastyaD {
+        transform: translate(-80px, -50px);
+    }
+    .AboutUs-promo__slider-quote {
+        margin-top: 12px;
+        width: 287px;
+    }
+    .AboutUs-promo__slider-quote-Kostya {
+        width: 344px;
+    }
+    .AboutUs-promo__slider-quote-NastyaD {
+        transform: translate(-19px, -52px);
+        width: 264px;
+    }
+    .AboutUs-icons {
+        width: 114.3px;
+        height: 114.3px;
+    }
+}
+
+@media (max-width: 768px) { 
+    .AboutUs-promo-wrapper {
+        padding: 0px 20px 25px;
+    }
+    .AboutUs-promo__title {
+        font-size: 53px;
+    }
+    .AboutUs_img {
+        width: 300px;
+        margin: 10px auto 0 auto;
+    }
+    .AboutUs-promo__container {
+        margin: 20px auto 0 auto;
+        width: 300px;
+    }
+    .swiper__container__AboutUs {
+        width: 300px;
+    }
+    .slide__AboutUs {
+        height: 430px !important;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .AboutUs-promo__slider-img {
+        margin-top: 204px;
+    }
+    .AboutUs-promo__slider-img-Kostya {
+        margin-top: 127px;
+    }
+    .AboutUs-promo__slider-img-Ksysha {
+        margin-right: 37px;
+    }
+    .AboutUs-promo__slider-img-Daniil {
+        margin-top: 204px;
+    }
+    .AboutUs-promo__slider-img-NastyaD {
+        margin-top: 204px;
+    }
+    .AboutUs-promo__slider-img-Egor {
+        margin-top: 128px;
+    }
+    .AboutUs-promo__slider-img-NastyaM {
+        margin-top: 156px;
+    }
+    .slide__AboutUs__Daniil img {
+        margin: 209px 9px 0 0;
+        transform: scale(1);
+        height: auto;
+    }
+    .slide__AboutUs__Kostya img {
+        margin-left: -71px;
+        transform: scale(0.8);
+        height: auto;
+        margin-top: 144px;
+    }
+    .slide__AboutUs__Ksysha img {
+        margin: 186px 0 0;
+        transform: scale(0.85);
+        height: auto;
+    }
+    .slide__AboutUs__NastyaD img {
+        transform: scale(0.85);
+        margin: 196px 0 0;
+        height: auto;
+    }
+    .slide__AboutUs__Egor img {
+        margin: 166px 0 0;
+        transform: scale(0.8);
+    }
+    .slide__AboutUs__NastyaM img {
+        margin: 172px 0 0;
+        transform: scale(0.75);
+    }
+    .AboutUs-promo__slider-descr-Daniil {
+        margin-top: -431px;
+        margin-left: 20px;
+    }
+    .AboutUs-promo__slider-descr-Egor {
+        margin-top: -442px;
+        margin-left: 20px;
+    }
+    .AboutUs-promo__slider-descr-NastyaM {
+        margin-top: -454px;
+        margin-left: 20px;
+    }
+    .AboutUs-promo__slider-descr-NastyaD {
+        margin-top: -439px;
+        margin-left: 20px;
+    }
+    .AboutUs-promo__slider-descr-Ksysha {
+        margin-top: -434px;
+        margin-left: 20px;
+    }
+    .AboutUs-promo__slider-descr-Kostya {
+        margin-top: -452px;
+        margin-left: 20px;
+    }
+    .AboutUs-promo__slider-name {
+        font-size: 25px;
+    }
+    .AboutUs-promo__slider-name-NastyaD {
+        transform: none;
+    }
+    .AboutUs-promo__slider-proffession {
+        font-size: 18px;
+        margin-top: 12px;
+    }
+    .AboutUs-promo__slider-proffession-NastyaD {
+        transform: none;
+    }
+    .AboutUs-promo__slider-quote {
+        width: 280px;
+    }
+    .AboutUs-promo__slider-quote-Kostya {
+        width: 280px;
+    }
+    .AboutUs-promo__slider-quote-NastyaD {
+        transform: none;
+        width: 257px
+    }
+    .AboutUs-promo__slider-icons {
+        flex-wrap: wrap;
+    }
+    .AboutUs-icons {
+        width: 100px;
+        height: 100px;
+    }
 }

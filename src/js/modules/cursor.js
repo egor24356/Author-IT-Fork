@@ -21,11 +21,9 @@ function cursor() {
 		window.addEventListener('mousemove', mousemoveTracker);
 		
 		function mousemoveTracker(e) {
-			console.log(e.pageY);
 			cursorObj.deltaY = e.pageY - window.scrollY;
 			cursorObj.pageX = e.pageX;
 			cursorObj.pageY = e.pageY;
-			console.log(e)
 			cursorToggler();
 		}
 
@@ -46,7 +44,6 @@ function cursor() {
 					((cursorObj.pageY - containerTeamTopCoord) > 0 && (cursorObj.pageY - containerTeamBottomCoord) < 0)) {
 				cursor.classList.remove('no-opacity');
 				body.style = 'cursor: none';
-				console.log(`cursorSize = ${cursorSize}`);
 				if (cursorObj.pageY - containerTeamTopCoord < 0) {
 					cursor.style = `transform: scale(${1 - rTop/(400)})`;
 				}

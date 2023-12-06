@@ -2,7 +2,7 @@
     position: relative;
     padding-bottom: 120px;
     .mailer-photo {
-        margin-bottom: 0;
+        // margin-bottom: 0;
     }
     .b24-form {
         position: absolute;
@@ -38,6 +38,14 @@
     }
     .b24-form-btn {
         background-color: #FF7D04;
+    }
+}
+
+// для футера
+
+@media (min-width: 1263px) {
+    .bitrix-mailer {
+        margin-bottom: -120px;
     }
 }
 

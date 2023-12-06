@@ -1,6 +1,5 @@
 //свайпер section Cases
 function swiperCases () {
-    console.log(window.matchMedia('(min-width: 768px)').matches)
     if (window.matchMedia('(min-width: 768px)').matches) {
         document.addEventListener('DOMContentLoaded', ()  => { 
             const swiper__cases = new Swiper('.Cases__swiper__container', {

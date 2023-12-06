@@ -146,6 +146,9 @@
 }
 
 @media (max-width: 1300px) { 
+    .AboutUs-promo-wrapper {
+        padding: 60px 39px 60px 40px;
+    }
     .AboutUs-promo__title {
         font-size: 152px;
     }
@@ -217,6 +220,10 @@
     }
     .AboutUs-promo__slider-quote-NastyaD {
         transform: translate(-32px, -32px);
+    }
+    .AboutUs-promo-arrow-prev, 
+    .AboutUs-promo-arrow-next {
+        top: 52% !important;
     }
     .AboutUs-icons {
         width: 152px;

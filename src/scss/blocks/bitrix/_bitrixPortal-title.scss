@@ -70,3 +70,43 @@
 .Bitrix__container-descr__item:not(:last-child) {
     border-bottom: 1px solid #707077;
 }
+
+@media (max-width: 1300px) {
+    .BitrixPortal__container-title {
+        padding: 80px 27px 32px 31px;
+    }
+    .BitrixPortal__title {
+        font-size: 77px;
+    }
+    .BitrixPortal__title-time {
+        right: 30px;
+        top: 190px;
+    }
+}
+
+@media (max-width: 992px) {
+    .BitrixPortal__container-title {
+        padding: 40px 27px 22px 31px;
+    }
+    .Bitrix__container-descr {
+        padding: 40px 86px 64px;
+    }
+    .BitrixPortal__title {
+        font-size: 58px;
+    }
+}
+
+@media (max-width: 768px) {
+    .BitrixPortal__title {
+        font-size: 26px;
+    }
+    .Bitrix__title-time {
+        font-size: 22px !important;
+    }
+    .BitrixPortal__container-descr {
+        padding: 25px 32px 50px;
+    }
+    .BitrixPortal-whyWe__title {
+        font-size: 23px;
+    }
+}

@@ -1,5 +1,8 @@
 Команда для установки всех пакетов:
+
 npm i gulp gulp-sass sass gulp-file-include gulp-clean gulp-server-livereload gulp-sourcemaps --save-dev
+npm i gulp-imagemin@7 --save-dev 
+npm i gulp-webp gulp-webp-html gulp-webp-css -D
 
 Описание пакетов:
 gulp - собственно Gulp

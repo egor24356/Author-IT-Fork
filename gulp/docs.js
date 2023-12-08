@@ -1,3 +1,5 @@
+// 'use strict';
+
 const gulp = require('gulp');
 
 // HTML
@@ -20,6 +22,7 @@ const changed = require('gulp-changed');
 
 // Images
 const webp = require('gulp-webp');
+const imagemin = require('gulp-imagemin');
 
 
 gulp.task('clean:docs', function (done) {
@@ -42,7 +45,7 @@ gulp.task('html:docs', function () {
 		.pipe(changed('./docs/'))
 		// .pipe(plumber(plumberNotify('HTML')))
 		.pipe(fileInclude(fileIncludeSetting))
-		// .pipe(webpHTML())
+		.pipe(webpHTML())
 		.pipe(htmlclean())
 		.pipe(gulp.dest('./docs/'));
 });
@@ -51,15 +54,12 @@ gulp.task('sass:docs', function () {
 	return gulp
 		.src('./src/scss/*.scss')
 		.pipe(changed('./docs/css/'))
-		// .pipe(plumber(plumberNotify('SCSS')))
 		.pipe(sourceMaps.init())
-		// .pipe(autoprefixer())
 		.pipe(sassGlob())
 		.pipe(webpCss())
-		// .pipe(groupMedia())
 		.pipe(sass())
 		.pipe(csso())
-		.pipe(sourceMaps.write())
+		// .pipe(sourceMaps.write())
 		.pipe(gulp.dest('./docs/css/'));
 });
 
@@ -67,11 +67,11 @@ gulp.task('images:docs', function () {
 	return gulp
 		.src('./src/img/**/*')
 		.pipe(changed('./docs/img/'))
-		// .pipe(webp())
-		// .pipe(gulp.dest('./docs/img/'))
-		// .pipe(gulp.src('./src/img/**/*'))
-		// .pipe(changed('./docs/img/'))
-		// .pipe(imagemin({ verbose: true }))
+		.pipe(webp())
+		.pipe(gulp.dest('./docs/img/'))
+		.pipe(gulp.src('./src/img/**/*'))
+		.pipe(changed('./docs/img/'))	
+		.pipe(imagemin({ verbose: true }))
 		.pipe(gulp.dest('./docs/img/'));
 });
 

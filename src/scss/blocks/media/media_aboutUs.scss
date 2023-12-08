@@ -1,35 +1,8 @@
 /* Медиа-запросы страницы AboutUs */
 
 @media (max-width: 1300px) { 
-    .aboutUs__table__row-right__descr-text {
-        width: 644px !important;
-    }
-    .AboutUs-history__wrapper {
-        padding: 240px 0px 117px 239px;
-    }
-    .AboutUs-achievement__wrapper {
-        padding: 55px 80px 0px 239px;
-    }
-    .AboutUs-weToday__wrapper {
-        padding: 260px 35px 0 35px;
-    }
-    .AboutUs-weFuture__wrapper {
-        padding: 205px 35px 0 133px;
-    }
-    .AboutUs-whyWe__wrapper {
-        padding: 120px 115px 40px 133px;
-    }
     .aboutUs__caption16 {
         font-size: 16px !important;
-    }
-    .nav__items {
-        width: 992px;
-    }
-    .tabs__item {
-        width: 185px !important;
-    }
-    .AboutUs-history__wrapper {
-        padding: 64px 109px 45px 203px;
     }
     .aboutUs__header1 {
         font-size: 70px;
@@ -37,131 +10,23 @@
     .caption16 {
         font-size: 12px;
     }
-    .AboutUs-history__img {
-        width: 680px;
-    }
-    .AboutUs-history__bottom {
-        width: 680px;
-    }
-    .AboutUs-achievement__wrapper {
-        padding: 24px 166px 24px 203px;
-    }
     .aboutUs__header2 {
         font-size: 55px;
     }
     .body14 {
         font-size: 12px;
     }
-    .AboutUs-weToday__wrapper {
-        padding: 40px 35px 0;
-    }
-    .AboutUs-weToday__img {
-        width: 922px;
-    }
-    .AboutUs-weToday__descr {
-        width: 650px;
-    }
-    .AboutUs-weFuture__wrapper {
-        padding: 40px 60px 0;
-    }
-    .AboutUs-weFuture__container {
-        width: 1345px;
-        transform: translateX(-417px);
-        margin-top: -64px;
-    }
-    .AboutUs-weFuture__img {
-        transform: scale(0.75);
-        margin-right: -44px;
-    }
-    .AboutUs-weFuture__descr-container {
-        margin: 136px 0 132px -81px;
-    }
-    .AboutUs-weFuture__descr-row {
-        font-size: 20px;
-    }
-    .AboutUs-weFuture__descr-icon {
-        width: 21px;
-        height: 21px;
-    }
     .subtitle24 {
         font-size: 20px;
-    }
-    .AboutUs-whyWe__wrapper {
-        padding: 0px 60px 40px;
-        margin-top: -60px;
-    }
-    .template__table__row {
-        padding: 15px 0;
-    }
-    .aboutUs__table__row-right__descr-text {
-        width: 500px !important;
     }
 }
 
 @media (max-width: 1100px) { 
-    .nav__items {
-        width: 992px;
-    }
-    .tabs__item {
-        width: 185px !important;
-        padding: 18px 4px 20px 4px;
-    }
-    .AboutUs__white {
-        background-size: 992px 100%;
-        width: 992px;
-        height: 4312px;
-    }
-    .AboutUs-history__wrapper {
-        padding: 78px 57px 35px 225px;
-    }
-    .AboutUs-history__bottom {
-        margin-top: 13px;
-    }
-    .AboutUs-achievement__wrapper {
-        padding: 42px 87px 29px 225px;
-    }
     .aboutUs__header2 {
         font-size: 45px;
     }
-    .AboutUs-weToday__wrapper {
-        padding: 30px 35px 0 35px;
-    }
-    .AboutUs-weToday__img {
-        width: 915px;
-    }
-    .AboutUs-weToday__descr {
-        margin-top: 17px;
-    }
-    .AboutUs-weFuture__container {
-        width: 1320px;
-        transform: translateX(-461px);
-        margin-top: -73px;
-    }
-    .AboutUs-weFuture__img {
-        transform: scale(0.7);
-        margin-right: -91px;
-    }
-    .AboutUs-weFuture__descr-container {
-        margin: 137px 0;
-    }
-    .AboutUs-weFuture__descr-row {
-        font-size: 17px;
-    }
-    .AboutUs-whyWe__wrapper {
-        padding: 0px 90px 40px 106px;
-        margin-top: -64px;
-    }
     .subtitle24 {
         font-size: 15px;
-    }
-    .template__table__row {
-        padding: 25px 0;
-    }
-    .aboutUs__table__row-right__descr-text {
-        width: 416px !important;
-    }
-    .AboutUs-weFuture__wrapper {
-       padding: 30px 35px 0 106px;
     }
 }
 
@@ -172,91 +37,14 @@
     .header {
         display: none;
     }
-    .nav__items {
-        width: 90vw;
-        justify-content: space-between;
-    }
-    .tabs__items {
-        width: auto !important;
-    }
     .aboutUs__caption16 {
         font-size: 14px !important;
-    }
-    .AboutUs-history__wrapper {
-        padding: 33px 20px 34px 132px;
     }
     .aboutUs__header1 {
         font-size: 55px;
     }
-    .AboutUs-history__top {
-        margin-top: 6px;
-    }
-    .AboutUs-history__img {
-        width: 572px;
-    }
-    .AboutUs-history__bottom {
-        width: 614px;
-        margin-top: 18px;
-    }
-    .AboutUs-achievement__wrapper {
-        padding: 27px 64px 28px 132px;
-    }
     .aboutUs__header2 {
         font-size: 40px;
-    }
-    .AboutUs-achievement__container1, 
-    .AboutUs-achievement__container2 {
-        margin-right: 34px;
-    }
-    .AboutUs-achievement__container1,
-    .AboutUs-achievement__container2,
-    .AboutUs-achievement__container3 {
-        width: 184px;
-    }
-    .AboutUs-weToday__wrapper {
-        padding: 33px 35px 0 35px;
-    }
-    .AboutUs-weToday__img {
-        width: 696px;
-    }
-    .AboutUs-weToday__descr {
-        margin-top: 17px;
-    }
-    .AboutUs-weFuture__wrapper {
-        padding: 55px 35px 0 76px;
-    }
-    .AboutUs-weFuture__container {
-        width: 1155px;
-        transform: translateX(-490px);
-        margin-top: -145px;
-    }
-    .AboutUs-weFuture__img {
-        transform: scale(0.55);
-        margin-right: -228px;
-    }
-    .AboutUs-weFuture__descr-container {
-        margin: 178px 0;
-    }
-    .AboutUs-weFuture__descr-row {
-        font-size: 16px;
-        margin-top: 0;
-    }
-    .AboutUs-weFuture__descr-icon {
-        width: 21px;
-        height: 21px;
-    }
-    .AboutUs-whyWe__wrapper {
-        padding: 55px 60px 40px;
-        margin-top: -174px;
-    }
-    .AboutUs-template__table {
-        margin-top: 15px;
-    }
-    .template__table__row {
-        padding: 15px 0;
-    }
-    .aboutUs__table__row-right__descr-text {
-        width: 660px !important;
     }
     .swiper__wrapper__comments { //!!!!!!!!!!!!!!!!!???????????????????????????
         height: auto !important;
@@ -270,108 +58,14 @@
     .aboutUs__caption16 {
         font-size: 12px !important;
     }
-    .AboutUs-history__wrapper {
-        padding: 48px 25px 48px 45px;
-    }
     .aboutUs__header1 {
         font-size: 45px;
-    }
-    .AboutUs-history__top {
-        margin-top: 6px;
-        flex-direction: column;
-    }
-    .AboutUs-history__top-left {
-        width: 291px;
-    }
-    .AboutUs-history__top-right {
-        width: 291px;
-        margin-top: 12px;
-    }
-    .AboutUs-history__img {
-        width: 291px;
-    }
-    .AboutUs-history__bottom {
-        width: 291px;
-        margin-top: 18px;
-    }
-    .AboutUs-achievement__wrapper {
-        padding: 40px 28px 37px 45px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
     }
     .aboutUs__header2 {
         font-size: 21px;
     }
-    .AboutUs-achievement__container2, 
-    .AboutUs-achievement__container3 {
-        margin-top: 16px;
-    }
-    .AboutUs-achievement__container1,
-    .AboutUs-achievement__container2,
-    .AboutUs-achievement__container3 {
-        width: 184px;
-    }
-    .AboutUs-weToday__wrapper {
-        padding: 15px 16px 0;
-    }
-    .AboutUs-weToday__img {
-        width: 360px;
-        transform: translateX(-16px);
-    }
-    .AboutUs-weToday__descr {
-        margin-top: 13px;
-        width: 329px;
-    }
-    .AboutUs-weFuture__wrapper {
-        padding: 30px 0 0 16px;
-    }
-    .AboutUs-weFuture__container {
-        width: 332px;
-        transform: translateX(0);
-        margin-top: 15px;
-        display: flex;
-        flex-direction: column;
-    }
-    .AboutUs-weFuture__img {
-        margin-right: 10px;
-        margin-top: 47px;
-        transform: translateX(-57px) scale(1.4);
-    }
-    .AboutUs-weFuture__descr-container {
-        margin: 60px 0 37px;
-        gap: 10px;
-    }
-    .AboutUs-weFuture__descr-row {
-        font-size: 16px;
-        margin-top: 11px;
-    }
-    .AboutUs-weFuture__descr-icon {
-        width: 21px;
-        height: 21px;
-    }
-    .AboutUs-whyWe__wrapper {
-        padding: 10px 16px 40px;
-        margin-top: 0;
-    }
     .subtitle24 {
-        font-size: 16px;
-    }
-    .AboutUs-template__table {
-        margin-top: 15px !important;
-    }
-    .AboutUs-template__table__row {
-        padding: 16px 0;
-        flex-direction: column;
-    }
-    .AboutUs-template__table__row-left {
-        gap: 16px;
-    }
-    .AboutUs-template__table__row-left__title-text {
-        width: 17px;
-    }
-    .aboutUs__table__row-right__descr-text {
-        width: 329px !important;
+        font-size: 16px !important;
     }
     .AboutUs__none768 {
         display: block;
@@ -379,76 +73,16 @@
     .AboutUs__block768 {
         display: none;
     }
-/*     .form__mailer {
-        padding: 40px 50px;
-        position: relative;
-        height: auto;
-        max-width: 100vw;
-        margin-top: 550px;
-        padding-bottom: 60px;
-    } */
-    .swiper__wrapper__comments {
+    .swiper__wrapper__comments { //!!!!!!!!!???????????
         height: auto !important;
     }
-/*     .container__mailer {
-        padding: 0 0 40px 0;
-        background-size: 106%;
-    }
-    .mailer-section {
-        margin-top: -220px;
-    }
-    .mailer button {
-        position: absolute;
-        bottom: -100px;
-        padding: 24px 12px;
-    }     */
 }
 
-/* @media (max-width: 610px) { 
-    .mailer-section {
-        margin-top: -280px;
-    }
-    .container__mailer {
-        padding: 0 0 40px 0;
-        background-size: 125%;
-    }
-    .form__mailer {
-        margin-top: 647px;
-        padding: 40px 42px;
-    }
-} */
-
-/* @media (max-width: 510px) { 
-    .mailer-section {
-        margin-top: -280px;
-    }
-    .container__mailer {
-        padding: 0 0 40px 0;
-        background-size: 125%;
-    }
-    .form__mailer {
-        margin-top: 578px;
-        padding: 40px 42px;
-    }
-} */
-
 @media (max-width: 440px) { 
-/*     .AboutUs-mailer {
-        margin-top: 22px;
-    }
-    .form__mailer {
-        margin-top: 524px;
-        padding: 40px 20px;
-    } */
     .aboutUs__header2 {
         font-size: 20px;
     }
     .aboutUs__header3 {
         font-size: 18px;
     }
-/*     .mailer button {
-        bottom: -80px;
-        padding: 9px 12px;
-        height: 58px;
-    } */
 }

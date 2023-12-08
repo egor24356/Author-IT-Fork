@@ -140,7 +140,7 @@ main {
 
 .aboutUs-comma {
     position: absolute;
-    background: url(../img/icon1/aboutUs-comma.svg) center center/cover no-repeat;
+    background: url(../img/icon1/aboutUs-comma.svg) center center/contain no-repeat;
     width: 1770.842px;
     height: 1952.5px;
     left: -146px;
@@ -244,7 +244,6 @@ main {
 }
 
 /* bitrix section */
-
 
 @media (max-width: 768px) {
     .before-click h2 {

@@ -26,3 +26,9 @@
 .Bitrix__title-time {
     color: #F5F6FF;
 }
+
+@media (max-width: 992px) {
+    .Bitrix__top-white-bg {
+        border-top-left-radius: 0;
+    }
+}

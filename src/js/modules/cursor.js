@@ -2,11 +2,12 @@
 function cursor() {
 	document.addEventListener('DOMContentLoaded', ()  => { 
 		const body = document.querySelector('body');
-		const containerTeam = document.querySelector('.team__container')  // was
 		const cursor = document.querySelector('.cursor') // ищем элемент, который будет следовать за курсором
+		
+		const containerTeam = document.querySelector('.team__container')  // was
 		const containerTeamTopCoord = containerTeam.getBoundingClientRect().top + window.scrollY;
 		const containerTeamBottomCoord = containerTeamTopCoord + containerTeam.getBoundingClientRect().height;
-
+		
 		let rTop = Math.abs(containerTeamTopCoord);
 		let rBottom = Math.abs(containerTeamBottomCoord);
 
@@ -34,8 +35,6 @@ function cursor() {
 			cursorToggler();
 			cursorTracker();
 		}
-
-		let size;
 
 		function cursorToggler() {
 			rTop = Math.abs(cursorObj.pageY - containerTeamTopCoord);
@@ -86,6 +85,7 @@ function cursor() {
 			// cursor.style.left = cursorObj.pageX - (cursorSize / 4) + 'px'; // задаём элементу позиционирование слева
 			// cursor.style.top = cursorObj.pageY - (cursorSize / 2) + 'px'; // задаём элементу позиционирование сверху
 		}
+
 		
 		const teamImg = document.querySelector('.team__img')
 		const links = document.querySelector('.team__links')

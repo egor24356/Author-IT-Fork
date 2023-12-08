@@ -151,6 +151,9 @@
 }
 
 @media (max-width: 992px) {
+    .Cases, .Cases-afterClick {
+        border-top-left-radius: 0;
+    }
     .Cases {
         padding-left: 50px;
         max-width: 768px;

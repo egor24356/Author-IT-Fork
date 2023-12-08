@@ -4,7 +4,9 @@ import swiperComments from './modules/swiper-comments.js';
 import swiperTeam from './modules/swiper-team.js';
 import swiperWeProud from './modules/swiper-we-proud.js';
 import headerLinks from './modules/header-links.js';
+import btnToTop from './modules/btn-to-top.js';
 
+btnToTop();
 headerLinks();
 swiperWeProud();
 swiperTeam();

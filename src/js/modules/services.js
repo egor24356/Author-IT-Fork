@@ -106,8 +106,6 @@ function services() {
             if (diffY < 0) {
                 showServices();
             } else {
-                console.log(e.touches[0])
-
                 hideServices();
             }
         }

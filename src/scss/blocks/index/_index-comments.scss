@@ -1,3 +1,7 @@
+.comments {
+    overflow: hidden;
+}
+
 .comments-bg--mobile {
     display: none;
 }
@@ -142,8 +146,8 @@
     }
     .comments-bg--mobile {
         display: block;
-        width: 100%;
-        left: 0;
+        // width: 100%;
+        left: -45px;
     }
     .container__comments h2 {
         padding-top: 67px;
@@ -152,6 +156,6 @@
         margin-top: 21px;
     }
     .comments__pagination {
-        bottom: 0;
+        bottom: 28px;
     }
 }

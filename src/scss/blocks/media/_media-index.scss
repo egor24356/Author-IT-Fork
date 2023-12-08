@@ -72,9 +72,6 @@
     .team__img img {
         width: 100%;
     }
-    .cursor {
-        display: none;
-    }
     .swiper__team__img {
         /* margin-left: 39%; */
     }
@@ -246,6 +243,9 @@
     .crm__icon__bottom {
         gap: 20px;
         flex-wrap: wrap;
+    }
+    .cursor {
+        display: none;
     }
     .descr {
         width: 100%;

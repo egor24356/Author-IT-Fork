@@ -137,6 +137,12 @@
     font-family: "Unbounded-Regular"; 
 }
 
+@media (max-width: 992px) {
+    .Cases, .Cases-afterClick {
+        border-top-left-radius: 0;
+    }
+}
+
 @media (max-width: 768px) {
     .swiper__wrapper__Cases {
         flex-direction: column;

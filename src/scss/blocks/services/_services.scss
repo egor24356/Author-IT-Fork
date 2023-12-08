@@ -349,3 +349,12 @@
 .proposal-position {
     top: 14%;
 }
+
+@media (max-width: 992px) {
+    .white__bg__services {
+        border-top-left-radius: 0;
+    }
+    .services-afterClick-title__container {
+        border-top-left-radius: 0;
+    }
+}

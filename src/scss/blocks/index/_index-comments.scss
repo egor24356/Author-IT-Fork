@@ -1,3 +1,7 @@
+.comments {
+    overflow: hidden;
+}
+
 .comments-bg--mobile {
     display: none;
 }
@@ -152,6 +156,6 @@
         margin-top: 21px;
     }
     .comments__pagination {
-        bottom: 0;
+        bottom: 28px;
     }
 }

@@ -1,4 +1,5 @@
 function benefits() {
+    const ANIM_DURATION = 250;
     const benefitsContainer = document.querySelector('.benefits-tabs');
     const readAllBtn = document.querySelector('.read__all');
     const readAllArrow = document.querySelector('.advantages__read__all__arrow');
@@ -13,14 +14,14 @@ function benefits() {
             benefitsContainer.animate([
                 {height: 0},
                 {height: height}
-            ], 100, 'ease');
+            ], ANIM_DURATION, 'ease');
         } else {
             let height = window.getComputedStyle(benefitsContainer).height;
             readAllText.innerHTML = "читать всё";
             let animation = benefitsContainer.animate([
                 {height: height},
                 {height: 0}
-            ], 100, 'ease');
+            ], ANIM_DURATION, 'ease');
             animation.addEventListener('finish', function() {
                 benefitsContainer.classList.add('none');
             })

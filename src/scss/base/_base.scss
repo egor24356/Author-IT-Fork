@@ -110,74 +110,8 @@ main {
     position: relative;
 }
 
-.white__bg {
-    position: relative;
-    background-color: #F5F6FF;
-    width: 1266.001px;
-    border-radius: 40px;
-    margin: 0 auto 0 auto;
-}
-
 .black__bg {
     max-width: 1270px;
-    margin: 0 auto;
-}
-
-.AboutUs-promo-wrapper {
-    padding: 60px 39px 80px 40px;
-    background-color: #F5F6FF;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    margin: 0 auto;
-}
-
-.aboutus-hist-ach-today__wrapper {
-    position: relative;
-    background-color: #F5F6FF;
-    margin: 0 auto;
-    height: 2232px;
-}
-
-.aboutUs-comma {
-    position: absolute;
-    background: url(../img/icon1/aboutUs-comma.svg) center center/cover no-repeat;
-    width: 1770.842px;
-    height: 1952.5px;
-    left: -146px;
-}
-
-.AboutUs-history__wrapper {
-    padding: 115px 419.42px 129px 432.42px;
-}
-
-.AboutUs-achievement__wrapper {
-    display: flex;
-    gap: 100px;
-    padding: 65px 473.42px 65px 381.42px;
-}
-
-.AboutUs-weToday__wrapper {
-    padding: 118px 389.42px 0 177.42px;
-}
-
-.AboutUs-weFuture__wrapper {
-    background-color: #F5F6FF;
-    padding: 120px 35px 0 133px;
-    margin: 0 auto;
-}
-
-.AboutUs-whyWe__wrapper {
-    background-color: #F5F6FF;
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-    margin: 0 auto;
-    padding: 101px 115px 40px 133px;
-}
-
-.Cases__png-bg {
-    background: url(../img/img1/Cases-bg.png) center bottom no-repeat;
-    width: 1920px;
-    position: relative;
     margin: 0 auto;
 }
 
@@ -211,6 +145,14 @@ main {
     display: none;
 }
 
+.AboutUs__none768 {
+    display: none;
+}
+
+.AboutUs__block768 {
+    display: block;
+}
+
 .Bitrix__top-white-bg {
     position: relative;
     width: 1266px;
@@ -231,22 +173,49 @@ main {
     position: relative;
     width: 1266px;
     background: #F5F6FF;
-    // border-bottom-right-radius: 40px;
-    // border-bottom-left-radius: 40px;
     margin: 0 auto;
 }
 
 .Bitrix__black-dg {
     width: 100vw;
-    /* height: 1263px; */
     position: relative;
     margin: 0 auto 0 auto;
 }
 
-/* bitrix section */
+@media (max-width: 1300px) {
+    .Bitrix__top-white-bg,
+    .Bitrix__white-bg, 
+    .Bitrix__bottom-white-bg,    
+    .Bitrix__black-bg {
+        width: 992px;
+    }
+}
 
+@media (max-width: 992px) {
+    .Bitrix__top-white-bg,
+    .Bitrix__white-bg, 
+    .Bitrix__bottom-white-bg,    
+    .Bitrix__black-bg {
+        width: 768px;
+    }
+    .Bitrix__black-bg {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+}
 
 @media (max-width: 768px) {
+    .Bitrix__top-white-bg,
+    .Bitrix__white-bg, 
+    .Bitrix__bottom-white-bg,    
+    .Bitrix__black-bg {
+        width: 360px;
+    }
+
+    .Bitrix__black-bg {
+        padding: 33px 2px;
+    }
     .before-click h2 {
         font-size: 32px;
     }    

@@ -1,5 +1,5 @@
 import changeMailer from "./change-mailer";
-import portfolio from "./bitrix-portfolio";
+import portfolio from "./bitrix-portfolio"
 
 function bitrixPage() {
 
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', ()  => {
         const bitrixData = bitrixAll.getAttribute('data-introduction');
         if (btnData === bitrixData) {
             bitrixAll.classList.remove('none');
-        }else{
+        } else{
             bitrixAll.classList.add('none');
         }
         changeMailer();
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', ()  => {
         const bitrixData = bitrixAll.getAttribute('data-introduction');
         if (btnData === bitrixData) {
             bitrixAll.classList.remove('none');
-        }else{
+        } else{
             bitrixAll.classList.add('none');
         }
         window.scrollTo({

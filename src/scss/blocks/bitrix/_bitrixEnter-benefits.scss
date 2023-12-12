@@ -1,0 +1,208 @@
+.BitrixEnter__white-bg {
+    position: relative;
+    max-width: 1266px;
+    background: #F5F6FF;
+    border-radius: 40px;
+    margin: 0 auto 58px auto;
+    /*display: none;*/
+}
+
+.BitrixEnter__container-descr {
+    padding: 70.5px 116.94px 60px 131px !important;
+}
+
+.benefits-section__container {
+    border-radius: 32px;
+    border: 1px solid #707077;
+    padding: 56px 106px;
+    display: flex;
+    flex-direction: column;
+}
+
+.benefits-section__wrapper {
+    padding: 0 108px;
+}
+
+.Bitrix-benefits__subtitle {
+    margin-top: 64px;
+}
+
+.benefits-section__list {
+    margin-top: 32px;
+    list-style: url('../img/icon1/check.png');
+}
+
+.benefits-section__item {
+    font-family: "Unbounded-regular";
+    padding-left: 16px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #232323;
+    line-height: 2.5;
+}
+
+.benefits-section__item_bold {
+    color:#FF7D04;
+    font-family: "Unbounded-Black";
+}
+
+.benefits-section__item_many-mobile {
+    display: none;
+}
+
+.benefits__container-descr {
+    display: flex;
+    flex-direction: column;
+    width: 473px;
+    gap: 32px;
+    margin-top: 64px;
+}
+
+.benefits__container-descr__item {
+    display: flex;
+    gap: 24px;
+}
+
+
+.benefits-info {
+    margin-top: 38px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.price-wrap {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.BitrixEnter__price-wrap {
+    padding: 35px 9px 0 0;
+}
+
+.price-btn {
+    padding: 24px 80px 24px 75px;
+    display: block;
+    border-radius: 40px;
+    background: #FF7D04;
+    margin-top: 32px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: #F5F6FF;
+    font-weight: 700;
+}
+
+.price {
+    color: #FF7D04; 
+}
+
+.BitrixEnter__white-bg {
+    height: auto;
+    padding-bottom: 70px;
+}
+
+.benefits-info__text {
+    margin-top: 0;
+}
+
+@media (max-width: 1300px) {
+    .BitrixEnter__container-descr {
+        padding: 65px 86px 64px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .BitrixEnter__container-descr {
+        padding-inline: 70px;
+        padding: 40px 86px 64px !important;
+    }
+    .benefits-section__container {
+        padding-inline: 45px;
+    }
+    .benefits-section__item {
+        padding-left: 0;
+    }
+    .canbe-list .benefits-section__item {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .BitrixEnter__container-descr {
+        padding: 30px 32px 64px !important;
+    }
+    .benefits-section__wrapper {
+        padding: 0 32px;
+    }
+    .benefits-section__container {
+        padding: 32px 20px;
+    }
+    .benefits-section__item {
+        font-size: 16px;
+    }
+    .Bitrix-benefits__subtitle {
+        margin-top: 32px;
+    }
+    .benefits-section__item_many-desktop {
+        display: none;
+    }
+    .benefits-section__item_many-mobile {
+        display: list-item;
+    }
+    .benefits-section__item {
+        line-height: normal;
+        vertical-align: baseline;
+    }
+    .benefits-section__list {
+        margin-top: 8px;
+    }
+    .canbe-list .benefits-section__item {
+        padding-left: 20px;
+    }
+    .BitrixEnter__price-wrap {
+        padding: 24px 0 0;
+    }
+    .price {
+        font-size: 30px;
+    }
+    .price-btn {
+        width: auto;
+        padding: 15px 45px;
+        margin-top: 24px;
+    }
+    .benefits__container-descr {
+        width: 264px;
+    }
+    .benefits-section__item {
+        margin-top: 16px;
+    }
+    .Bitrix-introduction__subtitle {
+        font-size: 16px;
+    }
+    .benefits__container-descr__item-text {
+        font-size: 16px;
+    }
+    .benefits__container-descr__item-img {
+        width: 25px;
+        height: 21px;
+    }
+    .benefits__container-descr__item {
+        align-items: center;
+    }
+    .benefits-info {
+        flex-direction: column;
+        align-items: start;
+        gap: 8px;
+    }
+    .benefits-info h2 {
+        font-size: 32px;
+    }
+    .Bitrix-introduction__subtitle {
+        margin-top: 0;
+    }
+    .BitrixEnter__title-time {
+        justify-content: center;
+    }
+}

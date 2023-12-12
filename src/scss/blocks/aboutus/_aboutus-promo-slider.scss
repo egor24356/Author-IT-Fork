@@ -1,3 +1,11 @@
+.AboutUs-promo-wrapper {
+    padding: 60px 39px 80px 40px;
+    background-color: #F5F6FF;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin: 0 auto;
+}
+
 .AboutUs-promo__title {
     color: #FF7D04;
     font-family: "Unbounded-Black";
@@ -146,6 +154,9 @@
 }
 
 @media (max-width: 1300px) { 
+    .AboutUs-promo-wrapper {
+        padding: 60px 39px 60px 40px;
+    }
     .AboutUs-promo__title {
         font-size: 152px;
     }
@@ -218,6 +229,10 @@
     .AboutUs-promo__slider-quote-NastyaD {
         transform: translate(-32px, -32px);
     }
+    .AboutUs-promo-arrow-prev, 
+    .AboutUs-promo-arrow-next {
+        top: 52% !important;
+    }
     .AboutUs-icons {
         width: 152px;
         height: 152px;
@@ -285,6 +300,7 @@
 @media (max-width: 992px) { 
     .AboutUs-promo-wrapper {
         padding: 36px 39px 58px 40px;
+        border-top-left-radius: 0;
     }
     .AboutUs-promo__title {
         font-size: 114px;

@@ -72,9 +72,6 @@
     .team__img img {
         width: 100%;
     }
-    .cursor {
-        display: none;
-    }
     .swiper__team__img {
         /* margin-left: 39%; */
     }
@@ -247,6 +244,9 @@
         gap: 20px;
         flex-wrap: wrap;
     }
+    .cursor {
+        display: none;
+    }
     .descr {
         width: 100%;
         width: auto;
@@ -393,7 +393,7 @@
         border-bottom-right-radius: 40px;
     }
     .crm__content__promo .crm__title {
-        margin-top: 49px;
+        // margin-top: 49px;
     }
 }
 
@@ -499,7 +499,7 @@
     }
     .container__comments {
         margin-top: 80px;
-        padding: 90px 12px 30px 12px;
+        padding: 90px 12px 77px 12px;
     }
     .go__project__arrow {
         margin-left: 10px;

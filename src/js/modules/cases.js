@@ -1,7 +1,5 @@
 // нажатие на свайпер section Cases
 function cases() {
-
-
     document.addEventListener('DOMContentLoaded', ()  => { 
 
         const sectionDisplay = document.querySelector('.Cases');
@@ -25,6 +23,11 @@ function cases() {
                         descr.classList.add('none') ;
                     }
                 })
+                window.scrollTo({
+                    top: 0,
+                    left: 0,
+                    behavior: 'smooth'
+                });
             });
         });
         
@@ -35,6 +38,11 @@ function cases() {
             a.addEventListener('click', () => {
                 sectionAfterDisplay.style.display = 'none';
                 sectionDisplay.style.display = 'block';
+                window.scrollTo({
+                    top: 0,
+                    left: 0,
+                    behavior: 'smooth'
+                });
             })
         });
     })

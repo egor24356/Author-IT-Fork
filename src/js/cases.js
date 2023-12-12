@@ -4,7 +4,9 @@ import cases from './modules/Cases.js';
 import filterCases from './modules/filterCases.js';
 import btnUp from './modules/btn-up.js';
 import headerLinks from './modules/header-links.js';
+import btnToTop from './modules/btn-to-top.js';
 
+btnToTop();
 headerLinks();
 mobileNav();
 btnUp();

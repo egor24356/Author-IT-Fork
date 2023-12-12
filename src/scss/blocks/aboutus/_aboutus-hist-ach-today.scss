@@ -1,0 +1,242 @@
+.aboutus-hist-ach-today__wrapper {
+    position: relative;
+    background-color: #F5F6FF;
+    margin: 0 auto;
+    height: 2232px;
+}
+
+.aboutUs-comma {
+    position: absolute;
+    background: url(../img/icon1/aboutUs-comma.svg) center center/contain no-repeat;
+    width: 1770.842px;
+    height: 1952.5px;
+    left: -146px;
+}
+
+/* AboutUs-history */
+
+.AboutUs-history__wrapper {
+    padding: 115px 419.42px 129px 432.42px;
+}
+
+/* текст сверху фото*/
+
+.AboutUs-history__year {
+    color: #F5F6FF;
+}
+
+.AboutUs-history__top {
+    display: flex;
+    gap: 20px;
+    color: #F5F6FF;
+    margin-top: 16px;
+    max-width: 868px;
+}
+
+/* фото*/
+
+.AboutUs-history__img {
+    border-radius: 24px;
+    margin-top: 24px;
+}
+
+/* текст ниже фото */
+
+.AboutUs-history__bottom {
+    width: 848px;
+    color: #F5F6FF;
+    margin-top: 24px;
+}
+
+/* achievement */
+
+.AboutUs-achievement__wrapper {
+    display: flex;
+    gap: 100px;
+    padding: 65px 473.42px 65px 381.42px;
+}
+
+/* верхние числа */
+
+.AboutUs-achievement__wrapper h2 {
+    color: #FF7D04;
+}
+
+/* weToday */
+
+.AboutUs-weToday__wrapper {
+    padding: 118px 389.42px 0 177.42px;
+}
+
+.AboutUs-weToday__descr {
+    width: 699px;
+    margin-top: 24px;
+}
+
+@media (max-width: 1300px) {
+    .aboutus-hist-ach-today__wrapper {
+        height: 1827px;
+    }
+    .aboutUs-comma {
+        width: 1423.842px;
+        height: 1571.5px;
+    }
+    /* AboutUs-history */
+    .AboutUs-history__wrapper {
+        padding: 64px 372px 49px 303px;
+    }
+    .AboutUs-history__img {
+        width: 750px;
+    }
+    .AboutUs-history__bottom {
+        width: 750px;
+    }
+    /* achievement */
+    .AboutUs-achievement__wrapper {
+        gap: 73px;
+        padding: 50px 372px 51px 303px;
+    }
+    /* weToday */
+    .AboutUs-weToday__wrapper {
+        padding: 118px 324.42px 0 177.42px;
+    }
+    .AboutUs-weToday__img {
+        width: 922px;
+    }
+    .AboutUs-weToday__descr {
+        width: 650px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .aboutus-hist-ach-today__wrapper {
+        height: 1780px;
+    }
+    /* AboutUs-history */
+    .AboutUs-history__wrapper {
+        padding: 60px 379px 64px 294px;
+    }
+    .AboutUs-history__bottom {
+        margin-top: 13px;
+    }
+    /* achievement */
+    .AboutUs-achievement__wrapper {
+        padding: 58px 353px 55px 294px;
+    }
+    /* weToday */
+    .AboutUs-weToday__wrapper {
+        padding: 80px 321px 0 187px;
+    }
+    .AboutUs-weToday__img {
+        width: 915px;
+    }
+    .AboutUs-weToday__descr {
+        margin-top: 17px;
+    }
+}
+
+@media (max-width: 992px) {
+    .aboutus-hist-ach-today__wrapper {
+        height: 1500px;
+    }
+    .aboutUs-comma {
+        background: url(../img/icon1/aboutUs-comma992.svg) center center/contain no-repeat;
+        width: 1240.842px;
+        height: 1373.5px;
+    }
+    /* AboutUs-history */
+    .AboutUs-history__wrapper {
+        padding: 50px 370px 48px 247px;
+    }
+    .AboutUs-history__top {
+        margin-top: 6px;
+    }
+    .AboutUs-history__img {
+        width: 660px;
+    }
+    .AboutUs-history__bottom {
+        width: 660px;
+        margin-top: 18px;
+    }
+    /* achievement */
+    .AboutUs-achievement__wrapper {
+        padding: 45px 350px 43px 247px;
+        gap: 20px;
+    }
+    .AboutUs-achievement__container1 {
+        width: 160px;
+    }
+    .AboutUs-achievement__container2 {
+        width: 233px;
+    }
+    .AboutUs-achievement__container3 {
+        width: 184px;
+    }
+    /* weToday */
+    .AboutUs-weToday__wrapper {
+        padding: 68px 350px 0 168px;
+    }
+    .AboutUs-weToday__img {
+        width: 723px;
+    }
+    .AboutUs-weToday__descr {
+        margin-top: 17px;
+    }
+}
+
+@media (max-width: 768px) { 
+    .aboutus-hist-ach-today__wrapper {
+        height: 1182px;
+    }
+    .aboutUs-comma {
+        background: url(../img/icon1/aboutUs-comma768.svg) center center/contain no-repeat;
+        width: 1010.84px;
+        height: 1053.5px;
+        left: -245px;
+    }
+    /* AboutUs-history */
+    .AboutUs-history__wrapper {
+        padding: 20px 419px 33px 310px;
+    }
+    .AboutUs-history__top {
+        gap: 15px;
+        margin-top: 15px;
+        flex-direction: column;
+    }
+    .AboutUs-history__img {
+        width: 284px;
+        margin-top: 20px;
+    }
+    .AboutUs-history__bottom {
+        width: 282px;
+        margin-top: 13px;
+    }
+    /* achievement */
+    .AboutUs-achievement__wrapper {
+        padding: 20px 458px 20px 310px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .AboutUs-achievement__container2, 
+    .AboutUs-achievement__container3 {
+        margin-top: 16px;
+    }
+    .AboutUs-achievement__container1,
+    .AboutUs-achievement__container2,
+    .AboutUs-achievement__container3 {
+        width: 184px;
+    }
+    /* weToday */
+    .AboutUs-weToday__wrapper {
+        padding: 35px 423px 20px 260px;
+    }
+    .AboutUs-weToday__img {
+        width: 350px;
+        transform: translateX(-10px);
+    }
+    .AboutUs-weToday__descr {
+        margin-top: 13px;
+        width: 329px;
+    }
+}

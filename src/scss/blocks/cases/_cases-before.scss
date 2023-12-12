@@ -1,30 +1,17 @@
-
-.Cases, .Cases-afterClick {
+.Cases {
     width: 1266px;
     background-color: #F5F6FF;
     border-radius: 40px;
     margin: 0 auto;
     padding: 100px 32px 40px 120px;
+    display: block;
 }
 
 .Cases__png-bg {
+    background: url(../img/img1/Cases-bg.png) center bottom repeat-y;
+    width: 1920px;
+    position: relative;
     margin: 0 auto;
-}
-
-.cases-title-mobile {
-    display: none;
-}
-
-.Cases-date-mobile {
-    display: none;
-}
-
-.arrow-up-btn {
-    display: none;
-}
-
-.Cases {
-    display: block;
 }
 
 .Cases__title {
@@ -137,20 +124,107 @@
     font-family: "Unbounded-Regular"; 
 }
 
+@media (max-width: 1300px) {
+    .Cases__png-bg {
+        height: auto;
+        background-position: top;
+        padding-bottom: 75px;
+    }
+    .Cases {
+        padding-top: 56px;
+        max-width: 992px;
+        height: auto;
+    }
+    .Cases__container {
+        overflow: hidden;
+        margin-top: 0;
+        flex-direction: column;
+    }
+    .Cases__filter-items {
+        margin-top: 50px;
+    }
+    .Cases__swiper__link {
+        font-size: 12px;
+        width: auto;
+        padding: 8px 15px;
+    }
+}
+
 @media (max-width: 992px) {
     .Cases, .Cases-afterClick {
         border-top-left-radius: 0;
     }
+    .Cases {
+        padding-left: 50px;
+        max-width: 768px;
+    }
+    .Cases__swiper {
+        margin-top: 40px;
+    }
+    .Cases__swiper__container {
+        width: auto;
+    }
+    .Cases__swiper__arrow-next {
+        left: auto !important;
+        right: 0 !important;
+    }
+    .Cases__swiper__arrow-prev {
+        left: auto !important;
+        right: 50px !important;
+    }
+    .Cases__swiper__img, .Cases__swiper__basement {
+        max-width: 98%;
+    }
+    .Cases__swiper-title {
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 768px) {
+    .Cases {
+        max-width: 360px;
+        padding-inline: 0;
+    }
+    .Cases__title, .Cases__filter-items {
+        margin-left: 32px;
+    }
+    .Cases__swiper {
+        margin-left: 10px;
+    }
     .swiper__wrapper__Cases {
         flex-direction: column;
+    }
+    .Cases__swiper-container-title-arrows {
+        display: none;
+    }
+    .Cases__swiper__slide {
+        max-width: 340px !important;
+        height: auto !important;
+    }
+    .Cases__container {
+        overflow: visible;
+    }
+    .Cases__swiper__img, .Cases__swiper__basement {
+        max-width: 100%;
+        gap: 10px;
+    }
+    .Cases__swiper__basement-descr, .Cases__swiper__basement-date {
+        text-align: center;
+        font-size: 12px;
+        padding: 8px 6px;
+        border-radius: 24px;
+        border: 1px solid #707077;
+        line-height: normal;
     }
     .Cases__swiper__basement-descr-BigWall {
         display: none;
     }
     .Cases__swiper__basement-date {
+        font-family: "Open-sans", sans-serif;
+        color: #707077;
+    }
+    .Cases__swiper__basement-date {
         border: none !important;
     }
+    
 }

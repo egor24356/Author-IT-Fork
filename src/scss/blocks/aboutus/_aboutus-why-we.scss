@@ -1,3 +1,11 @@
+.AboutUs-whyWe__wrapper {
+    background-color: #F5F6FF;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin: 0 auto;
+    padding: 101px 115px 40px 133px;
+}
+
 /* заголовок */
 
 .AboutUs-whyWe__title {
@@ -74,16 +82,6 @@
 .template__table__row-right__descr-text {
     width: 603px;
     color: #232323;
-}
-
-/* для адаптива */
-
-.AboutUs__none768 {
-    display: none;
-}
-
-.AboutUs__block768 {
-    display: block;
 }
 
 

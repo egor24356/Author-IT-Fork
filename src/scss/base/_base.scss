@@ -176,10 +176,14 @@ main {
     margin: 0 auto;
 }
 
-.Bitrix__black-dg {
-    width: 100vw;
+.Bitrix__black-bg {
     position: relative;
-    margin: 0 auto 0 auto;
+    width: 1266px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 33px 31px;
+    align-items:center;
 }
 
 @media (max-width: 1300px) {

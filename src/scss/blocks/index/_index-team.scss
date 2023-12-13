@@ -153,8 +153,194 @@
     left: 1144px !important;
 }
 
+@media (max-width: 1399px) {
+    .team {
+        max-width: 95vw;
+        margin: 0 auto;
+    }
+    .team__wrap-face {
+        /* width: 100%; */
+        margin: 0 auto;
+    }
+    .team__container {
+        max-height: 665px;
+        height: auto;
+        margin-top: 120px;
+    }
+    .team__img {
+        margin: -127px auto 0 auto;
+        width: 78vw;
+        transform: none;
+        height: auto;
+    }
+    .team__img img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1299px) {
+    .team__wrap-face {
+        width: auto !important;
+    }
+    .custom-pagination {
+        left: 6% !important;
+    }
+    .descr-team {
+        height: 100% !important;
+        width: 100% !important;
+    }
+    .swiper-slide {
+        position: relative;
+    }
+    .team__profession {
+        position: absolute;
+        margin-top: 0;
+        top: 180px;
+    }   
+    .swiper__team__img {
+        position: absolute;
+        margin: 0;
+        right: 0;
+        // top: 100px;
+        bottom: 0;
+        width: 50%;
+        z-index: -1;
+    }
+    .descr-Daniil .swiper__team__img {
+        bottom: 125px;
+    }
+}
+
+@media (max-width: 992px) {
+    .cursor {
+        display: none;
+    }
+    .container__we {
+        height: auto;
+        padding: 0;
+    }
+    .container__we__commas .com {
+        height: auto !important;
+    }
+    .we {
+        margin-top: 40px;
+    }
+    .team__container {
+        margin-bottom: 0;
+    }
+    .swiper__team__img {
+        z-index: -1;
+        // top: 150px;  
+        width: 400px;
+    }
+    .descr-team {
+        width: 100% !important;
+        position: relative;
+    }
+    .swiper__team {
+        width: 100% !important;
+    }
+}
+
 @media (max-width: 768px) {
     .team__container {
         max-width: 100%;
+    }
+    .team__name {
+        font-size: 32px;
+    }
+    .team {
+        max-width: 100vw;
+    }
+    .team__img {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .team__profession {
+        top: 110px;
+        font-weight: 400;
+        font-size: 16px;
+    }
+    .swiper__team__img {
+        width: 270px;
+        // top: 100px;
+        bottom: 120px;
+        right: -30px;
+    }
+    .container__we h2 {
+        margin-left: 0;
+    }
+    .container__we {
+        padding: 0 10px;
+    }
+    .container__we__commas {
+        padding: 0;
+    }
+    .team__links {
+        width: 100%;
+        height: 100%;
+        transform: none;
+        top: 0;
+    }
+    .team__links {
+        z-index: 3;
+    }
+}
+@media (max-width: 690px) {
+    .team__container {
+        margin-top: 15px;
+    }
+    .team__img img {
+        width: 690px;
+        transform: translateY(15%);
+        width: 100% !important;
+    }
+    .team__container {
+        position: relative;
+    }
+    .cursor-mobile-wrap {
+        left: 35%;
+    }
+}
+
+@keyframes pulsating {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 576px) {
+    .team__profession {
+        position: absolute;
+        margin-top: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .descr-team {
+        height: auto !important;
+    }
+    .swiper__team {
+        height: 650px !important;
+        padding: 128px 40px 81px 40px;
+    }
+    .custom-pagination {
+        bottom: 0 !important;
+    }
+}
+
+@media (max-width: 490px) {
+    .swiper__team__img {
+        width: 270px;
+        bottom: -18%;
+    }
+    .descr-Daniil .swiper__team__img {
+        bottom: 30px;
     }
 }

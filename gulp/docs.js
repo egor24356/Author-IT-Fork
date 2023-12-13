@@ -54,7 +54,7 @@ gulp.task('sass:docs', function () {
 	return gulp
 		.src('./src/scss/*.scss')
 		.pipe(changed('./docs/css/'))
-		.pipe(sourceMaps.init())
+		// .pipe(sourceMaps.init())
 		.pipe(sassGlob())
 		.pipe(webpCss())
 		.pipe(sass())

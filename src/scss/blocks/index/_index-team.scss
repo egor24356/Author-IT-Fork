@@ -1,6 +1,7 @@
 .team__container {
     display: flex;
     background-color: #F5F6FF;
+    max-width: 1263px;
     height: 665px;
     border-radius: 48px;
     margin-bottom: 127px;
@@ -12,6 +13,7 @@
 /* cursor */
 
 .cursor {
+    mix-blend-mode: exclusion;
     position: absolute;
     width: 150px;
     height: 150px;
@@ -19,11 +21,11 @@
     border-radius: 100%;
     user-select: none;
     display: block;
-    opacity: 0;
-    transform: translate(-50%, -50%); /* центрируем кружок */
+    // opacity: 0; 
+    // transform: translate(-50%, -50%); /* центрируем кружок */
     z-index: 999; /* чтобы элемент был над остальными элементами */
     pointer-events: none; /* чтобы сквозь элемент можно было взаимодействовать с элементами, находящимися под ним */
-    transition: width 0.3s, height 0.3s, border-radius 0.3s, background 0.3s;
+    transition: width 0.3s, height 0.3s, border-radius 0.3s, background 0.3s, opacity 0.2s;
 }
 
 /* cursor при наведении на ссылки (лица команды) */
@@ -31,7 +33,7 @@
 .cursor_active {
     height: 250px;
     width: 250px;
-    border-width: 2px;
+    // border-width: 2px;
     background: rgba(34, 153, 141, 0.5);
 }
 
@@ -52,6 +54,10 @@
     cursor: url(../img/icon1/team__cursor.svg), pointer;
     top: 0;
     // transform: translate(44px, -821px);
+}
+
+.cursor-mobile-wrap {
+    cursor: url(../img/icon1/team__cursor.svg), pointer;
 }
 
 
@@ -133,7 +139,7 @@
 .swiper__team__img {
     position: absolute;
     right: 0;
-    top: -115px;
+    bottom: -123px;
 }
 
 .custom-pagination {

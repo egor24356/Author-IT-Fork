@@ -6,7 +6,7 @@ function bitirixOpen() {
 
     function checkUrl() {
         const urlHash = new URL(document.location).hash;
-        if (urlHash) {
+        if (urlHash && urlHash != '#mailer') {
             changeBitrixPage();
             changeMailer();
         }

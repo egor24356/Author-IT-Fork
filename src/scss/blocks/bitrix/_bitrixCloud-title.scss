@@ -1,0 +1,85 @@
+.Bitrix__container-title {
+    padding: 100px 27px 40px 31px;
+}
+
+/* заголовок */
+
+.Bitrix__title {
+    color: #232323;
+    margin-top: 0;
+}
+
+/* контейнер для описания и срока */
+
+.Bitrix__container-descr-time {
+    padding: 38px 0 0 31px;
+}
+
+/* описание заголовка */
+
+.Bitrix__title-descr {
+    width: 688px;
+}
+
+/* срок выполнения */
+
+.Bitrix__title-time {
+    color: #F5F6FF;
+}
+
+@media (max-width: 1300px) {
+    .BitrixCloud__container-title {
+        padding: 80px 27px 73px 31px;
+    }
+    .BitrixCloud__title-descr {
+        width: 582px;
+    }
+    .Bitrix__title-time {
+        font-size: 40px !important;
+    }
+    .Bitrix__container-descr {
+        padding: 62px 86px 64px;
+    }
+}
+
+@media (max-width: 992px) {
+    .Bitrix__container-title {
+        padding: 60px 27px 45px 31px;
+    }
+    .Bitrix__container-descr-time {
+        padding: 40px 0 0 31px;
+    }
+    .Bitrix__title-time {
+        font-size: 40px !important;
+    }
+    .Bitrix__title-descr {
+        width: 420px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Bitrix__container-title {
+        padding: 29px 23px 27px 23px;
+    }
+    .Bitrix__title {
+        margin-bottom: 0;
+    }
+    .Bitrix__container-descr__item {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .Bitrix__title-descr {
+        width: 278px;
+    }
+    .bitrix-title-block360 {
+        display: none;
+    }
+    .bitrix-title-none360 {
+        display: block;
+    }
+    .Bitrix__container-descr-time {
+        margin-top: 0px;
+        flex-direction: column-reverse;
+        gap: 8px;
+    }
+}

@@ -1,0 +1,46 @@
+/* белый фон секций */
+
+.services-afterClick-title__container {
+    position: relative;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    background-color: #F5F6FF;
+    color: #232323;
+    margin: 0 auto;
+    padding: 100px 30px 80px 31px;
+}
+
+.services-table__wrapper {
+    position: relative;
+    background-color: #F5F6FF;
+    margin: 0 auto;
+    padding: 0 0 80px 31px;
+}
+
+.services-proposal__container {
+    position: relative;
+    background-color: #F5F6FF;
+    margin: 0 auto;
+    padding: 0 0 99px;
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width: 1300px) {
+    .services-afterClick-title__container {
+        padding: 70px 30px 50px 31px;
+    }
+}
+
+@media (max-width: 992px) {
+    .services-afterClick-title__container {
+        border-top-left-radius: 0;
+        padding: 50px 30px 40px 31px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-afterClick-title__container {
+        padding: 40px 20px 30px 22px;
+    }
+}

@@ -145,9 +145,6 @@
 }
 
 @media (max-width: 768px) {
-    .footer__container {
-        margin-top: 60px;
-    }
     .footer__nav {
         gap: 30px 20px;
     }
@@ -171,5 +168,19 @@
 @media (max-width: 573px) {
     .contacts-section {
         flex-direction: column;
+    }
+}
+
+// для мейлера
+
+@media (min-width: 1263px) {
+    .footer__container {
+        padding-top: 260px;
+    }
+}
+
+@media (max-width: 1253px) {
+    .footer__container {
+        margin-top: -35px;
     }
 }

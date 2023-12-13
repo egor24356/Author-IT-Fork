@@ -19,10 +19,8 @@
 .crm__background {
     z-index: -1;
     position: absolute;
-    top: -125px;
     left: -109px;
-    margin-top: 125px;
-}
+    }
 
 .crm__container {
     padding-top: 150px;
@@ -157,7 +155,7 @@
         padding-left: 90px;
     }
     .crm__container {
-        padding-top: 50px;
+        padding-top: 90px;
         padding-bottom: 0;
     }
     .crm__background--desktop {
@@ -184,6 +182,10 @@
         max-height: 100%;
         left: 0;
     }
+    .crm__container {
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
     .crm__icon__top {
         flex-direction: column;
     }
@@ -196,6 +198,7 @@
     }
     .descr {
         border-radius: 16px;
+        padding: 24px 0 24px 24px;
     }
     .specialization {
         display: none;

@@ -17,6 +17,7 @@
 	<body>
 		@@include('blocks/header.html')
 		<main class="main">
+			@@include('blocks/btn-to-top.html')
 			<div class="before-click">
 				@@include('blocks/bitrix/bitrix-integration.html')
 				@@include('blocks/bitrix/bitrix-confusion.html')
@@ -30,24 +31,38 @@
 			</div>
 			<div class="BitrixPortal__white-bg bitrixAll none" data-introduction="Box">
 				<!-- Корпоративный портал -->
-				@@include('blocks/bitrix/bitrixall-portal-title.html') 
-				@@include('blocks/bitrix/bitrixall-why-we.html')
-				@@include('blocks/bitrix/bitrixall-why-we-rates.html')
+				@@include('blocks/bitrix/bitrixPortal-title.html') 
+				@@include('blocks/bitrix/bitrixPortal-why-we.html')
+				@@include('blocks/bitrix/bitrixPortal-rates.html')
+				
 				<!-- Облачный сервис -->
-				@@include('blocks/bitrix/bitrix-title-section.html')
-				@@include('blocks/bitrix/bitrix-bitrixall-rates.html')
+				@@include('blocks/bitrix/bitrixCloud-title.html')
+				@@include('blocks/bitrix/bitrixCloud-rates.html')
+				
 				<!-- Энтерпрайз -->
-				@@include('blocks/bitrix/bitrixall-enter-title.html')
-				@@include('blocks/bitrix/bitrixall-enter-benefits.html')
+				@@include('blocks/bitrix/bitrixEnter-title.html')
+				@@include('blocks/bitrix/bitrixEnter-benefits.html')
+
 			</div>
+			
 			<div class="mailer-before">
-				@@include('blocks/mailer-integrate.html')
+				<div id="mailer" class="bitrix-mailer">
+					<img src="../img/img1/mailer__bg.png" alt="" class="mailer-photo">
+				<script data-b24-form="inline/39/eoshqe" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://avtorit24.ru/upload/crm/form/loader_39_eoshqe.js');</script>
+				</div>
+				<!-- @@include('blocks/mailer-integrate.html') -->
 			</div>
 			<div class="mailer-after none">
-				@@include('blocks/mailer-questions-bg.html')
+				<div class="container mailer-bg-container">
+					<div id="mailer-bg" class="bitrix-mailer">
+						<img src="../img/img1/mailer__bg.png" alt="" class="mailer-photo">
+						<script data-b24-form="inline/37/d8iu5c" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://avtorit24.ru/upload/crm/form/loader_37_d8iu5c.js');</script>
+					</div>
+				</div>
+				<!-- @@include('blocks/mailer-questions-bg.html') -->
 			</div>
+			@@include('blocks/footer.html')
 		</main>
-		@@include('blocks/footer.html')
 		<script src="./js/bitrix.bundle.js"></script>
 	</body>
 </html>

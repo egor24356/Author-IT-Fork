@@ -1,4 +1,5 @@
 import changeMailer from "./change-mailer";
+import portfolio from "./bitrix-portfolio"
 
 function bitrixPage() {
 
@@ -12,12 +13,13 @@ document.addEventListener('DOMContentLoaded', ()  => {
 
     //нажатие на кнопку
     bitrixBtnAll.addEventListener('click', () => {
+        portfolio();
         bitrixBefore.classList.add('none'); 
         const btnData = bitrixBtnAll.getAttribute('data-introduction');
         const bitrixData = bitrixAll.getAttribute('data-introduction');
         if (btnData === bitrixData) {
             bitrixAll.classList.remove('none');
-        }else{
+        } else{
             bitrixAll.classList.add('none');
         }
         changeMailer();
@@ -33,7 +35,7 @@ document.addEventListener('DOMContentLoaded', ()  => {
         const bitrixData = bitrixAll.getAttribute('data-introduction');
         if (btnData === bitrixData) {
             bitrixAll.classList.remove('none');
-        }else{
+        } else{
             bitrixAll.classList.add('none');
         }
         window.scrollTo({

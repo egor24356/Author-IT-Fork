@@ -51,10 +51,11 @@
         position: relative;
     }
     .confusion__img {
-        width: 200px;
+        width: 224px;
     }
     .confusion__container__left {
         order: 2;
+        margin-top: 0;
         position: absolute;
         top: 0;
         right: 0;
@@ -70,28 +71,23 @@
     .confusion__title__text {
         font-size: 24px;
     }
+    .confusion__img {
+        width: 120px;
+    }
     .confusion__descr__title {
         font-size: 20px;
     }
     .confusion__descr__text {
-        font-size: 12px;
+        font-size: 12px !important;
     }
     .confusion__container__left {
-        position: absolute;
-        width: 105px;
-        margin-left: 0;
-        right: -10px;
-        top: 10px;
-    }
-    .confusion__wrapper {
-        position: relative;
+        right: -15px;
+        top: -7px;
     }
     .confusion__container__right {
-        padding-top: 24px;
-        flex-basis: auto;
         gap: 16px;
     }
     .confusion__first-descr {
-        max-width: 221px;
+        max-width: 205px;
     }
 }

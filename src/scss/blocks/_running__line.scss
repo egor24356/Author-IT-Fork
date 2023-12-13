@@ -7,7 +7,6 @@
 }
 
 .running__line {
-    background: linear-gradient(90deg, rgba(35,35,35,1) 0%, rgba(35,35,35,0) 5%, rgba(35,35,35,0) 95%, rgba(35,35,35,1) 100%);
     margin: 0 auto;
     max-width: 1920px;
     overflow-x: hidden;
@@ -27,6 +26,15 @@
     flex-shrink: 0;
     padding: 0 15px;
     animation: ticker 5s linear infinite;
+}
+
+@media (max-width: 576px) {
+    .ticker__wrapper .ticker__item {
+        font-size: 45px;
+    }
+    .ticker {
+        margin: 40px 0 0 0;
+    }
 }
   
 @keyframes ticker {

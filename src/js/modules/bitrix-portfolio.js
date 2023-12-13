@@ -12,7 +12,7 @@ function portfolio() {
             if (isAnimated) return;
             let posY = portfolioBlock.getBoundingClientRect().top;
             let coordY = window.scrollY;
-            if (Math.abs(posY) < 20  && !bitrixBefore.classList.contains('none')) {
+            if (Math.abs(posY) < 20 && !bitrixBefore.classList.contains('none')) {
                 body.classList.add('no-scroll');
                 isAnimated = true;
                 setTimeout(changeFlag, ANIM_DURATION);

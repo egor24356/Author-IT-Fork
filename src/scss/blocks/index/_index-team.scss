@@ -20,7 +20,7 @@
     background: rgba(25, 127, 117, 0.8);
     border-radius: 100%;
     user-select: none;
-    display: block;
+    display: none;
     // opacity: 0; 
     // transform: translate(-50%, -50%); /* центрируем кружок */
     z-index: 999; /* чтобы элемент был над остальными элементами */
@@ -342,5 +342,11 @@
     }
     .descr-Daniil .swiper__team__img {
         bottom: 30px;
+    }
+}
+
+@media (hover:hover) {
+    .cursor {
+        display: block;
     }
 }

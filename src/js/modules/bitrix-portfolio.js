@@ -7,6 +7,8 @@ function portfolio() {
         const secondBlock = document.querySelector('.portfolio-2');
         const thirdBlock = document.querySelector('.portfolio-3');
         const portfolioBlock = document.querySelector('.portfolio');
+        
+        let isAnimated = false;
 
         window.addEventListener('scroll', function() {      
             if (isAnimated) return;
@@ -30,7 +32,6 @@ function portfolio() {
             window.scrollTo(0, coordY + posY);
         }
 
-        let isAnimated = false;
 
         function changeFlag() {
             isAnimated = false;

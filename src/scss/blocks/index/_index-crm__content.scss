@@ -146,6 +146,51 @@
     color: #F5F6FF;
 }
 
+@media (max-width: 1399px) {
+    .crm__title {
+        height: auto;
+        margin: 0;
+    }
+    .crm__content__promo {
+        height: auto;
+        min-width: 0;   
+        gap: 30px;
+        margin-left: 0;
+    }
+    .crm__descr__no-bg {
+        max-width: 488px;
+    }
+    .comm__revers {
+        min-width: 213px;
+    }
+    .descr {
+        height: auto;
+    }
+    .specialization {
+        width: 490px;
+        min-width: 285px;
+        height: auto;
+        background: #F5F6FF;
+        padding: 48px 40px 40px 40px;
+        border-radius: 32px;
+    }
+    .specialization p {
+        color: #232323;
+    }
+}
+
+@media (max-width: 1299px) {
+    .comm__revers {
+        display: none;
+    }
+    .personalization {
+        margin: 0;
+    }
+    .crm__icon__top {
+        gap: 20px;
+    }
+}
+
 @media (max-width: 992px) {
     .crm__content {
         height: auto;
@@ -168,6 +213,46 @@
         margin: 0;
         padding: 24px 0;
         width: 100%;
+    }
+    .crm__content .more {
+        order: 2;
+        width: 100%;
+        margin: 0;
+        padding: 40px 0;
+    }
+    .crm__icon__bottom {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .descr {
+        width: 100%;
+        width: auto;
+    }
+    .specialization {
+        width: 100% !important;
+        min-width: 0;
+        width: auto;
+    }
+    .crm__content {
+        padding-top: 50px;
+    }
+    .crm__content__promo {
+        flex-direction: column;
+    }
+    .subtitle {
+        text-shadow: none;
+        font-size: 16px;
+    }
+    .crm__content {
+        background: url('../img/icon1/crm-mobile-bg.svg');
+        background-repeat: no-repeat;
+        background-size: 100vw;
+    }
+    .crm__icon__bottom {
+        background-color: #0A7272;
+        padding-bottom: 40px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 }
 
@@ -202,6 +287,39 @@
     }
     .specialization {
         display: none;
+    }
+    .crm__content__promo {
+        padding: 0 16px;
+    }
+    .crm__icon__top {
+        gap: 8px;
+    }
+    .crm__icon__bottom {
+        gap: 8px;
+        padding-top: 8px;
+        margin-top: 0;
+    }
+    .crm__icon__top {
+        background-color: #0A7272;
+    }
+    .crm__content .more {
+        margin-top: 16px;
+    }
+    .crm__descr__no-bg {
+        height: auto;
+        margin-top: 0;
+    }
+    .crm__descr__no-bg {
+        width: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .descr {
+        padding: 30px;
+    }
+    .specialization  {
+        padding: 20px 30px;
     }
 }
 

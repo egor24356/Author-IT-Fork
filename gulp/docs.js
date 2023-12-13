@@ -19,10 +19,14 @@ const fs = require('fs');
 const sourceMaps = require('gulp-sourcemaps');
 const webpack = require('webpack-stream');
 const changed = require('gulp-changed');
+const autoprefixer = require('gulp-autoprefixer');
 
 // Images
 const webp = require('gulp-webp');
 const imagemin = require('gulp-imagemin');
+
+// JS
+const babel = require('gulp-babel');
 
 
 gulp.task('clean:docs', function (done) {
@@ -53,8 +57,9 @@ gulp.task('html:docs', function () {
 gulp.task('sass:docs', function () {
 	return gulp
 		.src('./src/scss/*.scss')
-		.pipe(changed('./docs/css/'))
+		// .pipe(changed('./docs/css/'))
 		// .pipe(sourceMaps.init())
+		.pipe(autoprefixer())
 		.pipe(sassGlob())
 		.pipe(webpCss())
 		.pipe(sass())
@@ -94,7 +99,7 @@ gulp.task('js:docs', function () {
 		.src('./src/js/*.js')
 		.pipe(changed('./docs/js/'))
 		// .pipe(plumber(plumberNotify('JS')))
-		// .pipe(babel())
+		.pipe(babel())
 		.pipe(webpack(require('./../webpack.config.js')))
 		.pipe(gulp.dest('./docs/js/'));
 });

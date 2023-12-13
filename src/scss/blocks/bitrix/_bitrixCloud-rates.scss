@@ -44,6 +44,13 @@
     font-weight: 700;
 }
 
+.BitrixPortal__rate__typeName {
+    color: #232323;
+    font-family: "Unbounded-Black"; 
+    font-size: 32px;
+    font-weight: 700;
+}
+
 /* описания тарифов */
 
 .Bitrix__rate__typeDescr {
@@ -434,6 +441,10 @@
         left: -20px;
         background-color: #232323;
     }
+    .BitrixPortal__container-services {
+        width: 702px;
+        left: 33px;
+    }
     .Bitrix__services__name {
         width: 290px;
     }
@@ -546,6 +557,9 @@
     .Bitrix__container-services {
         width: 319px;
         left: -10px;
+    }
+    .BitrixPortal__container-services {
+        left: 21px;
     }
     .Bitrix__services__name {
         width: 193px;

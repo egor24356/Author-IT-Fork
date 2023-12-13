@@ -31,13 +31,6 @@
     margin-top: 16px;
 }
 
-.BitrixPortal__rate__typeName {
-    color: #232323;
-    font-family: "Unbounded-Black"; 
-    font-size: 32px;
-    font-weight: 700;
-}
-
 .BitrixPortal__container-rates__support {
     margin-bottom: 0px;
 }
@@ -98,10 +91,6 @@
     .BitrixPortal__container-rate__typeItem {
         width: auto;
     }
-    .BitrixPortal__container-services {
-        width: 702px;
-        left: 33px;
-    }
     .BitrixPortal__services__priceItem {
         margin: 5px 25px;
     }
@@ -120,9 +109,6 @@
 @media (max-width: 768px) {
     .BitrixPortal__container-rates__support-check {
         width: 35px;
-    }
-    .BitrixPortal__container-services {
-        left: 21px;
     }
     .BitrixPortal__container-rates__support-row {
         gap: 50px;

@@ -2,16 +2,6 @@
     padding: 100px 27px 30px 31px;
 }
 
-.Bitrix__black-bg {
-    position: relative;
-    width: 1266px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 33px 31px;
-    align-items:center;
-}
-
 .Bitrix__type-rates__container {
     display: flex;
     gap: 8px;    
@@ -62,11 +52,6 @@
     padding-bottom: 24px;
 }
 
-.Bitrix__container-descr__item-img {
-    width: 36px;
-    height: 29px;
-}
-
 .Bitrix__container-descr__item:not(:last-child) {
     border-bottom: 1px solid #707077;
 }
@@ -102,6 +87,9 @@
     }
     .Bitrix__title-time {
         font-size: 22px !important;
+    }
+    .Bitrix__type-rates__item {
+        padding: 6px;
     }
     .BitrixPortal__container-descr {
         padding: 25px 32px 50px;

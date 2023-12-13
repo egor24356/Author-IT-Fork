@@ -10,3 +10,15 @@
     padding-left: 100px;
     margin-top: 29px;
 }
+
+.Bitrix__container-descr__item-img {
+    width: 36px;
+    height: 29px;
+}
+
+@media (max-width: 768px) {
+    .Bitrix__container-descr__item-img {
+        width: 25px;
+        height: 21px;
+    }
+}

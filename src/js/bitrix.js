@@ -9,7 +9,7 @@ import btnToTop from './modules/btn-to-top.js';
 btnToTop();
 bitirixOpen();
 headerLinks();
-portfolio();
+// portfolio();
 bitrixPage();
 mobileNav();
 benefits();

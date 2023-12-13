@@ -61,6 +61,7 @@
 }
 
 .slide__AboutUs__NastyaD img {
+    width: 620px;
     margin-left: 43px;
 }
 
@@ -183,22 +184,30 @@
         margin-top: 15px;
     }
     .slide__AboutUs__NastyaM img {
+        width: 375px;
         margin-left: 71px;
         margin-right: 43px;
     }
     .slide__AboutUs__Daniil img {
+        width: 481px;
         margin-right: -9px;
         margin-left: 14px;
     }
     .slide__AboutUs__Kostya img {
+        width: 819px;
         margin-right: -406px;
         margin-left: -3px;
     }
+    .slide__AboutUs__Ksysha img{
+        width: 450px;
+    }
     .slide__AboutUs__Egor img {
+        width: 400px;
         margin-left: 41px;
         margin-right: -4px;
     }
     .slide__AboutUs__NastyaD img {
+        width: 465px;
         margin-left: 33px;
     }
     .AboutUs-promo__slider-descr {
@@ -329,34 +338,40 @@
         margin-top: 26px;
     }
     .slide__AboutUs__Daniil img {
+        width: auto;
         margin-left: 46px;
         margin-right: -48px;
         height: 287px;
     }
     .slide__AboutUs__Kostya img {
+        width: auto;
         margin-left: 15px;
         margin-right: -295px;
         margin-top: 87px;
         height: 283px;
     }
     .slide__AboutUs__Ksysha img {
+        width: auto;
         margin-left: 39px;
         margin-top: 63px;
         margin-right: 13px;
         height: 306px;
     }
     .slide__AboutUs__NastyaD img {
+        width: auto;
         margin-left: 26px;
         margin-top: 104px;
         height: 267px;
     }
     .slide__AboutUs__Egor img {
+        width: auto;
         margin-left: 35px;
         margin-right: -14px;
         margin-top: 76px;
         height: 294px;
     }
     .slide__AboutUs__NastyaM img {
+        width: auto;
         margin-left: 57px;
         margin-right: 23px;
         height: 297px;
@@ -414,6 +429,9 @@
 }
 
 @media (max-width: 768px) { 
+    .AboutUs-promo__slider-icons picture {
+        height: 100px;
+    }
     .AboutUs-promo-wrapper {
         padding: 0px 20px 25px;
     }
@@ -458,22 +476,26 @@
         margin-top: 156px;
     }
     .slide__AboutUs__Daniil img {
+        width: 280px;
         margin: 209px 9px 0 0;
         transform: scale(1);
         height: auto;
     }
     .slide__AboutUs__Kostya img {
+        width: 650px;
         margin-left: -71px;
         transform: scale(0.8);
         height: auto;
         margin-top: 144px;
     }
     .slide__AboutUs__Ksysha img {
+        width: 310px;
         margin: 186px 0 0;
         transform: scale(0.85);
         height: auto;
     }
     .slide__AboutUs__NastyaD img {
+        width: 300px;
         transform: scale(0.85);
         margin: 196px 0 0;
         height: auto;

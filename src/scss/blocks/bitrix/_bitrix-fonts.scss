@@ -39,6 +39,19 @@
     .caption16 {
         font-size: 12px;
     }
+    /* замена текста */
+    .rates-block992 {
+        display: none;
+    }
+    .rates-none992 {
+        display: flex !important;
+    }
+    .rates-wrapper-block992 {
+        display: none;
+    }
+    .rates-wrapper-none992 {
+        display: block;
+    }
 }
 
 @media (max-width: 768px) {

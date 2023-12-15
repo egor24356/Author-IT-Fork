@@ -4,15 +4,16 @@ function switchCases(filterValueSwiper) {
 
     const casesWrapperDescr = sectionAfterDisplay.querySelectorAll('.Cases__wrapper-descr');
                 
-    sectionDisplay.style.display = 'none';
-    sectionAfterDisplay.style.display = 'flex';
+
+    sectionAfterDisplay.classList.remove('none');
+    sectionDisplay.classList.add('none');
     
     casesWrapperDescr.forEach((descr) => {
         const filterValueDescr = descr.dataset.filterdescr;
         if (filterValueSwiper === filterValueDescr) {
-            descr.classList.remove('none') ;
+            descr.classList.remove('none');
         } else {
-            descr.classList.add('none') ;
+            descr.classList.add('none');
         }
     })
     window.scrollTo({

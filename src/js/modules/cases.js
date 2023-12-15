@@ -4,10 +4,13 @@ import switchCases from "./switch-cases";
 function cases() {
     document.addEventListener('DOMContentLoaded', ()  => { 
         const clickSlides = document.querySelectorAll('.swiper-slide');
+        let scrollSaver;
 
         // Обработчик события клика на слайд
+
         clickSlides.forEach((slide) => {
             slide.addEventListener('click', () => {
+                scrollSaver = window.scrollY;
                 const filterValueSwiper = slide.dataset.filterdescr;
                 switchCases(filterValueSwiper);
             });
@@ -17,24 +20,45 @@ function cases() {
 
         const sectionDisplay = document.querySelector('.Cases');
         const sectionAfterDisplay = document.querySelector('.Cases-afterClick');
+
+        function hideCase() {
+            sectionAfterDisplay.classList.add('none');
+            sectionDisplay.classList.remove('none');
+        }
+
+        // Обработчик события клика на кнопку возврата 
         
         const clickLink = document.querySelectorAll('.Cases__descr-link');
-        // Обработчик события клика на кнопку возврата 
+
         clickLink.forEach((a) => {
             a.addEventListener('click', () => {
                 if (url.searchParams.get('filterDescr')) {
                     url.searchParams.delete('filterDescr');
                     window.history.pushState({}, '', url.toString());
                 }
-                sectionAfterDisplay.style.display = 'none';
-                sectionDisplay.style.display = 'block';
+                hideCase();
                 window.scrollTo({
-                    top: 0,
+                    top: scrollSaver,
                     left: 0,
-                    behavior: 'smooth'
+                    behavior: 'auto'
                 });
             })
         });
+
+        /* Возвращение назад при открытом кейсе */
+
+        history.pushState({}, null, '');
+        window.onpopstate = function(e) {
+            history.pushState({}, null, '');
+            e.preventDefault();
+            hideCase();
+            window.scrollTo({
+                top: scrollSaver,
+                left: 0,
+                behavior: 'auto'
+            });
+        }
+
     })
 }
 

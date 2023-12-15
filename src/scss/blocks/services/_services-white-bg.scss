@@ -1,6 +1,6 @@
 .main-services {
-    max-height: 85vh;
-    overflow-y: hidden;
+    max-height: 85svh;
+    overflow: hidden;
 }
 
 /* White background */
@@ -38,7 +38,7 @@
 }
 
 .services__wrap {
-    height: 84vh;
+    height: 90svh;
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -147,6 +147,11 @@
     width: 220px;
 }
 
+.container__commas-for-js:hover .comma__service {
+    filter: drop-shadow(-1px 2px 5px rgba(57, 53, 48, 0.5));
+    transform: translate(1px, -1px);
+}
+
 .comma__service-mobile {
     display: none;
 }
@@ -233,7 +238,7 @@
         left: 5%;
     }
     .main-services {
-        max-height: calc(100svh - 70px);
+        max-height: calc(100svh - 80px);
     }
     .comma__service {
         width: 200px !important;
@@ -251,7 +256,7 @@
         flex-wrap: wrap;
     }
     .our-service {
-        min-height: 79%;
+        min-height: 77%;
     }
 }
 
@@ -267,7 +272,7 @@
     }
     .container__last {
         transform: none !important;
-        min-height: 410px;
+        // min-height: 410px;
         align-items: start;
     }
     .comma__service-mobile {
@@ -275,7 +280,7 @@
         aspect-ratio: 150/196;
     }
     .comma__service {
-        width: 150px !important;
+        width: 130px !important;
     }
     .comma__service:not(.comma__service-mobile) {
         display: none;
@@ -290,7 +295,7 @@
         justify-content: start !important;
     }
     .container__last {
-        min-height: 425px;
+        // min-height: 425px;
     }
 }
 

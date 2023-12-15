@@ -39,9 +39,11 @@
 .Cases__filter-item {
     margin-top: 10px;
 }
+.Cases__filter-item:hover {
+    opacity: .6;
+}
 
-.Cases__filter-item1 {
-    margin-top: 0;
+.Cases__filter-item--active {
     color: #FF7D04;
 }
 

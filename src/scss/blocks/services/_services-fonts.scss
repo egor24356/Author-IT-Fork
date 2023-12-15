@@ -1,4 +1,7 @@
 @media (max-width: 1299px) {
+    .header__second {
+        font-size: 40px;
+    }
     .services__header1 {
         font-size: 64px;
     }
@@ -17,9 +20,6 @@
         top: 18% !important;
         right: 8% !important;
     }
-}
-
-@media (max-width: 1080px) {
     .service-btn p {
         font-size: 28px;
     }
@@ -29,6 +29,7 @@
     .service-btn p {
         font-size: 20px;
     }
+    
     .services__header1 {
         font-size: 52px;
     }

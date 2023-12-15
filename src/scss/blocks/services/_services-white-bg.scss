@@ -196,15 +196,12 @@
         max-width: 992px !important;
     }
     .service-btn p {
-        font-size: 28px;
         left: 15%;
     }
     .services__title {
         font-size: 45px;
     }
-    .header__second {
-        font-size: 40px;
-    }
+
     .container__title__our__services {
         align-items: center;
     }
@@ -250,9 +247,6 @@
 }
 
 @media (max-width: 811px) {
-    .wrapper__services {
-        justify-content: start;
-    }
     .container__commas {
         flex-wrap: wrap;
     }

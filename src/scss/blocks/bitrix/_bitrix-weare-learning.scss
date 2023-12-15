@@ -29,10 +29,16 @@
     }
 }
 @media (max-width: 768px) {
+    .weare-learning__wrap {
+        padding: 45px 20px 18px 20px;
+    }
     .weare-learning__container {
         max-width: 360px;
     }
     .weare-learning__table-row-text {
         width: auto !important;
+    }
+    .weare-learning__table-row {
+        gap: 8px;
     }
 }

@@ -1,4 +1,3 @@
-
 .integration__container {
     position: relative;
     background-color: #F5F6FF;
@@ -55,12 +54,6 @@
         height: 556px;
         padding: 61px 40px 0 0;
     }
-    .integration__header1 {
-        font-size: 60px;
-    }
-    .integration__header2 {
-        font-size: 52px;
-    }
     .integration__bg {
         width: 1020px;
         height: 490px;
@@ -80,9 +73,6 @@
         border-top-left-radius: 0;
         padding: 119px 45px 0 0;
         height: 524px;
-    }
-    .integration__header2 {
-        font-size: 34px;
     }
     .integration__bg {
         left: -77px;
@@ -109,12 +99,6 @@
     .integration__descr__bg {
         padding: 163px 36px 32px 242px;
     }
-    .integration__header1 {
-        font-size: 32px;
-    }
-    .integration__header2 {
-        font-size: 24px !important;
-    }
     .integration__descr__text__bg {
         line-height: 138%;
     }
@@ -123,25 +107,5 @@
     }
     .integration__none768 {
         display: block;
-    }
-
-
-    .bitrix__wrapper__right {
-        gap: 8px;
-    }
-    .bitrix__container__left {
-        gap: 0;
-    }
-    .bitrix__left__title {
-        padding-bottom: 16px;
-    }
-    .bitrix__wrapper__right {
-        padding: 175px 0 31px 50px;
-    }
-    .bitrix__left__descr__text {
-        margin-bottom: 16px;
-    }
-    .bitrix-bitrix-img-mobile {
-        margin-bottom: 23px;
     }
 }

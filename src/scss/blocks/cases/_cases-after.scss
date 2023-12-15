@@ -61,6 +61,7 @@
 .Cases__descr-link {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     width: 212px;
@@ -70,8 +71,10 @@
     border-radius: 16px;
     border: 1px solid var(--c);
     --c:#232323;
+    color: var(--c);
     text-decoration: none;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .Cases__descr-link:hover {
@@ -171,6 +174,9 @@
     }
     .Cases__descr-title {
         font-size: 40px;
+    }
+    .Cases__wrapper-descr[data-filterDescr='tts-group'] .cases-title-mobile {
+        font-size: 32px;
     }
     .Cases__descr-subtitle {
         font-size: 20px;

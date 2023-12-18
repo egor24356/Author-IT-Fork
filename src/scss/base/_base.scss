@@ -5,6 +5,21 @@ html {
 * {
     box-sizing: border-box;
     margin: 0;
+    scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: #181818;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #0A7272;    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+    border: 1px solid #181818;
 }
 
 body, html {

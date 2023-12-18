@@ -8,6 +8,7 @@
 
 .mobile-nav {
     width: 768px;
+    height: 93svh;
     z-index: 999;
     // overflow: hidden;
     // transition: all .2s ease;
@@ -15,7 +16,6 @@
     top: calc(50% - var(--height) * 2);
     right: calc(50% - var(--width));
     margin-top: 95px;
-    height: 93vh;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -244,7 +244,7 @@
     }
     .mobile-nav {
         width: 360px;
-        height: 95svh;
+        height: 93svh;
         margin-top: 45px;
     }
 }

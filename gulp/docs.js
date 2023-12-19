@@ -76,7 +76,9 @@ gulp.task('images:docs', function () {
 		.pipe(gulp.dest('./docs/img/'))
 		.pipe(gulp.src('./src/img/**/*'))
 		.pipe(changed('./docs/img/'))	
-		.pipe(imagemin({ verbose: true }))
+		.pipe(imagemin(
+			{ verbose: true, quality: 'high' }
+		))
 		.pipe(gulp.dest('./docs/img/'));
 });
 

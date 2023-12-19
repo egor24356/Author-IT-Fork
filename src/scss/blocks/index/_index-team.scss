@@ -137,9 +137,12 @@
 }
 
 .swiper__team__img {
-    position: absolute;
     right: 0;
-    bottom: -123px;
+    bottom: -80px;
+    position: absolute;
+    margin: 0;
+    width: 50%;
+    z-index: -1;
 }
 
 .custom-pagination {
@@ -197,15 +200,6 @@
         margin-top: 0;
         top: 180px;
     }   
-    .swiper__team__img {
-        position: absolute;
-        margin: 0;
-        right: 0;
-        // top: 100px;
-        bottom: 0;
-        width: 50%;
-        z-index: -1;
-    }
     .descr-Daniil .swiper__team__img {
         bottom: 125px;
     }
@@ -230,8 +224,9 @@
     }
     .swiper__team__img {
         z-index: -1;
+        bottom: 0;
         // top: 150px;  
-        width: 400px;
+        // width: 400px;
     }
     .descr-team {
         width: 100% !important;
@@ -263,8 +258,9 @@
         font-size: 16px;
     }
     .swiper__team__img {
-        width: 270px;
+        // width: 270px;
         // top: 100px;
+        width: 60%;
         bottom: 120px;
         right: -30px;
     }
@@ -327,21 +323,21 @@
         height: auto !important;
     }
     .swiper__team {
-        height: 650px !important;
+        // height: 650px !important;
         padding: 128px 40px 81px 40px;
     }
     .custom-pagination {
-        bottom: 0 !important;
+        // bottom: 0 !important;
     }
 }
 
 @media (max-width: 490px) {
     .swiper__team__img {
-        width: 270px;
-        bottom: -18%;
+        width: 70%;
+        // bottom: -18%;
     }
     .descr-Daniil .swiper__team__img {
-        bottom: 30px;
+        width: 80%;
     }
 }
 

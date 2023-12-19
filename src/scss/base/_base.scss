@@ -9,7 +9,7 @@ html {
 }
 
 body::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
+    width: 1vw;               /* width of the entire scrollbar */
 }
   
 body::-webkit-scrollbar-track {
@@ -313,6 +313,7 @@ main {
         display: none;
     }
 }
+
 
 /* шрифты */
 

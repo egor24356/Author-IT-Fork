@@ -11,11 +11,16 @@ function swiperTeam() {
           direction: 'horizontal',
           speed: 1500,
           keyboard: true,
+          loop: true,
 
           pagination: {
             el: '.custom-pagination',
             type: 'fraction',
-            clickable: true,
+          },
+
+          navigation: {
+            nextEl: ".swiper-team__arrowNext",
+            prevEl: ".swiper-team__arrowPrev",
           },
       });
   })

@@ -21,8 +21,6 @@
     border-radius: 100%;
     user-select: none;
     display: none;
-    // opacity: 0; 
-    // transform: translate(-50%, -50%); /* центрируем кружок */
     z-index: 999; /* чтобы элемент был над остальными элементами */
     pointer-events: none; /* чтобы сквозь элемент можно было взаимодействовать с элементами, находящимися под ним */
     transition: width 0.3s, height 0.3s, border-radius 0.3s, background 0.3s, opacity 0.2s;
@@ -33,7 +31,6 @@
 .cursor_active {
     height: 250px;
     width: 250px;
-    // border-width: 2px;
     background: rgba(34, 153, 141, 0.5);
 }
 
@@ -53,7 +50,6 @@
     background-color: transparent;
     cursor: url(../img/icon1/team__cursor.svg), pointer;
     top: 0;
-    // transform: translate(44px, -821px);
 }
 
 .cursor-mobile-wrap {
@@ -100,7 +96,6 @@
 
 /* swiper в section team */
 
-
 .swiper__team {
     position: relative;
     min-width: 0;
@@ -108,7 +103,7 @@
     overflow: hidden;
     width: 1270px !important;
     height: 878px !important;
-    padding: 128px 72px 81px 72px;
+    padding: 128px 72px 81px;
     transform: translateY(-71px) !important;
     cursor: url(../img/icon1/team__cursor.svg), pointer;
 }
@@ -116,12 +111,9 @@
 .descr-team {
     display: flex;
     flex-direction: column;
-    // width: 1263px !important;
     position: relative;
     height: 612px !important;
-    /* margin-right: 0px !important; */
     cursor: url(../img/icon1/team__cursor.svg), pointer;
-
 }
 
 .team__name {
@@ -137,12 +129,24 @@
 }
 
 .swiper__team__img {
-    right: 0;
-    bottom: -80px;
     position: absolute;
-    margin: 0;
-    width: 50%;
-    z-index: -1;
+    right: 67px;
+    bottom: -123px;
+}
+
+.descr-Egor img {
+    width: 670px;
+    bottom: -110px;
+}
+
+.descr-NastyaD img {
+    width: 589px;
+    right: 44px;
+    bottom: -91px;
+}
+
+.descr-Ksysha img {
+    right: 112px;
 }
 
 .custom-pagination {
@@ -156,13 +160,28 @@
     left: 1144px !important;
 }
 
+.swiper-team__arrowPrev {
+    position: absolute;
+    width: 31px;
+    height: 24px;
+    left: 64px;
+    top: 45%;
+}
+
+.swiper-team__arrowNext {
+    position: absolute;
+    width: 31px;
+    height: 24px;
+    right: 64px;
+    top: 45%;
+}
+
 @media (max-width: 1399px) {
     .team {
         max-width: 95vw;
         margin: 0 auto;
     }
     .team__wrap-face {
-        /* width: 100%; */
         margin: 0 auto;
     }
     .team__container {
@@ -179,11 +198,6 @@
     .team__img img {
         width: 100%;
     }
-    .team__links{
-        width: 100%;
-        height: 100%;
-        top: -70px;
-    }
 }
 
 @media (max-width: 1299px) {
@@ -192,6 +206,12 @@
     }
     .custom-pagination {
         left: 6% !important;
+    }
+    .swiper-team__arrowPrev {
+        top: 50%;
+    }
+    .swiper-team__arrowNext {
+        top: 50%;
     }
     .descr-team {
         height: 100% !important;
@@ -205,7 +225,15 @@
         margin-top: 0;
         top: 180px;
     }   
-    .descr-Daniil .swiper__team__img {
+    .swiper__team__img {
+        position: absolute;
+        margin: 0;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        z-index: -1;
+    }
+    .descr-Daniil img {
         bottom: 125px;
     }
 }
@@ -227,11 +255,39 @@
     .team__container {
         margin-bottom: 0;
     }
+    .team__profession {
+        top: 133px;
+    } 
     .swiper__team__img {
         z-index: -1;
-        bottom: 0;
-        // top: 150px;  
-        // width: 400px;
+    }
+    .descr-Kostya img {
+        width: 333px;
+        bottom: 110px;
+    }
+    .descr-NastyaM img {
+        width: 338px;
+        bottom: 107px;
+        right: 8px;
+        transform: scale(-1,1);
+    }
+    .descr-Egor img {
+        width: 333px;
+        bottom: 80px;
+    }
+    .descr-NastyaD img {
+        width: 312px;
+        bottom: 110px;
+    }
+    .descr-Ksysha img {
+        width: 268px;
+        right: 15px;
+        bottom: 110px;
+    }
+    .descr-Daniil img {
+        width: 400px;
+        right: 25px;
+        bottom: 110px;
     }
     .descr-team {
         width: 100% !important;
@@ -239,6 +295,9 @@
     }
     .swiper__team {
         width: 100% !important;
+    }
+    .custom-pagination {
+        left: 64px;
     }
 }
 
@@ -263,9 +322,7 @@
         font-size: 16px;
     }
     .swiper__team__img {
-        // width: 270px;
-        // top: 100px;
-        width: 60%;
+        width: 270px;
         bottom: 120px;
         right: -30px;
     }
@@ -282,6 +339,7 @@
         width: 100%;
         height: 100%;
         transform: none;
+        top: 0;
     }
     .team__links {
         z-index: 3;
@@ -301,9 +359,6 @@
     }
     .cursor-mobile-wrap {
         left: 35%;
-    }
-    .team__links {
-        top: 0;
     }
 }
 
@@ -330,28 +385,21 @@
         height: auto !important;
     }
     .swiper__team {
-        // height: 650px !important;
+        height: 650px !important;
         padding: 128px 40px 81px 40px;
     }
     .custom-pagination {
-        // bottom: 0 !important;
-    }
-    .cursor-mobile {
-        height: 120px;
-        width: 120px;
-    }
-    .team__img {
-        margin-top: -70px;
+        bottom: 0 !important;
     }
 }
 
 @media (max-width: 490px) {
     .swiper__team__img {
-        width: 70%;
-        // bottom: -18%;
+        width: 270px;
+        bottom: -18%;
     }
     .descr-Daniil .swiper__team__img {
-        width: 80%;
+        bottom: 30px;
     }
 }
 

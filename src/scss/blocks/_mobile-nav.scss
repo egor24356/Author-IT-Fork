@@ -8,7 +8,7 @@
 
 .mobile-nav {
     width: 768px;
-    height: 93svh;
+    height: calc(100vh - 80px);
     z-index: 999;
     // overflow: hidden;
     // transition: all .2s ease;
@@ -23,10 +23,6 @@
     // border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     padding: 0 8px 28px;
-}
-
-.mobile-nav--open {
-
 }
 
 .mobile-nav .mobile-logo__link {
@@ -244,7 +240,6 @@
     }
     .mobile-nav {
         width: 360px;
-        height: 93svh;
         margin-top: 45px;
     }
 }

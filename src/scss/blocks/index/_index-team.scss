@@ -179,6 +179,11 @@
     .team__img img {
         width: 100%;
     }
+    .team__links{
+        width: 100%;
+        height: 100%;
+        top: -70px;
+    }
 }
 
 @media (max-width: 1299px) {
@@ -277,7 +282,6 @@
         width: 100%;
         height: 100%;
         transform: none;
-        top: 0;
     }
     .team__links {
         z-index: 3;
@@ -297,6 +301,9 @@
     }
     .cursor-mobile-wrap {
         left: 35%;
+    }
+    .team__links {
+        top: 0;
     }
 }
 
@@ -328,6 +335,13 @@
     }
     .custom-pagination {
         // bottom: 0 !important;
+    }
+    .cursor-mobile {
+        height: 120px;
+        width: 120px;
+    }
+    .team__img {
+        margin-top: -70px;
     }
 }
 

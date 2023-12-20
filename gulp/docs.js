@@ -74,9 +74,11 @@ gulp.task('images:docs', function () {
 		.pipe(changed('./docs/img/'))
 		.pipe(webp())
 		.pipe(gulp.dest('./docs/img/'))
-		.pipe(gulp.src('./src/img/**/*'))
+		.pipe(gulp.src(['./src/img/**/*', '!./src/img/img1/Page1_main_img.png']))
 		.pipe(changed('./docs/img/'))	
-		.pipe(imagemin({ verbose: true }))
+		.pipe(imagemin(
+			{ verbose: true, quality: 'high' }
+		))
 		.pipe(gulp.dest('./docs/img/'));
 });
 

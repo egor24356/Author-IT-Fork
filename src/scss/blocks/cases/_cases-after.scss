@@ -2,7 +2,7 @@
     width: 1266px;
     background-color: #F5F6FF;
     border-radius: 40px;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
     padding: 100px 32px 40px 120px;
     // display: none;
 }
@@ -98,6 +98,11 @@
 .review__photo-wrap {
     margin-top: 16px;
     margin-bottom: 8px !important;
+}
+
+.review__photo {
+    width: 125px;
+    border-radius: 50%;
 }
 
 .review__name {

@@ -126,6 +126,7 @@
     background-color: inherit;
     top: 100%;
     left: 0;
+    z-index: 1;
 }
 
 /* отображение псевдоэлементов для закругления при наведении */
@@ -141,8 +142,8 @@
 /* псевдоклассы */
 
 .nav__list-item__link:hover, .header__telephone:hover, .tabs__item--active {
+    background-color: #f5f6ff;
     color: #232323;
-    background-color: #F5F6FF;
 }
 
 .nav__logo:hover, .nav__logo.tabs__item--active {

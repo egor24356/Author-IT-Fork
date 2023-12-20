@@ -2,13 +2,14 @@
     width: 1266px;
     background-color: #F5F6FF;
     border-radius: 40px;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
     padding: 100px 32px 40px 120px;
     display: block;
 }
 
 .Cases__png-bg {
-    background: url(../img/img1/Cases-bg.png) center bottom repeat-y;
+    background: linear-gradient(#232323 0%, transparent 3%),
+     url(../img/img1/Cases-bg.png) center bottom repeat-y;
     width: 1920px;
     position: relative;
     margin: 0 auto;
@@ -104,7 +105,6 @@
 .Cases__swiper__link {
     color: #F5F6FF;
     font-family: "Unbounded-Regular"; 
-    width: 186px;
     padding: 10px;
     display: flex;
     justify-content: center;

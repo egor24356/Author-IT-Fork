@@ -4,7 +4,7 @@ import switchCases from "./switch-cases";
 function cases() {
     document.addEventListener('DOMContentLoaded', ()  => { 
         const clickSlides = document.querySelectorAll('.swiper-slide');
-        let scrollSaver;
+        let scrollSaver = 0;
 
         // Обработчик события клика на слайд
 

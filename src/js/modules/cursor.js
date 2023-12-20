@@ -39,7 +39,7 @@ function cursor() {
 		function cursorToggler() {
 			rTop = Math.abs(cursorObj.pageY - containerTeamTopCoord);
 			rBottom = Math.abs(cursorObj.pageY - containerTeamBottomCoord);
-			if (rTop < 400 || rBottom < 400 ||		
+			if (rTop < 400 || rBottom < 1000 ||		
 					((cursorObj.pageY - containerTeamTopCoord) > 0 && (cursorObj.pageY - containerTeamBottomCoord) < 0)) {
 				cursor.classList.remove('no-opacity');
 				body.style = 'cursor: none';

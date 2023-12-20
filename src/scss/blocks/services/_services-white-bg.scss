@@ -256,7 +256,7 @@
         flex-wrap: wrap;
     }
     .our-service {
-        min-height: 77%;
+        min-height: 80%;
     }
 }
 
@@ -307,7 +307,10 @@
 
 @media (max-width: 460px) {
     .white__bg__services {
-        max-width: 100vw;
-        border-radius: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .services__wrap {
+        height: calc(100vh - 80px);
     }
 }

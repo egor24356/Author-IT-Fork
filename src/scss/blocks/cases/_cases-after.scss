@@ -181,6 +181,9 @@
     .Cases__descr-title {
         font-size: 40px;
     }
+    .Cases__descr-title_fs24 {
+        font-size: 24px;
+    }
     .Cases__wrapper-descr[data-filterDescr='tts-group'] .cases-title-mobile {
         font-size: 32px;
     }
@@ -191,6 +194,7 @@
     .cases-title-mobile {
         display: inline;
         margin-left: 32px;
+        margin-right: 10px;
     }
     .cases-title-desktop {
         display: none;

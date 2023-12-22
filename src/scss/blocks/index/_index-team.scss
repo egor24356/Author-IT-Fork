@@ -344,6 +344,10 @@
     .team__links {
         z-index: 3;
     }
+    .cursor-mobile {
+        width: 110px;
+        height: 110px;
+    }
 }
 @media (max-width: 690px) {
     .team__container {

@@ -163,7 +163,7 @@
         padding: 20px 25px;
     }
     .container__autor__IT {
-        padding-inline: 16px;
+        padding: 56px 16px 40px 16px;
     }
     .container__autor__IT img {
         height: 350px;
@@ -190,6 +190,9 @@
         margin-bottom: 1px;
         margin-right: 1px;
     }
+    .autor__descr1 {
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 690px) {
@@ -207,12 +210,6 @@
     }
     .autor__content {
         margin-left: 0;
-    }
-    .container__autor__IT {
-        padding: 56px 24px 40px 24px;
-    }
-    .autor__descr1 {
-        margin-right: 0;
     }
     .container__autor__IT img {
         top: 130px;

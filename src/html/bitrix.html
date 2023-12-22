@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Автор IT</title>
-		<link rel="shortcut icon" href="img/icon1/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="img/icon1/footer-logo.svg">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
 		@@include('blocks/header.html')
 		<main class="main">
 			@@include('blocks/btn-to-top.html')
-			<div class="before-click none">
+			<div class="before-click">
 				@@include('blocks/bitrix/bitrix-integration.html')
 				@@include('blocks/bitrix/bitrix-confusion.html')
 				@@include('blocks/bitrix/bitrix-bitrix.html')
@@ -29,7 +29,7 @@
 				@@include('blocks/bitrix/bitrix-ik-element.html')
 				@@include('blocks/bitrix/bitrix-rates.html')
 			</div>
-			<div class="BitrixPortal__white-bg bitrixAll " data-introduction="Box">
+			<div class="BitrixPortal__white-bg bitrixAll none" data-introduction="Box">
 				<!-- Корпоративный портал -->
 				@@include('blocks/bitrix/bitrixPortal-title.html') 
 				@@include('blocks/bitrix/bitrixPortal-why-we.html')

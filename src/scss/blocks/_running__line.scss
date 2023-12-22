@@ -51,16 +51,15 @@
 }
 
 @media (max-width: 768px) {
+    .ticker__item {
+        font-size: 40px;
+    }
     .bitrix__ticker {
         margin: 45px 0;
     }
     .bitrix__ticker__item {
         font-size: 32px;
     }
-}
-
-
-@media (max-width: 576px) {
     .ticker {
         margin: 40px 0 0 0;
     }

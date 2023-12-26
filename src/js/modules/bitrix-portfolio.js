@@ -3,14 +3,13 @@ function portfolio() {
     if (window.matchMedia('(min-width: 992px)').matches && !bitrixBefore.classList.contains('none')) {
         const ANIM_DURATION = 300;
         const body = document.querySelector('body');
-        const portfolioSection = document.querySelector('.ik-element');
         const secondBlock = document.querySelector('.portfolio-2');
         const thirdBlock = document.querySelector('.portfolio-3');
         const portfolioBlock = document.querySelector('.portfolio');
         
         let isAnimated = false;
 
-        window.addEventListener('scroll', function() {      
+        window.addEventListener('scroll', function(e) {
             if (isAnimated) return;
             let posY = portfolioBlock.getBoundingClientRect().top;
             let coordY = window.scrollY;

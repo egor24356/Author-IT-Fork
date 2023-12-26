@@ -20,6 +20,7 @@ const sourceMaps = require('gulp-sourcemaps');
 const webpack = require('webpack-stream');
 const changed = require('gulp-changed');
 const autoprefixer = require('gulp-autoprefixer');
+const groupMedia = require('gulp-group-css-media-queries');
 
 // Images
 const webp = require('gulp-webp');
@@ -64,6 +65,7 @@ gulp.task('sass:docs', function () {
 		.pipe(webpCss())
 		.pipe(sass())
 		.pipe(csso())
+		.pipe(groupMedia())
 		// .pipe(sourceMaps.write())
 		.pipe(gulp.dest('./docs/css/'));
 });

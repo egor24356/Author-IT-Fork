@@ -49,9 +49,11 @@ function cases() {
 
         history.pushState({}, null, '');
         window.onpopstate = function(e) {
-            history.pushState({}, null, '');
-            e.preventDefault();
-            hideCase();
+            if (!sectionAfterDisplay.classList.contains('none')) {
+                history.pushState({}, null, '');
+                e.preventDefault();
+                hideCase();
+            }
         }
     })
 }

@@ -24,11 +24,15 @@ function cases() {
         function hideCase() {
             sectionAfterDisplay.classList.add('none');
             sectionDisplay.classList.remove('none');
+            scroller(scrollSaver);
+        }
+
+        function scroller(coord) {
             window.scrollTo({
-                top: scrollSaver,
+                top: coord,
                 left: 0,
                 behavior: 'auto'
-            });
+            })
         }
 
         // Обработчик события клика на кнопку возврата 

@@ -1,5 +1,5 @@
 .main-services {
-    max-height: 85svh;
+    max-height: calc(100dvh - 80px);
     overflow: hidden;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .services__wrap {
-    height: 85svh;
+    height: 85dvh;
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -238,7 +238,7 @@
         left: 5%;
     }
     .main-services {
-        max-height: calc(100svh - 80px);
+        max-height: calc(100dvh - 80px);
     }
     .comma__service {
         width: 200px !important;
@@ -292,6 +292,7 @@
         padding-left: 20px !important;
     }
     .wrapper__services {
+        padding-top: 40px;
         justify-content: start !important;
     }
     .container__last {
@@ -311,6 +312,6 @@
         border-bottom-right-radius: 0;
     }
     .services__wrap {
-        height: calc(100vh - 80px);
+        height: calc(100dvh - 80px);
     }
 }

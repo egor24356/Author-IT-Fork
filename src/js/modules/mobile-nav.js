@@ -22,7 +22,6 @@ function mobileNav() {
 	}
 
 	const searchbar = document.querySelector('.mobile-searchbar')
-	console.log(searchbar);
 
 	navBtn.onclick = function () {
 		nav.classList.toggle('mobile-nav--open');

@@ -55,7 +55,7 @@ function cases() {
         window.onpopstate = function(e) {
             if (!sectionAfterDisplay.classList.contains('none')) {
                 history.pushState({}, null, '');
-                e.preventDefault();
+                // e.preventDefault();
                 hideCase();
             }
         }

@@ -1,6 +1,6 @@
 .ticker {
-    height: 140px;
-    margin: 108px 0 31px 0;
+    height: auto;
+    margin: 108px 0;
 }
 
 /* отдельный класс для бегущей строки на странице битрикса */
@@ -33,38 +33,35 @@
 }
 
 @media (max-width: 1300px) {
-    .bitrix__ticker {
+    .bitrix__ticker,
+    .ticker {
         margin: 80px 0;
     }
-    .bitrix__ticker__item {
+    .bitrix__ticker__item,
+    .ticker__item {
         font-size: 64px;
     }
 }
 
 @media (max-width: 992px) {
-    .bitrix__ticker {
+    .bitrix__ticker,
+    .ticker {
         margin: 60px 0;
     }
-    .bitrix__ticker__item {
+    .bitrix__ticker__item,
+    .ticker__item {
         font-size: 55px;
     }
 }
 
 @media (max-width: 768px) {
-    .ticker__item {
-        font-size: 40px;
-    }
-    .bitrix__ticker {
-        margin: 45px 0;
-    }
-    .bitrix__ticker__item {
-        font-size: 32px;
-    }
+    .bitrix__ticker,
     .ticker {
-        margin: 40px 0 0 0;
-    }
-    .bitrix__ticker {
         margin: 40px 0;
+    }
+    .bitrix__ticker__item,
+    .ticker__item {
+        font-size: 32px;
     }
 }
   

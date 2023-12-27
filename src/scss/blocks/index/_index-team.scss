@@ -164,6 +164,7 @@
     height: 24px;
     left: 64px;
     top: 45%;
+    outline: none;
 }
 
 .swiper-team__arrowNext {
@@ -172,6 +173,7 @@
     height: 24px;
     right: 64px;
     top: 45%;
+    outline: none;
 }
 
 @media (max-width: 1299px) {
@@ -329,11 +331,6 @@
         margin-bottom: 15px;
         width: 417px;
     }
-    // .team__img {
-        //     width: 100vw;
-        //     display: flex;
-        //     justify-content: center;
-        // }
     .team__links {
         width: 425px;
         height: 369px;
@@ -350,20 +347,26 @@
         font-size: 16px;
     }
     .swiper__team {
-        padding: 103px 32px 348px;
-        height: auto !important;
+        padding: 30px 32px 378px;
+        height: 525px !important;
+        transform: none !important;
     }
     .custom-pagination {
         font-size: 16px;
-        bottom: 312px !important;
+        bottom: 25px !important;
     }
     .swiper-team__arrowPrev {
         left: 25px;
-        top: 40%;
+        top: 55%;
     }
     .swiper-team__arrowNext {
         right: 25px;
-        top: 40%;
+        top: 55%;
+    }
+    .swiper-team__arrowPrev, 
+    .swiper-team__arrowNext {
+        width: 26px;
+        height: 20px;
     }
     .team__name {
         font-size: 32px;
@@ -384,11 +387,12 @@
     }
     .descr-Egor img {
         width: 85%;
-        bottom: 9px;
+        bottom: -344px;
     }
     .descr-NastyaD img {
         right: 26px;
         width: 76%;
+        bottom: -344px;
     }
     .descr-Ksysha img {
         right: 39px;

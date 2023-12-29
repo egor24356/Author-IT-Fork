@@ -140,7 +140,9 @@
 
 .Cases__container-img {
     // margin-right: 63px;
-    object-fit: contain;
+    max-width: 695px;
+    object-fit: cover;
+    aspect-ratio: 696/380;
     border-radius: 22px;
 }
 
@@ -150,6 +152,14 @@
 
 .Cases-date-mobile {
     display: none;
+}
+
+.cases__descr-link {
+    color: inherit;
+    text-decoration: underline .5px;
+    &:hover {
+        opacity: .8;
+    }
 }
 
 .arrow-up-btn {

@@ -92,6 +92,9 @@
 }
 
 .Cases__swiper__img {
+    aspect-ratio: 696/380;
+    width: 696px;
+    object-fit: cover;
     border-radius: 22px;
 }
 
@@ -132,9 +135,9 @@
 }
 
 @media (max-width: 1300px) {
-    .portfolio-1 .left-container__title {
-        margin-right: 8px;
-    }
+    // .portfolio-1 .left-container__title {
+    //     margin-right: 8px;
+    // }
     .Cases__png-bg {
         height: auto;
         background-position: top;
@@ -161,9 +164,9 @@
 }
 
 @media (max-width: 992px) {
-    .portfolio-1 .left-container__title {
-        margin-right: 187px;
-    }
+    // .portfolio-1 .left-container__title {
+    //     margin-right: 187px;
+    // }
     .Cases, .Cases-afterClick {
         border-top-left-radius: 0;
     }

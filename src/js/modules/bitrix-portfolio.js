@@ -35,13 +35,16 @@ function portfolio() {
             isAnimated = false;
         }
 
-        function wheelListener(e) {
+        function wheelListener(e, deltaY) {
+            if (e) deltaY = e.deltaY
             if(isAnimated) return;
             isAnimated = true;
             setTimeout(changeFlag, ANIM_DURATION);
-            if (e.deltaY > 0 ) {
+            if (deltaY > 0 ) {
                 if (secondBlock.classList.contains('portfolio-block--showed')) {
-                    body.classList.remove('no-scroll');
+                    setTimeout(function() {
+                        body.classList.remove('no-scroll');
+                    }, ANIM_DURATION);
                 }
                 if (!secondBlock.classList.contains('portfolio-block--showed')) {
                     setTimeout(scrollToSection, ANIM_DURATION);
@@ -58,7 +61,9 @@ function portfolio() {
                     body.classList.add('no-scroll');
                 }
                 if (secondBlock.classList.contains('portfolio-block--showed') && !thirdBlock.classList.contains('portfolio-block--showed')) {
-                    body.classList.remove('no-scroll');
+                    setTimeout(function() {
+                        body.classList.remove('no-scroll');
+                    }, ANIM_DURATION);
                 }
                 if (!secondBlock.classList.contains('portfolio-block--showed')) {
                     body.classList.remove('no-scroll');
@@ -68,6 +73,32 @@ function portfolio() {
                 }
             }
         }
+
+        let startX = 0;
+        let startY = 0;
+    
+        document.addEventListener('touchstart', function(e) {
+            startX = e.touches[0].clientX;
+            startY = e.touches[0].clientY;
+        });
+    
+        portfolioBlock.addEventListener('touchmove', function(e) {
+            if (!startX || !startY) {
+                return;
+            }
+            // if (Math.abs(posY) < 20 && !bitrixBefore.classList.contains('none') && (posY > -1 && isEnded || posY < 1 && !isEnded)) {
+            let endX = e.touches[0].clientX;
+            let endY = e.touches[0].clientY;
+    
+            let diffY = endY - startY;
+            if (Math.abs(diffY) >= Math.abs(endX - startX)) {
+                wheelListener(null, -diffY); 
+            }
+    
+            startX = 0;
+            startY = 0;
+            // }
+        });
         
         function showPortfolio () {
             if (!secondBlock.classList.contains('portfolio-block--showed')) {

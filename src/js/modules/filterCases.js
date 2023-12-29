@@ -32,9 +32,9 @@ function filterCases() {
 
                 visibleSlides = getVisibleSlides();
 
-                slides.forEach((slide, index) => {
+                slides.forEach((slide) => {
                     const slideFilterValue = slide.dataset.filter;
-                    if ((filterValue === 'filterAll' || slideFilterValue === filterValue) /* && index < visibleSlides */) {
+                    if ((filterValue === 'filterAll' || slideFilterValue === filterValue)) {
                         slide.style.display = 'block';
                     } else {
                         slide.style.display = 'none';

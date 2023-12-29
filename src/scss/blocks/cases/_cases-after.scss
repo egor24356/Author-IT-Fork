@@ -153,6 +153,14 @@
     display: none;
 }
 
+.cases__descr-link {
+    color: inherit;
+    text-decoration: underline .5px;
+    &:hover {
+        opacity: .8;
+    }
+}
+
 .arrow-up-btn {
     display: none;
 }

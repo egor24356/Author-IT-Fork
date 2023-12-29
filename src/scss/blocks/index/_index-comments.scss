@@ -34,7 +34,7 @@
 
 .swiper__container__comments__items {
     max-width: 780px;
-    height: 520px;
+    // height: 520px;
     padding-bottom: 75px;
     // transform: translateX(30%);
     margin: 40px auto 0;
@@ -177,6 +177,9 @@
     .swiper__container__comments__items {
         margin-top: 21px;
     }
+    .swiper__container__comments__items {
+        padding-bottom: 0;
+    }
     .comments__pagination {
         bottom: 28px;
     }
@@ -192,7 +195,7 @@
     }
     .container__comments {
         margin-top: 80px;
-        padding: 90px 12px 130px 12px;
+        padding: 90px 12px 70px 12px;
     }
     .comments__items {
         height: auto !important;

@@ -9,7 +9,6 @@ function portfolio() {
         const portfolioBlock = document.querySelector('.portfolio');
         
         let isEnded = false;
-
         let isAnimated = false;
 
         window.addEventListener('scroll', function(e) {
@@ -86,7 +85,6 @@ function portfolio() {
             if (!startX || !startY) {
                 return;
             }
-            // if (Math.abs(posY) < 20 && !bitrixBefore.classList.contains('none') && (posY > -1 && isEnded || posY < 1 && !isEnded)) {
             let endX = e.touches[0].clientX;
             let endY = e.touches[0].clientY;
     
@@ -97,7 +95,6 @@ function portfolio() {
     
             startX = 0;
             startY = 0;
-            // }
         });
         
         function showPortfolio () {

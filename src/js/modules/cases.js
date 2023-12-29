@@ -56,7 +56,7 @@ function cases() {
             if (!sectionAfterDisplay.classList.contains('none')) {
                 history.pushState({}, null, '');
                 // e.preventDefault();
-                hideCase();
+                setTimeout(hideCase, 10);
             }
         }
     })

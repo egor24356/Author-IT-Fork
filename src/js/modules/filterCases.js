@@ -17,17 +17,24 @@ function filterCases() {
         }
 
         filterItems.forEach(filterItem => {
-            filterItem.addEventListener('click', () => {
-                
+            filterItem.addEventListener('click', (e) => {
+
+                filterItems.forEach(i => {
+                    i.classList.remove('Cases__filter-item--active')
+                    if (i == e.target) {
+                        i.classList.add('Cases__filter-item--active')
+                    }
+                })
+
                 const filterValue = filterItem.dataset.filter;
                 swiperTitle.innerHTML = filterItem.innerHTML;
                 const slides = swiperContainer.querySelectorAll('.Cases__swiper__slide');
 
                 visibleSlides = getVisibleSlides();
 
-                slides.forEach((slide, index) => {
+                slides.forEach((slide) => {
                     const slideFilterValue = slide.dataset.filter;
-                    if ((filterValue === 'filterAll' || slideFilterValue === filterValue) /* && index < visibleSlides */) {
+                    if ((filterValue === 'filterAll' || slideFilterValue === filterValue)) {
                         slide.style.display = 'block';
                     } else {
                         slide.style.display = 'none';

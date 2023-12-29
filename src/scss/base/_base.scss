@@ -5,6 +5,21 @@ html {
 * {
     box-sizing: border-box;
     margin: 0;
+    scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar {
+    width: .8vw;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: #181818;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #0A7272;    /* color of the scroll thumb */
+    border-radius: 10px;       /* roundness of the scroll thumb */
+    border: 1px solid #181818;
 }
 
 body, html {
@@ -137,6 +152,22 @@ main {
     display: none !important;
 }
 
+.rates-wrapper-block992 {
+    display: block;
+}
+
+.rates-wrapper-none992 {
+    display: none;
+}
+
+.table-none768 {
+    display: none;
+}
+
+.table-block768 {
+    display: block;
+}
+
 .bitrix-title-block360 {
     display: block;
 }
@@ -186,16 +217,30 @@ main {
     align-items:center;
 }
 
+.Bitrix__container-rates-services {
+    margin-top: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-radius: 25px;
+    border: 1px solid #707077;
+}
+
 @media (max-width: 1300px) {
+    /* доп. страницы битрикса*/
     .Bitrix__top-white-bg,
     .Bitrix__white-bg, 
     .Bitrix__bottom-white-bg,    
     .Bitrix__black-bg {
         width: 992px;
     }
+    .Bitrix__container-rates-services {
+        margin-top: 40px;
+    }
 }
 
 @media (max-width: 992px) {
+    /* доп. страницы битрикса*/
     .Bitrix__top-white-bg,
     .Bitrix__white-bg, 
     .Bitrix__bottom-white-bg,    
@@ -206,27 +251,75 @@ main {
         flex-direction: column;
         gap: 15px;
         align-items: flex-start;
+        padding: 28px 31px;
+    }
+    .Bitrix__container-rates-services {
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    .rates-wrapper-block992 {
+        display: none;
+    }
+    .rates-wrapper-none992 {
+        display: block;
+    }
+    .rates-block992 {
+        display: none !important;
+    }
+    .rates-none992 {
+        display: flex !important;
+    }
+    body::-webkit-scrollbar-thumb {
+        background-color: #0A7272;    /* color of the scroll thumb */
+        border-radius: 10px;       /* roundness of the scroll thumb */
+        border: .2px solid #181818;
     }
 }
 
 @media (max-width: 768px) {
+    /* основная стр. битрикса */
+    .table-block768 {
+        display: none;
+    }
+    .table-none768 {
+        display: block;
+    }
+    /* доп. страницы битрикса*/
     .Bitrix__top-white-bg,
     .Bitrix__white-bg, 
     .Bitrix__bottom-white-bg,    
     .Bitrix__black-bg {
         width: 360px;
     }
-
     .Bitrix__black-bg {
-        padding: 33px 2px;
+        padding: 28px 2px;
     }
+    .Bitrix__container-rates-services {
+        width: auto;
+    }
+    .bitrix-title-block360 {
+        display: none;
+    }
+    .bitrix-title-none360 {
+        display: block;
+    }
+    /*?????*/
     .before-click h2 {
         font-size: 32px;
     }    
     .before-click p {
         font-size: 16px;
     }    
+    /* страница О нас */
+    .AboutUs__none768 {
+        display: block;
+    }
+    .AboutUs__block768 {
+        display: none;
+    }
 }
+
 
 /* шрифты */
 

@@ -7,10 +7,6 @@
     /*display: none;*/
 }
 
-.BitrixEnter__container-descr {
-    padding: 70.5px 116.94px 60px 131px !important;
-}
-
 .benefits-section__container {
     border-radius: 32px;
     border: 1px solid #707077;
@@ -61,8 +57,8 @@
 .benefits__container-descr__item {
     display: flex;
     gap: 24px;
+    line-height: 1.5;
 }
-
 
 .benefits-info {
     margin-top: 38px;
@@ -105,24 +101,43 @@
 
 .benefits-info__text {
     margin-top: 0;
+    line-height: 1.5;
 }
 
 @media (max-width: 1300px) {
-    .BitrixEnter__container-descr {
-        padding: 65px 86px 64px !important;
+    .benefits-section__wrapper {
+        padding: 0 86px;
+    }
+    .benefits-section__container {
+        padding: 56px 62px;
     }
 }
 
 @media (max-width: 992px) {
-    .BitrixEnter__container-descr {
-        padding-inline: 70px;
-        padding: 40px 86px 64px !important;
+    .benefits-section__wrapper {
+        padding: 0 31px;
     }
     .benefits-section__container {
-        padding-inline: 45px;
+        padding: 38px 55px;
+    }
+    .Bitrix-benefits__subtitle {
+        margin-top: 38px;
+    }
+    .benefits-section__list {
+        margin-top: 19px;
     }
     .benefits-section__item {
+        line-height: 2.6;
         padding-left: 0;
+    }
+    .benefits__container-descr {
+        margin-top: 38px;
+    }
+    .benefits__container-descr__item-text {
+        line-height: 1.5;
+    }
+    .benefits__container-descr__item-img {
+        width: 25px;
     }
     .canbe-list .benefits-section__item {
         padding-left: 10px;
@@ -131,7 +146,7 @@
 
 @media (max-width: 768px) {
     .BitrixEnter__container-descr {
-        padding: 30px 32px 64px !important;
+        padding: 28px 32px 52px !important;
     }
     .benefits-section__wrapper {
         padding: 0 32px;

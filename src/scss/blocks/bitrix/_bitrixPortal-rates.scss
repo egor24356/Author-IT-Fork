@@ -52,6 +52,10 @@
     gap: 0;
 }
 
+.BitrixPortal__rates-services__btn {
+    margin-top: 18px;
+}
+
 @media (max-width: 1300px) {
     .BitrixPortal__container-rates__types {
         gap: 8px;
@@ -80,6 +84,9 @@
 }
 
 @media (max-width: 992px) {
+    .BitrixPortal__container-rates__types {
+        padding: 0 17px 0 0;
+    }
     .BitrixPortal__services__separPrice {
         width: 100px;
     }
@@ -90,6 +97,12 @@
     }
     .BitrixPortal__container-rate__typeItem {
         width: auto;
+    }
+    .BitrixPortal__rate__typeNameInter {
+        font-size: 32px;
+    }
+    .BitrixPortal__rate__price {
+        font-size: 32px;
     }
     .BitrixPortal__services__priceItem {
         margin: 5px 25px;

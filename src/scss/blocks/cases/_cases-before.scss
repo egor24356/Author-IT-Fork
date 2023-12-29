@@ -2,13 +2,14 @@
     width: 1266px;
     background-color: #F5F6FF;
     border-radius: 40px;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
     padding: 100px 32px 40px 120px;
     display: block;
 }
 
 .Cases__png-bg {
-    background: url(../img/img1/Cases-bg.png) center bottom repeat-y;
+    background: linear-gradient(#232323 0%, transparent 3%),
+     url(../img/img1/Cases-bg.png) center bottom repeat-y;
     width: 1920px;
     position: relative;
     margin: 0 auto;
@@ -39,9 +40,11 @@
 .Cases__filter-item {
     margin-top: 10px;
 }
+.Cases__filter-item:hover {
+    opacity: .6;
+}
 
-.Cases__filter-item1 {
-    margin-top: 0;
+.Cases__filter-item--active {
     color: #FF7D04;
 }
 
@@ -88,6 +91,13 @@
     margin-top: 20px;
 }
 
+.Cases__swiper__img {
+    aspect-ratio: 696/380;
+    width: 696px;
+    object-fit: cover;
+    border-radius: 22px;
+}
+
 /* нижняя часть слайдера с кратким описанием проекта */
 
 .Cases__swiper__basement {
@@ -102,7 +112,6 @@
 .Cases__swiper__link {
     color: #F5F6FF;
     font-family: "Unbounded-Regular"; 
-    width: 186px;
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -126,6 +135,9 @@
 }
 
 @media (max-width: 1300px) {
+    // .portfolio-1 .left-container__title {
+    //     margin-right: 8px;
+    // }
     .Cases__png-bg {
         height: auto;
         background-position: top;
@@ -152,6 +164,9 @@
 }
 
 @media (max-width: 992px) {
+    // .portfolio-1 .left-container__title {
+    //     margin-right: 187px;
+    // }
     .Cases, .Cases-afterClick {
         border-top-left-radius: 0;
     }

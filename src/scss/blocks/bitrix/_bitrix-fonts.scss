@@ -18,6 +18,16 @@
     .caption16 {
         font-size: 14px;
     }
+    /* основная стр битрикса */
+    .integration__header1 {
+        font-size: 60px;
+    }
+    .integration__header2 {
+        font-size: 52px;
+    }
+    .integration__header3 {
+        font-size: 40px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -39,18 +49,12 @@
     .caption16 {
         font-size: 12px;
     }
-    /* замена текста */
-    .rates-block992 {
-        display: none;
+    /* основная стр битрикса */
+    .integration__header2 {
+        font-size: 34px;
     }
-    .rates-none992 {
-        display: flex !important;
-    }
-    .rates-wrapper-block992 {
-        display: none;
-    }
-    .rates-wrapper-none992 {
-        display: block;
+    .integration__header3 {
+        font-size: 26px;
     }
 }
 
@@ -74,5 +78,15 @@
     .bitrixPortal__header4,
     .bitrixEnter__header4 {
         font-size: 16px;
+    }
+    /* замена текста */
+    .integration__header1 {
+        font-size: 32px;
+    }
+    .integration__header2 {
+        font-size: 24px !important;
+    }
+    .integration__header3 {
+        font-size: 20px;
     }
 }

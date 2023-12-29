@@ -1,0 +1,91 @@
+@media (max-width: 1299px) {
+    .header__second {
+        font-size: 40px;
+    }
+    .services__header1 {
+        font-size: 64px;
+    }
+    .services-afterClick-title__descr__text {
+        font-size: 20px !important;
+    }
+    .services__header2 {
+        font-size: 50px;
+    }
+    .services-table__text {
+        font-size: 20px !important;
+    }
+    .services-proposal__text {
+        font-size: 20px !important;
+        width: 77% !important;
+        top: 18% !important;
+        right: 8% !important;
+    }
+    .service-btn p {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 992px) {
+    .service-btn p {
+        font-size: 20px;
+    }
+    
+    .services__header1 {
+        font-size: 52px;
+    }
+    .services-header64px {
+        font-size: 48px !important;
+    }
+    .services-afterClick-title__descr__text {
+        font-size: 18px !important;
+    }
+    .services__header2 {
+        font-size: 42px;
+    }
+    .services-table__text {
+        font-size: 16px !important;
+    }
+    .services-proposal__text { 
+        font-size: 16px !important;
+        top: 19% !important;
+    }
+}
+
+@media (max-width: 811px) {
+    h1 {
+        font-size: 65px;
+    }
+    h2 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .service-btn p {
+        font-size: 14px;
+        left: 15% !important;
+    }
+    .header__second {
+        font-size: 24px;
+    }
+    .services__header1 {
+        font-size: 26px;
+    }
+    .services-header64px {
+        font-size: 22px !important;
+    }
+    .services-afterClick-title__descr__text {
+        font-size: 14px !important;
+    }
+    .services__header2 {
+        font-size: 22px;
+    }
+    .services-table__text {
+        font-size: 14px !important;
+    }
+    .services-proposal__text { 
+        font-size: 12px !important;
+        width: 81% !important;
+        top: 14% !important;
+    }
+}

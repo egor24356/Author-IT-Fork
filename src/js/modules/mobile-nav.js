@@ -21,15 +21,19 @@ function mobileNav() {
 		}
 	}
 
+	const searchbar = document.querySelector('.mobile-searchbar')
+
 	navBtn.onclick = function () {
 		nav.classList.toggle('mobile-nav--open');
 		// nav.classList.toggle('visually-hidden');
 		navCircle.classList.toggle('mobile-nav-circle--active');
 		if (menuIcon.classList.contains('nav-icon--active')) {
+			searchbar.content = '#232323';
 			setTimeout(changeIcon, ANIM_DURATION - 50);
 			setTimeout(changeOverflow, ANIM_DURATION);
-
+			
 		} else {
+			searchbar.content = '#F5F6FF';
 			changeIcon();
 			changeOverflow();
 		}

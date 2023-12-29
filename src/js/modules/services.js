@@ -44,7 +44,7 @@ function services() {
             scrollTimeout = setTimeout(changeFlag, ANIM_DURATION);
             if (e.deltaY > 0) {  // wheeldown
                 showServices();
-            } else {
+            } else {    
                 hideServices();
             }
         }
@@ -101,8 +101,7 @@ function services() {
 
         let diffY = endY - startY;
 
-        if (Math.abs(diffY) < Math.abs(endX - startX)) {}
-        else {
+        if (Math.abs(diffY) >= Math.abs(endX - startX)) {
             if (diffY < 0) {
                 showServices();
             } else {

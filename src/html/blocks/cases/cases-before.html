@@ -2,7 +2,7 @@
     <h1 class="Cases__title">Кейсы</h1>
     <div class="Cases__container">
         <div class="Cases__filter-items">
-            <div class="Cases__filter-item Cases__filter-item1" data-filter="filterAll">
+            <div class="Cases__filter-item Cases__filter-item--active" data-filter="filterAll">
                 Все проекты
             </div>
             <div class="Cases__filter-item" data-filter="filterInteg">
@@ -17,6 +17,9 @@
             <div class="Cases__filter-item" data-filter="filterMobil">
                 Мобильные приложения
             </div>
+            <div class="Cases__filter-item" data-filter="events">
+                Мероприятия, обучение
+            </div>
         </div>
         <div class="Cases__swiper">
             <div class="swiper-container Cases__swiper__container">
@@ -28,75 +31,147 @@
                     <img class="swiper-button-next Cases__swiper__arrow-next" src="img/icon1/cases__arrow__next.svg" alt="Стрелка вправо">
                 </div>
                 <div class="swiper-wrapper swiper__wrapper__Cases">
-                    <div class="swiper-slide Cases__swiper__slide" data-filter="filterInteg" data-filterDescr="Integration">
-                        <img class="Cases__swiper__img Cases__swiper__img-BigWall" src="img/img1/Cases-BigWall.png" alt="Изображение интернет-магазина BigWall">
+                    <div class="swiper-slide Cases__swiper__slide" data-filter="filterInteg" data-filterDescr="tts-group">
+                        <img class="Cases__swiper__img Cases__swiper__img-BigWall" src="img/img1/slider-cases-tts-group.png" alt="Изображение интернет-магазина BigWall">
                         <div class="Cases__swiper__basement Cases__swiper__basement-BigWall">
-                            <div class="Cases__swiper__link Cases__swiper__link-BigWall">BigWall</div>
+                            <div class="Cases__swiper__link Cases__swiper__link-BigWall">Теплосервис-ТС</div>
                             <div class="Cases__swiper__basement-descr Cases__swiper__basement-descr-BigWall body14">
                                 Интеграция Битрикс24
                             </div>
                             <div class="Cases__swiper__basement-date Cases__swiper__basement-date-BigWall">
-                                20.03.2017
+                                11.01.2020
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide Cases__swiper__slide" data-filter="filterInter" data-filterDescr="BigWall1">
-                        <img class="Cases__swiper__img Cases__swiper__img-BigWall" src="img/img1/Cases-BigWall.png" alt="Изображение интернет-магазина BigWall">
+                    <div class="swiper-slide Cases__swiper__slide" data-filter="filterInteg" data-filterDescr="magTender">
+                        <img class="Cases__swiper__img Cases__swiper__img-BigWall" src="img/img1/slider-cases-magtender.png" alt="Изображение интернет-магазина BigWall">
                         <div class="Cases__swiper__basement Cases__swiper__basement-BigWall">
-                            <div class="Cases__swiper__link Cases__swiper__link-BigWall">BigWall</div>
+                            <div class="Cases__swiper__link Cases__swiper__link-BigWall">МагТендер</div>
                             <div class="Cases__swiper__basement-descr Cases__swiper__basement-descr-BigWall body14">
-                                Интернет-магазин
+                                Интеграция Битрикс24
                             </div>
                             <div class="Cases__swiper__basement-date Cases__swiper__basement-date-BigWall">
-                                20.03.2017
+                                03.03.2023
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide Cases__swiper__slide" data-filter="filterSite" data-filterDescr="Site">
-                        <img class="Cases__swiper__img Cases__swiper__img-BigWall" src="img/img1/Cases-BigWall.png" alt="Изображение интернет-магазина BigWall">
+                    <div class="swiper-slide Cases__swiper__slide" data-filter="filterInteg" data-filterDescr="goldenSection">
+                        <img class="Cases__swiper__img Cases__swiper__img-BigWall" src="img/img1/slider-cases-goldensection.png" alt="Изображение интернет-магазина BigWall">
                         <div class="Cases__swiper__basement Cases__swiper__basement-BigWall">
-                            <div class="Cases__swiper__link Cases__swiper__link-BigWall">BigWall</div>
+                            <div class="Cases__swiper__link Cases__swiper__link-BigWall">Золотое сечение</div>
+                            <div class="Cases__swiper__basement-descr Cases__swiper__basement-descr-BigWall body14">
+                                Интеграция Битрикс24
+                            </div>
+                            <div class="Cases__swiper__basement-date Cases__swiper__basement-date-BigWall">
+                                17.11.2022
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide Cases__swiper__slide" data-filter="filterInteg" data-filterDescr="beauty-boutique">
+                        <img class="Cases__swiper__img Cases__swiper__img-BigWall" src="img/img1/slider-cases-bb.png" alt="Изображение интернет-магазина BigWall">
+                        <div class="Cases__swiper__basement Cases__swiper__basement-BigWall">
+                            <div class="Cases__swiper__link Cases__swiper__link-BigWall">Beauty Boutique</div>
+                            <div class="Cases__swiper__basement-descr Cases__swiper__basement-descr-BigWall body14">
+                                Интеграция Битрикс24
+                            </div>
+                            <div class="Cases__swiper__basement-date Cases__swiper__basement-date-BigWall">
+                                07.09.2023
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide Cases__swiper__slide" data-filter="filterInteg" data-filterDescr="ik-element">
+                        <img class="Cases__swiper__img Cases__swiper__img-BigWall" src="img/img1/slider-cases-ik.png" alt="Изображение интернет-магазина BigWall">
+                        <div class="Cases__swiper__basement Cases__swiper__basement-BigWall">
+                            <div class="Cases__swiper__link Cases__swiper__link-BigWall">ИК-элемент</div>
+                            <div class="Cases__swiper__basement-descr Cases__swiper__basement-descr-BigWall body14">
+                                Интеграция Битрикс24
+                            </div>
+                            <div class="Cases__swiper__basement-date Cases__swiper__basement-date-BigWall">
+                                10.04.2023
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide Cases__swiper__slide" data-filter="filterInteg" data-filterDescr="teplosphere">
+                        <img class="Cases__swiper__img Cases__swiper__img-BigWall" src="img/img1/Cases-teplosphere.png" alt="Изображение интернет-магазина BigWall">
+                        <div class="Cases__swiper__basement Cases__swiper__basement-BigWall">
+                            <div class="Cases__swiper__link Cases__swiper__link-BigWall">Теплосфера</div>
+                            <div class="Cases__swiper__basement-descr Cases__swiper__basement-descr-BigWall body14">
+                                Интеграция Битрикс24
+                            </div>
+                            <div class="Cases__swiper__basement-date Cases__swiper__basement-date-BigWall">
+                                12.03.2022
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide Cases__swiper__slide" data-filter="filterInteg" data-filterDescr="uralmedias">
+                        <img class="Cases__swiper__img Cases__swiper__img-BigWall" src="img/img1/slider-cases-uralmedias.png" alt="Изображение интернет-магазина BigWall">
+                        <div class="Cases__swiper__basement Cases__swiper__basement-BigWall">
+                            <div class="Cases__swiper__link Cases__swiper__link-BigWall">Uralmedias</div>
+                            <div class="Cases__swiper__basement-descr Cases__swiper__basement-descr-BigWall body14">
+                                Интеграция Битрикс24
+                            </div>
+                            <div class="Cases__swiper__basement-date Cases__swiper__basement-date-BigWall">
+                                15.04.2021
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide Cases__swiper__slide" data-filter="filterInteg" data-filterDescr="squad">
+                        <img class="Cases__swiper__img Cases__swiper__img-BigWall" src="img/img1/slider-cases-squad.png" alt="Изображение интернет-магазина BigWall">
+                        <div class="Cases__swiper__basement Cases__swiper__basement-BigWall">
+                            <div class="Cases__swiper__link Cases__swiper__link-BigWall">Отряды</div>
+                            <div class="Cases__swiper__basement-descr Cases__swiper__basement-descr-BigWall body14">
+                                Интеграция Битрикс24
+                            </div>
+                            <div class="Cases__swiper__basement-date Cases__swiper__basement-date-BigWall">
+                                01.10.2023
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide Cases__swiper__slide" data-filter="events" data-filterDescr="fb-chelyabinsk">
+                        <img class="Cases__swiper__img Cases__swiper__img-BigWall" src="img/img1/slider-cases-fb.png" alt="Изображение интернет-магазина BigWall">
+                        <div class="Cases__swiper__basement Cases__swiper__basement-BigWall">
+                            <div class="Cases__swiper__link Cases__swiper__link-BigWall">&laquo;Формула Бизнеса&raquo; в&nbsp;Челябинске</div>
+                            <div class="Cases__swiper__basement-descr Cases__swiper__basement-descr-BigWall body14">
+                                Мероприятия
+                            </div>
+                            <div class="Cases__swiper__basement-date Cases__swiper__basement-date-BigWall">
+                                24.05.2023
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide Cases__swiper__slide" data-filter="filterSite" data-filterDescr="tts-group-site">
+                        <img class="Cases__swiper__img Cases__swiper__img-BigWall" src="img/img1/slider-cases-tts-group.png" alt="Изображение интернет-магазина BigWall">
+                        <div class="Cases__swiper__basement Cases__swiper__basement-BigWall">
+                            <div class="Cases__swiper__link Cases__swiper__link-BigWall">Теплосервис-ТС</div>
                             <div class="Cases__swiper__basement-descr Cases__swiper__basement-descr-BigWall body14">
                                 Корпоративные сайты
                             </div>
                             <div class="Cases__swiper__basement-date Cases__swiper__basement-date-BigWall">
-                                20.03.2017
+                                11.01.2020
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide Cases__swiper__slide" data-filter="filterInter" data-filterDescr="BigWall2">
-                        <img class="Cases__swiper__img Cases__swiper__img-BigWall" src="img/img1/Cases-BigWall.png" alt="Изображение интернет-магазина BigWall">
+                    <div class="swiper-slide Cases__swiper__slide" data-filter="filterInter" data-filterDescr="harley">
+                        <img class="Cases__swiper__img Cases__swiper__img-BigWall" src="img/img1/Cases-harley.png" alt="Изображение интернет-магазина BigWall">
                         <div class="Cases__swiper__basement Cases__swiper__basement-BigWall">
-                            <div class="Cases__swiper__link Cases__swiper__link-BigWall">BigWall</div>
+                            <div class="Cases__swiper__link Cases__swiper__link-BigWall">Harley-Davidson </div>
                             <div class="Cases__swiper__basement-descr Cases__swiper__basement-descr-BigWall body14">
-                                Интернет-магазин
+                                Интернет-магазины
                             </div>
                             <div class="Cases__swiper__basement-date Cases__swiper__basement-date-BigWall">
-                                20.03.2017
+                                05.02.2020
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide Cases__swiper__slide" data-filter="filterMobil" data-filterDescr="Mobile">
-                        <img class="Cases__swiper__img Cases__swiper__img-BigWall" src="img/img1/Cases-BigWall.png" alt="Изображение интернет-магазина BigWall">
+                    <div class="swiper-slide Cases__swiper__slide" data-filter="filterMobil" data-filterDescr="shef">
+                        <img class="Cases__swiper__img Cases__swiper__img-BigWall" src="img/img1/slider-cases-shef.png" alt="Изображение интернет-магазина BigWall">
                         <div class="Cases__swiper__basement Cases__swiper__basement-BigWall">
-                            <div class="Cases__swiper__link Cases__swiper__link-BigWall">BigWall</div>
+                            <div class="Cases__swiper__link Cases__swiper__link-BigWall">Шеф</div>
                             <div class="Cases__swiper__basement-descr Cases__swiper__basement-descr-BigWall body14">
                                 Мобильные приложения
                             </div>
                             <div class="Cases__swiper__basement-date Cases__swiper__basement-date-BigWall">
-                                20.03.2017
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide Cases__swiper__slide" data-filter="filterInter" data-filterDescr="BigWall3">
-                        <img class="Cases__swiper__img Cases__swiper__img-BigWall" src="img/img1/Cases-BigWall.png" alt="Изображение интернет-магазина BigWall">
-                        <div class="Cases__swiper__basement Cases__swiper__basement-BigWall">
-                            <div class="Cases__swiper__link Cases__swiper__link-BigWall">BigWall</div>
-                            <div class="Cases__swiper__basement-descr Cases__swiper__basement-descr-BigWall body14">
-                                Интернет-магазин
-                            </div>
-                            <div class="Cases__swiper__basement-date Cases__swiper__basement-date-BigWall">
-                                20.03.2017
+                                01.06.2023
                             </div>
                         </div>
                     </div>

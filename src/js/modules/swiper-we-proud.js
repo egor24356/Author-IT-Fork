@@ -14,7 +14,7 @@ function swiperWeProud() {
                     delay: 10000,
                     disableOnInteraction: true
                 },
-                speed: 3000,
+                speed: 1500,
             
                 // Navigation arrows
                 navigation: {

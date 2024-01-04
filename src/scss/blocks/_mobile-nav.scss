@@ -8,7 +8,7 @@
 
 .mobile-nav {
     width: 768px;
-    height: calc(100dvh - 80px + 1px);
+    height: calc(100vh - 80px + 1px);
     z-index: 999;
     // overflow: hidden;
     // transition: all .2s ease;
@@ -126,7 +126,7 @@
 }
 
 .mobile-nav-circle--active {
-    width: calc(100vw + 200svh);
+    width: calc(100vw + 200vh);
     // transform: none;
     // border-radius: 0;
     // transform: translate(50%, -50%);

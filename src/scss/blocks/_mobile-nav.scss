@@ -8,7 +8,7 @@
 
 .mobile-nav {
     width: 768px;
-    height: calc(100vh - 80px + 1px);
+    height: calc(100dvh - 80px + 1px);
     z-index: 999;
     // overflow: hidden;
     // transition: all .2s ease;
@@ -23,7 +23,7 @@
     // border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     padding: 0 8px 28px;
-    transition: height .2s;
+    transition: height .1s;
 }
 
 .mobile-nav .mobile-logo__link {
@@ -119,7 +119,6 @@
     transition: all .4s ease-in-out;
     background-color: #f5f6ff;
     border-radius: 50%;
-    mix-blend-mode: difference;
     z-index: 999;
     width: 0px;
     aspect-ratio: 1/1;

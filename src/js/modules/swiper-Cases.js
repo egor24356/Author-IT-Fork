@@ -12,14 +12,13 @@ function swiperCases () {
                     delay: 10000,
                     disableOnInteraction: true
                 },
-                speed: 3000,
+                speed: 1000,
             
                 // Navigation arrows
                 navigation: {
                     nextEl: '.Cases__swiper__arrow-next',
                     prevEl: '.Cases__swiper__arrow-prev',
                 },
-            
                 keyboard: true,
             })
         })

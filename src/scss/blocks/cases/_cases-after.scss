@@ -28,6 +28,13 @@
     color: #707077;
 }
 
+.cases-chain__item {
+    cursor: pointer;
+    &:hover {
+        opacity: .8;
+    }
+}
+
 /* описание проекта */
 
 .Cases__descr-title {

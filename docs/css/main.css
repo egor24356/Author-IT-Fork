@@ -2440,6 +2440,14 @@ main {
   color: #707077;
 }
 
+.cases-chain__item {
+  cursor: pointer;
+}
+
+.cases-chain__item:hover {
+  opacity: .8;
+}
+
 .Cases__descr-title {
   color: #232323;
   margin-top: 24px;

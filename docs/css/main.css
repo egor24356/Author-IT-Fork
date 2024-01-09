@@ -893,7 +893,7 @@ main {
   justify-content: end;
   border-top-right-radius: 40px;
   padding: 0 8px 28px;
-  transition: height .2s;
+  transition: height .1s;
 }
 
 .mobile-nav .mobile-logo__link {
@@ -979,14 +979,13 @@ main {
   transition: all .4s ease-in-out;
   background-color: #f5f6ff;
   border-radius: 50%;
-  mix-blend-mode: difference;
   z-index: 999;
   width: 0;
   aspect-ratio: 1/1;
 }
 
 .mobile-nav-circle--active {
-  width: calc(100vw + 200svh);
+  width: calc(100vw + 200vh);
   border-bottom-left-radius: 0;
 }
 
@@ -3489,7 +3488,7 @@ main {
 }
 
 .main-services {
-  max-height: calc(100dvh - 80px);
+  max-height: calc(100dvh - 80px - 10px);
   overflow: hidden;
 }
 
@@ -3524,7 +3523,7 @@ main {
 }
 
 .services__wrap {
-  height: 85dvh;
+  height: calc(100dvh - 80px - 7px);
   gap: 10px;
   display: flex;
   flex-direction: column;
@@ -6197,10 +6196,6 @@ main {
     left: 5%;
   }
 
-  .main-services {
-    max-height: calc(100dvh - 80px);
-  }
-
   .comma__service {
     width: 200px!important;
   }
@@ -7819,11 +7814,19 @@ main {
 
   .comma__service-mobile {
     display: block!important;
+  }
+
+  .comma__service-mobile,
+  .container__commas-for-js {
     aspect-ratio: 150/196;
   }
 
+  .container__commas-for-js {
+    width: 38%;
+  }
+
   .comma__service {
-    width: 130px!important;
+    width: 100%!important;
   }
 
   .comma__service:not(.comma__service-mobile) {
@@ -7839,8 +7842,12 @@ main {
   }
 
   .wrapper__services {
-    padding-top: 40px;
+    margin-top: auto;
     justify-content: start!important;
+  }
+
+  .services__wrap {
+    height: calc(100dvh - 80px - 1px);
   }
 }
 
@@ -7955,10 +7962,6 @@ main {
   .white__bg__services {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-  }
-
-  .services__wrap {
-    height: calc(100dvh - 80px);
   }
 }
 

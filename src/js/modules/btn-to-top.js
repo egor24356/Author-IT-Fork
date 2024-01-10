@@ -1,4 +1,5 @@
 function btnToTop () {
+    if (window.matchMedia('(max-width: 768px)').matches && navigator.userAgent.search(/YaBrowser/) > 0) return;
     const footer = document.querySelector('.footer');
     if (!footer) return
 

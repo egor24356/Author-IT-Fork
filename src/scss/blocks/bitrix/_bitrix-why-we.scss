@@ -1,0 +1,76 @@
+.Bitrix-whyWe__wrapper {
+    padding: 0 116.94px 55px 31px;
+}
+
+.Bitrix-whyWe__title {
+    color: #232323;
+}
+
+.Bitrix__table {
+    padding-left: 100px;
+    margin-top: 29px;
+}
+
+.Bitrix__container-descr__item-img {
+    width: 36px;
+    height: 29px;
+}
+
+@media (max-width: 1300px) {
+    .Bitrix-whyWe__wrapper {
+        padding: 0 86px 40px 33px;
+    }
+    .Bitrix__table {
+        margin-top: 20px;
+        padding-left: 53px;
+    }
+    .template__table__row {
+        padding: 25px 0;
+    }
+    .template__table__row-right__descr-text {
+        width: 466px;
+    }
+}
+
+@media (max-width: 992px) {
+    .Bitrix-whyWe__wrapper {
+        padding: 0px 93px 40px 33px;
+    }
+    .template__table__row {
+        padding: 16px 0;
+        flex-direction: column;
+    }
+    .template__table__row-left {
+        gap: 20px;
+    }
+    .template__table__row-left__title-text {
+        width: 41px;
+    }
+    .template__table__row-right__descr-text {
+        width: 550px;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .Bitrix-whyWe__wrapper {
+        padding: 0px 32px 20px 32px;
+    }
+    .template__table {
+        margin: 0;
+        padding-left: 0px;
+    }
+    .template__table__row-left {
+        gap: 16px;
+    }
+    .template__table__row-left__title-text {
+        width: 16px;
+    }
+    .template__table__row-right__descr-text {
+        width: 300px;
+    }
+    .Bitrix__container-descr__item-img {
+        width: 25px;
+        height: 21px;
+    }
+}

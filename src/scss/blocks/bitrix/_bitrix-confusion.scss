@@ -1,0 +1,93 @@
+.confusion__container {
+    background-color: #F5F6FF;
+    display: block;
+    width: 1266px;
+    margin: 0 auto;
+    padding: 45px 18px 48px 140px;
+}
+
+.confusion__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 98px;
+}
+
+.confusion__container__left {
+    margin-top: 13px;
+}
+
+.confusion__descr__container {
+    display: flex;
+    max-width: 486px;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.confusion__descr__text {
+    line-height: normal;
+}
+
+.confusion__container__right {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    max-width: 486px;
+}
+
+@media (max-width: 1300px) {
+    .confusion__container {
+        padding: 42px 18px 45px 20px;
+    }
+    .confusion__wrapper {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    .confusion__container {
+        padding: 45px 16px 45px 18px;
+    }
+    .confusion__wrapper {
+        position: relative;
+    }
+    .confusion__img {
+        width: 224px;
+    }
+    .confusion__container__left {
+        order: 2;
+        margin-top: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .confusion__container__right {
+        order: 1;
+        margin-top: 24px;
+        gap: 28px;
+    }
+ 
+}
+@media (max-width: 768px) {
+    .confusion__title__text {
+        font-size: 24px;
+    }
+    .confusion__img {
+        width: 120px;
+    }
+    .confusion__descr__title {
+        font-size: 20px;
+    }
+    .confusion__descr__text {
+        font-size: 12px !important;
+    }
+    .confusion__container__left {
+        right: -15px;
+        top: -7px;
+    }
+    .confusion__container__right {
+        gap: 16px;
+    }
+    .confusion__first-descr {
+        max-width: 205px;
+    }
+}

@@ -1,0 +1,75 @@
+.ticker {
+    height: auto;
+    margin: 108px 0;
+}
+
+/* отдельный класс для бегущей строки на странице битрикса */
+
+.bitrix__ticker {
+    height: auto;
+    margin: 108px 0;
+}
+
+.running__line {
+    margin: 0 auto;
+    max-width: 1920px;
+    overflow-x: hidden;
+}
+
+.ticker__wrapper {
+    display: flex;
+}
+  
+.ticker__item {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    color: white;
+    font-family: "Unbounded-Black";
+    font-size: 70px;
+    font-weight: 500;
+    flex-shrink: 0;
+    padding: 0 15px;
+    animation: ticker 5s linear infinite;
+}
+
+@media (max-width: 1300px) {
+    .bitrix__ticker,
+    .ticker {
+        margin: 80px 0;
+    }
+    .bitrix__ticker__item,
+    .ticker__item {
+        font-size: 64px;
+    }
+}
+
+@media (max-width: 992px) {
+    .bitrix__ticker,
+    .ticker {
+        margin: 60px 0;
+    }
+    .bitrix__ticker__item,
+    .ticker__item {
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bitrix__ticker,
+    .ticker {
+        margin: 40px 0;
+    }
+    .bitrix__ticker__item,
+    .ticker__item {
+        font-size: 32px;
+    }
+}
+  
+@keyframes ticker {
+    0% {
+      transform: translateZ(0);
+    }
+    to {
+      transform: translate3d(-100%, 0, 0);
+    }
+}

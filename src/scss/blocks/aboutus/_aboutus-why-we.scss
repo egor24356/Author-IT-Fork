@@ -1,0 +1,154 @@
+.AboutUs-whyWe__wrapper {
+    background-color: #F5F6FF;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin: 0 auto;
+    padding: 101px 115px 40px 133px;
+}
+
+/* заголовок */
+
+.AboutUs-whyWe__title {
+    color: #232323;
+}
+
+/* контейнер строк */
+
+.template__table {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+    position: relative;
+    justify-content: center;
+}
+
+/* контейнер строки */
+
+.template__table__row {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    position: relative;
+}
+
+.template__table__row:not(:last-child) {
+    border-bottom: 1px solid #707077;
+}
+
+/* левая часть строки */
+
+.template__table__row-left {
+    display: flex;
+    gap: 20px;
+    flex-basis: 60%;
+}
+
+.template__table__row-left__title {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.template__table__row-left__title-text {
+    width: 58px;
+    color: #FF7D04;
+}
+
+.template__table__row-left__descr {
+    display: flex;
+    position: relative;
+}
+
+.template__table__row-left__descr-text {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #232323;
+}
+
+/* правая часть строки */
+
+.template__table__row-right {
+    display: flex;
+    align-items: center;
+}
+
+.template__table__row-right__descr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.template__table__row-right__descr-text {
+    width: 603px;
+    color: #232323;
+}
+
+
+@media (max-width: 1300px) {
+    .AboutUs-whyWe__wrapper {
+        padding: 0px 60px 20px;
+        margin-top: -32px;
+    }
+    .aboutUs__table__row-right__descr-text {
+        width: 644px !important;
+    }
+    .template__table__row {
+        padding: 15px 0;
+    }
+    .aboutUs__table__row-right__descr-text {
+        width: 500px !important;
+    }
+}
+
+@media (max-width: 1100px) {
+    .AboutUs-whyWe__wrapper {
+        padding: 0px 75px 20px 75px;
+        margin-top: -43px;
+    }
+    .template__table__row {
+        padding: 25px 0;
+    }
+    .aboutUs__table__row-right__descr-text {
+        width: 416px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .AboutUs-whyWe__wrapper {
+        padding: 55px 55px 40px;
+        margin-top: -174px;
+    }
+    .AboutUs-template__table {
+        margin-top: 15px;
+    }
+    .template__table__row {
+        padding: 15px 0;
+    }
+    .aboutUs__table__row-right__descr-text {
+        width: 660px !important;
+    }
+}
+
+@media (max-width: 768px) { 
+    .AboutUs-whyWe__wrapper {
+        padding: 10px 16px 20px;
+        margin-top: 0;
+    }
+    .AboutUs-template__table {
+        margin-top: 15px !important;
+    }
+    .AboutUs-template__table__row {
+        padding: 16px 0;
+        flex-direction: column;
+    }
+    .AboutUs-template__table__row-left {
+        gap: 16px;
+    }
+    .AboutUs-template__table__row-left__title-text {
+        width: 17px;
+    }
+    .aboutUs__table__row-right__descr-text {
+        width: 329px !important;
+    }
+}

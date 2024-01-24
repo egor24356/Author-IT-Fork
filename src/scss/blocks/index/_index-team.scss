@@ -1,0 +1,432 @@
+.team__container {
+    display: flex;
+    background-color: #F5F6FF;
+    border-radius: 48px;
+    height: 665px;
+    margin-bottom: 127px;
+    margin-top: 40px;
+    cursor: none;
+}
+
+/* cursor */
+
+.cursor {
+    mix-blend-mode: exclusion;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: rgba(25, 127, 117, 0.8);
+    border-radius: 100%;
+    user-select: none;
+    display: none;
+    z-index: 999; /* чтобы элемент был над остальными элементами */
+    pointer-events: none; /* чтобы сквозь элемент можно было взаимодействовать с элементами, находящимися под ним */
+    transition: width 0.3s, height 0.3s, border-radius 0.3s, background 0.3s, opacity 0.2s;
+}
+
+/* cursor при наведении на ссылки (лица команды) */
+
+.cursor_active {
+    height: 250px;
+    width: 250px;
+    background: rgba(34, 153, 141, 0.5);
+}
+
+/* ссылки на лицах*/
+
+.team__wrap-face {
+    position: relative;
+    opacity: 1;
+    transform: translateX(98px);
+}
+
+.team__links {
+    position: absolute;
+    width: 1005px;
+    height: 739px;
+    padding: 0;
+    display: block;
+    background-color: transparent;
+    cursor: url(../img/icon1/team__cursor.svg), pointer;
+    top: 0;
+}
+
+.cursor-mobile-wrap {
+    cursor: url(../img/icon1/team__cursor.svg), pointer;
+}
+
+
+/* фотография в team__container */
+
+.team__img {
+    margin-top: -81px;
+    width: 1075.68px;
+    height: 847.138px;
+}
+
+.cursor-mobile {
+    z-index: 1;
+    display: block;
+    width: 156px;
+    height: 156px;
+    border-radius: 50%;
+    background-color: #0A7272;
+    mix-blend-mode: exclusion;
+    transform: translateX(-50%);
+    animation: 1s infinite pulsating ease;
+}
+.cursor-mobile-wrap {
+    bottom: 10%;
+    left: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cursor-mobile-wrap p {
+    font-family: "Unbounded-regular";
+    position: absolute;
+    z-index: 1;
+    text-transform: uppercase;
+    color: #F5F6FF;
+    font-size: 16px;
+}
+
+/* swiper в section team */
+
+.swiper__team {
+    position: relative;
+    min-width: 0;
+    display: none;
+    overflow: hidden;
+    width: 1270px !important;
+    height: 878px !important;
+    padding: 128px 72px 81px;
+    transform: translateY(-71px) !important;
+    cursor: url(../img/icon1/team__cursor.svg), pointer;
+}
+
+.descr-team {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 612px !important;
+    cursor: url(../img/icon1/team__cursor.svg), pointer;
+}
+
+.team__name {
+    color:#000;
+}
+
+.team__profession {
+    color: #000;
+    font-family: "Unbounded-Black";
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 349px;
+}
+
+.swiper__team__img {
+    position: absolute;
+    right: 67px;
+    bottom: -123px;
+}
+
+.descr-Egor img {
+    width: 670px;
+    bottom: -110px;
+}
+
+.descr-NastyaD img {
+    width: 589px;
+    right: 44px;
+    bottom: -91px;
+}
+
+.descr-Ksysha img {
+    right: 112px;
+}
+
+.custom-pagination {
+    width: 65px !important;
+    height: 30px;
+    color:#232323 !important;
+    font-family: "Unbounded-Black";
+    font-size: 24px;
+    font-weight: 400;
+    bottom: 200px !important;
+    left: 1144px !important;
+}
+
+.swiper-team__arrowPrev {
+    position: absolute;
+    width: 31px;
+    height: 24px;
+    left: 64px;
+    top: 45%;
+    outline: none;
+}
+
+.swiper-team__arrowNext {
+    position: absolute;
+    width: 31px;
+    height: 24px;
+    right: 64px;
+    top: 45%;
+    outline: none;
+}
+
+@media (max-width: 1299px) {
+    .team__container {
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+    .team__img {
+        margin-top: -32px;
+        width: 921px;
+        height: auto;
+    }
+    .team__img img {
+        width: 100%;
+    }
+    .team__links {
+        width: 924px;
+        height: 665px;
+    }
+    .team__wrap-face {
+        transform: translateX(45px);
+    }
+    .custom-pagination {//
+        left: 6% !important;
+    }
+    .swiper__team {
+        padding: 128px 62px 203px;
+    }
+    .swiper-team__arrowPrev {
+        top: 50%;
+        left: 55px;
+    }
+    .swiper-team__arrowNext {
+        top: 50%;
+        right: 55px;
+    }
+    .descr-team {//
+        height: 100% !important;
+        width: 100% !important;
+    }
+    .swiper-slide {//
+        position: relative;
+    }
+    .team__profession {
+        margin-top: 22px;
+    }   
+    .swiper__team__img {
+        bottom: 0;
+        width: 42%;
+        z-index: -1;
+    }
+    .descr-NastyaM img {
+        right: 47px;
+    }
+    .descr-Egor img {
+        width: 51%;
+        bottom: 0;
+    }
+    .descr-NastyaD img {
+        width: 45%;
+        bottom: 0;
+    }
+    .descr-Ksysha img {
+        right: 72px;
+        width: 39%;
+    }
+    .descr-Daniil img {
+        width: 52%;
+    }
+}
+
+@media (max-width: 992px) {
+    .cursor {//
+        display: none;
+    }
+    .container__we {//
+        height: auto;
+        padding: 0;
+    }
+    .container__we__commas .com {//
+        height: auto !important;
+    }
+    .we {//
+        margin-top: 40px;
+    }
+    .team__container {//
+        margin-bottom: 0;
+    }
+    .team__profession {//
+        top: 133px;
+    } 
+    .team__wrap-face {
+        transform: translateX(-60px);
+    }
+    .team__img {
+        margin-top: -22px;
+        width: 894px;
+    }
+    .swiper-team__arrowPrev {
+        left: 35px;
+    }
+    .swiper-team__arrowNext {
+        right: 35px;
+    }
+    .descr-Kostya img {
+        width: 52%;
+        right: 20px;
+    }
+    .descr-NastyaM img {
+        width: 54%;
+        right: 23px;
+        transform: scale(-1, 1);
+    }
+    .descr-Egor img {
+        width: 60%;
+        right: 22px;
+    }
+    .descr-NastyaD img {
+        right: 26px;
+        width: 48%;
+    }
+    .descr-Ksysha img {
+        right: 19px;
+        width: 46%;
+    }
+    .descr-Daniil img {
+        right: 30px;
+        width: 64%;
+    }
+    .descr-team {//
+        width: 100% !important;
+        position: relative;
+    }
+    .swiper__team {//
+        width: 100% !important;
+        padding: 128px 42px 203px;
+    }
+    .custom-pagination {//
+        left: 64px;
+    }
+}
+
+@media (max-width: 768px) {
+    .team {
+        max-width: 100vw;
+    }
+    .team__container {
+        height: auto;
+    }
+    .team__wrap-face {
+        transform: translateX(-24px);
+    }
+    .team__img {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 417px;
+    }
+    .team__links {
+        width: 425px;
+        height: 369px;
+        transform: none;
+        top: 0;
+        z-index: 3;
+    }
+    .cursor-mobile {
+        width: 110px;
+        height: 110px;
+    }
+    .team__profession {
+        margin-top: 16px;
+        font-size: 16px;
+    }
+    .swiper__team {
+        padding: 30px 32px 378px;
+        height: 525px !important;
+        transform: none !important;
+    }
+    .custom-pagination {
+        font-size: 16px;
+        bottom: 25px !important;
+    }
+    .swiper-team__arrowPrev {
+        left: 25px;
+        top: 55%;
+    }
+    .swiper-team__arrowNext {
+        right: 25px;
+        top: 55%;
+    }
+    .swiper-team__arrowPrev, 
+    .swiper-team__arrowNext {
+        width: 26px;
+        height: 20px;
+    }
+    .team__name {
+        font-size: 32px;
+    }
+    .swiper__team__img {
+        width: 270px;
+        right: -30px;
+        bottom: -344px;
+    }
+    .descr-Kostya img {
+        width: 70%;
+        right: 40px;
+    }
+    .descr-NastyaM img {
+        width: 74%;
+        right: 29px;
+        transform: none;
+    }
+    .descr-Egor img {
+        width: 85%;
+        bottom: -344px;
+    }
+    .descr-NastyaD img {
+        right: 26px;
+        width: 76%;
+        bottom: -344px;
+    }
+    .descr-Ksysha img {
+        right: 39px;
+        width: 68%;
+    }
+    .descr-Daniil img {
+        right: 18px;
+        width: 87%;
+    }
+    .container__we h2 {
+        margin-left: 0;
+    }
+    .container__we {
+        padding: 0 10px;
+    }
+    .container__we__commas {
+        padding: 0;
+    }
+}
+
+@keyframes pulsating {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (hover:hover) {
+    .cursor {
+        display: block;
+    }
+}

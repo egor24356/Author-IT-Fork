@@ -1,0 +1,111 @@
+.integration__container {
+    position: relative;
+    background-color: #F5F6FF;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    display: flex;
+    justify-content: end;
+    padding: 61px 31px 0 0;
+    width: 1266px;
+    height: 780px;
+    margin: 0 auto;
+}
+
+.integration__bg {
+    display: flex;
+    position: absolute;
+    width: 1200px;
+    height: 732px;
+    gap: 16px;
+    bottom: 0;
+    left: -210px;
+}
+
+.integration__descr__bg {
+    background: url(../img/img1/strange_bg.svg) center center/contain no-repeat;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    padding: 339px 89px 91px 247px;
+}
+
+.integration__title__bg {
+    color: #F5F6FF;
+}
+
+.integration__descr__text__bg {
+    color: #F5F6FF;
+}
+
+.integration__none768 {
+    display: none;
+}
+
+.integration__subtitle {
+    position: absolute;
+    right: 31px;
+    bottom: 80px;
+    width: 198px;
+    color: #232323;
+}
+
+@media (max-width: 1300px) {
+    .integration__container {
+        height: 556px;
+        padding: 61px 40px 0 0;
+    }
+    .integration__bg {
+        width: 1020px;
+        height: 490px;
+        left: -264px;
+        top: 60px;
+    }
+    .integration__descr__bg {
+        padding: 232px 303px 58px 312px;
+    }
+    .integration__subtitle {
+        right: 40px;
+        bottom: 60px;
+    }
+}
+@media (max-width: 992px) {
+    .integration__container {
+        border-top-left-radius: 0;
+        padding: 119px 45px 0 0;
+        height: 524px;
+    }
+    .integration__bg {
+        left: -77px;
+        top: 36px;
+    }
+    .integration__descr__bg {
+        padding: 224px 150px 58px 111px;
+    }
+    .integration__subtitle {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .integration__container {
+        height: 363px;
+        padding: 73px 21px 0 0;
+    }
+    .integration__bg {
+        height: 346px;
+        width: 566px;
+        left: -223px;
+        top: 16px;
+    }
+    .integration__descr__bg {
+        padding: 163px 36px 32px 242px;
+    }
+    .integration__descr__text__bg {
+        line-height: 138%;
+    }
+    .integration__block768 {
+        display: none;
+    }
+    .integration__none768 {
+        display: block;
+    }
+}

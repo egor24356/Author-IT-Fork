@@ -52,7 +52,7 @@
 
 .AboutUs-achievement__wrapper {
     display: flex;
-    gap: 100px;
+    gap: 78px;
     padding: 65px 473.42px 65px 381.42px;
 }
 
@@ -60,6 +60,12 @@
 
 .AboutUs-achievement__wrapper h2 {
     color: #FF7D04;
+}
+
+/* Подписи к числам */
+
+.AboutUs-achievement__descr {
+    font-weight: 600;
 }
 
 /* weToday */

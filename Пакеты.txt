@@ -6,6 +6,8 @@ npm i gulp-webp gulp-webp-html gulp-webp-css -D
 npm i gulp-autoprefixer -D
 npm i gulp-babel @babel/core @babel/preset-env
 
+test
+
 Описание пакетов:
 gulp - собственно Gulp
 gulp-sass - Сборка SASS / SCSS

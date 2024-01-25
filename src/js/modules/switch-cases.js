@@ -4,7 +4,6 @@ function switchCases(filterValueSwiper) {
 
     const casesWrapperDescr = sectionAfterDisplay.querySelectorAll('.Cases__wrapper-descr');
                 
-
     sectionAfterDisplay.classList.remove('none');
     sectionDisplay.classList.add('none');
     

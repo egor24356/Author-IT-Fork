@@ -29,7 +29,7 @@ function cases() {
 
         function scroller(coord) {
             window.scrollTo({
-                top: coord,
+                top: coord ? coord : 0,
                 left: 0,
                 behavior: 'auto'
             })

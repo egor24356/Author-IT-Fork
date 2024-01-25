@@ -23,7 +23,7 @@
     // border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     padding: 0 8px 28px;
-    transition: height .2s;
+    transition: height .1s;
 }
 
 .mobile-nav .mobile-logo__link {
@@ -119,14 +119,13 @@
     transition: all .4s ease-in-out;
     background-color: #f5f6ff;
     border-radius: 50%;
-    mix-blend-mode: difference;
     z-index: 999;
     width: 0px;
     aspect-ratio: 1/1;
 }
 
 .mobile-nav-circle--active {
-    width: calc(100vw + 200svh);
+    width: calc(100vw + 200vh);
     // transform: none;
     // border-radius: 0;
     // transform: translate(50%, -50%);

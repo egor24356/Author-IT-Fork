@@ -7,13 +7,15 @@ import headerLinks from './modules/header-links.js';
 import btnToTop from './modules/btn-to-top.js';
 import casesOpen from './modules/cases-open.js';
 import icon from './modules/icon.js';
+import casesChain from './modules/casesChain.js';
 
 icon();
 casesOpen();
-btnToTop();
 headerLinks();
 mobileNav();
-btnUp();
 swiperCases();
+casesChain();
+btnToTop();
+btnUp();
 filterCases();
 cases();

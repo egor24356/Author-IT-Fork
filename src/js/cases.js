@@ -8,7 +8,9 @@ import btnToTop from './modules/btn-to-top.js';
 import casesOpen from './modules/cases-open.js';
 import icon from './modules/icon.js';
 import casesChain from './modules/casesChain.js';
+import { scrollToForm } from './modules/scrollToForm.js';
 
+scrollToForm();
 icon();
 casesOpen();
 headerLinks();

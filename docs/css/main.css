@@ -1135,12 +1135,17 @@ main {
 
 .AboutUs-achievement__wrapper {
   display: flex;
-  gap: 100px;
-  padding: 65px 473.42px 65px 381.42px;
+  gap: 38px;
+  padding: 35px 473.42px 65px 381.42px;
 }
 
 .AboutUs-achievement__wrapper h2 {
   color: #ff7d04;
+}
+
+.AboutUs-achievement__descr {
+  font-weight: 600;
+  font-size: 21px;
 }
 
 .AboutUs-weToday__wrapper {
@@ -2440,6 +2445,14 @@ main {
   color: #707077;
 }
 
+.cases-chain__item {
+  cursor: pointer;
+}
+
+.cases-chain__item:hover {
+  opacity: .8;
+}
+
 .Cases__descr-title {
   color: #232323;
   margin-top: 24px;
@@ -2588,7 +2601,7 @@ main {
 }
 
 .Cases__filter-items {
-  margin-top: 271px;
+  margin-top: 0;
   margin-right: 70px;
   color: #232323;
   font-family: "Unbounded-Regular";
@@ -2675,15 +2688,10 @@ main {
   font-family: "Unbounded-Regular";
 }
 
-.autor__content .mobile-title {
-  display: none;
-}
-
 .container__autor__IT {
   display: flex;
   gap: 50px;
-  height: 928px;
-  padding: 167px 0 159px;
+  padding: 80px 0 0 80px;
   margin: 0 auto;
   background-color: #f5f6ff;
   border-top-left-radius: 40px;
@@ -2693,27 +2701,33 @@ main {
 .container__autor__IT img {
   height: 807px;
   border-radius: 50px 0 0 50px;
-  transform: translateY(-100px);
+  transform: translateY(-40px);
 }
 
 .autor__content {
-  width: 488px;
-  height: 602px;
-  margin-right: 70px;
-  margin-left: 133px;
+  display: flex;
+  flex-direction: column;
+}
+
+.desktop-title {
+  width: 600px;
+}
+
+.autor__descr1,
+.autor__descr2,
+.title-btn {
+  max-width: 435px;
+  font-size: 18px;
+  padding-left: 40px;
 }
 
 .autor__descr1 {
-  margin-top: 19px;
-  margin-right: 124px;
+  padding-right: 85px;
+  margin-top: 50px;
 }
 
 .autor__descr2 {
   margin-top: 40px;
-}
-
-.title-btn {
-  width: 391px;
 }
 
 .autor__go__work {
@@ -2723,7 +2737,7 @@ main {
   background-color: #ff7d04;
   border-radius: 40px;
   padding: 24px 80px 24px 75px;
-  margin-top: 40px;
+  margin-top: 60px;
   transition: all .3s ease;
 }
 
@@ -2941,8 +2955,8 @@ main {
 }
 
 .crm__descr__no-bg {
-  width: 488px;
-  height: 80px;
+  font-size: 18px;
+  width: 550px;
   color: #f5f6ff;
   margin-top: 27px;
 }
@@ -3213,11 +3227,13 @@ main {
 }
 
 .proud__descr__left {
+  font-size: 18px;
   width: 396px;
   margin-right: 216px;
 }
 
 .proud__descr__right {
+  font-size: 18px;
   width: 386px;
 }
 
@@ -3885,8 +3901,12 @@ main {
   }
 
   .AboutUs-achievement__wrapper {
-    gap: 73px;
-    padding: 50px 372px 51px 303px;
+    gap: 60px;
+    padding: 20px 372px 51px 303px;
+  }
+
+  .AboutUs-achievement__descr {
+    font-size: 18px;
   }
 
   .AboutUs-weToday__wrapper {
@@ -4443,6 +4463,11 @@ main {
     padding: 8px 15px;
   }
 
+  .desktop-title {
+    font-size: 84px;
+    width: 500px;
+  }
+
   .container__autor__IT {
     padding-inline: 56px;
   }
@@ -4772,10 +4797,6 @@ main {
     margin-top: 13px;
   }
 
-  .AboutUs-achievement__wrapper {
-    padding: 58px 353px 55px 294px;
-  }
-
   .AboutUs-weToday__wrapper {
     padding: 80px 321px 0 187px;
   }
@@ -5065,8 +5086,12 @@ main {
   }
 
   .AboutUs-achievement__wrapper {
-    padding: 45px 350px 43px 247px;
+    padding: 15px 350px 43px 247px;
     gap: 20px;
+  }
+
+  .AboutUs-achievement__descr {
+    font-size: 16px;
   }
 
   .AboutUs-achievement__container1 {
@@ -5078,7 +5103,7 @@ main {
   }
 
   .AboutUs-achievement__container3 {
-    width: 184px;
+    width: 204px;
   }
 
   .AboutUs-weToday__wrapper {
@@ -5832,10 +5857,14 @@ main {
   .container__autor__IT img {
     height: 450px;
     transform: none;
+    position: absolute;
+    right: -250px;
+    top: 164px;
   }
 
   .container__autor__IT {
     border-top-left-radius: 0;
+    position: relative;
     padding-top: 50px;
     height: auto;
     padding-bottom: 60px;
@@ -5851,11 +5880,12 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 315px;
+    width: 80%;
   }
 
   .autor__go__work {
     padding: 20px 39px;
+    width: 100%;
   }
 
   .container__comments h2 {
@@ -6412,15 +6442,20 @@ main {
   }
 
   .AboutUs-achievement__wrapper {
-    padding: 20px 458px 20px 310px;
+    padding: 8px 458px 20px 310px;
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
 
+  .AboutUs-achievement__descr {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
   .AboutUs-achievement__container2,
   .AboutUs-achievement__container3 {
-    margin-top: 16px;
+    margin-top: 8px;
   }
 
   .AboutUs-achievement__container1,
@@ -7367,13 +7402,14 @@ main {
   .container__autor__IT img {
     height: 350px;
     position: absolute;
-    right: 0;
+    right: -138px;
     top: 120px;
   }
 
   .autor__content h1 {
     margin-bottom: 390px;
     font-size: 40px;
+    width: auto;
   }
 
   .autor__go__work,
@@ -7398,6 +7434,17 @@ main {
 
   .autor__descr1 {
     margin-right: 0;
+    padding-right: 0;
+  }
+
+  .title-btn {
+    width: auto;
+  }
+
+  .autor__descr1,
+  .autor__descr2,
+  .title-btn {
+    padding-left: 0;
   }
 
   .comment__1 a,
@@ -7852,14 +7899,6 @@ main {
 }
 
 @media (max-width:690px) {
-  .autor__content .desktop-title {
-    display: none;
-  }
-
-  .autor__content .mobile-title {
-    display: block;
-  }
-
   .slider__name-mobile {
     display: inline;
     text-align: center;
@@ -7904,10 +7943,6 @@ main {
     margin-left: 0;
   }
 
-  .container__autor__IT img {
-    top: 130px;
-  }
-
   .autor__IT {
     padding: 0;
   }
@@ -7949,12 +7984,6 @@ main {
 
   .mailer-bg-container .bitrix-mailer {
     padding-bottom: 480px;
-  }
-}
-
-@media (max-width:476px) {
-  .title-img {
-    right: -30%!important;
   }
 }
 

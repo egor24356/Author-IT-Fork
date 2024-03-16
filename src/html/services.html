@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Услуги – Автор IT</title>
+		<meta name="description" content="Услуги компании Автор АйТи">
+		<meta name="theme-color" content="#232323" class="mobile-searchbar">
+		<link rel="icon" href="img/icon1/footer-logo.svg" class="site-icon">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./css/main.css" />
+		<!-- Yandex.Metrika counter -->
+		<script type="text/javascript" >
+			(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+			m[i].l=1*new Date();
+			for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+			k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+		
+			ym(96338179, "init", {
+				clickmap:true,
+				trackLinks:true,
+				accurateTrackBounce:true
+			});
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/96338179" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+	</head>
+	<body>
+		@@include('blocks/header.html')
+        <main class="main main-services">
+			@@include('blocks/btn-to-top.html')
+            @@include('blocks/services/services-white-bg-services.html')
+		</main>
+			<div class="services-mobileApp services-page none" data-services="mobileApp">
+				@@include('blocks/services/services-mobileApp-title.html')
+				@@include('blocks/services/services-mobileApp-table.html')
+				@@include('blocks/services/services-mobileApp-proposal.html')
+			</div>
+			<div class="services-webDev services-page none" data-services="webDev">
+				@@include('blocks/services/services-webDev-title.html')
+				@@include('blocks/services/services-webDev-table.html')
+				@@include('blocks/services/services-webDev-proposal.html')
+			</div>
+			<div class="services-industry services-page none" data-services="industry">
+				@@include('blocks/services/services-industry-title.html')
+				@@include('blocks/services/services-industry-table.html')
+				@@include('blocks/services/services-industry-proposal.html')
+			</div>
+			<div class="services-testWeb services-page none" data-services="testWeb">
+				@@include('blocks/services/services-testWeb-title.html')
+				@@include('blocks/services/services-testWeb-table.html')
+				@@include('blocks/services/services-testWeb-proposal.html')
+			</div>
+			<div class="services-testStress services-page none" data-services="testStress">
+				@@include('blocks/services/services-testStress-title.html')
+				@@include('blocks/services/services-testStress-table.html')
+				@@include('blocks/services/services-testStress-proposal.html')
+			</div>
+		<div class="services-mailer-footer none">
+			<!-- @@include('blocks/mailer-questions-bg.html') -->
+			<div class="container mailer-bg-container" id="mailer-bg">
+				<div class="bitrix-mailer">
+					<img src="../img/img1/mailer__bg.png" alt="" class="mailer-photo">
+					<script data-b24-form="inline/37/d8iu5c" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://avtorit24.ru/upload/crm/form/loader_37_d8iu5c.js');</script>
+				</div>
+			</div>
+			@@include('blocks/footer.html')
+		</div>
+		<script src="./js/services.bundle.js"></script>
+	</body>
+</html>

@@ -1,0 +1,92 @@
+@media (max-width: 1300px) {
+    .bitrix__header1,
+    .bitrixPortal__header1,
+    .bitrixEnter__header1 {
+        font-size: 84px;
+    }
+    .bitrix__header2,
+    .bitrixPortal__header2,
+    .bitrixEnter__header2 {
+        font-size: 52px;
+    }
+    .bitrix__header4 {
+        font-size: 14px;
+    }
+    .subtitle24 {
+        font-size: 20px;
+    }
+    .caption16 {
+        font-size: 14px;
+    }
+    /* основная стр битрикса */
+    .integration__header1 {
+        font-size: 60px;
+    }
+    .integration__header2 {
+        font-size: 52px;
+    }
+    .integration__header3 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .bitrix__header1,
+    .bitrixPortal__header1,
+    .bitrixEnter__header1 {
+        font-size: 63px;
+    }
+    .bitrix__header2,
+    .bitrixPortal__header2,
+    .bitrixEnter__header2 {
+        font-size: 41px;
+    }
+    .bitrix__header4,
+    .bitrixPortal__header4,
+    .bitrixEnter__header4 {
+        font-size: 20px;
+    }
+    .caption16 {
+        font-size: 12px;
+    }
+    /* основная стр битрикса */
+    .integration__header2 {
+        font-size: 34px;
+    }
+    .integration__header3 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bitrix__header1,
+    .bitrixPortal__header1,
+    .bitrixEnter__header1 {
+        font-size: 27px;
+    }
+    .bitrix__header2,
+    .bitrixPortal__header2,
+    .bitrixEnter__header2 {
+        font-size: 24px;
+    }
+    .bitrix__header3,
+    .bitrixPortal__header3,
+    .bitrixEnter__header3 {
+        font-size: 21px;
+    }
+    .bitrix__header4,
+    .bitrixPortal__header4,
+    .bitrixEnter__header4 {
+        font-size: 16px;
+    }
+    /* замена текста */
+    .integration__header1 {
+        font-size: 32px;
+    }
+    .integration__header2 {
+        font-size: 24px !important;
+    }
+    .integration__header3 {
+        font-size: 20px;
+    }
+}

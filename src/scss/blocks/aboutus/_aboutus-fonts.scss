@@ -1,0 +1,82 @@
+/* Медиа-запросы страницы AboutUs */
+
+@media (max-width: 1300px) { 
+    .aboutUs__caption16 {
+        font-size: 16px !important;
+    }
+    .aboutUs__header1 {
+        font-size: 70px;
+    }
+    .caption16 {
+        font-size: 12px;
+    }
+    .aboutUs__header2 {
+        font-size: 55px;
+    }
+    .body14 {
+        font-size: 12px;
+    }
+    .subtitle24 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1100px) { 
+    .aboutUs__header2 {
+        font-size: 45px;
+    }
+    .subtitle24 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 992px) { 
+    .caption16 {
+        font-size: 12px;
+    }
+    .header {
+        display: none;
+    }
+    .aboutUs__caption16 {
+        font-size: 14px !important;
+    }
+    .aboutUs__header1 {
+        font-size: 55px;
+    }
+    .aboutUs__header2 {
+        font-size: 40px;
+    }
+    .swiper__wrapper__comments { //!!!!!!!!!!!!!!!!!???????????????????????????
+        height: auto !important;
+    }
+}
+
+@media (max-width: 768px) { 
+    .header {
+        display: none;
+    }
+    .aboutUs__caption16 {
+        font-size: 12px !important;
+    }
+    .aboutUs__header1 {
+        font-size: 45px;
+    }
+    .aboutUs__header2 {
+        font-size: 21px;
+    }
+    .subtitle24 {
+        font-size: 16px !important;
+    }
+    .swiper__wrapper__comments { //!!!!!!!!!???????????
+        height: auto !important;
+    }
+}
+
+@media (max-width: 440px) { 
+    .aboutUs__header2 {
+        font-size: 20px;
+    }
+    .aboutUs__header3 {
+        font-size: 18px;
+    }
+}

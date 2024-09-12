@@ -1,0 +1,124 @@
+.bitrix__container {
+    background-color: #F5F6FF;
+    display: flex;
+    gap: 19px;
+    padding: 0 0 64px 136px;
+    margin: 0 auto;
+}
+
+.bitrix__left__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 522px;
+}
+
+.bitrix__left-top__descr {
+    margin-top: 40px;
+}
+
+.bitrix__left__descr {
+    line-height: normal;
+    color: #000;
+    max-width: 419px;
+}
+
+.bitrix__left__container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 135px;
+}
+
+.bitrix__container__right {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    height: 612px;
+    width: 546px;
+    background: url(../img/img1/comma_bg.svg) center center/cover no-repeat;
+    padding: 314px 0 0 64px;
+    margin-top: 15px;
+}
+
+.bitrix__right__descr__title {
+    color: #F5F6FF;
+}
+
+.bitrix__right__descr__text {
+    color: #F5F6FF;
+}
+
+.bitrix-bitrix-img-mobile {
+    display: none !important;
+}
+
+@media (max-width: 1300px) {
+    .bitrix {
+        &__container {
+            padding: 0 0 45px 20px;
+            gap: 39px;
+        }
+    }
+    .bitrix__left__wrapper {
+        max-width: 442px;
+    }
+    .bitrix__container__right {
+        width: 472px;
+        height: 531px;
+        padding-top: 269px;
+        margin-top: 8px;
+    }
+}
+@media (max-width: 992px) {
+    .bitrix {
+        &__container {
+            padding: 0 18px 45px 20px;
+            gap: 0;
+        }
+    }
+    .bitrix__left__wrapper {
+        max-width: 992px;
+    }
+    .bitrix__left-top__descr {
+        margin-top: 25px;
+    }
+    .bitrix__left__descr {
+        max-width: 100%;
+    }
+    .bitrix__container__right {
+        width: 557px;
+    }
+    .bitrix-bitrix-img-desktop {
+        display: none !important;
+    }
+    .bitrix-bitrix-img-mobile {
+        display: flex !important;
+        margin: 25px auto;
+        width: 460px;
+        height: 518px;
+        padding: 287px 0 0 52px;
+    }
+    .bitrix__left__container {
+        margin-top: 0;
+    }
+}
+@media (max-width: 768px) {
+    .bitrix__container {
+        padding: 0 18px 45px 20px;
+    }
+    .bitrix-bitrix-img-mobile {
+        width: 318px;
+        height: 359px;
+        padding: 178px 0 0 58px;
+        margin: 0 0 23px 0;
+    }
+    .bitrix__left__container {
+        gap: 16px;
+    }
+    .bitrix__left-top__descr {
+        margin: 16px 0;
+    }
+    .bitrix__container__right {
+        gap: 24px;
+    }
+}

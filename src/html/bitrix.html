@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Автор IT</title>
+		<meta name="theme-color" content="#232323" class="mobile-searchbar">
+		<link rel="icon" href="img/icon1/footer-logo.svg" class="site-icon">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="./css/main.css" />
+		<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>  -->
+
+	</head>
+	<body>
+		@@include('blocks/header.html')
+		<main class="main">
+			@@include('blocks/btn-to-top.html')
+			<div class="before-click">
+				@@include('blocks/bitrix/bitrix-integration.html')
+				@@include('blocks/bitrix/bitrix-confusion.html')
+				@@include('blocks/bitrix/bitrix-bitrix.html')
+				@@include('blocks/bitrix/bitrix-advantages.html')
+				@@include('blocks/bitrix/bitrix-partner.html')
+				@@include('blocks/bitrix/bitrix-weare-learning.html')
+				@@include('blocks/bitrix/bitrix-running-line.html')
+				@@include('blocks/bitrix/bitrix-ik-element.html')
+				@@include('blocks/bitrix/bitrix-rates.html')
+			</div>
+			<div class="BitrixPortal__white-bg bitrixAll none" data-introduction="Box">
+				<!-- Корпоративный портал -->
+				@@include('blocks/bitrix/bitrixPortal-title.html') 
+				@@include('blocks/bitrix/bitrixPortal-why-we.html')
+				@@include('blocks/bitrix/bitrixPortal-rates.html')
+				
+				<!-- Облачный сервис -->
+				@@include('blocks/bitrix/bitrixCloud-title.html')
+				@@include('blocks/bitrix/bitrixCloud-rates.html')
+				
+				<!-- Энтерпрайз -->
+				@@include('blocks/bitrix/bitrixEnter-title.html')
+				@@include('blocks/bitrix/bitrixEnter-benefits.html')
+
+			</div>
+			
+			<div class="mailer-before">
+				<div id="mailer" class="bitrix-mailer">
+					<img src="../img/img1/mailer__bg.png" alt="" class="mailer-photo">
+				<script data-b24-form="inline/39/eoshqe" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://avtorit24.ru/upload/crm/form/loader_39_eoshqe.js');</script>
+				</div>
+				<!-- @@include('blocks/mailer-integrate.html') -->
+			</div>
+			<div class="mailer-after none">
+				<div class="container mailer-bg-container">
+					<div id="mailer-bg" class="bitrix-mailer">
+						<img src="../img/img1/mailer__bg.png" alt="" class="mailer-photo">
+						<script data-b24-form="inline/37/d8iu5c" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://avtorit24.ru/upload/crm/form/loader_37_d8iu5c.js');</script>
+					</div>
+				</div>
+				<!-- @@include('blocks/mailer-questions-bg.html') -->
+			</div>
+			@@include('blocks/footer.html')
+		</main>
+		<script src="./js/bitrix.bundle.js"></script>
+	</body>
+</html>

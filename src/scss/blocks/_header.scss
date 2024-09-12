@@ -1,0 +1,211 @@
+/* Header section */
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 18px auto 0;
+}
+
+.header__nav {
+    max-width: 1055px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* список */
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ссылки и телефон */
+
+.nav__list-item__link, .header__telephone {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 211px;
+    height: 66px;
+    color: #F5F6FF;
+    padding: 18px 48px 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* логотип доп. стили */
+
+.nav__logo {
+    padding: 18px 67px 18.63px 76px;
+    position: relative;
+    width: 211px;
+}
+
+.logo svg {
+    width: 25px;
+    height: 24px;
+}
+
+/* телефон доп. стили */
+
+.header__telephone {
+    padding: 19px 4px 19px 0;
+    position: relative;
+    width: 211px;
+}
+
+/* псевдоэлементы */
+
+/* псевдоэлемент для ссылок и логотипа */
+
+.nav__list-item__link::before {
+    position: absolute;
+    display: none;
+    content: "";
+    height: 45px;
+    width: 53px;
+    border-left: 24px solid #F5F6FF;
+    border-bottom: 24px solid #F5F6FF;
+    border-bottom-left-radius: 51px;
+    background-color: transparent;
+    bottom: -24px;
+    right: -53px;
+}
+
+/* псевдоэлементы для ссылок и телефона */
+
+.nav__list-item__link::after,
+.header__telephone::after {
+    position: absolute;
+    display: none;
+    content: "";
+    height: 45px;
+    width: 53px;
+    border-right: 24px solid #F5F6FF;
+    border-bottom: 24px solid #F5F6FF;
+    border-bottom-right-radius: 51px;
+    background-color: transparent;
+    bottom: -24px;
+    right: 187px;
+}
+
+/* псевдоэлемент для логотипа для удлиннения при наведении */
+
+.nav__logo::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 40px;
+    width: 100%;
+    background-color: inherit;
+    top: 100%;
+    left: 0;
+    /* обнуление предыдущих стилей after */
+    bottom: 0;
+    right: 0;
+    border: none;
+    border-bottom-left-radius: 0;
+    z-index: 1;
+}
+
+/* псевдоэлемент для телефона для удлиннения при наведении */
+
+.header__telephone::before {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 40px;
+    width: 100%;
+    background-color: inherit;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+/* отображение псевдоэлементов для закругления при наведении */
+
+.nav__list-item__link:hover::before,
+.nav__list-item__link:hover::after,
+.header__telephone:hover::after,
+.tabs__item--active::before,
+.tabs__item--active::after {
+    display: block;
+}
+
+/* псевдоклассы */
+
+.nav__list-item__link:hover, .header__telephone:hover, .tabs__item--active {
+    background-color: #f5f6ff;
+    color: #232323;
+}
+
+.nav__logo:hover, .nav__logo.tabs__item--active {
+    path {
+        fill: #232323;
+    }
+}
+
+@media (max-width: 1300px) { 
+    .header__nav {
+        max-width: 830px;
+    }
+    .nav__list-item__link, .header__telephone {
+        width: 166px;
+        height: 52px;
+        font-size: 14px;
+    }
+    .nav__list-item__link {
+        padding: 18px 44px 20px;
+    }
+    .nav__logo {
+        padding: 15px 67px 15px 76px;
+    }
+    .header__telephone::after {
+        height: 17px;
+        width: 34px;
+        border-right: 28px solid #F5F6FF;
+        border-bottom: 28px solid #F5F6FF;
+        right: 134px;
+        bottom: -28px;
+    }
+    .nav__list-item__link::after {
+        height: 33px;
+        width: 44px;
+        border-right: 34px solid #F5F6FF;
+        border-bottom: 34px solid #F5F6FF;
+        right: 132px;
+        bottom: -34px;
+    }
+    .nav__logo::after {
+        height: 40px;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        /* обнуление предыдущих стилей after */
+        bottom: 0;
+        right: 0;
+        border: none;
+        border-bottom-left-radius: 0;
+    }
+    .nav__list-item__link::before {
+        height: 33px;
+        width: 44px;
+        border-left: 34px solid #F5F6FF;
+        border-bottom: 34px solid #F5F6FF;
+        right: -44px;
+        bottom: -34px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .tabs__items {
+        width: 165px;
+    }
+}

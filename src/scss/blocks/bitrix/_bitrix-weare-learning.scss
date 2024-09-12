@@ -1,0 +1,52 @@
+.weare-learning__container {
+    max-width: 1266px;
+    margin: 0 auto;
+    background-color: #F5F6FF;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.weare-learning__wrap {
+    padding: 56px 114px 56px 134px;
+}
+
+.weare-learning__table-row {
+    gap: 20px;
+}
+
+@media (max-width: 1300px) {
+    .weare-learning__container {
+        max-width: 992px;
+    }
+    .weare-learning__table {
+        margin-top: 10px;
+    }
+    .weare-learning__wrap {
+        padding: 45px 20px 8px;
+    }
+}
+@media (max-width: 992px) {
+    .weare-learning__container {
+        max-width: 768px;
+    }
+    .weare-learning__table {
+        margin-top: 20px;
+    }
+    .weare-learning__table-row {
+        gap: 0px;
+    }
+}
+@media (max-width: 768px) {
+    .weare-learning__wrap {
+        padding: 45px 20px 20px;
+    }
+    .weare-learning__container {
+        max-width: 360px;
+    }
+    .weare-learning__table-row-text {
+        width: auto !important;
+    }
+    .weare-learning__table-row {
+        gap: 8px;
+    }
+}

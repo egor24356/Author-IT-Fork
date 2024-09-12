@@ -1,0 +1,124 @@
+
+/* секция proposal */
+
+.services-proposal__img {
+    position: absolute;
+    left: -20px;
+    top: 65px;
+    z-index: 1;
+}
+
+/* фотография */
+
+.services-proposal__img-team {
+    width: 721px;
+    height: 884px;
+    object-fit: contain;
+}
+
+/* контейнер с текстом на фоне черной запятой */
+
+.services-proposal__comma-with-text {
+    background-image: url("../img/icon1/services-comma.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 624px;
+    height: 865px;
+    position: relative;
+}
+
+/* текст */
+
+.services-proposal__text {
+    color: #F5F6FF;
+    font-family: "Unbounded-Regular";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    width: 72%;
+    position: absolute;
+    top: 21%;
+    right: 12%;
+}
+
+/* текст с другим top у секций Отраслевые решения и Нагрузочное тестирование */
+
+.proposal-position {
+    top: 14%;
+}
+
+@media (max-width: 1300px) {
+    .services-proposal__img {
+        left: -44px;
+        top: 15px;
+    }
+    .services-proposal__img-team {
+        width: 589px;
+        height: 727px;
+    }
+    .services-proposal__comma-with-text {
+        width: 487px;
+        height: 674px;
+    }
+    .proposal-position-mediaMobile {
+        top: 21%;
+    }
+    .proposal-position-mediaIndustry {
+        top: 16%;
+    }
+    .proposal-position-mediaStress {
+        width: 80%;
+        top: 12%;
+        right: 10%;
+    }
+}
+
+@media (max-width: 992px) {
+    .services-proposal__img-team {
+        width: 463px;
+        height: 572px;
+    }
+    .services-proposal__comma-with-text {
+        width: 398px;
+        height: 554px;
+    }
+    .proposal-position-mediaMobile {
+        right: 6%;
+    }
+    .proposal-position-mediaIndustry {
+        top: 17%;
+    }
+    .proposal-position-mediaStress {
+        top: 14%;
+        right: 7%;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .services-proposal__container {
+        padding-bottom: 200px;
+    }
+    .services-proposal__img {
+        left: -25px;
+        top: 193px;
+    }
+    .services-proposal__img-team {
+        width: 291px;
+        height: 344px;
+    }
+    .services-proposal__comma-with-text {
+        width: 250px;
+        height: 346px;
+    }
+    .proposal-position-mediaMobile {
+        top: 18%;
+    }
+    .proposal-position-mediaDev {
+        top: 11%;
+    }
+    .proposal-position-mediaStress {
+        top: 9%;
+    }
+}

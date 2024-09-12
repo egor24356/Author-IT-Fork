@@ -1,0 +1,25 @@
+<section class="mailer mailer-section">
+    <div class="container__mailer">
+        <div class="mailer-bg__container container">
+            <img src="../img/img1/mailer__bg.png" alt="" class="mailer-photo">
+            <div id="mailer-bg" class="form__mailer index-mailer">
+                <h2 class="mailer__title">
+                    Остались вопросы?
+                </h2>
+                <form name="test" action="mail.php" class="mailer mailer-form-wrap" method="post" enctype="multipart/form-data">
+                    <div class="container__break__mailer">
+                        <div class="mailer__row">
+                            <input class="input input-name" type="text" data-validate-field="name" name="NAME" placeholder="Ваше имя">
+                        </div>
+                        <div class="mailer__row mailer__second-row">
+                            <input class="input input-tel" type="tel" data-validate-field="tel" name="PHONE" placeholder="Номер телефона">
+                            <input class="input input-mail" type="email" data-validate-field="email" name="EMAIL" placeholder="Почта" >
+                        </div>
+                        <p class="mailer__descr">Оставьте свои данные и мы свяжемся с вами в течение недели.</p>
+                    </div>
+                    <button class="button form-btn" type="submit"><h3>Оставить заявку</h3></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

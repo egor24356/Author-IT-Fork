@@ -1,0 +1,229 @@
+.autor__content .mobile-title {
+    display: none;
+}
+
+.container__autor__IT {
+    display: flex;
+    gap: 50px;
+    height: 928px;
+    padding: 167px 0 159px 0;
+    margin: 0 auto;
+    background-color: #F5F6FF;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+/* Общая фотка в section autor__IT*/
+
+.container__autor__IT img {
+    height: 807px;
+    border-radius: 50px 0 0 50px;
+    transform: translateY(-100px);
+}
+
+/* Контент autor__content */
+
+.autor__content {
+    width: 488px;
+    height: 602px;
+    margin-right: 70px;
+    margin-left: 133px;
+}
+
+.autor__descr1 {
+    margin-top: 19px;
+    margin-right: 124px;
+}
+
+.autor__descr2 {
+    margin-top: 40px;
+}
+
+/* Кнопка "Давайте работать!" */
+
+.title-btn {
+    width: 391px;
+}
+
+.autor__go__work {
+    display: flex;
+    justify-content: center;
+    color: #F5F6FF;
+    background-color: #FF7D04;
+    border-radius: 40px;
+    padding: 24px 80px 24px 75px;
+    margin-top: 40px;
+    transition: all .3s ease;
+}
+
+/* Ссылки на АвторIT */
+
+.autor__wrap__links {
+    width: 100%;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.autor__links {
+    background-color: #F5F6FF;
+    border: 1px solid #232323;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+/* Текст внутри ссылок на АвторIT*/
+
+.vk {
+    min-width: 70px;
+}
+
+.tg {
+    min-width: 114px;
+}
+
+.yt {
+    min-width: 110px;
+}
+
+/* Эффекты у ссылок на АвторIT */
+
+.autor__links:hover {
+    border: 1px solid #FF7D04;
+    color:#FF7D04;
+}
+
+.autor__links:active {
+    border: 1px solid #EC7202;
+    color: #EC7202;
+}
+
+@media (max-width: 1300px) {
+    .container__autor__IT {
+        padding-inline: 56px;
+    }
+    .autor__content {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    h2 {
+        font-size: 55px;
+    }
+    h1 {
+        font-size: 70px;
+    }
+    p {
+        font-size: 12px;
+    }
+    .caption16 {
+        font-size: 12px;
+    }
+    .container__autor__IT img {
+        height: 450px;
+        transform: none;
+    }
+    .container__autor__IT {
+        border-top-left-radius: 0;
+    }
+    .container__autor__IT {
+        padding-top: 50px;
+        height: auto;
+        padding-bottom: 60px;
+    }
+    .autor__content {
+        height: auto;
+        margin-left: 80px;
+        margin-right: 0;
+    }
+    .autor__content {
+        margin-left: 0;
+    }
+    .title-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 315px;
+    }
+    .autor__go__work {
+        padding: 20px 39px;
+    }
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 32px;
+    }
+    .autor__go__work {
+        padding: 20px 25px;
+    }
+    .container__autor__IT {
+        padding: 56px 16px 40px 16px;
+    }
+    .container__autor__IT img {
+        height: 350px;
+        position: absolute;
+        right: 0;
+        top: 120px;
+    }
+    .autor__content h1 {
+        margin-bottom: 390px;
+        font-size: 40px;
+    }
+    .autor__go__work, .autor__wrap__links {
+        width: 100%;
+    }
+    .autor__go__work h3 {
+        font-size: 16px;
+    }
+    .autor__go__work {
+        padding-inline: 60px;
+    }
+    .go__project {
+        width: 98%;
+        justify-content: center;
+        margin-bottom: 1px;
+        margin-right: 1px;
+    }
+    .autor__descr1 {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 690px) {
+    .autor__content .desktop-title {
+        display: none;
+    }
+    .autor__content .mobile-title {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 40px;
+    }
+    .autor__content {
+        margin-left: 0;
+    }
+    .container__autor__IT img {
+        top: 130px;
+    }
+    .autor__IT {
+        padding: 0;
+    }
+    .autor__go__work h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 476px) {
+    .title-img {
+        right: -30% !important;
+    }
+}

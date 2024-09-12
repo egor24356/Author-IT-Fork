@@ -1,0 +1,272 @@
+.Cases-afterClick {
+    width: 1266px;
+    background-color: #F5F6FF;
+    border-radius: 40px;
+    margin: 0 auto 20px auto;
+    padding: 100px 32px 40px 120px;
+    // display: none;
+}
+
+.Cases__wrapper-descr {
+    display: flex;
+}
+
+/* контейнер левой части с описанием проекта */
+
+.Cases__container-descr {
+    // width: 317px;
+    margin-right: 39px;
+}
+
+.Cases__descr-item, .Cases__descr-itemб .comment, .cases-review-author, .cases-review-text {
+    max-width: 700px;
+}
+
+/* путь */
+
+.Cases__container-descr__way {
+    color: #707077;
+}
+
+.cases-chain__item {
+    cursor: pointer;
+    &:hover {
+        opacity: .8;
+    }
+}
+
+/* описание проекта */
+
+.Cases__descr-title {
+    color: #232323;
+    margin-top: 24px;
+}
+
+.Cases__descr-subtitle {
+    color: #232323;
+    margin-top: 6px;
+}
+
+.Cases__descr-about-projects {
+    color: #232323;
+    margin-top: 32px;
+}
+
+.Cases__descr-task {
+    color: #232323;
+    margin-top: 24px;
+}
+
+.Cases__descr-item {
+    color: #232323;
+    margin-top: 8px;
+}
+
+.Cases__descr-result {
+    color: #232323;
+    margin-top: 24px;
+}
+
+/* кнопка для возврата к прошлой секции */
+
+.Cases__descr-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    width: 212px;
+    height: 40px;
+    padding: 8px 40px 8px 32px;
+    margin-top: 34px;
+    border-radius: 16px;
+    border: 1px solid var(--c);
+    --c:#232323;
+    color: var(--c);
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.Cases__descr-link:hover {
+    background-color: #F5F6FF;
+    --c:#FF7D04;
+    color:#FF7D04;
+}
+
+.Cases__descr-link:active {
+    background-color: #F5F6FF;
+    --c:#EC7202;
+    color:#EC7202;
+}
+
+.Cases__descr-link-arrow {
+    stroke: #FF7D04;
+}
+
+/* отзыв */
+
+.review__photo-wrap {
+    margin-top: 16px;
+    margin-bottom: 8px !important;
+}
+
+.review__photo {
+    width: 125px;
+    border-radius: 50%;
+}
+
+.review__name {
+    font-family: "Unbounded-regular" !important;
+}
+
+.review__job-title {
+    margin-top: 8px;
+}
+
+.review__text {
+    margin-top: 16px;
+    height: auto !important;
+}
+
+.cases-review-author {
+    gap: 40px;
+}
+
+/* правая часть секции Cases-afterClick с изображением проекта */
+
+.cases-img-bottom {
+    display: none;
+}
+
+.descr-photo-container {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+}
+
+.Cases__container-img {
+    // margin-right: 63px;
+    max-width: 695px;
+    object-fit: cover;
+    aspect-ratio: 696/380;
+    border-radius: 22px;
+}
+
+.cases-title-mobile {
+    display: none;
+}
+
+.Cases-date-mobile {
+    display: none;
+}
+
+.cases__descr-link {
+    color: inherit;
+    text-decoration: underline .5px;
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.arrow-up-btn {
+    display: none;
+}
+
+@media (max-width: 1300px) {
+    .cases-img-bottom {
+        display: block;
+    }
+    .cases-img-text {
+        display: none;
+    }
+    .Cases__container-img {
+        margin-top: 50px;
+        margin-right: 0;
+    }
+    .Cases__wrapper-descr {
+        flex-direction: column;
+    }
+    .Cases__descr-about-projects {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .Cases__container-descr {
+        width: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .Cases-afterClick {
+        padding-left: 50px;
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cases-review-author {
+        gap: 18px;
+    }
+    .Cases-afterClick {
+        padding-top: 42px;
+        max-width: 360px;
+        padding-inline: 0;
+        position: relative;
+    }
+    .Cases__container-img {
+        order: 1;
+        max-width: 360px;
+    }
+    .Cases__container-descr {
+        order: 2;
+    }
+    .Cases__container-descr__way {
+        display: none;
+    }
+    .Cases__descr-title {
+        font-size: 40px;
+    }
+    .Cases__descr-title_fs24 {
+        font-size: 24px;
+    }
+    .Cases__wrapper-descr[data-filterDescr='tts-group'] .cases-title-mobile {
+        font-size: 32px;
+    }
+    .Cases__descr-subtitle {
+        font-size: 20px;
+        color: #232323;
+    }
+    .cases-title-mobile {
+        display: inline;
+        margin-left: 32px;
+        margin-right: 10px;
+    }
+    .cases-title-desktop {
+        display: none;
+    }
+    .Cases__descr-about-projects {
+        margin-left: 32px;
+    }
+    .Cases__descr-item {
+        font-size: 14px;
+    }
+    .Cases__descr-link {
+        display: none;
+    }
+    .Cases-date-mobile {
+        order: 3;
+        display: inline;
+        margin-left: 27px;
+        margin-top: 24px;
+        font-size: 16px;
+        font-family: "Unbounded-regular", sans-serif;
+        color: #707077;
+    }
+    .arrow-up-btn {
+        display: block;
+        position: absolute;
+        bottom: -50px;
+        right: 25px;
+    }
+}

@@ -8,7 +8,8 @@ function hideCasesSlider(filterValue) {
         filterInter: 'Интернет-магазины',
         filterSite: 'Корпоративные сайты',
         filterMobil: 'Мобильные приложения',
-        events: 'Мероприятия, обучение'
+        events: 'Мероприятия, обучение',
+        b24app: 'Приложения Битрикс24'
     }
 
     swiperTitle.innerHTML = filterNames[filterValue];

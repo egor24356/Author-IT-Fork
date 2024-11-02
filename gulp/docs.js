@@ -47,10 +47,10 @@ const fileIncludeSetting = {
 gulp.task('html:docs', function () {
 	return gulp
 		.src(['./src/html/**/*.html', '!./src/html/blocks/**/*.html'])
-		.pipe(changed('./docs/'))
+		// .pipe(changed('./docs/'))
 		// .pipe(plumber(plumberNotify('HTML')))
 		.pipe(fileInclude(fileIncludeSetting))
-		.pipe(webpHTML())
+		// .pipe(webpHTML())
 		.pipe(htmlclean())
 		.pipe(gulp.dest('./docs/'));
 });
@@ -58,7 +58,7 @@ gulp.task('html:docs', function () {
 gulp.task('sass:docs', function () {
 	return gulp
 		.src('./src/scss/*.scss')
-		// .pipe(changed('./docs/css/'))
+		.pipe(changed('./docs/css/'))
 		// .pipe(sourceMaps.init())
 		.pipe(autoprefixer())
 		.pipe(sassGlob())

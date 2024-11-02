@@ -6,6 +6,7 @@ const config = {
 		cases: './src/js/cases.js',
 		services: './src/js/services.js',
 		aboutus: './src/js/aboutus.js',
+		certificates: './src/js/certificates.js'
 	},
 	output: {
 		filename: '[name].bundle.js',

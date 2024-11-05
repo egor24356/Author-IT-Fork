@@ -236,20 +236,19 @@ h2 {
 }
 
 .subtitle24,
-h3,
-p {
-  font-family: "Open Sans",sans-serif;
-}
-
-.subtitle24,
 h3 {
   font-size: 24px;
   font-weight: 700;
 }
 
-.container__text__slider__union h4,
-h4 {
+.subtitle24,
+h3,
+h4,
+p {
   font-family: "Open Sans",sans-serif;
+}
+
+h4 {
   font-size: 16px;
   font-weight: 700;
 }
@@ -3330,10 +3329,15 @@ main {
   margin-right: 42px;
 }
 
-.container__text__slider__union h3 {
+.container__text__slider__union h3,
+.container__text__slider__union h4 {
   font-family: "Open Sans",sans-serif;
   font-size: 24px;
   font-weight: 700;
+}
+
+.container__text__slider__union h4 {
+  font-size: 16px;
 }
 
 .slider__union__name {
@@ -4518,6 +4522,10 @@ main {
     font-size: 12px;
     width: auto;
     padding: 8px 15px;
+  }
+
+  .certificates-title {
+    font-size: 74px;
   }
 
   .desktop-title {
@@ -5896,6 +5904,30 @@ main {
 
   .Cases__swiper-title {
     margin-right: 0;
+  }
+
+  .certificates-title {
+    font-size: 48px;
+  }
+
+  .certificates-list-container {
+    border-top-left-radius: 0;
+  }
+
+  h3.certificates-group-name {
+    font-size: 20px;
+  }
+
+  h4.certificates-group-name {
+    font-size: 16px;
+  }
+
+  .certificate-card__title {
+    font-size: 12px;
+  }
+
+  .certificates-list {
+    margin-bottom: 32px;
   }
 
   h2 {
@@ -7442,6 +7474,27 @@ main {
     font-family: "Open-sans",sans-serif;
     color: #707077;
     border: 0!important;
+  }
+
+  .certificates-list-container {
+    padding: 32px;
+  }
+
+  .certificates-title {
+    font-size: 24px;
+  }
+
+  h3.certificates-group-name {
+    font-size: 16px;
+  }
+
+  h4.certificates-group-name {
+    font-size: 12px;
+  }
+
+  .certificates-list__item {
+    width: calc(50% - 16px);
+    padding: 8px 0;
   }
 
   h2 {

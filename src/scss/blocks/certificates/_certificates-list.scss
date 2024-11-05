@@ -57,3 +57,61 @@
         text-align: center;
     }
 }
+
+@media (max-width: 1300px) {
+    .certificates-title {
+        font-size: 74px;
+    }
+}
+
+@media (max-width: 992px) {
+    .certificates-title {
+        font-size: 48px;
+    }
+
+    .certificates-list-container {
+        border-top-left-radius: 0;
+    }
+
+    h3.certificates-group-name {
+        font-size: 20px;
+    }
+
+    h4.certificates-group-name {
+        font-size: 16px;
+    }
+
+    .certificate-card__title {
+        font-size: 12px;
+    }
+
+    .certificates-list {
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .certificates-list-container {
+        padding: 32px;
+    }
+
+    .certificates-title {
+        font-size: 24px;
+    }
+
+    h3.certificates-group-name {
+        font-size: 16px;
+    }
+
+    h4.certificates-group-name {
+        font-size: 12px;
+    }
+
+    .certificates-list {
+        &__item {
+            width: calc(50% - 16px);
+            padding: 8px 0;
+        }
+
+    }
+}

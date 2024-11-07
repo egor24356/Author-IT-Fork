@@ -1,3 +1,14 @@
+/* шрифты */
+
+@font-face {
+    font-family: "Unbounded-Regular";
+    src: url("../fonts/Unbounded-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Unbounded-Black";
+    src: url("../fonts/Unbounded-Black.ttf") format("truetype");
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -321,13 +332,3 @@ main {
 }
 
 
-/* шрифты */
-
-@font-face {
-    font-family: "Unbounded-Regular"; 
-    src: url("../fonts/Unbounded-Regular.ttf") format("truetype");
-}
-@font-face {
-    font-family: "Unbounded-Black"; 
-    src: url("../fonts/Unbounded-Black.ttf") format("truetype");
-}

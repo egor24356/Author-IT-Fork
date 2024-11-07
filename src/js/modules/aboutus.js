@@ -1,9 +1,14 @@
-
 //переход на нужный слайд при нажатии на соответствующую иконку страницы "О нас"
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 function aboutus() {
     document.addEventListener('DOMContentLoaded', ()  => { 
         const swiperAboutUs = new Swiper('.swiper__container__AboutUs', {
+            modules: [Navigation, Pagination],
             initialSlide: 0,
             spaceBetween: 140,
             loop: true,

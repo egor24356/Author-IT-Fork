@@ -1,9 +1,16 @@
 //свайпер section we__proud
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 function swiperWeProud() {
     document.addEventListener('DOMContentLoaded', ()  => { 
         if (window.matchMedia("(min-width: 992px)").matches) {
             /* the viewport is at least 992 pixels wide */
             const swiper__proud = new Swiper('.swiper__container__we__proud', {
+                modules: [Navigation, Pagination],
                 initialSlide: 0,
                 spaceBetween: 140,
                 loop: true,

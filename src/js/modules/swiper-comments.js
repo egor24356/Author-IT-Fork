@@ -1,10 +1,17 @@
 //свайпер section comments
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
 function swiperComments() {
-  document.addEventListener('DOMContentLoaded', ()  => { 
+  document.addEventListener('DOMContentLoaded', ()  => {
 
     if (window.matchMedia("(min-width: 992px)").matches) {
       /* the viewport is at least 992 pixels wide */
       const swiper__comments = new Swiper('.swiper__container__comments__items', {
+        modules: [Navigation, Pagination],
         effect: "coverflow",
         initialSlide: 1,
         grabCursor: true,

@@ -1,5 +1,1 @@
-<svg width="13" height="18" viewBox="0 0 13 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="cursor">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V18L5 13H13L0 0Z" fill="#252525"/>
-</g>
-</svg>
+<svg width="13" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 0v18l5-5h8L0 0z" fill="#252525"/></svg>

@@ -62,15 +62,18 @@ gulp.task('html:docs', function () {
         // .pipe(changed('./docs/'))
         .pipe(plumber(plumberNotify('HTML')))
         .pipe(fileInclude(fileIncludeSetting))
-        .pipe(webpHTML())
-        // .pipe(htmlclean())
+        .pipe(webpHTML()) // плагин кривой: ВСЕ КАРТИНКИ
+                          // <img> ДОЛЖНЫ БЫТЬ В ОДНУ
+                          // СТРОЧКУ БЕЗ
+                          // ПЕРЕНОСОВ!!!!!!!!!!
+        .pipe(htmlclean())
         .pipe(gulp.dest('./docs/'));
 });
 
 gulp.task('sass:docs', function () {
     return gulp
         .src('./src/scss/*.scss')
-        .pipe(changed('./docs/css/'))
+        // .pipe(changed('./docs/css/'))
         // .pipe(sourceMaps.init())
         .pipe(autoprefixer())
         .pipe(sassGlob())
@@ -96,21 +99,21 @@ gulp.task('images:docs', function () {
 gulp.task('fonts:docs', function () {
     return gulp
         .src('./src/fonts/**/*')
-        .pipe(changed('./docs/fonts/'))
+        // .pipe(changed('./docs/fonts/'))
         .pipe(gulp.dest('./docs/fonts/'));
 });
 
 gulp.task('files:docs', function () {
     return gulp
         .src('./src/files/**/*')
-        .pipe(changed('./docs/files/'))
+        // .pipe(changed('./docs/files/'))
         .pipe(gulp.dest('./docs/files/'));
 });
 
 gulp.task('js:docs', function () {
     return gulp
         .src('./src/js/*.js')
-        .pipe(changed('./docs/js/'))
+        // .pipe(changed('./docs/js/'))
         // .pipe(plumber(plumberNotify('JS')))
         .pipe(babel())
         .pipe(webpack(require('./../webpack.config.js')))

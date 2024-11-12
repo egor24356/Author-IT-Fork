@@ -1,49 +1,97 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Автор IT</title>
-		<meta name="description" content="Автор АйТи – компания-интегратор.">
-		<meta name="theme-color" content="#232323" class="mobile-searchbar">
-		<link rel="icon" href="img/icon1/footer-logo.svg" class="site-icon">
-		<link rel="stylesheet" href="./css/main.css" />
-		<!-- Yandex.Metrika counter -->
-		<script type="text/javascript" >
-			(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-			m[i].l=1*new Date();
-			for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-			k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-		
-			ym(96338179, "init", {
-				clickmap:true,
-				trackLinks:true,
-				accurateTrackBounce:true
-			});
-		</script>
-		<noscript><div><img src="https://mc.yandex.ru/watch/96338179" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-		<!-- /Yandex.Metrika counter -->
-	</head>
-	<body>
-		@@include('blocks/header.html')
-		<main class="main">
-			@@include('blocks/btn-to-top.html')
-			@@include('blocks/index/index-author__IT.html')
-			@@include('blocks/index/index-crm__content.html')
-			<!-- @@include('blocks/index-we.html') -->
-			@@include('blocks/index/index-running__line.html')
-			@@include('blocks/index/index-team.html')
-			@@include('blocks/index/index-we__proud.html')
-			@@include('blocks/index/index-comments.html')
-			<!-- @@include('blocks/mailer-coop.html') -->
-			<div class="bitrix-mailer">
-				<img src="../img/img1/mailer__bg.png" alt="" class="mailer-photo">
-				<script data-b24-form="inline/38/jx2901" data-skip-moving="true">(function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://avtorit24.ru/upload/crm/form/loader_38_jx2901.js');</script>
-			</div>
-			@@include('blocks/footer.html')
-		</main>
-		<script src="./js/index.bundle.js"></script>
-	</body>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Автор IT – Компания-интегратор Автор АйТи</title>
+    <meta name="description" content="Автор АйТи – компания-интегратор с упором на внедрение и разработку корпоративных порталов Битрикс24. Используйте Битрикс24
+и будьте на шаг впереди конкурентов!">
+    <meta name="theme-color" content="#232323" class="mobile-searchbar">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://authorit-new.ru/">
+    <meta property="og:title" content="Автор IT">
+    <meta property="og:description" content="Автор АйТи – компания-интегратор">
+    <meta property="og:image" content="img/icon1/footer-logo.svg">
+    <link rel="icon" href="img/icon1/footer-logo.svg" class="site-icon">
+    <link rel="stylesheet" href="./css/main.css"/>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function ( m, e, t, r, i, k, a ) {
+            m[i] = m[i] || function () {(m[i].a = m[i].a || []).push(arguments);};
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) {
+                    return;
+                }
+            }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a);
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(96338179, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/96338179" style="position:absolute; left:-9999px;" alt=""/></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "logo": "https://authorit-new.ru/img/icon1/footer-logo.svg",
+            "name": "Автор АйТи",
+            "url": "https://authorit-new.ru/",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+7-351-951-0040",
+                "contactType": "Customer Service",
+                "areaServed": "RU",
+                "availableLanguage": "Russian"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Североморская, 34",
+                "addressLocality": "Россия, Магнитогорск",
+                "addressRegion": "Челябинская обл.",
+                "postalCode": "455006",
+                "addressCountry": "RU"
+            },
+            "sameAs": [
+                "https://vk.com/autor_it"
+            ]
+        }
+    </script>
+</head>
+<body>
+@@include('blocks/header.html')
+<main class="main">
+    @@include('blocks/btn-to-top.html')
+    @@include('blocks/index/index-author__IT.html')
+    @@include('blocks/index/index-crm__content.html')
+    <!-- @@include('blocks/index-we.html') -->
+    @@include('blocks/index/index-running__line.html')
+    @@include('blocks/index/index-team.html')
+    @@include('blocks/index/index-we__proud.html')
+    @@include('blocks/index/index-comments.html')
+    <!-- @@include('blocks/mailer-coop.html') -->
+    <div class="bitrix-mailer">
+        <img src="../img/img1/mailer__bg.png" alt="" class="mailer-photo">
+        <script data-b24-form="inline/38/jx2901"
+                data-skip-moving="true">(function ( w, d, u ) {
+            var s = d.createElement('script');
+            s.async = true;
+            s.src = u + '?' + (Date.now() / 180000 | 0);
+            var h = d.getElementsByTagName('script')[0];
+            h.parentNode.insertBefore(s, h);
+        })(window, document, 'https://avtorit24.ru/upload/crm/form/loader_38_jx2901.js');</script>
+    </div>
+    @@include('blocks/footer.html')
+</main>
+<script src="./js/index.bundle.js"></script>
+</body>
 </html>

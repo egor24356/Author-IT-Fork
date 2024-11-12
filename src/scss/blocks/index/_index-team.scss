@@ -75,6 +75,7 @@
     transform: translateX(-50%);
     animation: 1s infinite pulsating ease;
 }
+
 .cursor-mobile-wrap {
     bottom: 10%;
     left: 50%;
@@ -83,6 +84,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .cursor-mobile-wrap p {
     font-family: "Unbounded-regular";
     position: absolute;
@@ -115,7 +117,7 @@
 }
 
 .team__name {
-    color:#000;
+    color: #000;
 }
 
 .team__profession {
@@ -148,9 +150,9 @@
 }
 
 .custom-pagination {
-    width: 65px !important;
+    width: 70px !important;
     height: 30px;
-    color:#232323 !important;
+    color: #232323 !important;
     font-family: "Unbounded-Black";
     font-size: 24px;
     font-weight: 400;
@@ -196,7 +198,7 @@
     .team__wrap-face {
         transform: translateX(45px);
     }
-    .custom-pagination {//
+    .custom-pagination { //
         left: 6% !important;
     }
     .swiper__team {
@@ -210,16 +212,16 @@
         top: 50%;
         right: 55px;
     }
-    .descr-team {//
+    .descr-team { //
         height: 100% !important;
         width: 100% !important;
     }
-    .swiper-slide {//
+    .swiper-slide { //
         position: relative;
     }
     .team__profession {
         margin-top: 22px;
-    }   
+    }
     .swiper__team__img {
         bottom: 0;
         width: 42%;
@@ -246,25 +248,25 @@
 }
 
 @media (max-width: 992px) {
-    .cursor {//
+    .cursor { //
         display: none;
     }
-    .container__we {//
+    .container__we { //
         height: auto;
         padding: 0;
     }
-    .container__we__commas .com {//
+    .container__we__commas .com { //
         height: auto !important;
     }
-    .we {//
+    .we { //
         margin-top: 40px;
     }
-    .team__container {//
+    .team__container { //
         margin-bottom: 0;
     }
-    .team__profession {//
+    .team__profession { //
         top: 133px;
-    } 
+    }
     .team__wrap-face {
         transform: translateX(-60px);
     }
@@ -303,15 +305,15 @@
         right: 30px;
         width: 64%;
     }
-    .descr-team {//
+    .descr-team { //
         width: 100% !important;
         position: relative;
     }
-    .swiper__team {//
+    .swiper__team { //
         width: 100% !important;
         padding: 128px 42px 203px;
     }
-    .custom-pagination {//
+    .custom-pagination { //
         left: 64px;
     }
 }
@@ -363,7 +365,7 @@
         right: 25px;
         top: 55%;
     }
-    .swiper-team__arrowPrev, 
+    .swiper-team__arrowPrev,
     .swiper-team__arrowNext {
         width: 26px;
         height: 20px;
@@ -425,7 +427,7 @@
     }
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
     .cursor {
         display: block;
     }
